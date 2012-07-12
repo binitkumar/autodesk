@@ -1,0 +1,12 @@
+<% title "Name Number" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @name_number.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_name_number_path(@name_number) %> |
+  <%= link_to "Destroy", @name_number, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", name_numbers_path %>
+</p>

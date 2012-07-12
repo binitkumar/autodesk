@@ -1,0 +1,12 @@
+<% title "Street" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @street.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_street_path(@street) %> |
+  <%= link_to "Destroy", @street, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", streets_path %>
+</p>

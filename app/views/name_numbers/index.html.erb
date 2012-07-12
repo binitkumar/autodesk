@@ -1,0 +1,17 @@
+<% title "Name Numbers" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for name_number in @name_numbers %>
+    <tr>
+      <td><%= name_number.value %></td>
+      <td><%= link_to "Show", name_number %></td>
+      <td><%= link_to "Edit", edit_name_number_path(name_number) %></td>
+      <td><%= link_to "Destroy", name_number, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Name Number", new_name_number_path %></p>

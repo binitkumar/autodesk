@@ -1,5 +1,13 @@
 Autobase::Application.routes.draw do
   
+  resources :name_numbers
+
+  resources :postcodes
+
+  resources :streets
+
+  resources :states
+
   resources :addresses
 
   devise_for :users

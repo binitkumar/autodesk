@@ -1,0 +1,17 @@
+<% title "Postcodes" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for postcode in @postcodes %>
+    <tr>
+      <td><%= postcode.value %></td>
+      <td><%= link_to "Show", postcode %></td>
+      <td><%= link_to "Edit", edit_postcode_path(postcode) %></td>
+      <td><%= link_to "Destroy", postcode, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Postcode", new_postcode_path %></p>

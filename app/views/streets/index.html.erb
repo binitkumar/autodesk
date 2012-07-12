@@ -1,0 +1,17 @@
+<% title "Streets" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for street in @streets %>
+    <tr>
+      <td><%= street.value %></td>
+      <td><%= link_to "Show", street %></td>
+      <td><%= link_to "Edit", edit_street_path(street) %></td>
+      <td><%= link_to "Destroy", street, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Street", new_street_path %></p>
