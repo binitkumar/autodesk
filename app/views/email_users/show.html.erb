@@ -1,0 +1,20 @@
+<% title "Email User" %>
+
+<p>
+  <strong>User:</strong>
+  <%= @email_user.user_id %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @email_user.email_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @email_user.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_email_user_path(@email_user) %> |
+  <%= link_to "Destroy", @email_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", email_users_path %>
+</p>

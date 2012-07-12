@@ -1,0 +1,9 @@
+one:
+  user_id: 1
+  email_id: 1
+  primary: false
+
+two:
+  user_id: 1
+  email_id: 1
+  primary: false

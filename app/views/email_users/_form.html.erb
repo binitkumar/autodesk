@@ -1,0 +1,16 @@
+<%= form_for @email_user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :email_id %><br />
+    <%= f.number_field :email_id %>
+  </p>
+  <p>
+    <%= f.label :primary %><br />
+    <%= f.check_box :primary %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,21 @@
+<% title "Email Users" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Email</th>
+    <th>Primary</th>
+  </tr>
+  <% for email_user in @email_users %>
+    <tr>
+      <td><%= email_user.user_id %></td>
+      <td><%= email_user.email_id %></td>
+      <td><%= email_user.primary %></td>
+      <td><%= link_to "Show", email_user %></td>
+      <td><%= link_to "Edit", edit_email_user_path(email_user) %></td>
+      <td><%= link_to "Destroy", email_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Email User", new_email_user_path %></p>
