@@ -1,0 +1,19 @@
+<% title "Dealers" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+  </tr>
+  <% for dealer in @dealers %>
+    <tr>
+      <td><%= dealer.name %></td>
+      <td><%= dealer.address_id %></td>
+      <td><%= link_to "Show", dealer %></td>
+      <td><%= link_to "Edit", edit_dealer_path(dealer) %></td>
+      <td><%= link_to "Destroy", dealer, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer", new_dealer_path %></p>
