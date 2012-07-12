@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :contact_numbers
+
   resources :email_users
 
   resources :dealer_emails

@@ -1,0 +1,12 @@
+<%= form_for @contact_number do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :contact_number_type_id %><br />
+    <%= f.number_field :contact_number_type_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

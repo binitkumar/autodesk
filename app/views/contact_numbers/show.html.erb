@@ -1,0 +1,16 @@
+<% title "Contact Number" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @contact_number.value %>
+</p>
+<p>
+  <strong>Contact Number Type:</strong>
+  <%= @contact_number.contact_number_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_contact_number_path(@contact_number) %> |
+  <%= link_to "Destroy", @contact_number, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", contact_numbers_path %>
+</p>
