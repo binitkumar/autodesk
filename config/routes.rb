@@ -1,4 +1,8 @@
 Autobase::Application.routes.draw do
+  
+  # Set default url
+  root :to => "dealers#index"
+  
   resources :permissions
 
   resources :dealer_users
