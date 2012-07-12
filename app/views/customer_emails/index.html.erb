@@ -1,0 +1,21 @@
+<% title "Customer Emails" %>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Email</th>
+    <th>Primary</th>
+  </tr>
+  <% for customer_email in @customer_emails %>
+    <tr>
+      <td><%= customer_email.customer_id %></td>
+      <td><%= customer_email.email_id %></td>
+      <td><%= customer_email.primary %></td>
+      <td><%= link_to "Show", customer_email %></td>
+      <td><%= link_to "Edit", edit_customer_email_path(customer_email) %></td>
+      <td><%= link_to "Destroy", customer_email, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Customer Email", new_customer_email_path %></p>

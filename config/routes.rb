@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :customer_emails
+
+  resources :emails
+
   resources :employer_employments
 
   resources :employment_types

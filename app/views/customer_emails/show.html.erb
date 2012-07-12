@@ -1,0 +1,20 @@
+<% title "Customer Email" %>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer_email.customer_id %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @customer_email.email_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @customer_email.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_customer_email_path(@customer_email) %> |
+  <%= link_to "Destroy", @customer_email, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", customer_emails_path %>
+</p>
