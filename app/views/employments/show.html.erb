@@ -1,0 +1,24 @@
+<% title "Employment" %>
+
+<p>
+  <strong>Employment Type:</strong>
+  <%= @employment.employment_type_id %>
+</p>
+<p>
+  <strong>Income:</strong>
+  <%= @employment.income_id %>
+</p>
+<p>
+  <strong>Customer:</strong>
+  <%= @employment.customer_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @employment.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_employment_path(@employment) %> |
+  <%= link_to "Destroy", @employment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", employments_path %>
+</p>

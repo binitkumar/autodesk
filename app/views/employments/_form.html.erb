@@ -1,0 +1,20 @@
+<%= form_for @employment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :employment_type_id %><br />
+    <%= f.number_field :employment_type_id %>
+  </p>
+  <p>
+    <%= f.label :income_id %><br />
+    <%= f.number_field :income_id %>
+  </p>
+  <p>
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </p>
+  <p>
+    <%= f.label :primary %><br />
+    <%= f.check_box :primary %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

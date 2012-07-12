@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :employments
+
   resources :address_employers
 
   resources :employers
