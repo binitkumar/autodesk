@@ -1,4 +1,6 @@
 Autobase::Application.routes.draw do
+  resources :preferences
+
   resources :dealers
 
   # The priority is based upon order of creation:

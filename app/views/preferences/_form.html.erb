@@ -1,0 +1,20 @@
+<%= form_for @preference do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :preference_type_id %><br />
+    <%= f.number_field :preference_type_id %>
+  </p>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

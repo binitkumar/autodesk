@@ -1,0 +1,24 @@
+<% title "Preference" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @preference.value %>
+</p>
+<p>
+  <strong>Preference Type:</strong>
+  <%= @preference.preference_type_id %>
+</p>
+<p>
+  <strong>Dealer:</strong>
+  <%= @preference.dealer_id %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @preference.user_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_preference_path(@preference) %> |
+  <%= link_to "Destroy", @preference, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", preferences_path %>
+</p>

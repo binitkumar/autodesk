@@ -1,0 +1,23 @@
+<% title "Preferences" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>Preference Type</th>
+    <th>Dealer</th>
+    <th>User</th>
+  </tr>
+  <% for preference in @preferences %>
+    <tr>
+      <td><%= preference.value %></td>
+      <td><%= preference.preference_type_id %></td>
+      <td><%= preference.dealer_id %></td>
+      <td><%= preference.user_id %></td>
+      <td><%= link_to "Show", preference %></td>
+      <td><%= link_to "Edit", edit_preference_path(preference) %></td>
+      <td><%= link_to "Destroy", preference, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Preference", new_preference_path %></p>
