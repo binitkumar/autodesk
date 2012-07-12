@@ -1,0 +1,23 @@
+<% title "Employer Employments" %>
+
+<table>
+  <tr>
+    <th>Employer</th>
+    <th>Employment</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <% for employer_employment in @employer_employments %>
+    <tr>
+      <td><%= employer_employment.employer_id %></td>
+      <td><%= employer_employment.employment_id %></td>
+      <td><%= employer_employment.start_date %></td>
+      <td><%= employer_employment.end_date %></td>
+      <td><%= link_to "Show", employer_employment %></td>
+      <td><%= link_to "Edit", edit_employer_employment_path(employer_employment) %></td>
+      <td><%= link_to "Destroy", employer_employment, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Employer Employment", new_employer_employment_path %></p>

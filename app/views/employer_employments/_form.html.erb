@@ -1,0 +1,20 @@
+<%= form_for @employer_employment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :employer_id %><br />
+    <%= f.number_field :employer_id %>
+  </p>
+  <p>
+    <%= f.label :employment_id %><br />
+    <%= f.number_field :employment_id %>
+  </p>
+  <p>
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </p>
+  <p>
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

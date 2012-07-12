@@ -1,0 +1,24 @@
+<% title "Employer Employment" %>
+
+<p>
+  <strong>Employer:</strong>
+  <%= @employer_employment.employer_id %>
+</p>
+<p>
+  <strong>Employment:</strong>
+  <%= @employer_employment.employment_id %>
+</p>
+<p>
+  <strong>Start Date:</strong>
+  <%= @employer_employment.start_date %>
+</p>
+<p>
+  <strong>End Date:</strong>
+  <%= @employer_employment.end_date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_employer_employment_path(@employer_employment) %> |
+  <%= link_to "Destroy", @employer_employment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", employer_employments_path %>
+</p>
