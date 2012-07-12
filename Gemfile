@@ -10,8 +10,9 @@ gem 'sqlite3'
 # Use nifty generators for quickly creating scaffolds
 gem 'nifty-generators'
 
-# Use devise for authentication and cancan for permissions
+# Use devise for authentication (with omniauth) and cancan for permissions
 gem 'devise'
+gem 'omniauth'
 gem 'cancan'
 
 # Gems used only for assets and not required
