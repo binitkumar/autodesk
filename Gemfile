@@ -7,7 +7,10 @@ gem 'rails', '3.2.6'
 
 gem 'sqlite3'
 
+# Use nifty generators for quickly creating scaffolds
 gem 'nifty-generators'
+
+# Use devise for authentication and cancan for permissions
 gem 'devise'
 gem 'cancan'
 
