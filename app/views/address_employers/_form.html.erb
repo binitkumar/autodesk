@@ -1,0 +1,12 @@
+<%= form_for @address_employer do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :address_id %><br />
+    <%= f.number_field :address_id %>
+  </p>
+  <p>
+    <%= f.label :employer_id %><br />
+    <%= f.number_field :employer_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

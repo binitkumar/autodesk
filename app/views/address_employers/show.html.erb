@@ -1,0 +1,16 @@
+<% title "Address Employer" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_employer.address_id %>
+</p>
+<p>
+  <strong>Employer:</strong>
+  <%= @address_employer.employer_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_employer_path(@address_employer) %> |
+  <%= link_to "Destroy", @address_employer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_employers_path %>
+</p>

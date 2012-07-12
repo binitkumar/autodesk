@@ -1,0 +1,19 @@
+<% title "Address Employers" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Employer</th>
+  </tr>
+  <% for address_employer in @address_employers %>
+    <tr>
+      <td><%= address_employer.address_id %></td>
+      <td><%= address_employer.employer_id %></td>
+      <td><%= link_to "Show", address_employer %></td>
+      <td><%= link_to "Edit", edit_address_employer_path(address_employer) %></td>
+      <td><%= link_to "Destroy", address_employer, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address Employer", new_address_employer_path %></p>

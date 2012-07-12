@@ -1,0 +1,12 @@
+<% title "Employer" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @employer.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_employer_path(@employer) %> |
+  <%= link_to "Destroy", @employer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", employers_path %>
+</p>

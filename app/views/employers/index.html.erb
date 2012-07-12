@@ -1,0 +1,17 @@
+<% title "Employers" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for employer in @employers %>
+    <tr>
+      <td><%= employer.name %></td>
+      <td><%= link_to "Show", employer %></td>
+      <td><%= link_to "Edit", edit_employer_path(employer) %></td>
+      <td><%= link_to "Destroy", employer, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Employer", new_employer_path %></p>
