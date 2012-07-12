@@ -1,0 +1,12 @@
+<% title "Customer Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @customer_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_customer_type_path(@customer_type) %> |
+  <%= link_to "Destroy", @customer_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", customer_types_path %>
+</p>

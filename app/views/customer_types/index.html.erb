@@ -1,0 +1,17 @@
+<% title "Customer Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for customer_type in @customer_types %>
+    <tr>
+      <td><%= customer_type.value %></td>
+      <td><%= link_to "Show", customer_type %></td>
+      <td><%= link_to "Edit", edit_customer_type_path(customer_type) %></td>
+      <td><%= link_to "Destroy", customer_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Customer Type", new_customer_type_path %></p>
