@@ -1,0 +1,16 @@
+<% title "Dealer Supplier" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_supplier.dealer_id %>
+</p>
+<p>
+  <strong>Supplier:</strong>
+  <%= @dealer_supplier.supplier_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_supplier_path(@dealer_supplier) %> |
+  <%= link_to "Destroy", @dealer_supplier, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_suppliers_path %>
+</p>

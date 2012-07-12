@@ -1,0 +1,19 @@
+<% title "Supplier Users" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Supplier</th>
+  </tr>
+  <% for supplier_user in @supplier_users %>
+    <tr>
+      <td><%= supplier_user.user_id %></td>
+      <td><%= supplier_user.supplier_id %></td>
+      <td><%= link_to "Show", supplier_user %></td>
+      <td><%= link_to "Edit", edit_supplier_user_path(supplier_user) %></td>
+      <td><%= link_to "Destroy", supplier_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Supplier User", new_supplier_user_path %></p>

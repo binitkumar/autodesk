@@ -1,0 +1,16 @@
+<% title "Supplier User" %>
+
+<p>
+  <strong>User:</strong>
+  <%= @supplier_user.user_id %>
+</p>
+<p>
+  <strong>Supplier:</strong>
+  <%= @supplier_user.supplier_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_supplier_user_path(@supplier_user) %> |
+  <%= link_to "Destroy", @supplier_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", supplier_users_path %>
+</p>
