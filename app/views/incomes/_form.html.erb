@@ -1,0 +1,16 @@
+<%= form_for @income do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :income_type_id %><br />
+    <%= f.number_field :income_type_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :currency_id %><br />
+    <%= f.number_field :currency_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

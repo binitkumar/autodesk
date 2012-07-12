@@ -1,0 +1,9 @@
+one:
+  income_type_id: 1
+  value: 1.5
+  currency_id: 1
+
+two:
+  income_type_id: 1
+  value: 1.5
+  currency_id: 1

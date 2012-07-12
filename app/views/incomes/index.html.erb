@@ -1,0 +1,21 @@
+<% title "Incomes" %>
+
+<table>
+  <tr>
+    <th>Income Type</th>
+    <th>Value</th>
+    <th>Currency</th>
+  </tr>
+  <% for income in @incomes %>
+    <tr>
+      <td><%= income.income_type_id %></td>
+      <td><%= income.value %></td>
+      <td><%= income.currency_id %></td>
+      <td><%= link_to "Show", income %></td>
+      <td><%= link_to "Edit", edit_income_path(income) %></td>
+      <td><%= link_to "Destroy", income, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Income", new_income_path %></p>

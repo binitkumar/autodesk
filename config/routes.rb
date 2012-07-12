@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :income_types
+
+  resources :incomes
+
   resources :employments
 
   resources :address_employers

@@ -1,0 +1,17 @@
+<% title "Income Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for income_type in @income_types %>
+    <tr>
+      <td><%= income_type.value %></td>
+      <td><%= link_to "Show", income_type %></td>
+      <td><%= link_to "Edit", edit_income_type_path(income_type) %></td>
+      <td><%= link_to "Destroy", income_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Income Type", new_income_type_path %></p>

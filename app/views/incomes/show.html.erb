@@ -1,0 +1,20 @@
+<% title "Income" %>
+
+<p>
+  <strong>Income Type:</strong>
+  <%= @income.income_type_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @income.value %>
+</p>
+<p>
+  <strong>Currency:</strong>
+  <%= @income.currency_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_income_path(@income) %> |
+  <%= link_to "Destroy", @income, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", incomes_path %>
+</p>
