@@ -1,0 +1,21 @@
+<% title "Dealer Emails" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Email</th>
+    <th>Primary</th>
+  </tr>
+  <% for dealer_email in @dealer_emails %>
+    <tr>
+      <td><%= dealer_email.dealer_id %></td>
+      <td><%= dealer_email.email_id %></td>
+      <td><%= dealer_email.primary %></td>
+      <td><%= link_to "Show", dealer_email %></td>
+      <td><%= link_to "Edit", edit_dealer_email_path(dealer_email) %></td>
+      <td><%= link_to "Destroy", dealer_email, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Email", new_dealer_email_path %></p>

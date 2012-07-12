@@ -1,0 +1,20 @@
+<% title "Dealer Email" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_email.dealer_id %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @dealer_email.email_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @dealer_email.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_email_path(@dealer_email) %> |
+  <%= link_to "Destroy", @dealer_email, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_emails_path %>
+</p>
