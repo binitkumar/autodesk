@@ -1,0 +1,7 @@
+one:
+  city: MyString
+  country: MyString
+
+two:
+  city: MyString
+  country: MyString

@@ -1,0 +1,19 @@
+<% title "Addresses" %>
+
+<table>
+  <tr>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+  <% for address in @addresses %>
+    <tr>
+      <td><%= address.city %></td>
+      <td><%= address.country %></td>
+      <td><%= link_to "Show", address %></td>
+      <td><%= link_to "Edit", edit_address_path(address) %></td>
+      <td><%= link_to "Destroy", address, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address", new_address_path %></p>

@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :addresses
+
   devise_for :users
 
   # Set default url
