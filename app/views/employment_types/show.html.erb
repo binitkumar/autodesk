@@ -1,0 +1,12 @@
+<% title "Employment Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @employment_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_employment_type_path(@employment_type) %> |
+  <%= link_to "Destroy", @employment_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", employment_types_path %>
+</p>
