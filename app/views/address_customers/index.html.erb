@@ -1,0 +1,25 @@
+<% title "Address Customers" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Customer</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Primary</th>
+  </tr>
+  <% for address_customer in @address_customers %>
+    <tr>
+      <td><%= address_customer.address_id %></td>
+      <td><%= address_customer.customer_id %></td>
+      <td><%= address_customer.start_date %></td>
+      <td><%= address_customer.end_date %></td>
+      <td><%= address_customer.primary %></td>
+      <td><%= link_to "Show", address_customer %></td>
+      <td><%= link_to "Edit", edit_address_customer_path(address_customer) %></td>
+      <td><%= link_to "Destroy", address_customer, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address Customer", new_address_customer_path %></p>

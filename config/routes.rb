@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :address_customers
+
   resources :customer_types
 
   resources :customers

@@ -1,0 +1,28 @@
+<% title "Address Customer" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_customer.address_id %>
+</p>
+<p>
+  <strong>Customer:</strong>
+  <%= @address_customer.customer_id %>
+</p>
+<p>
+  <strong>Start Date:</strong>
+  <%= @address_customer.start_date %>
+</p>
+<p>
+  <strong>End Date:</strong>
+  <%= @address_customer.end_date %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @address_customer.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_customer_path(@address_customer) %> |
+  <%= link_to "Destroy", @address_customer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_customers_path %>
+</p>
