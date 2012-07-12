@@ -1,0 +1,12 @@
+<% title "Preference Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @preference_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_preference_type_path(@preference_type) %> |
+  <%= link_to "Destroy", @preference_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", preference_types_path %>
+</p>
