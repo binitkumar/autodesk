@@ -1,0 +1,21 @@
+<% title "Permissions" %>
+
+<table>
+  <tr>
+    <th>Dealer User</th>
+    <th>Action</th>
+    <th>Target</th>
+  </tr>
+  <% for permission in @permissions %>
+    <tr>
+      <td><%= permission.dealer_user_id %></td>
+      <td><%= permission.action %></td>
+      <td><%= permission.target %></td>
+      <td><%= link_to "Show", permission %></td>
+      <td><%= link_to "Edit", edit_permission_path(permission) %></td>
+      <td><%= link_to "Destroy", permission, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Permission", new_permission_path %></p>

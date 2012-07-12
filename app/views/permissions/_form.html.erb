@@ -1,0 +1,16 @@
+<%= form_for @permission do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :dealer_user_id %><br />
+    <%= f.number_field :dealer_user_id %>
+  </p>
+  <p>
+    <%= f.label :action %><br />
+    <%= f.text_field :action %>
+  </p>
+  <p>
+    <%= f.label :target %><br />
+    <%= f.text_field :target %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

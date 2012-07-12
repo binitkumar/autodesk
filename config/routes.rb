@@ -1,4 +1,6 @@
 Autobase::Application.routes.draw do
+  resources :permissions
+
   resources :dealer_users
 
   resources :supplier_users
