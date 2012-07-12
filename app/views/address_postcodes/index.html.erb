@@ -1,0 +1,21 @@
+<% title "Address Postcodes" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Postcode</th>
+    <th>Order</th>
+  </tr>
+  <% for address_postcode in @address_postcodes %>
+    <tr>
+      <td><%= address_postcode.address_id %></td>
+      <td><%= address_postcode.postcode_id %></td>
+      <td><%= address_postcode.order %></td>
+      <td><%= link_to "Show", address_postcode %></td>
+      <td><%= link_to "Edit", edit_address_postcode_path(address_postcode) %></td>
+      <td><%= link_to "Destroy", address_postcode, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address Postcode", new_address_postcode_path %></p>

@@ -1,0 +1,16 @@
+<%= form_for @address_name_number do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :address_id %><br />
+    <%= f.number_field :address_id %>
+  </p>
+  <p>
+    <%= f.label :name_number_id %><br />
+    <%= f.number_field :name_number_id %>
+  </p>
+  <p>
+    <%= f.label :order %><br />
+    <%= f.number_field :order %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

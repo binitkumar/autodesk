@@ -1,0 +1,20 @@
+<% title "Address Street" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_street.address_id %>
+</p>
+<p>
+  <strong>Street:</strong>
+  <%= @address_street.street_id %>
+</p>
+<p>
+  <strong>Order:</strong>
+  <%= @address_street.order %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_street_path(@address_street) %> |
+  <%= link_to "Destroy", @address_street, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_streets_path %>
+</p>

@@ -1,0 +1,21 @@
+<% title "Address Name Numbers" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Name Number</th>
+    <th>Order</th>
+  </tr>
+  <% for address_name_number in @address_name_numbers %>
+    <tr>
+      <td><%= address_name_number.address_id %></td>
+      <td><%= address_name_number.name_number_id %></td>
+      <td><%= address_name_number.order %></td>
+      <td><%= link_to "Show", address_name_number %></td>
+      <td><%= link_to "Edit", edit_address_name_number_path(address_name_number) %></td>
+      <td><%= link_to "Destroy", address_name_number, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address Name Number", new_address_name_number_path %></p>

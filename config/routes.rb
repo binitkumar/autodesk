@@ -1,5 +1,13 @@
 Autobase::Application.routes.draw do
   
+  resources :address_name_numbers
+
+  resources :address_postcodes
+
+  resources :address_streets
+
+  resources :address_states
+
   resources :name_numbers
 
   resources :postcodes

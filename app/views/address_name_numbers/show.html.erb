@@ -1,0 +1,20 @@
+<% title "Address Name Number" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_name_number.address_id %>
+</p>
+<p>
+  <strong>Name Number:</strong>
+  <%= @address_name_number.name_number_id %>
+</p>
+<p>
+  <strong>Order:</strong>
+  <%= @address_name_number.order %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_name_number_path(@address_name_number) %> |
+  <%= link_to "Destroy", @address_name_number, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_name_numbers_path %>
+</p>

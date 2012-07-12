@@ -1,0 +1,21 @@
+<% title "Address States" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>State</th>
+    <th>Order</th>
+  </tr>
+  <% for address_state in @address_states %>
+    <tr>
+      <td><%= address_state.address_id %></td>
+      <td><%= address_state.state_id %></td>
+      <td><%= address_state.order %></td>
+      <td><%= link_to "Show", address_state %></td>
+      <td><%= link_to "Edit", edit_address_state_path(address_state) %></td>
+      <td><%= link_to "Destroy", address_state, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address State", new_address_state_path %></p>

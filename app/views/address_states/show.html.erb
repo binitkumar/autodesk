@@ -1,0 +1,20 @@
+<% title "Address State" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_state.address_id %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @address_state.state_id %>
+</p>
+<p>
+  <strong>Order:</strong>
+  <%= @address_state.order %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_state_path(@address_state) %> |
+  <%= link_to "Destroy", @address_state, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_states_path %>
+</p>

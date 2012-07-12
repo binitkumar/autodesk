@@ -1,0 +1,21 @@
+<% title "Address Streets" %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Street</th>
+    <th>Order</th>
+  </tr>
+  <% for address_street in @address_streets %>
+    <tr>
+      <td><%= address_street.address_id %></td>
+      <td><%= address_street.street_id %></td>
+      <td><%= address_street.order %></td>
+      <td><%= link_to "Show", address_street %></td>
+      <td><%= link_to "Edit", edit_address_street_path(address_street) %></td>
+      <td><%= link_to "Destroy", address_street, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Address Street", new_address_street_path %></p>

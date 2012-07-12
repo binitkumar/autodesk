@@ -1,0 +1,20 @@
+<% title "Address Postcode" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_postcode.address_id %>
+</p>
+<p>
+  <strong>Postcode:</strong>
+  <%= @address_postcode.postcode_id %>
+</p>
+<p>
+  <strong>Order:</strong>
+  <%= @address_postcode.order %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_postcode_path(@address_postcode) %> |
+  <%= link_to "Destroy", @address_postcode, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_postcodes_path %>
+</p>
