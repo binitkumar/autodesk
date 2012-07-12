@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  devise_for :users
+
   # Set default url
   root :to => "dealers#index"
   
