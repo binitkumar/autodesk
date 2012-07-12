@@ -1,4 +1,6 @@
 Autobase::Application.routes.draw do
+  resources :suppliers
+
   resources :preference_types
 
   resources :preferences

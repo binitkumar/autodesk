@@ -1,0 +1,12 @@
+<% title "Supplier" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @supplier.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_supplier_path(@supplier) %> |
+  <%= link_to "Destroy", @supplier, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", suppliers_path %>
+</p>
