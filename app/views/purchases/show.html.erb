@@ -1,0 +1,20 @@
+<% title "Purchase" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @purchase.dealer_id %>
+</p>
+<p>
+  <strong>Purchase Type:</strong>
+  <%= @purchase.purchase_type_id %>
+</p>
+<p>
+  <strong>Tax Rate:</strong>
+  <%= @purchase.tax_rate_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_purchase_path(@purchase) %> |
+  <%= link_to "Destroy", @purchase, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", purchases_path %>
+</p>

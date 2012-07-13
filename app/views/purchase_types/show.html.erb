@@ -1,0 +1,12 @@
+<% title "Purchase Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @purchase_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_purchase_type_path(@purchase_type) %> |
+  <%= link_to "Destroy", @purchase_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", purchase_types_path %>
+</p>

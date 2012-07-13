@@ -1,0 +1,17 @@
+<% title "Purchase Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for purchase_type in @purchase_types %>
+    <tr>
+      <td><%= purchase_type.value %></td>
+      <td><%= link_to "Show", purchase_type %></td>
+      <td><%= link_to "Edit", edit_purchase_type_path(purchase_type) %></td>
+      <td><%= link_to "Destroy", purchase_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Purchase Type", new_purchase_type_path %></p>

@@ -1,0 +1,12 @@
+<%= form_for @product_purchase do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :product_id %><br />
+    <%= f.number_field :product_id %>
+  </p>
+  <p>
+    <%= f.label :purchase_id %><br />
+    <%= f.number_field :purchase_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
