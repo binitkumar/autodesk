@@ -1,0 +1,12 @@
+<%= form_for @customer_event do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </p>
+  <p>
+    <%= f.label :event_id %><br />
+    <%= f.number_field :event_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,19 @@
+<% title "Customer Events" %>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Event</th>
+  </tr>
+  <% for customer_event in @customer_events %>
+    <tr>
+      <td><%= customer_event.customer_id %></td>
+      <td><%= customer_event.event_id %></td>
+      <td><%= link_to "Show", customer_event %></td>
+      <td><%= link_to "Edit", edit_customer_event_path(customer_event) %></td>
+      <td><%= link_to "Destroy", customer_event, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Customer Event", new_customer_event_path %></p>

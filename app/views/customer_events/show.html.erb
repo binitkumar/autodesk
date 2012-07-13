@@ -1,0 +1,16 @@
+<% title "Customer Event" %>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer_event.customer_id %>
+</p>
+<p>
+  <strong>Event:</strong>
+  <%= @customer_event.event_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_customer_event_path(@customer_event) %> |
+  <%= link_to "Destroy", @customer_event, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", customer_events_path %>
+</p>

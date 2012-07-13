@@ -1,0 +1,20 @@
+<% title "Event Comment" %>
+
+<p>
+  <strong>User:</strong>
+  <%= @event_comment.user_id %>
+</p>
+<p>
+  <strong>Event:</strong>
+  <%= @event_comment.event_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @event_comment.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_event_comment_path(@event_comment) %> |
+  <%= link_to "Destroy", @event_comment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", event_comments_path %>
+</p>
