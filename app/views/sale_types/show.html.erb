@@ -1,0 +1,12 @@
+<% title "Sale Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @sale_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sale_type_path(@sale_type) %> |
+  <%= link_to "Destroy", @sale_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sale_types_path %>
+</p>

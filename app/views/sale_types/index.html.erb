@@ -1,0 +1,17 @@
+<% title "Sale Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for sale_type in @sale_types %>
+    <tr>
+      <td><%= sale_type.value %></td>
+      <td><%= link_to "Show", sale_type %></td>
+      <td><%= link_to "Edit", edit_sale_type_path(sale_type) %></td>
+      <td><%= link_to "Destroy", sale_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Sale Type", new_sale_type_path %></p>
