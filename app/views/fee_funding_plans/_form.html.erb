@@ -1,0 +1,12 @@
+<%= form_for @fee_funding_plan do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :fee_id %><br />
+    <%= f.number_field :fee_id %>
+  </p>
+  <p>
+    <%= f.label :funding_plan_id %><br />
+    <%= f.number_field :funding_plan_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

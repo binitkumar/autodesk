@@ -1,0 +1,16 @@
+<% title "Dealer Funding Plan" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_funding_plan.dealer_id %>
+</p>
+<p>
+  <strong>Funding Plan:</strong>
+  <%= @dealer_funding_plan.funding_plan_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_funding_plan_path(@dealer_funding_plan) %> |
+  <%= link_to "Destroy", @dealer_funding_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_funding_plans_path %>
+</p>

@@ -1,0 +1,2 @@
+module FeeFundingPlansHelper
+end

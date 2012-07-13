@@ -1,0 +1,16 @@
+<% title "Fee Funding Plan" %>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @fee_funding_plan.fee_id %>
+</p>
+<p>
+  <strong>Funding Plan:</strong>
+  <%= @fee_funding_plan.funding_plan_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fee_funding_plan_path(@fee_funding_plan) %> |
+  <%= link_to "Destroy", @fee_funding_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fee_funding_plans_path %>
+</p>

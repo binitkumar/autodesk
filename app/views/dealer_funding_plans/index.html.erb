@@ -1,0 +1,19 @@
+<% title "Dealer Funding Plans" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Funding Plan</th>
+  </tr>
+  <% for dealer_funding_plan in @dealer_funding_plans %>
+    <tr>
+      <td><%= dealer_funding_plan.dealer_id %></td>
+      <td><%= dealer_funding_plan.funding_plan_id %></td>
+      <td><%= link_to "Show", dealer_funding_plan %></td>
+      <td><%= link_to "Edit", edit_dealer_funding_plan_path(dealer_funding_plan) %></td>
+      <td><%= link_to "Destroy", dealer_funding_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Funding Plan", new_dealer_funding_plan_path %></p>
