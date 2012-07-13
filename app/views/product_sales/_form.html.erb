@@ -1,0 +1,20 @@
+<%= form_for @product_sale do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :product_id %><br />
+    <%= f.number_field :product_id %>
+  </p>
+  <p>
+    <%= f.label :sale_id %><br />
+    <%= f.number_field :sale_id %>
+  </p>
+  <p>
+    <%= f.label :tax_rate_id %><br />
+    <%= f.number_field :tax_rate_id %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

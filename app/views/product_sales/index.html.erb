@@ -1,0 +1,23 @@
+<% title "Product Sales" %>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Sale</th>
+    <th>Tax Rate</th>
+    <th>Price</th>
+  </tr>
+  <% for product_sale in @product_sales %>
+    <tr>
+      <td><%= product_sale.product_id %></td>
+      <td><%= product_sale.sale_id %></td>
+      <td><%= product_sale.tax_rate_id %></td>
+      <td><%= product_sale.price %></td>
+      <td><%= link_to "Show", product_sale %></td>
+      <td><%= link_to "Edit", edit_product_sale_path(product_sale) %></td>
+      <td><%= link_to "Destroy", product_sale, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Product Sale", new_product_sale_path %></p>

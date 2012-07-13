@@ -1,0 +1,21 @@
+<% title "Role Users" %>
+
+<table>
+  <tr>
+    <th>Role</th>
+    <th>User</th>
+    <th>Primary</th>
+  </tr>
+  <% for role_user in @role_users %>
+    <tr>
+      <td><%= role_user.role_id %></td>
+      <td><%= role_user.user_id %></td>
+      <td><%= role_user.primary %></td>
+      <td><%= link_to "Show", role_user %></td>
+      <td><%= link_to "Edit", edit_role_user_path(role_user) %></td>
+      <td><%= link_to "Destroy", role_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Role User", new_role_user_path %></p>
