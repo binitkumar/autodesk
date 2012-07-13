@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :referral_types
+
+  resources :referrals
+
   resources :product_sales
 
   resources :role_users

@@ -1,0 +1,17 @@
+<% title "Referrals" %>
+
+<table>
+  <tr>
+    <th>Referral Type</th>
+  </tr>
+  <% for referral in @referrals %>
+    <tr>
+      <td><%= referral.referral_type_id %></td>
+      <td><%= link_to "Show", referral %></td>
+      <td><%= link_to "Edit", edit_referral_path(referral) %></td>
+      <td><%= link_to "Destroy", referral, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Referral", new_referral_path %></p>

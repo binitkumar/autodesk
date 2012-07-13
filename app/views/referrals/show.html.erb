@@ -1,0 +1,12 @@
+<% title "Referral" %>
+
+<p>
+  <strong>Referral Type:</strong>
+  <%= @referral.referral_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_referral_path(@referral) %> |
+  <%= link_to "Destroy", @referral, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", referrals_path %>
+</p>
