@@ -1,0 +1,19 @@
+<% title "Event Users" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Event</th>
+  </tr>
+  <% for event_user in @event_users %>
+    <tr>
+      <td><%= event_user.user_id %></td>
+      <td><%= event_user.event_id %></td>
+      <td><%= link_to "Show", event_user %></td>
+      <td><%= link_to "Edit", edit_event_user_path(event_user) %></td>
+      <td><%= link_to "Destroy", event_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Event User", new_event_user_path %></p>
