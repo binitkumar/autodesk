@@ -1,0 +1,12 @@
+<% title "Registration Mark" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @registration_mark.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_registration_mark_path(@registration_mark) %> |
+  <%= link_to "Destroy", @registration_mark, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", registration_marks_path %>
+</p>

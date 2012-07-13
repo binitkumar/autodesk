@@ -1,0 +1,16 @@
+<%= form_for @mileage_reading do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :vehicle_id %><br />
+    <%= f.number_field :vehicle_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.number_field :value %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

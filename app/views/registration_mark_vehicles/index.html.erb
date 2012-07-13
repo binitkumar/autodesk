@@ -1,0 +1,19 @@
+<% title "Registration Mark Vehicles" %>
+
+<table>
+  <tr>
+    <th>Registration Mark</th>
+    <th>Vehicle</th>
+  </tr>
+  <% for registration_mark_vehicle in @registration_mark_vehicles %>
+    <tr>
+      <td><%= registration_mark_vehicle.registration_mark_id %></td>
+      <td><%= registration_mark_vehicle.vehicle_id %></td>
+      <td><%= link_to "Show", registration_mark_vehicle %></td>
+      <td><%= link_to "Edit", edit_registration_mark_vehicle_path(registration_mark_vehicle) %></td>
+      <td><%= link_to "Destroy", registration_mark_vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Registration Mark Vehicle", new_registration_mark_vehicle_path %></p>

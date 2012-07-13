@@ -1,0 +1,12 @@
+<%= form_for @registration_mark_vehicle do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :registration_mark_id %><br />
+    <%= f.number_field :registration_mark_id %>
+  </p>
+  <p>
+    <%= f.label :vehicle_id %><br />
+    <%= f.number_field :vehicle_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

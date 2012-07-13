@@ -1,0 +1,21 @@
+<% title "Mileage Readings" %>
+
+<table>
+  <tr>
+    <th>Vehicle</th>
+    <th>Value</th>
+    <th>Date</th>
+  </tr>
+  <% for mileage_reading in @mileage_readings %>
+    <tr>
+      <td><%= mileage_reading.vehicle_id %></td>
+      <td><%= mileage_reading.value %></td>
+      <td><%= mileage_reading.date %></td>
+      <td><%= link_to "Show", mileage_reading %></td>
+      <td><%= link_to "Edit", edit_mileage_reading_path(mileage_reading) %></td>
+      <td><%= link_to "Destroy", mileage_reading, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Mileage Reading", new_mileage_reading_path %></p>

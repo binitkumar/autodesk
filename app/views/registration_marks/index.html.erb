@@ -1,0 +1,17 @@
+<% title "Registration Marks" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for registration_mark in @registration_marks %>
+    <tr>
+      <td><%= registration_mark.value %></td>
+      <td><%= link_to "Show", registration_mark %></td>
+      <td><%= link_to "Edit", edit_registration_mark_path(registration_mark) %></td>
+      <td><%= link_to "Destroy", registration_mark, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Registration Mark", new_registration_mark_path %></p>

@@ -1,5 +1,11 @@
 Autobase::Application.routes.draw do
   
+  resources :registration_mark_vehicles
+
+  resources :registration_marks
+
+  resources :mileage_readings
+
   resources :trims
 
   resources :models

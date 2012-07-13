@@ -1,0 +1,20 @@
+<% title "Mileage Reading" %>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @mileage_reading.vehicle_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @mileage_reading.value %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @mileage_reading.date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_mileage_reading_path(@mileage_reading) %> |
+  <%= link_to "Destroy", @mileage_reading, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", mileage_readings_path %>
+</p>
