@@ -1,0 +1,19 @@
+<% title "Dealer Product Types" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Product Type</th>
+  </tr>
+  <% for dealer_product_type in @dealer_product_types %>
+    <tr>
+      <td><%= dealer_product_type.dealer_id %></td>
+      <td><%= dealer_product_type.product_type_id %></td>
+      <td><%= link_to "Show", dealer_product_type %></td>
+      <td><%= link_to "Edit", edit_dealer_product_type_path(dealer_product_type) %></td>
+      <td><%= link_to "Destroy", dealer_product_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Product Type", new_dealer_product_type_path %></p>

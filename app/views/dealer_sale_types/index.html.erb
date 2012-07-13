@@ -1,0 +1,19 @@
+<% title "Dealer Sale Types" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Sale Type</th>
+  </tr>
+  <% for dealer_sale_type in @dealer_sale_types %>
+    <tr>
+      <td><%= dealer_sale_type.dealer_id %></td>
+      <td><%= dealer_sale_type.sale_type_id %></td>
+      <td><%= link_to "Show", dealer_sale_type %></td>
+      <td><%= link_to "Edit", edit_dealer_sale_type_path(dealer_sale_type) %></td>
+      <td><%= link_to "Destroy", dealer_sale_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Sale Type", new_dealer_sale_type_path %></p>
