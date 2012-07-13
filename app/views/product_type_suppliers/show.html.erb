@@ -1,0 +1,16 @@
+<% title "Product Type Supplier" %>
+
+<p>
+  <strong>Product Type:</strong>
+  <%= @product_type_supplier.product_type_id %>
+</p>
+<p>
+  <strong>Supplier:</strong>
+  <%= @product_type_supplier.supplier_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_product_type_supplier_path(@product_type_supplier) %> |
+  <%= link_to "Destroy", @product_type_supplier, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", product_type_suppliers_path %>
+</p>

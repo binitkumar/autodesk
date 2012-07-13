@@ -1,0 +1,19 @@
+<% title "Product Type Suppliers" %>
+
+<table>
+  <tr>
+    <th>Product Type</th>
+    <th>Supplier</th>
+  </tr>
+  <% for product_type_supplier in @product_type_suppliers %>
+    <tr>
+      <td><%= product_type_supplier.product_type_id %></td>
+      <td><%= product_type_supplier.supplier_id %></td>
+      <td><%= link_to "Show", product_type_supplier %></td>
+      <td><%= link_to "Edit", edit_product_type_supplier_path(product_type_supplier) %></td>
+      <td><%= link_to "Destroy", product_type_supplier, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Product Type Supplier", new_product_type_supplier_path %></p>
