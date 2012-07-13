@@ -1,5 +1,15 @@
 Autobase::Application.routes.draw do
   
+  resources :dealer_feature_types
+
+  resources :dealer_features
+
+  resources :feature_suppliers
+
+  resources :feature_vehicles
+
+  resources :customer_features
+
   resources :feature_types
 
   resources :features

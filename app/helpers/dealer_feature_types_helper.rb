@@ -1,0 +1,2 @@
+module DealerFeatureTypesHelper
+end

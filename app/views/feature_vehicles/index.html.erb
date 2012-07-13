@@ -1,0 +1,19 @@
+<% title "Feature Vehicles" %>
+
+<table>
+  <tr>
+    <th>Vehicle</th>
+    <th>Feature</th>
+  </tr>
+  <% for feature_vehicle in @feature_vehicles %>
+    <tr>
+      <td><%= feature_vehicle.vehicle_id %></td>
+      <td><%= feature_vehicle.feature_id %></td>
+      <td><%= link_to "Show", feature_vehicle %></td>
+      <td><%= link_to "Edit", edit_feature_vehicle_path(feature_vehicle) %></td>
+      <td><%= link_to "Destroy", feature_vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Feature Vehicle", new_feature_vehicle_path %></p>

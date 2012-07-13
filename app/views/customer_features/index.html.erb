@@ -1,0 +1,19 @@
+<% title "Customer Features" %>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Feature</th>
+  </tr>
+  <% for customer_feature in @customer_features %>
+    <tr>
+      <td><%= customer_feature.customer_id %></td>
+      <td><%= customer_feature.feature_id %></td>
+      <td><%= link_to "Show", customer_feature %></td>
+      <td><%= link_to "Edit", edit_customer_feature_path(customer_feature) %></td>
+      <td><%= link_to "Destroy", customer_feature, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Customer Feature", new_customer_feature_path %></p>

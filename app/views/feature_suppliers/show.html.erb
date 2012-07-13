@@ -1,0 +1,16 @@
+<% title "Feature Supplier" %>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @feature_supplier.supplier_id %>
+</p>
+<p>
+  <strong>Feature:</strong>
+  <%= @feature_supplier.feature_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_feature_supplier_path(@feature_supplier) %> |
+  <%= link_to "Destroy", @feature_supplier, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", feature_suppliers_path %>
+</p>

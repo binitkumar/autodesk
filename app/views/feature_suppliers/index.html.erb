@@ -1,0 +1,19 @@
+<% title "Feature Suppliers" %>
+
+<table>
+  <tr>
+    <th>Supplier</th>
+    <th>Feature</th>
+  </tr>
+  <% for feature_supplier in @feature_suppliers %>
+    <tr>
+      <td><%= feature_supplier.supplier_id %></td>
+      <td><%= feature_supplier.feature_id %></td>
+      <td><%= link_to "Show", feature_supplier %></td>
+      <td><%= link_to "Edit", edit_feature_supplier_path(feature_supplier) %></td>
+      <td><%= link_to "Destroy", feature_supplier, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Feature Supplier", new_feature_supplier_path %></p>

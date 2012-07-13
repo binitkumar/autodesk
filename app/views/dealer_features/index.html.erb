@@ -1,0 +1,19 @@
+<% title "Dealer Features" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Feature</th>
+  </tr>
+  <% for dealer_feature in @dealer_features %>
+    <tr>
+      <td><%= dealer_feature.dealer_id %></td>
+      <td><%= dealer_feature.feature_id %></td>
+      <td><%= link_to "Show", dealer_feature %></td>
+      <td><%= link_to "Edit", edit_dealer_feature_path(dealer_feature) %></td>
+      <td><%= link_to "Destroy", dealer_feature, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Feature", new_dealer_feature_path %></p>

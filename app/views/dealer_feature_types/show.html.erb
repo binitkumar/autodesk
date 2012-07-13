@@ -1,0 +1,16 @@
+<% title "Dealer Feature Type" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_feature_type.dealer_id %>
+</p>
+<p>
+  <strong>Feature Type:</strong>
+  <%= @dealer_feature_type.feature_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_feature_type_path(@dealer_feature_type) %> |
+  <%= link_to "Destroy", @dealer_feature_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_feature_types_path %>
+</p>

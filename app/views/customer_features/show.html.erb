@@ -1,0 +1,16 @@
+<% title "Customer Feature" %>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer_feature.customer_id %>
+</p>
+<p>
+  <strong>Feature:</strong>
+  <%= @customer_feature.feature_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_customer_feature_path(@customer_feature) %> |
+  <%= link_to "Destroy", @customer_feature, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", customer_features_path %>
+</p>

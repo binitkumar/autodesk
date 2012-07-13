@@ -1,0 +1,16 @@
+<% title "Feature Vehicle" %>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @feature_vehicle.vehicle_id %>
+</p>
+<p>
+  <strong>Feature:</strong>
+  <%= @feature_vehicle.feature_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_feature_vehicle_path(@feature_vehicle) %> |
+  <%= link_to "Destroy", @feature_vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", feature_vehicles_path %>
+</p>
