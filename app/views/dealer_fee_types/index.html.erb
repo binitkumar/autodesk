@@ -1,0 +1,19 @@
+<% title "Dealer Fee Types" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Fee Type</th>
+  </tr>
+  <% for dealer_fee_type in @dealer_fee_types %>
+    <tr>
+      <td><%= dealer_fee_type.dealer_id %></td>
+      <td><%= dealer_fee_type.fee_type_id %></td>
+      <td><%= link_to "Show", dealer_fee_type %></td>
+      <td><%= link_to "Edit", edit_dealer_fee_type_path(dealer_fee_type) %></td>
+      <td><%= link_to "Destroy", dealer_fee_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Fee Type", new_dealer_fee_type_path %></p>

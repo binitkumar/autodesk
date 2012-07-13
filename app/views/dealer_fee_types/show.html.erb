@@ -1,0 +1,16 @@
+<% title "Dealer Fee Type" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_fee_type.dealer_id %>
+</p>
+<p>
+  <strong>Fee Type:</strong>
+  <%= @dealer_fee_type.fee_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_fee_type_path(@dealer_fee_type) %> |
+  <%= link_to "Destroy", @dealer_fee_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_fee_types_path %>
+</p>

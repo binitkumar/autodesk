@@ -1,0 +1,19 @@
+<% title "Dealer Funding Types" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Funding Type</th>
+  </tr>
+  <% for dealer_funding_type in @dealer_funding_types %>
+    <tr>
+      <td><%= dealer_funding_type.dealer_id %></td>
+      <td><%= dealer_funding_type.funding_type_id %></td>
+      <td><%= link_to "Show", dealer_funding_type %></td>
+      <td><%= link_to "Edit", edit_dealer_funding_type_path(dealer_funding_type) %></td>
+      <td><%= link_to "Destroy", dealer_funding_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Funding Type", new_dealer_funding_type_path %></p>

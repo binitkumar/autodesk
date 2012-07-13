@@ -1,0 +1,12 @@
+<%= form_for @dealer_fee_type do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :fee_type_id %><br />
+    <%= f.number_field :fee_type_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
