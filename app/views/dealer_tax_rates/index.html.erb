@@ -1,0 +1,19 @@
+<% title "Dealer Tax Rates" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Tax Rate</th>
+  </tr>
+  <% for dealer_tax_rate in @dealer_tax_rates %>
+    <tr>
+      <td><%= dealer_tax_rate.dealer_id %></td>
+      <td><%= dealer_tax_rate.tax_rate_id %></td>
+      <td><%= link_to "Show", dealer_tax_rate %></td>
+      <td><%= link_to "Edit", edit_dealer_tax_rate_path(dealer_tax_rate) %></td>
+      <td><%= link_to "Destroy", dealer_tax_rate, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Tax Rate", new_dealer_tax_rate_path %></p>

@@ -1,0 +1,12 @@
+<% title "Tax Rate Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @tax_rate_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_tax_rate_type_path(@tax_rate_type) %> |
+  <%= link_to "Destroy", @tax_rate_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", tax_rate_types_path %>
+</p>

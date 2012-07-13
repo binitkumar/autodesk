@@ -1,0 +1,21 @@
+<% title "Tax Rates" %>
+
+<table>
+  <tr>
+    <th>Tax Rate Type</th>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+  <% for tax_rate in @tax_rates %>
+    <tr>
+      <td><%= tax_rate.tax_rate_type_id %></td>
+      <td><%= tax_rate.name %></td>
+      <td><%= tax_rate.value %></td>
+      <td><%= link_to "Show", tax_rate %></td>
+      <td><%= link_to "Edit", edit_tax_rate_path(tax_rate) %></td>
+      <td><%= link_to "Destroy", tax_rate, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Tax Rate", new_tax_rate_path %></p>

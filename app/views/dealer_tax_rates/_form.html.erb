@@ -1,0 +1,12 @@
+<%= form_for @dealer_tax_rate do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :tax_rate_id %><br />
+    <%= f.number_field :tax_rate_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
