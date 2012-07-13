@@ -1,0 +1,20 @@
+<% title "Fee" %>
+
+<p>
+  <strong>Fee Type:</strong>
+  <%= @fee.fee_type_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @fee.name %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @fee.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fee_path(@fee) %> |
+  <%= link_to "Destroy", @fee, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fees_path %>
+</p>

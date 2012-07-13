@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :fee_types
+
+  resources :fees
+
   resources :fee_funding_plans
 
   resources :dealer_funding_plans

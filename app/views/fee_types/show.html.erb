@@ -1,0 +1,12 @@
+<% title "Fee Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @fee_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fee_type_path(@fee_type) %> |
+  <%= link_to "Destroy", @fee_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fee_types_path %>
+</p>
