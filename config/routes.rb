@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :contact_number_types
+
   resources :contact_numbers
 
   resources :email_users

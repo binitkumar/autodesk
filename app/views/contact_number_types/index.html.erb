@@ -1,0 +1,17 @@
+<% title "Contact Number Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for contact_number_type in @contact_number_types %>
+    <tr>
+      <td><%= contact_number_type.value %></td>
+      <td><%= link_to "Show", contact_number_type %></td>
+      <td><%= link_to "Edit", edit_contact_number_type_path(contact_number_type) %></td>
+      <td><%= link_to "Destroy", contact_number_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Contact Number Type", new_contact_number_type_path %></p>
