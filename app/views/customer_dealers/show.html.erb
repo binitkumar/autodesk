@@ -1,0 +1,16 @@
+<% title "Customer Dealer" %>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer_dealer.customer_id %>
+</p>
+<p>
+  <strong>Dealer:</strong>
+  <%= @customer_dealer.dealer_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_customer_dealer_path(@customer_dealer) %> |
+  <%= link_to "Destroy", @customer_dealer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", customer_dealers_path %>
+</p>

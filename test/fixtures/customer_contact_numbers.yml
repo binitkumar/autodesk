@@ -1,0 +1,9 @@
+one:
+  contact_number_id: 1
+  customer_id: 1
+  primary: false
+
+two:
+  contact_number_id: 1
+  customer_id: 1
+  primary: false

@@ -1,0 +1,21 @@
+<% title "Customer Contact Numbers" %>
+
+<table>
+  <tr>
+    <th>Contact Number</th>
+    <th>Customer</th>
+    <th>Primary</th>
+  </tr>
+  <% for customer_contact_number in @customer_contact_numbers %>
+    <tr>
+      <td><%= customer_contact_number.contact_number_id %></td>
+      <td><%= customer_contact_number.customer_id %></td>
+      <td><%= customer_contact_number.primary %></td>
+      <td><%= link_to "Show", customer_contact_number %></td>
+      <td><%= link_to "Edit", edit_customer_contact_number_path(customer_contact_number) %></td>
+      <td><%= link_to "Destroy", customer_contact_number, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Customer Contact Number", new_customer_contact_number_path %></p>

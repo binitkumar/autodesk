@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :customer_dealers
+
+  resources :customer_contact_numbers
+
   resources :contact_number_dealers
 
   resources :contact_number_users

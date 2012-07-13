@@ -1,0 +1,12 @@
+<%= form_for @customer_dealer do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </p>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
