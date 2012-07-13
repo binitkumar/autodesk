@@ -1,0 +1,17 @@
+<% title "Financial Transaction Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for financial_transaction_type in @financial_transaction_types %>
+    <tr>
+      <td><%= financial_transaction_type.value %></td>
+      <td><%= link_to "Show", financial_transaction_type %></td>
+      <td><%= link_to "Edit", edit_financial_transaction_type_path(financial_transaction_type) %></td>
+      <td><%= link_to "Destroy", financial_transaction_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Financial Transaction Type", new_financial_transaction_type_path %></p>
