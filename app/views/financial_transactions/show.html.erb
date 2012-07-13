@@ -1,0 +1,32 @@
+<% title "Financial Transaction" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @financial_transaction.dealer_id %>
+</p>
+<p>
+  <strong>Financial Transaction Type:</strong>
+  <%= @financial_transaction.financial_transaction_type_id %>
+</p>
+<p>
+  <strong>Financial Transaction Method:</strong>
+  <%= @financial_transaction.financial_transaction_method_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @financial_transaction.value %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @financial_transaction.time %>
+</p>
+<p>
+  <strong>Debit:</strong>
+  <%= @financial_transaction.debit %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_financial_transaction_path(@financial_transaction) %> |
+  <%= link_to "Destroy", @financial_transaction, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", financial_transactions_path %>
+</p>

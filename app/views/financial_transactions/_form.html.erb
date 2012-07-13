@@ -1,0 +1,28 @@
+<%= form_for @financial_transaction do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :financial_transaction_type_id %><br />
+    <%= f.number_field :financial_transaction_type_id %>
+  </p>
+  <p>
+    <%= f.label :financial_transaction_method_id %><br />
+    <%= f.number_field :financial_transaction_method_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </p>
+  <p>
+    <%= f.label :debit %><br />
+    <%= f.check_box :debit %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

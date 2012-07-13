@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :financial_transactions
+
   resources :dealer_tax_rates
 
   resources :tax_rate_types
