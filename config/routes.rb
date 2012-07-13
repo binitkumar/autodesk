@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :currencies
+
   resources :financial_transaction_types
 
   resources :financial_transaction_methods

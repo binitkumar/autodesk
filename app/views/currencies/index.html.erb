@@ -1,0 +1,17 @@
+<% title "Currencies" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for currency in @currencies %>
+    <tr>
+      <td><%= currency.value %></td>
+      <td><%= link_to "Show", currency %></td>
+      <td><%= link_to "Edit", edit_currency_path(currency) %></td>
+      <td><%= link_to "Destroy", currency, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Currency", new_currency_path %></p>
