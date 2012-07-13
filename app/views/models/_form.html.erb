@@ -1,0 +1,12 @@
+<%= form_for @model do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :make_id %><br />
+    <%= f.number_field :make_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

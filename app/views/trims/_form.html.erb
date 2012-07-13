@@ -1,0 +1,12 @@
+<%= form_for @trim do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :model_id %><br />
+    <%= f.number_field :model_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

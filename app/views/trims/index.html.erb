@@ -1,0 +1,19 @@
+<% title "Trims" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>Model</th>
+  </tr>
+  <% for trim in @trims %>
+    <tr>
+      <td><%= trim.value %></td>
+      <td><%= trim.model_id %></td>
+      <td><%= link_to "Show", trim %></td>
+      <td><%= link_to "Edit", edit_trim_path(trim) %></td>
+      <td><%= link_to "Destroy", trim, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Trim", new_trim_path %></p>

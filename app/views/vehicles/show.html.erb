@@ -1,0 +1,20 @@
+<% title "Vehicle" %>
+
+<p>
+  <strong>Make:</strong>
+  <%= @vehicle.make_id %>
+</p>
+<p>
+  <strong>Model:</strong>
+  <%= @vehicle.model_id %>
+</p>
+<p>
+  <strong>Trim:</strong>
+  <%= @vehicle.trim_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_vehicle_path(@vehicle) %> |
+  <%= link_to "Destroy", @vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", vehicles_path %>
+</p>

@@ -1,0 +1,16 @@
+<% title "Trim" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @trim.value %>
+</p>
+<p>
+  <strong>Model:</strong>
+  <%= @trim.model_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_trim_path(@trim) %> |
+  <%= link_to "Destroy", @trim, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", trims_path %>
+</p>

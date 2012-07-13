@@ -1,0 +1,12 @@
+<% title "Make" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @make.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_make_path(@make) %> |
+  <%= link_to "Destroy", @make, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", makes_path %>
+</p>

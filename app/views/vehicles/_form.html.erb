@@ -1,0 +1,16 @@
+<%= form_for @vehicle do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :make_id %><br />
+    <%= f.number_field :make_id %>
+  </p>
+  <p>
+    <%= f.label :model_id %><br />
+    <%= f.number_field :model_id %>
+  </p>
+  <p>
+    <%= f.label :trim_id %><br />
+    <%= f.number_field :trim_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

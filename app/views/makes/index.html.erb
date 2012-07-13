@@ -1,0 +1,17 @@
+<% title "Makes" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for make in @makes %>
+    <tr>
+      <td><%= make.value %></td>
+      <td><%= link_to "Show", make %></td>
+      <td><%= link_to "Edit", edit_make_path(make) %></td>
+      <td><%= link_to "Destroy", make, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Make", new_make_path %></p>

@@ -1,5 +1,13 @@
 Autobase::Application.routes.draw do
   
+  resources :trims
+
+  resources :models
+
+  resources :makes
+
+  resources :vehicles
+
   resources :purchase_types
 
   resources :purchases
