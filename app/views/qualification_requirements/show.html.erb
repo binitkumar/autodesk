@@ -1,0 +1,16 @@
+<% title "Qualification Requirement" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @qualification_requirement.value %>
+</p>
+<p>
+  <strong>Metric:</strong>
+  <%= @qualification_requirement.metric_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_qualification_requirement_path(@qualification_requirement) %> |
+  <%= link_to "Destroy", @qualification_requirement, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", qualification_requirements_path %>
+</p>

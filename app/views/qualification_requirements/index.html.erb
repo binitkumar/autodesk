@@ -1,0 +1,19 @@
+<% title "Qualification Requirements" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>Metric</th>
+  </tr>
+  <% for qualification_requirement in @qualification_requirements %>
+    <tr>
+      <td><%= qualification_requirement.value %></td>
+      <td><%= qualification_requirement.metric_id %></td>
+      <td><%= link_to "Show", qualification_requirement %></td>
+      <td><%= link_to "Edit", edit_qualification_requirement_path(qualification_requirement) %></td>
+      <td><%= link_to "Destroy", qualification_requirement, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Qualification Requirement", new_qualification_requirement_path %></p>

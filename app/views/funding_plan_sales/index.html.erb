@@ -1,0 +1,25 @@
+<% title "Funding Plan Sales" %>
+
+<table>
+  <tr>
+    <th>Funding Plan</th>
+    <th>Sale</th>
+    <th>Amount</th>
+    <th>Fees Spread</th>
+    <th>Customer Rate</th>
+  </tr>
+  <% for funding_plan_sale in @funding_plan_sales %>
+    <tr>
+      <td><%= funding_plan_sale.funding_plan_id %></td>
+      <td><%= funding_plan_sale.sale_id %></td>
+      <td><%= funding_plan_sale.amount %></td>
+      <td><%= funding_plan_sale.fees_spread %></td>
+      <td><%= funding_plan_sale.customer_rate %></td>
+      <td><%= link_to "Show", funding_plan_sale %></td>
+      <td><%= link_to "Edit", edit_funding_plan_sale_path(funding_plan_sale) %></td>
+      <td><%= link_to "Destroy", funding_plan_sale, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Funding Plan Sale", new_funding_plan_sale_path %></p>

@@ -1,0 +1,2 @@
+module FundingPlanSalesHelper
+end
