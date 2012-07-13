@@ -1,0 +1,24 @@
+<% title "Sale" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @sale.dealer_id %>
+</p>
+<p>
+  <strong>Customer:</strong>
+  <%= @sale.customer_id %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @sale.date %>
+</p>
+<p>
+  <strong>Sale Type:</strong>
+  <%= @sale.sale_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sale_path(@sale) %> |
+  <%= link_to "Destroy", @sale, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sales_path %>
+</p>

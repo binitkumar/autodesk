@@ -1,0 +1,11 @@
+one:
+  dealer_id: 1
+  customer_id: 1
+  date: 2012-07-13
+  sale_type_id: 1
+
+two:
+  dealer_id: 1
+  customer_id: 1
+  date: 2012-07-13
+  sale_type_id: 1

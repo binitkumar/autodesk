@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :sales
+
   resources :event_users
 
   resources :event_comments
