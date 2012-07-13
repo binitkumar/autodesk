@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :feature_types
+
+  resources :features
+
   resources :sale_vehicles
 
   resources :registration_mark_vehicles

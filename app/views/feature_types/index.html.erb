@@ -1,0 +1,17 @@
+<% title "Feature Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for feature_type in @feature_types %>
+    <tr>
+      <td><%= feature_type.value %></td>
+      <td><%= link_to "Show", feature_type %></td>
+      <td><%= link_to "Edit", edit_feature_type_path(feature_type) %></td>
+      <td><%= link_to "Destroy", feature_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Feature Type", new_feature_type_path %></p>
