@@ -1,0 +1,19 @@
+<% title "Referral Sale Users" %>
+
+<table>
+  <tr>
+    <th>Sale User</th>
+    <th>Referral</th>
+  </tr>
+  <% for referral_sale_user in @referral_sale_users %>
+    <tr>
+      <td><%= referral_sale_user.sale_user_id %></td>
+      <td><%= referral_sale_user.referral_id %></td>
+      <td><%= link_to "Show", referral_sale_user %></td>
+      <td><%= link_to "Edit", edit_referral_sale_user_path(referral_sale_user) %></td>
+      <td><%= link_to "Destroy", referral_sale_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Referral Sale User", new_referral_sale_user_path %></p>

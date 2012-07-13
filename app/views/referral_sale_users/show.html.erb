@@ -1,0 +1,16 @@
+<% title "Referral Sale User" %>
+
+<p>
+  <strong>Sale User:</strong>
+  <%= @referral_sale_user.sale_user_id %>
+</p>
+<p>
+  <strong>Referral:</strong>
+  <%= @referral_sale_user.referral_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_referral_sale_user_path(@referral_sale_user) %> |
+  <%= link_to "Destroy", @referral_sale_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", referral_sale_users_path %>
+</p>

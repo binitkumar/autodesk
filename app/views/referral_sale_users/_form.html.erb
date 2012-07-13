@@ -1,0 +1,12 @@
+<%= form_for @referral_sale_user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :sale_user_id %><br />
+    <%= f.number_field :sale_user_id %>
+  </p>
+  <p>
+    <%= f.label :referral_id %><br />
+    <%= f.number_field :referral_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
