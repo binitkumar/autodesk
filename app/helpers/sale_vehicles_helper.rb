@@ -1,0 +1,2 @@
+module SaleVehiclesHelper
+end

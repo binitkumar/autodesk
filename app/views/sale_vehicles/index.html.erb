@@ -1,0 +1,23 @@
+<% title "Sale Vehicles" %>
+
+<table>
+  <tr>
+    <th>Sale</th>
+    <th>Vehicle</th>
+    <th>Tax Rate</th>
+    <th>Price</th>
+  </tr>
+  <% for sale_vehicle in @sale_vehicles %>
+    <tr>
+      <td><%= sale_vehicle.sale_id %></td>
+      <td><%= sale_vehicle.vehicle_id %></td>
+      <td><%= sale_vehicle.tax_rate_id %></td>
+      <td><%= sale_vehicle.price %></td>
+      <td><%= link_to "Show", sale_vehicle %></td>
+      <td><%= link_to "Edit", edit_sale_vehicle_path(sale_vehicle) %></td>
+      <td><%= link_to "Destroy", sale_vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Sale Vehicle", new_sale_vehicle_path %></p>

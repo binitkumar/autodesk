@@ -1,0 +1,24 @@
+<% title "Sale Vehicle" %>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @sale_vehicle.sale_id %>
+</p>
+<p>
+  <strong>Vehicle:</strong>
+  <%= @sale_vehicle.vehicle_id %>
+</p>
+<p>
+  <strong>Tax Rate:</strong>
+  <%= @sale_vehicle.tax_rate_id %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @sale_vehicle.price %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sale_vehicle_path(@sale_vehicle) %> |
+  <%= link_to "Destroy", @sale_vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sale_vehicles_path %>
+</p>
