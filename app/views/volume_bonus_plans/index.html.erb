@@ -1,0 +1,19 @@
+<% title "Volume Bonus Plans" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+  <% for volume_bonus_plan in @volume_bonus_plans %>
+    <tr>
+      <td><%= volume_bonus_plan.name %></td>
+      <td><%= volume_bonus_plan.value %></td>
+      <td><%= link_to "Show", volume_bonus_plan %></td>
+      <td><%= link_to "Edit", edit_volume_bonus_plan_path(volume_bonus_plan) %></td>
+      <td><%= link_to "Destroy", volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Volume Bonus Plan", new_volume_bonus_plan_path %></p>

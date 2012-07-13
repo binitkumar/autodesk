@@ -1,0 +1,19 @@
+<% title "Dealer Volume Bonus Plans" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Volume Bonus Plan</th>
+  </tr>
+  <% for dealer_volume_bonus_plan in @dealer_volume_bonus_plans %>
+    <tr>
+      <td><%= dealer_volume_bonus_plan.dealer_id %></td>
+      <td><%= dealer_volume_bonus_plan.volume_bonus_plan_id %></td>
+      <td><%= link_to "Show", dealer_volume_bonus_plan %></td>
+      <td><%= link_to "Edit", edit_dealer_volume_bonus_plan_path(dealer_volume_bonus_plan) %></td>
+      <td><%= link_to "Destroy", dealer_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Volume Bonus Plan", new_dealer_volume_bonus_plan_path %></p>

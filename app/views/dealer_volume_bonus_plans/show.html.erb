@@ -1,0 +1,16 @@
+<% title "Dealer Volume Bonus Plan" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_volume_bonus_plan.dealer_id %>
+</p>
+<p>
+  <strong>Volume Bonus Plan:</strong>
+  <%= @dealer_volume_bonus_plan.volume_bonus_plan_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_volume_bonus_plan_path(@dealer_volume_bonus_plan) %> |
+  <%= link_to "Destroy", @dealer_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_volume_bonus_plans_path %>
+</p>

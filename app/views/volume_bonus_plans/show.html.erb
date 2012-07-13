@@ -1,0 +1,16 @@
+<% title "Volume Bonus Plan" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @volume_bonus_plan.name %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @volume_bonus_plan.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_volume_bonus_plan_path(@volume_bonus_plan) %> |
+  <%= link_to "Destroy", @volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", volume_bonus_plans_path %>
+</p>
