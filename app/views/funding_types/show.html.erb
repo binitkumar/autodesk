@@ -1,0 +1,12 @@
+<% title "Funding Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @funding_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_funding_type_path(@funding_type) %> |
+  <%= link_to "Destroy", @funding_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", funding_types_path %>
+</p>

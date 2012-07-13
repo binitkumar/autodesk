@@ -1,0 +1,40 @@
+<% title "Funding Plan" %>
+
+<p>
+  <strong>Funding Type:</strong>
+  <%= @funding_plan.funding_type_id %>
+</p>
+<p>
+  <strong>Supplier:</strong>
+  <%= @funding_plan.supplier_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @funding_plan.name %>
+</p>
+<p>
+  <strong>Difference In Charges:</strong>
+  <%= @funding_plan.difference_in_charges %>
+</p>
+<p>
+  <strong>Commission Max Term:</strong>
+  <%= @funding_plan.commission_max_term %>
+</p>
+<p>
+  <strong>Commission Minimum:</strong>
+  <%= @funding_plan.commission_minimum %>
+</p>
+<p>
+  <strong>Commission Fixed:</strong>
+  <%= @funding_plan.commission_fixed %>
+</p>
+<p>
+  <strong>Max Term:</strong>
+  <%= @funding_plan.max_term %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_funding_plan_path(@funding_plan) %> |
+  <%= link_to "Destroy", @funding_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", funding_plans_path %>
+</p>

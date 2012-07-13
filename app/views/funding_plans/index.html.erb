@@ -1,0 +1,31 @@
+<% title "Funding Plans" %>
+
+<table>
+  <tr>
+    <th>Funding Type</th>
+    <th>Supplier</th>
+    <th>Name</th>
+    <th>Difference In Charges</th>
+    <th>Commission Max Term</th>
+    <th>Commission Minimum</th>
+    <th>Commission Fixed</th>
+    <th>Max Term</th>
+  </tr>
+  <% for funding_plan in @funding_plans %>
+    <tr>
+      <td><%= funding_plan.funding_type_id %></td>
+      <td><%= funding_plan.supplier_id %></td>
+      <td><%= funding_plan.name %></td>
+      <td><%= funding_plan.difference_in_charges %></td>
+      <td><%= funding_plan.commission_max_term %></td>
+      <td><%= funding_plan.commission_minimum %></td>
+      <td><%= funding_plan.commission_fixed %></td>
+      <td><%= funding_plan.max_term %></td>
+      <td><%= link_to "Show", funding_plan %></td>
+      <td><%= link_to "Edit", edit_funding_plan_path(funding_plan) %></td>
+      <td><%= link_to "Destroy", funding_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Funding Plan", new_funding_plan_path %></p>

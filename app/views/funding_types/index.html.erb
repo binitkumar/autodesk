@@ -1,0 +1,17 @@
+<% title "Funding Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for funding_type in @funding_types %>
+    <tr>
+      <td><%= funding_type.value %></td>
+      <td><%= link_to "Show", funding_type %></td>
+      <td><%= link_to "Edit", edit_funding_type_path(funding_type) %></td>
+      <td><%= link_to "Destroy", funding_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Funding Type", new_funding_type_path %></p>

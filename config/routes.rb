@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :funding_types
+
+  resources :funding_plans
+
   resources :currencies
 
   resources :financial_transaction_types

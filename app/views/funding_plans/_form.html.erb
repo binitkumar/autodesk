@@ -1,0 +1,36 @@
+<%= form_for @funding_plan do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :funding_type_id %><br />
+    <%= f.number_field :funding_type_id %>
+  </p>
+  <p>
+    <%= f.label :supplier_id %><br />
+    <%= f.number_field :supplier_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :difference_in_charges %><br />
+    <%= f.text_field :difference_in_charges %>
+  </p>
+  <p>
+    <%= f.label :commission_max_term %><br />
+    <%= f.number_field :commission_max_term %>
+  </p>
+  <p>
+    <%= f.label :commission_minimum %><br />
+    <%= f.text_field :commission_minimum %>
+  </p>
+  <p>
+    <%= f.label :commission_fixed %><br />
+    <%= f.text_field :commission_fixed %>
+  </p>
+  <p>
+    <%= f.label :max_term %><br />
+    <%= f.number_field :max_term %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

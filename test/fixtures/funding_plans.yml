@@ -1,0 +1,19 @@
+one:
+  funding_type_id: 1
+  supplier_id: 1
+  name: MyString
+  difference_in_charges: 1.5
+  commission_max_term: 1
+  commission_minimum: 1.5
+  commission_fixed: 1.5
+  max_term: 1
+
+two:
+  funding_type_id: 1
+  supplier_id: 1
+  name: MyString
+  difference_in_charges: 1.5
+  commission_max_term: 1
+  commission_minimum: 1.5
+  commission_fixed: 1.5
+  max_term: 1
