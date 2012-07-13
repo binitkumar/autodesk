@@ -1,0 +1,12 @@
+<%= form_for @funding_plan_volume_bonus_plan do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :funding_plan_id %><br />
+    <%= f.number_field :funding_plan_id %>
+  </p>
+  <p>
+    <%= f.label :volume_bonus_plan_id %><br />
+    <%= f.number_field :volume_bonus_plan_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

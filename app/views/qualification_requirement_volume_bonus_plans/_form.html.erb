@@ -1,0 +1,12 @@
+<%= form_for @qualification_requirement_volume_bonus_plan do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :qualification_requirement_id %><br />
+    <%= f.number_field :qualification_requirement_id %>
+  </p>
+  <p>
+    <%= f.label :volume_bonus_plan_id %><br />
+    <%= f.number_field :volume_bonus_plan_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,19 @@
+<% title "Funding Plan Volume Bonus Plans" %>
+
+<table>
+  <tr>
+    <th>Funding Plan</th>
+    <th>Volume Bonus Plan</th>
+  </tr>
+  <% for funding_plan_volume_bonus_plan in @funding_plan_volume_bonus_plans %>
+    <tr>
+      <td><%= funding_plan_volume_bonus_plan.funding_plan_id %></td>
+      <td><%= funding_plan_volume_bonus_plan.volume_bonus_plan_id %></td>
+      <td><%= link_to "Show", funding_plan_volume_bonus_plan %></td>
+      <td><%= link_to "Edit", edit_funding_plan_volume_bonus_plan_path(funding_plan_volume_bonus_plan) %></td>
+      <td><%= link_to "Destroy", funding_plan_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Funding Plan Volume Bonus Plan", new_funding_plan_volume_bonus_plan_path %></p>

@@ -1,0 +1,16 @@
+<% title "Qualification Requirement Volume Bonus Plan" %>
+
+<p>
+  <strong>Qualification Requirement:</strong>
+  <%= @qualification_requirement_volume_bonus_plan.qualification_requirement_id %>
+</p>
+<p>
+  <strong>Volume Bonus Plan:</strong>
+  <%= @qualification_requirement_volume_bonus_plan.volume_bonus_plan_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_qualification_requirement_volume_bonus_plan_path(@qualification_requirement_volume_bonus_plan) %> |
+  <%= link_to "Destroy", @qualification_requirement_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", qualification_requirement_volume_bonus_plans_path %>
+</p>

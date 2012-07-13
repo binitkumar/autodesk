@@ -1,0 +1,19 @@
+<% title "Qualification Requirement Volume Bonus Plans" %>
+
+<table>
+  <tr>
+    <th>Qualification Requirement</th>
+    <th>Volume Bonus Plan</th>
+  </tr>
+  <% for qualification_requirement_volume_bonus_plan in @qualification_requirement_volume_bonus_plans %>
+    <tr>
+      <td><%= qualification_requirement_volume_bonus_plan.qualification_requirement_id %></td>
+      <td><%= qualification_requirement_volume_bonus_plan.volume_bonus_plan_id %></td>
+      <td><%= link_to "Show", qualification_requirement_volume_bonus_plan %></td>
+      <td><%= link_to "Edit", edit_qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan) %></td>
+      <td><%= link_to "Destroy", qualification_requirement_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Qualification Requirement Volume Bonus Plan", new_qualification_requirement_volume_bonus_plan_path %></p>
