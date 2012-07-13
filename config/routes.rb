@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :sale_users
+
   resources :dealer_sale_types
 
   resources :dealer_product_types

@@ -1,0 +1,20 @@
+<% title "Sale User" %>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @sale_user.sale_id %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @sale_user.user_id %>
+</p>
+<p>
+  <strong>Role:</strong>
+  <%= @sale_user.role_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sale_user_path(@sale_user) %> |
+  <%= link_to "Destroy", @sale_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sale_users_path %>
+</p>

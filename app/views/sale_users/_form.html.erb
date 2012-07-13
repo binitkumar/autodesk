@@ -1,0 +1,16 @@
+<%= form_for @sale_user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :sale_id %><br />
+    <%= f.number_field :sale_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :role_id %><br />
+    <%= f.number_field :role_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

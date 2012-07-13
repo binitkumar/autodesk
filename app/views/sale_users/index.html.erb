@@ -1,0 +1,21 @@
+<% title "Sale Users" %>
+
+<table>
+  <tr>
+    <th>Sale</th>
+    <th>User</th>
+    <th>Role</th>
+  </tr>
+  <% for sale_user in @sale_users %>
+    <tr>
+      <td><%= sale_user.sale_id %></td>
+      <td><%= sale_user.user_id %></td>
+      <td><%= sale_user.role_id %></td>
+      <td><%= link_to "Show", sale_user %></td>
+      <td><%= link_to "Edit", edit_sale_user_path(sale_user) %></td>
+      <td><%= link_to "Destroy", sale_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Sale User", new_sale_user_path %></p>
