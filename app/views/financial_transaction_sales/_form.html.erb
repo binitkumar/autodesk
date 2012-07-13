@@ -1,0 +1,12 @@
+<%= form_for @financial_transaction_sale do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :financial_transaction_id %><br />
+    <%= f.number_field :financial_transaction_id %>
+  </p>
+  <p>
+    <%= f.label :sale_id %><br />
+    <%= f.number_field :sale_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

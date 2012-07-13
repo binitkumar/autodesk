@@ -1,0 +1,2 @@
+module FinancialTransactionSalesHelper
+end

@@ -1,0 +1,19 @@
+<% title "Financial Transaction Sales" %>
+
+<table>
+  <tr>
+    <th>Financial Transaction</th>
+    <th>Sale</th>
+  </tr>
+  <% for financial_transaction_sale in @financial_transaction_sales %>
+    <tr>
+      <td><%= financial_transaction_sale.financial_transaction_id %></td>
+      <td><%= financial_transaction_sale.sale_id %></td>
+      <td><%= link_to "Show", financial_transaction_sale %></td>
+      <td><%= link_to "Edit", edit_financial_transaction_sale_path(financial_transaction_sale) %></td>
+      <td><%= link_to "Destroy", financial_transaction_sale, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Financial Transaction Sale", new_financial_transaction_sale_path %></p>

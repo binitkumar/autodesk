@@ -1,0 +1,16 @@
+<% title "Financial Transaction Sale" %>
+
+<p>
+  <strong>Financial Transaction:</strong>
+  <%= @financial_transaction_sale.financial_transaction_id %>
+</p>
+<p>
+  <strong>Sale:</strong>
+  <%= @financial_transaction_sale.sale_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_financial_transaction_sale_path(@financial_transaction_sale) %> |
+  <%= link_to "Destroy", @financial_transaction_sale, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", financial_transaction_sales_path %>
+</p>

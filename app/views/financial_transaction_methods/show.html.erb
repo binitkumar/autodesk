@@ -1,0 +1,12 @@
+<% title "Financial Transaction Method" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @financial_transaction_method.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_financial_transaction_method_path(@financial_transaction_method) %> |
+  <%= link_to "Destroy", @financial_transaction_method, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", financial_transaction_methods_path %>
+</p>
