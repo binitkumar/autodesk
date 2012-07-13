@@ -1,0 +1,20 @@
+<% title "Contact Number Dealer" %>
+
+<p>
+  <strong>Contact Number:</strong>
+  <%= @contact_number_dealer.contact_number_id %>
+</p>
+<p>
+  <strong>Dealer:</strong>
+  <%= @contact_number_dealer.dealer_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @contact_number_dealer.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_contact_number_dealer_path(@contact_number_dealer) %> |
+  <%= link_to "Destroy", @contact_number_dealer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", contact_number_dealers_path %>
+</p>

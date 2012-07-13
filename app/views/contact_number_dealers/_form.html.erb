@@ -1,0 +1,16 @@
+<%= form_for @contact_number_dealer do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :contact_number_id %><br />
+    <%= f.number_field :contact_number_id %>
+  </p>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :primary %><br />
+    <%= f.check_box :primary %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,20 @@
+<% title "Contact Number User" %>
+
+<p>
+  <strong>Contact Number:</strong>
+  <%= @contact_number_user.contact_number_id %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @contact_number_user.user_id %>
+</p>
+<p>
+  <strong>Primary:</strong>
+  <%= @contact_number_user.primary %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_contact_number_user_path(@contact_number_user) %> |
+  <%= link_to "Destroy", @contact_number_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", contact_number_users_path %>
+</p>
