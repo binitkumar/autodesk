@@ -1,0 +1,19 @@
+<% title "Quote Users" %>
+
+<table>
+  <tr>
+    <th>Quote</th>
+    <th>User</th>
+  </tr>
+  <% for quote_user in @quote_users %>
+    <tr>
+      <td><%= quote_user.quote_id %></td>
+      <td><%= quote_user.user_id %></td>
+      <td><%= link_to "Show", quote_user %></td>
+      <td><%= link_to "Edit", edit_quote_user_path(quote_user) %></td>
+      <td><%= link_to "Destroy", quote_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Quote User", new_quote_user_path %></p>
