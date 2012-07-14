@@ -15,6 +15,10 @@ gem 'devise'
 gem 'omniauth'
 gem 'cancan'
 
+# Use Formtastic and Attrtastic to make creation of forms & show pages quicker
+gem 'formtastic'
+gem 'attrtastic'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
