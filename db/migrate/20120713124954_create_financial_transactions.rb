@@ -4,6 +4,7 @@ class CreateFinancialTransactions < ActiveRecord::Migration
       t.integer :dealer_id
       t.integer :financial_transaction_type_id
       t.integer :financial_transaction_method_id
+      t.integer :currency_id
       t.float :value
       t.time :time
       t.boolean :debit
