@@ -1,0 +1,12 @@
+<%= form_for @proposal do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :proposal_status_id %><br />
+    <%= f.number_field :proposal_status_id %>
+  </p>
+  <p>
+    <%= f.label :funding_plan_quote_id %><br />
+    <%= f.number_field :funding_plan_quote_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

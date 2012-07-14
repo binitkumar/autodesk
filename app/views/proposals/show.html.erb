@@ -1,0 +1,16 @@
+<% title "Proposal" %>
+
+<p>
+  <strong>Proposal Status:</strong>
+  <%= @proposal.proposal_status_id %>
+</p>
+<p>
+  <strong>Funding Plan Quote:</strong>
+  <%= @proposal.funding_plan_quote_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_proposal_path(@proposal) %> |
+  <%= link_to "Destroy", @proposal, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", proposals_path %>
+</p>

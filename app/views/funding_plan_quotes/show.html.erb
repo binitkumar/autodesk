@@ -1,0 +1,28 @@
+<% title "Funding Plan Quote" %>
+
+<p>
+  <strong>Funding Plan:</strong>
+  <%= @funding_plan_quote.funding_plan_id %>
+</p>
+<p>
+  <strong>Quote:</strong>
+  <%= @funding_plan_quote.quote_id %>
+</p>
+<p>
+  <strong>Amount:</strong>
+  <%= @funding_plan_quote.amount %>
+</p>
+<p>
+  <strong>Fees Spread:</strong>
+  <%= @funding_plan_quote.fees_spread %>
+</p>
+<p>
+  <strong>Customer Rate:</strong>
+  <%= @funding_plan_quote.customer_rate %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_funding_plan_quote_path(@funding_plan_quote) %> |
+  <%= link_to "Destroy", @funding_plan_quote, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", funding_plan_quotes_path %>
+</p>

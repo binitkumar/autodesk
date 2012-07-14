@@ -1,0 +1,25 @@
+<% title "Funding Plan Quotes" %>
+
+<table>
+  <tr>
+    <th>Funding Plan</th>
+    <th>Quote</th>
+    <th>Amount</th>
+    <th>Fees Spread</th>
+    <th>Customer Rate</th>
+  </tr>
+  <% for funding_plan_quote in @funding_plan_quotes %>
+    <tr>
+      <td><%= funding_plan_quote.funding_plan_id %></td>
+      <td><%= funding_plan_quote.quote_id %></td>
+      <td><%= funding_plan_quote.amount %></td>
+      <td><%= funding_plan_quote.fees_spread %></td>
+      <td><%= funding_plan_quote.customer_rate %></td>
+      <td><%= link_to "Show", funding_plan_quote %></td>
+      <td><%= link_to "Edit", edit_funding_plan_quote_path(funding_plan_quote) %></td>
+      <td><%= link_to "Destroy", funding_plan_quote, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Funding Plan Quote", new_funding_plan_quote_path %></p>

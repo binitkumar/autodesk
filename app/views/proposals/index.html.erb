@@ -1,0 +1,19 @@
+<% title "Proposals" %>
+
+<table>
+  <tr>
+    <th>Proposal Status</th>
+    <th>Funding Plan Quote</th>
+  </tr>
+  <% for proposal in @proposals %>
+    <tr>
+      <td><%= proposal.proposal_status_id %></td>
+      <td><%= proposal.funding_plan_quote_id %></td>
+      <td><%= link_to "Show", proposal %></td>
+      <td><%= link_to "Edit", edit_proposal_path(proposal) %></td>
+      <td><%= link_to "Destroy", proposal, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Proposal", new_proposal_path %></p>
