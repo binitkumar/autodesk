@@ -19,6 +19,9 @@ gem 'cancan'
 gem 'formtastic'
 gem 'attrtastic'
 
+# Use web-app-theme gem for easy creation of initial layout (repository version not updated; pulling from Github)
+gem 'web-app-theme', :git =>'git://github.com/chonan/web-app-theme.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
