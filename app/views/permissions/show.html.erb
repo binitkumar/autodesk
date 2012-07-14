@@ -1,20 +1,34 @@
-<% title "Permission" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", permissions_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_permission_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", permission_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.permission.dealer_user_id", :default => t("activerecord.labels.dealer_user_id", :default => "Dealer user")) %>:</b>
+          <%= @permission.dealer_user_id %>
+        </p>
 
-<p>
-  <strong>Dealer User:</strong>
-  <%= @permission.dealer_user_id %>
-</p>
-<p>
-  <strong>Action:</strong>
-  <%= @permission.action %>
-</p>
-<p>
-  <strong>Target:</strong>
-  <%= @permission.target %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.permission.action", :default => t("activerecord.labels.action", :default => "Action")) %>:</b>
+          <%= @permission.action %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_permission_path(@permission) %> |
-  <%= link_to "Destroy", @permission, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", permissions_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.permission.target", :default => t("activerecord.labels.target", :default => "Target")) %>:</b>
+          <%= @permission.target %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_permission_path(@permission), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), permission_path(@permission), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

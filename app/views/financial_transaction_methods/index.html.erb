@@ -1,17 +1,48 @@
-<% title "Financial Transaction Methods" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", financial_transaction_methods_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_financial_transaction_method_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> FinancialTransactionMethods</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.financial_transaction_method.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @financial_transaction_methods.each do |financial_transaction_method| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= financial_transaction_method.id %>
+          </td>
+                    <td>
+            <%= link_to financial_transaction_method.value, financial_transaction_method_path(financial_transaction_method) %>
+          </td>
+                    <td>
+            <%= financial_transaction_method.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", financial_transaction_method_path(financial_transaction_method) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_financial_transaction_method_path(financial_transaction_method) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", financial_transaction_method_path(financial_transaction_method), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for financial_transaction_method in @financial_transaction_methods %>
-    <tr>
-      <td><%= financial_transaction_method.value %></td>
-      <td><%= link_to "Show", financial_transaction_method %></td>
-      <td><%= link_to "Edit", edit_financial_transaction_method_path(financial_transaction_method) %></td>
-      <td><%= link_to "Destroy", financial_transaction_method, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Financial Transaction Method", new_financial_transaction_method_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

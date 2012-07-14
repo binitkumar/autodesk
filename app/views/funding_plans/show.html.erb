@@ -1,40 +1,59 @@
-<% title "Funding Plan" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", funding_plans_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_funding_plan_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", funding_plan_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.funding_type_id", :default => t("activerecord.labels.funding_type_id", :default => "Funding type")) %>:</b>
+          <%= @funding_plan.funding_type_id %>
+        </p>
 
-<p>
-  <strong>Funding Type:</strong>
-  <%= @funding_plan.funding_type_id %>
-</p>
-<p>
-  <strong>Supplier:</strong>
-  <%= @funding_plan.supplier_id %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @funding_plan.name %>
-</p>
-<p>
-  <strong>Difference In Charges:</strong>
-  <%= @funding_plan.difference_in_charges %>
-</p>
-<p>
-  <strong>Commission Max Term:</strong>
-  <%= @funding_plan.commission_max_term %>
-</p>
-<p>
-  <strong>Commission Minimum:</strong>
-  <%= @funding_plan.commission_minimum %>
-</p>
-<p>
-  <strong>Commission Fixed:</strong>
-  <%= @funding_plan.commission_fixed %>
-</p>
-<p>
-  <strong>Max Term:</strong>
-  <%= @funding_plan.max_term %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.supplier_id", :default => t("activerecord.labels.supplier_id", :default => "Supplier")) %>:</b>
+          <%= @funding_plan.supplier_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_funding_plan_path(@funding_plan) %> |
-  <%= link_to "Destroy", @funding_plan, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", funding_plans_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.name", :default => t("activerecord.labels.name", :default => "Name")) %>:</b>
+          <%= @funding_plan.name %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.difference_in_charges", :default => t("activerecord.labels.difference_in_charges", :default => "Difference in charges")) %>:</b>
+          <%= @funding_plan.difference_in_charges %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.commission_max_term", :default => t("activerecord.labels.commission_max_term", :default => "Commission max term")) %>:</b>
+          <%= @funding_plan.commission_max_term %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.commission_minimum", :default => t("activerecord.labels.commission_minimum", :default => "Commission minimum")) %>:</b>
+          <%= @funding_plan.commission_minimum %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.commission_fixed", :default => t("activerecord.labels.commission_fixed", :default => "Commission fixed")) %>:</b>
+          <%= @funding_plan.commission_fixed %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.funding_plan.max_term", :default => t("activerecord.labels.max_term", :default => "Max term")) %>:</b>
+          <%= @funding_plan.max_term %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_funding_plan_path(@funding_plan), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), funding_plan_path(@funding_plan), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

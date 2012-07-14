@@ -1,21 +1,48 @@
-<% title "Vehicles" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", vehicles_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_vehicle_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Vehicles</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.vehicle.make_id", :default => t("activerecord.labels.make_id", :default => "Make_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @vehicles.each do |vehicle| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= vehicle.id %>
+          </td>
+                    <td>
+            <%= link_to vehicle.make_id, vehicle_path(vehicle) %>
+          </td>
+                    <td>
+            <%= vehicle.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", vehicle_path(vehicle) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_vehicle_path(vehicle) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", vehicle_path(vehicle), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Make</th>
-    <th>Model</th>
-    <th>Trim</th>
-  </tr>
-  <% for vehicle in @vehicles %>
-    <tr>
-      <td><%= vehicle.make_id %></td>
-      <td><%= vehicle.model_id %></td>
-      <td><%= vehicle.trim_id %></td>
-      <td><%= link_to "Show", vehicle %></td>
-      <td><%= link_to "Edit", edit_vehicle_path(vehicle) %></td>
-      <td><%= link_to "Destroy", vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Vehicle", new_vehicle_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

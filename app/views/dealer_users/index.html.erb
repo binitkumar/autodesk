@@ -1,19 +1,48 @@
-<% title "Dealer Users" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", dealer_users_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_dealer_user_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> DealerUsers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.dealer_user.dealer_id", :default => t("activerecord.labels.dealer_id", :default => "Dealer_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @dealer_users.each do |dealer_user| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= dealer_user.id %>
+          </td>
+                    <td>
+            <%= link_to dealer_user.dealer_id, dealer_user_path(dealer_user) %>
+          </td>
+                    <td>
+            <%= dealer_user.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", dealer_user_path(dealer_user) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_dealer_user_path(dealer_user) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", dealer_user_path(dealer_user), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Dealer</th>
-    <th>User</th>
-  </tr>
-  <% for dealer_user in @dealer_users %>
-    <tr>
-      <td><%= dealer_user.dealer_id %></td>
-      <td><%= dealer_user.user_id %></td>
-      <td><%= link_to "Show", dealer_user %></td>
-      <td><%= link_to "Edit", edit_dealer_user_path(dealer_user) %></td>
-      <td><%= link_to "Destroy", dealer_user, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Dealer User", new_dealer_user_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

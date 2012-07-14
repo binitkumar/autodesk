@@ -1,17 +1,48 @@
-<% title "Constraint Types" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", constraint_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_constraint_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> ConstraintTypes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.constraint_type.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @constraint_types.each do |constraint_type| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= constraint_type.id %>
+          </td>
+                    <td>
+            <%= link_to constraint_type.value, constraint_type_path(constraint_type) %>
+          </td>
+                    <td>
+            <%= constraint_type.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", constraint_type_path(constraint_type) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_constraint_type_path(constraint_type) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", constraint_type_path(constraint_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for constraint_type in @constraint_types %>
-    <tr>
-      <td><%= constraint_type.value %></td>
-      <td><%= link_to "Show", constraint_type %></td>
-      <td><%= link_to "Edit", edit_constraint_type_path(constraint_type) %></td>
-      <td><%= link_to "Destroy", constraint_type, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Constraint Type", new_constraint_type_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,23 +1,48 @@
-<% title "Employer Employments" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", employer_employments_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_employer_employment_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> EmployerEmployments</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.employer_employment.employer_id", :default => t("activerecord.labels.employer_id", :default => "Employer_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @employer_employments.each do |employer_employment| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= employer_employment.id %>
+          </td>
+                    <td>
+            <%= link_to employer_employment.employer_id, employer_employment_path(employer_employment) %>
+          </td>
+                    <td>
+            <%= employer_employment.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", employer_employment_path(employer_employment) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_employer_employment_path(employer_employment) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", employer_employment_path(employer_employment), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Employer</th>
-    <th>Employment</th>
-    <th>Start Date</th>
-    <th>End Date</th>
-  </tr>
-  <% for employer_employment in @employer_employments %>
-    <tr>
-      <td><%= employer_employment.employer_id %></td>
-      <td><%= employer_employment.employment_id %></td>
-      <td><%= employer_employment.start_date %></td>
-      <td><%= employer_employment.end_date %></td>
-      <td><%= link_to "Show", employer_employment %></td>
-      <td><%= link_to "Edit", edit_employer_employment_path(employer_employment) %></td>
-      <td><%= link_to "Destroy", employer_employment, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Employer Employment", new_employer_employment_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

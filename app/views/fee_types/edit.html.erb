@@ -1,8 +1,19 @@
-<% title "Edit Fee Type" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", fee_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_fee_type_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_fee_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> FeeType</h2>
+    <div class="inner">
+      <%= form_for @fee_type, :url => fee_type_path(@fee_type), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @fee_type %> |
-  <%= link_to "View All", fee_types_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

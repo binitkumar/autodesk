@@ -1,32 +1,54 @@
-<% title "Financial Transaction" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", financial_transactions_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_financial_transaction_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", financial_transaction_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.dealer_id", :default => t("activerecord.labels.dealer_id", :default => "Dealer")) %>:</b>
+          <%= @financial_transaction.dealer_id %>
+        </p>
 
-<p>
-  <strong>Dealer:</strong>
-  <%= @financial_transaction.dealer_id %>
-</p>
-<p>
-  <strong>Financial Transaction Type:</strong>
-  <%= @financial_transaction.financial_transaction_type_id %>
-</p>
-<p>
-  <strong>Financial Transaction Method:</strong>
-  <%= @financial_transaction.financial_transaction_method_id %>
-</p>
-<p>
-  <strong>Value:</strong>
-  <%= @financial_transaction.value %>
-</p>
-<p>
-  <strong>Time:</strong>
-  <%= @financial_transaction.time %>
-</p>
-<p>
-  <strong>Debit:</strong>
-  <%= @financial_transaction.debit %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.financial_transaction_type_id", :default => t("activerecord.labels.financial_transaction_type_id", :default => "Financial transaction type")) %>:</b>
+          <%= @financial_transaction.financial_transaction_type_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_financial_transaction_path(@financial_transaction) %> |
-  <%= link_to "Destroy", @financial_transaction, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", financial_transactions_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.financial_transaction_method_id", :default => t("activerecord.labels.financial_transaction_method_id", :default => "Financial transaction method")) %>:</b>
+          <%= @financial_transaction.financial_transaction_method_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.currency_id", :default => t("activerecord.labels.currency_id", :default => "Currency")) %>:</b>
+          <%= @financial_transaction.currency_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.value", :default => t("activerecord.labels.value", :default => "Value")) %>:</b>
+          <%= @financial_transaction.value %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.time", :default => t("activerecord.labels.time", :default => "Time")) %>:</b>
+          <%= @financial_transaction.time %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.financial_transaction.debit", :default => t("activerecord.labels.debit", :default => "Debit")) %>:</b>
+          <%= @financial_transaction.debit %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_financial_transaction_path(@financial_transaction), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), financial_transaction_path(@financial_transaction), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,20 +1,31 @@
-<%= form_for @constraint do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :constraint_type_id %><br />
-    <%= f.number_field :constraint_type_id %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :upper_value %><br />
-    <%= f.text_field :upper_value %>
-  </p>
-  <p>
-    <%= f.label :lower_value %><br />
-    <%= f.text_field :lower_value %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :constraint_type_id, t("activerecord.attributes.constraint.constraint_type_id", :default => "Constraint type"), :class => :label %>
+    <%= f.number_field :constraint_type_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :name, t("activerecord.attributes.constraint.name", :default => "Name"), :class => :label %>
+    <%= f.text_field :name, :class => 'text_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :upper_value, t("activerecord.attributes.constraint.upper_value", :default => "Upper value"), :class => :label %>
+    <%= f.text_field :upper_value, :class => 'text_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :lower_value, t("activerecord.attributes.constraint.lower_value", :default => "Lower value"), :class => :label %>
+    <%= f.text_field :lower_value, :class => 'text_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), constraints_path, :class => "text_button_padding link_button" %>
+</div>

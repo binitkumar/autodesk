@@ -1,8 +1,19 @@
-<% title "Edit Name Number" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", name_numbers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_name_number_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_name_number_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> NameNumber</h2>
+    <div class="inner">
+      <%= form_for @name_number, :url => name_number_path(@name_number), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @name_number %> |
-  <%= link_to "View All", name_numbers_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

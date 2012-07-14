@@ -1,21 +1,48 @@
-<% title "Customer Contact Numbers" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", customer_contact_numbers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_customer_contact_number_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> CustomerContactNumbers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.customer_contact_number.contact_number_id", :default => t("activerecord.labels.contact_number_id", :default => "Contact_number_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @customer_contact_numbers.each do |customer_contact_number| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= customer_contact_number.id %>
+          </td>
+                    <td>
+            <%= link_to customer_contact_number.contact_number_id, customer_contact_number_path(customer_contact_number) %>
+          </td>
+                    <td>
+            <%= customer_contact_number.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", customer_contact_number_path(customer_contact_number) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_customer_contact_number_path(customer_contact_number) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", customer_contact_number_path(customer_contact_number), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Contact Number</th>
-    <th>Customer</th>
-    <th>Primary</th>
-  </tr>
-  <% for customer_contact_number in @customer_contact_numbers %>
-    <tr>
-      <td><%= customer_contact_number.contact_number_id %></td>
-      <td><%= customer_contact_number.customer_id %></td>
-      <td><%= customer_contact_number.primary %></td>
-      <td><%= link_to "Show", customer_contact_number %></td>
-      <td><%= link_to "Edit", edit_customer_contact_number_path(customer_contact_number) %></td>
-      <td><%= link_to "Destroy", customer_contact_number, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Customer Contact Number", new_customer_contact_number_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

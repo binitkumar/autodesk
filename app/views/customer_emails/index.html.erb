@@ -1,21 +1,48 @@
-<% title "Customer Emails" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", customer_emails_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_customer_email_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> CustomerEmails</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.customer_email.customer_id", :default => t("activerecord.labels.customer_id", :default => "Customer_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @customer_emails.each do |customer_email| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= customer_email.id %>
+          </td>
+                    <td>
+            <%= link_to customer_email.customer_id, customer_email_path(customer_email) %>
+          </td>
+                    <td>
+            <%= customer_email.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", customer_email_path(customer_email) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_customer_email_path(customer_email) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", customer_email_path(customer_email), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Customer</th>
-    <th>Email</th>
-    <th>Primary</th>
-  </tr>
-  <% for customer_email in @customer_emails %>
-    <tr>
-      <td><%= customer_email.customer_id %></td>
-      <td><%= customer_email.email_id %></td>
-      <td><%= customer_email.primary %></td>
-      <td><%= link_to "Show", customer_email %></td>
-      <td><%= link_to "Edit", edit_customer_email_path(customer_email) %></td>
-      <td><%= link_to "Destroy", customer_email, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Customer Email", new_customer_email_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

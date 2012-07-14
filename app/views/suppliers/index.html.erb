@@ -1,17 +1,48 @@
-<% title "Suppliers" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", suppliers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_supplier_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Suppliers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.supplier.name", :default => t("activerecord.labels.name", :default => "Name")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @suppliers.each do |supplier| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= supplier.id %>
+          </td>
+                    <td>
+            <%= link_to supplier.name, supplier_path(supplier) %>
+          </td>
+                    <td>
+            <%= supplier.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", supplier_path(supplier) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_supplier_path(supplier) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", supplier_path(supplier), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-  <% for supplier in @suppliers %>
-    <tr>
-      <td><%= supplier.name %></td>
-      <td><%= link_to "Show", supplier %></td>
-      <td><%= link_to "Edit", edit_supplier_path(supplier) %></td>
-      <td><%= link_to "Destroy", supplier, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Supplier", new_supplier_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

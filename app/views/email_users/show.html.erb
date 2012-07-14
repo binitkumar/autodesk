@@ -1,20 +1,34 @@
-<% title "Email User" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", email_users_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_email_user_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", email_user_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.email_user.user_id", :default => t("activerecord.labels.user_id", :default => "User")) %>:</b>
+          <%= @email_user.user_id %>
+        </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @email_user.user_id %>
-</p>
-<p>
-  <strong>Email:</strong>
-  <%= @email_user.email_id %>
-</p>
-<p>
-  <strong>Primary:</strong>
-  <%= @email_user.primary %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.email_user.email_id", :default => t("activerecord.labels.email_id", :default => "Email")) %>:</b>
+          <%= @email_user.email_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_email_user_path(@email_user) %> |
-  <%= link_to "Destroy", @email_user, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", email_users_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.email_user.primary", :default => t("activerecord.labels.primary", :default => "Primary")) %>:</b>
+          <%= @email_user.primary %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_email_user_path(@email_user), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), email_user_path(@email_user), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

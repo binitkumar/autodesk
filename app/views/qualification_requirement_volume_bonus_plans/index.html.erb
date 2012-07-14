@@ -1,19 +1,48 @@
-<% title "Qualification Requirement Volume Bonus Plans" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", qualification_requirement_volume_bonus_plans_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_qualification_requirement_volume_bonus_plan_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> QualificationRequirementVolumeBonusPlans</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.qualification_requirement_volume_bonus_plan.qualification_requirement_id", :default => t("activerecord.labels.qualification_requirement_id", :default => "Qualification_requirement_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @qualification_requirement_volume_bonus_plans.each do |qualification_requirement_volume_bonus_plan| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= qualification_requirement_volume_bonus_plan.id %>
+          </td>
+                    <td>
+            <%= link_to qualification_requirement_volume_bonus_plan.qualification_requirement_id, qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan) %>
+          </td>
+                    <td>
+            <%= qualification_requirement_volume_bonus_plan.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Qualification Requirement</th>
-    <th>Volume Bonus Plan</th>
-  </tr>
-  <% for qualification_requirement_volume_bonus_plan in @qualification_requirement_volume_bonus_plans %>
-    <tr>
-      <td><%= qualification_requirement_volume_bonus_plan.qualification_requirement_id %></td>
-      <td><%= qualification_requirement_volume_bonus_plan.volume_bonus_plan_id %></td>
-      <td><%= link_to "Show", qualification_requirement_volume_bonus_plan %></td>
-      <td><%= link_to "Edit", edit_qualification_requirement_volume_bonus_plan_path(qualification_requirement_volume_bonus_plan) %></td>
-      <td><%= link_to "Destroy", qualification_requirement_volume_bonus_plan, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Qualification Requirement Volume Bonus Plan", new_qualification_requirement_volume_bonus_plan_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,19 +1,48 @@
-<% title "Customer Features" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", customer_features_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_customer_feature_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> CustomerFeatures</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.customer_feature.customer_id", :default => t("activerecord.labels.customer_id", :default => "Customer_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @customer_features.each do |customer_feature| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= customer_feature.id %>
+          </td>
+                    <td>
+            <%= link_to customer_feature.customer_id, customer_feature_path(customer_feature) %>
+          </td>
+                    <td>
+            <%= customer_feature.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", customer_feature_path(customer_feature) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_customer_feature_path(customer_feature) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", customer_feature_path(customer_feature), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Customer</th>
-    <th>Feature</th>
-  </tr>
-  <% for customer_feature in @customer_features %>
-    <tr>
-      <td><%= customer_feature.customer_id %></td>
-      <td><%= customer_feature.feature_id %></td>
-      <td><%= link_to "Show", customer_feature %></td>
-      <td><%= link_to "Edit", edit_customer_feature_path(customer_feature) %></td>
-      <td><%= link_to "Destroy", customer_feature, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Customer Feature", new_customer_feature_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

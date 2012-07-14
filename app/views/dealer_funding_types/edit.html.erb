@@ -1,8 +1,19 @@
-<% title "Edit Dealer Funding Type" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", dealer_funding_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_dealer_funding_type_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_dealer_funding_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> DealerFundingType</h2>
+    <div class="inner">
+      <%= form_for @dealer_funding_type, :url => dealer_funding_type_path(@dealer_funding_type), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @dealer_funding_type %> |
-  <%= link_to "View All", dealer_funding_types_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,17 +1,48 @@
-<% title "Postcodes" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", postcodes_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_postcode_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Postcodes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.postcode.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @postcodes.each do |postcode| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= postcode.id %>
+          </td>
+                    <td>
+            <%= link_to postcode.value, postcode_path(postcode) %>
+          </td>
+                    <td>
+            <%= postcode.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", postcode_path(postcode) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_postcode_path(postcode) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", postcode_path(postcode), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for postcode in @postcodes %>
-    <tr>
-      <td><%= postcode.value %></td>
-      <td><%= link_to "Show", postcode %></td>
-      <td><%= link_to "Edit", edit_postcode_path(postcode) %></td>
-      <td><%= link_to "Destroy", postcode, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Postcode", new_postcode_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

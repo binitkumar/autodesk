@@ -1,16 +1,25 @@
-<%= form_for @vehicle do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :make_id %><br />
-    <%= f.number_field :make_id %>
-  </p>
-  <p>
-    <%= f.label :model_id %><br />
-    <%= f.number_field :model_id %>
-  </p>
-  <p>
-    <%= f.label :trim_id %><br />
-    <%= f.number_field :trim_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :make_id, t("activerecord.attributes.vehicle.make_id", :default => "Make"), :class => :label %>
+    <%= f.number_field :make_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :model_id, t("activerecord.attributes.vehicle.model_id", :default => "Model"), :class => :label %>
+    <%= f.number_field :model_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :trim_id, t("activerecord.attributes.vehicle.trim_id", :default => "Trim"), :class => :label %>
+    <%= f.number_field :trim_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), vehicles_path, :class => "text_button_padding link_button" %>
+</div>

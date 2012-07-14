@@ -1,17 +1,48 @@
-<% title "Registration Marks" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", registration_marks_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_registration_mark_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> RegistrationMarks</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.registration_mark.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @registration_marks.each do |registration_mark| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= registration_mark.id %>
+          </td>
+                    <td>
+            <%= link_to registration_mark.value, registration_mark_path(registration_mark) %>
+          </td>
+                    <td>
+            <%= registration_mark.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", registration_mark_path(registration_mark) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_registration_mark_path(registration_mark) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", registration_mark_path(registration_mark), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for registration_mark in @registration_marks %>
-    <tr>
-      <td><%= registration_mark.value %></td>
-      <td><%= link_to "Show", registration_mark %></td>
-      <td><%= link_to "Edit", edit_registration_mark_path(registration_mark) %></td>
-      <td><%= link_to "Destroy", registration_mark, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Registration Mark", new_registration_mark_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

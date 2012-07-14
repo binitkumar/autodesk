@@ -1,16 +1,34 @@
-<% title "Registration Mark Vehicle" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", registration_mark_vehicles_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_registration_mark_vehicle_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", registration_mark_vehicle_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.registration_mark_vehicle.registration_mark_id", :default => t("activerecord.labels.registration_mark_id", :default => "Registration mark")) %>:</b>
+          <%= @registration_mark_vehicle.registration_mark_id %>
+        </p>
 
-<p>
-  <strong>Registration Mark:</strong>
-  <%= @registration_mark_vehicle.registration_mark_id %>
-</p>
-<p>
-  <strong>Vehicle:</strong>
-  <%= @registration_mark_vehicle.vehicle_id %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.registration_mark_vehicle.vehicle_id", :default => t("activerecord.labels.vehicle_id", :default => "Vehicle")) %>:</b>
+          <%= @registration_mark_vehicle.vehicle_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_registration_mark_vehicle_path(@registration_mark_vehicle) %> |
-  <%= link_to "Destroy", @registration_mark_vehicle, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", registration_mark_vehicles_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.registration_mark_vehicle.current", :default => t("activerecord.labels.current", :default => "Current")) %>:</b>
+          <%= @registration_mark_vehicle.current %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_registration_mark_vehicle_path(@registration_mark_vehicle), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), registration_mark_vehicle_path(@registration_mark_vehicle), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

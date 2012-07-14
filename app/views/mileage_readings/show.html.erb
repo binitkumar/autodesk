@@ -1,20 +1,34 @@
-<% title "Mileage Reading" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", mileage_readings_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_mileage_reading_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", mileage_reading_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.mileage_reading.vehicle_id", :default => t("activerecord.labels.vehicle_id", :default => "Vehicle")) %>:</b>
+          <%= @mileage_reading.vehicle_id %>
+        </p>
 
-<p>
-  <strong>Vehicle:</strong>
-  <%= @mileage_reading.vehicle_id %>
-</p>
-<p>
-  <strong>Value:</strong>
-  <%= @mileage_reading.value %>
-</p>
-<p>
-  <strong>Date:</strong>
-  <%= @mileage_reading.date %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.mileage_reading.value", :default => t("activerecord.labels.value", :default => "Value")) %>:</b>
+          <%= @mileage_reading.value %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_mileage_reading_path(@mileage_reading) %> |
-  <%= link_to "Destroy", @mileage_reading, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", mileage_readings_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.mileage_reading.date", :default => t("activerecord.labels.date", :default => "Date")) %>:</b>
+          <%= @mileage_reading.date %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_mileage_reading_path(@mileage_reading), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), mileage_reading_path(@mileage_reading), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

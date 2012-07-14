@@ -1,16 +1,25 @@
-<%= form_for @mileage_reading do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :vehicle_id %><br />
-    <%= f.number_field :vehicle_id %>
-  </p>
-  <p>
-    <%= f.label :value %><br />
-    <%= f.number_field :value %>
-  </p>
-  <p>
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :vehicle_id, t("activerecord.attributes.mileage_reading.vehicle_id", :default => "Vehicle"), :class => :label %>
+    <%= f.number_field :vehicle_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :value, t("activerecord.attributes.mileage_reading.value", :default => "Value"), :class => :label %>
+    <%= f.number_field :value, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :date, t("activerecord.attributes.mileage_reading.date", :default => "Date"), :class => :label %>
+    <%= f.date_select :date, :class => 'date_select' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), mileage_readings_path, :class => "text_button_padding link_button" %>
+</div>

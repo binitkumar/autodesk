@@ -1,24 +1,39 @@
-<% title "Constraint" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", constraints_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_constraint_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", constraint_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.constraint.constraint_type_id", :default => t("activerecord.labels.constraint_type_id", :default => "Constraint type")) %>:</b>
+          <%= @constraint.constraint_type_id %>
+        </p>
 
-<p>
-  <strong>Constraint Type:</strong>
-  <%= @constraint.constraint_type_id %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @constraint.name %>
-</p>
-<p>
-  <strong>Upper Value:</strong>
-  <%= @constraint.upper_value %>
-</p>
-<p>
-  <strong>Lower Value:</strong>
-  <%= @constraint.lower_value %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.constraint.name", :default => t("activerecord.labels.name", :default => "Name")) %>:</b>
+          <%= @constraint.name %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_constraint_path(@constraint) %> |
-  <%= link_to "Destroy", @constraint, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", constraints_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.constraint.upper_value", :default => t("activerecord.labels.upper_value", :default => "Upper value")) %>:</b>
+          <%= @constraint.upper_value %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.constraint.lower_value", :default => t("activerecord.labels.lower_value", :default => "Lower value")) %>:</b>
+          <%= @constraint.lower_value %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_constraint_path(@constraint), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), constraint_path(@constraint), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

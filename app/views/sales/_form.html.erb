@@ -1,20 +1,31 @@
-<%= form_for @sale do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :dealer_id %><br />
-    <%= f.number_field :dealer_id %>
-  </p>
-  <p>
-    <%= f.label :customer_id %><br />
-    <%= f.number_field :customer_id %>
-  </p>
-  <p>
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </p>
-  <p>
-    <%= f.label :sale_type_id %><br />
-    <%= f.number_field :sale_type_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :dealer_id, t("activerecord.attributes.sale.dealer_id", :default => "Dealer"), :class => :label %>
+    <%= f.number_field :dealer_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :customer_id, t("activerecord.attributes.sale.customer_id", :default => "Customer"), :class => :label %>
+    <%= f.number_field :customer_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :date, t("activerecord.attributes.sale.date", :default => "Date"), :class => :label %>
+    <%= f.date_select :date, :class => 'date_select' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :sale_type_id, t("activerecord.attributes.sale.sale_type_id", :default => "Sale type"), :class => :label %>
+    <%= f.number_field :sale_type_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), sales_path, :class => "text_button_padding link_button" %>
+</div>

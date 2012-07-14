@@ -1,8 +1,19 @@
-<% title "Edit Proposal" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", proposals_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_proposal_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_proposal_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> Proposal</h2>
+    <div class="inner">
+      <%= form_for @proposal, :url => proposal_path(@proposal), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @proposal %> |
-  <%= link_to "View All", proposals_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

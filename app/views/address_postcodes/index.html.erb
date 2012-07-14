@@ -1,21 +1,48 @@
-<% title "Address Postcodes" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", address_postcodes_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_address_postcode_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> AddressPostcodes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.address_postcode.address_id", :default => t("activerecord.labels.address_id", :default => "Address_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @address_postcodes.each do |address_postcode| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= address_postcode.id %>
+          </td>
+                    <td>
+            <%= link_to address_postcode.address_id, address_postcode_path(address_postcode) %>
+          </td>
+                    <td>
+            <%= address_postcode.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", address_postcode_path(address_postcode) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_address_postcode_path(address_postcode) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", address_postcode_path(address_postcode), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Address</th>
-    <th>Postcode</th>
-    <th>Order</th>
-  </tr>
-  <% for address_postcode in @address_postcodes %>
-    <tr>
-      <td><%= address_postcode.address_id %></td>
-      <td><%= address_postcode.postcode_id %></td>
-      <td><%= address_postcode.order %></td>
-      <td><%= link_to "Show", address_postcode %></td>
-      <td><%= link_to "Edit", edit_address_postcode_path(address_postcode) %></td>
-      <td><%= link_to "Destroy", address_postcode, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Address Postcode", new_address_postcode_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

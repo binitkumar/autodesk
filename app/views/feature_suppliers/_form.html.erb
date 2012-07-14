@@ -1,12 +1,19 @@
-<%= form_for @feature_supplier do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :supplier_id %><br />
-    <%= f.number_field :supplier_id %>
-  </p>
-  <p>
-    <%= f.label :feature_id %><br />
-    <%= f.number_field :feature_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :supplier_id, t("activerecord.attributes.feature_supplier.supplier_id", :default => "Supplier"), :class => :label %>
+    <%= f.number_field :supplier_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :feature_id, t("activerecord.attributes.feature_supplier.feature_id", :default => "Feature"), :class => :label %>
+    <%= f.number_field :feature_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), feature_suppliers_path, :class => "text_button_padding link_button" %>
+</div>

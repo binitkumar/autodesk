@@ -1,24 +1,44 @@
-<% title "Product Sale" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", product_sales_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_product_sale_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", product_sale_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.product_sale.product_id", :default => t("activerecord.labels.product_id", :default => "Product")) %>:</b>
+          <%= @product_sale.product_id %>
+        </p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @product_sale.product_id %>
-</p>
-<p>
-  <strong>Sale:</strong>
-  <%= @product_sale.sale_id %>
-</p>
-<p>
-  <strong>Tax Rate:</strong>
-  <%= @product_sale.tax_rate_id %>
-</p>
-<p>
-  <strong>Price:</strong>
-  <%= @product_sale.price %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.product_sale.sale_id", :default => t("activerecord.labels.sale_id", :default => "Sale")) %>:</b>
+          <%= @product_sale.sale_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_product_sale_path(@product_sale) %> |
-  <%= link_to "Destroy", @product_sale, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", product_sales_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.product_sale.tax_rate_id", :default => t("activerecord.labels.tax_rate_id", :default => "Tax rate")) %>:</b>
+          <%= @product_sale.tax_rate_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.product_sale.currency_id", :default => t("activerecord.labels.currency_id", :default => "Currency")) %>:</b>
+          <%= @product_sale.currency_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.product_sale.price", :default => t("activerecord.labels.price", :default => "Price")) %>:</b>
+          <%= @product_sale.price %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_product_sale_path(@product_sale), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), product_sale_path(@product_sale), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

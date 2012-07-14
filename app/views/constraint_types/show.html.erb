@@ -1,12 +1,24 @@
-<% title "Constraint Type" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", constraint_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_constraint_type_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", constraint_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.constraint_type.value", :default => t("activerecord.labels.value", :default => "Value")) %>:</b>
+          <%= @constraint_type.value %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_constraint_type_path(@constraint_type), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), constraint_type_path(@constraint_type), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Value:</strong>
-  <%= @constraint_type.value %>
-</p>
-
-<p>
-  <%= link_to "Edit", edit_constraint_type_path(@constraint_type) %> |
-  <%= link_to "Destroy", @constraint_type, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", constraint_types_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

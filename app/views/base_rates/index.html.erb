@@ -1,19 +1,48 @@
-<% title "Base Rates" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", base_rates_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_base_rate_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> BaseRates</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.base_rate.funding_plan_id", :default => t("activerecord.labels.funding_plan_id", :default => "Funding_plan_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @base_rates.each do |base_rate| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= base_rate.id %>
+          </td>
+                    <td>
+            <%= link_to base_rate.funding_plan_id, base_rate_path(base_rate) %>
+          </td>
+                    <td>
+            <%= base_rate.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", base_rate_path(base_rate) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_base_rate_path(base_rate) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", base_rate_path(base_rate), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Funding Plan</th>
-    <th>Value</th>
-  </tr>
-  <% for base_rate in @base_rates %>
-    <tr>
-      <td><%= base_rate.funding_plan_id %></td>
-      <td><%= base_rate.value %></td>
-      <td><%= link_to "Show", base_rate %></td>
-      <td><%= link_to "Edit", edit_base_rate_path(base_rate) %></td>
-      <td><%= link_to "Destroy", base_rate, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Base Rate", new_base_rate_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

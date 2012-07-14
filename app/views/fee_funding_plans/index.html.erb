@@ -1,19 +1,48 @@
-<% title "Fee Funding Plans" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", fee_funding_plans_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_fee_funding_plan_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> FeeFundingPlans</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.fee_funding_plan.fee_id", :default => t("activerecord.labels.fee_id", :default => "Fee_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @fee_funding_plans.each do |fee_funding_plan| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= fee_funding_plan.id %>
+          </td>
+                    <td>
+            <%= link_to fee_funding_plan.fee_id, fee_funding_plan_path(fee_funding_plan) %>
+          </td>
+                    <td>
+            <%= fee_funding_plan.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", fee_funding_plan_path(fee_funding_plan) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_fee_funding_plan_path(fee_funding_plan) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", fee_funding_plan_path(fee_funding_plan), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Fee</th>
-    <th>Funding Plan</th>
-  </tr>
-  <% for fee_funding_plan in @fee_funding_plans %>
-    <tr>
-      <td><%= fee_funding_plan.fee_id %></td>
-      <td><%= fee_funding_plan.funding_plan_id %></td>
-      <td><%= link_to "Show", fee_funding_plan %></td>
-      <td><%= link_to "Edit", edit_fee_funding_plan_path(fee_funding_plan) %></td>
-      <td><%= link_to "Destroy", fee_funding_plan, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Fee Funding Plan", new_fee_funding_plan_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

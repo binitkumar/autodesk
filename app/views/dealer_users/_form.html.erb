@@ -1,12 +1,19 @@
-<%= form_for @dealer_user do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :dealer_id %><br />
-    <%= f.number_field :dealer_id %>
-  </p>
-  <p>
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :dealer_id, t("activerecord.attributes.dealer_user.dealer_id", :default => "Dealer"), :class => :label %>
+    <%= f.number_field :dealer_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :user_id, t("activerecord.attributes.dealer_user.user_id", :default => "User"), :class => :label %>
+    <%= f.number_field :user_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), dealer_users_path, :class => "text_button_padding link_button" %>
+</div>

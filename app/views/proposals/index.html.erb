@@ -1,19 +1,48 @@
-<% title "Proposals" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", proposals_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_proposal_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Proposals</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.proposal.proposal_status_id", :default => t("activerecord.labels.proposal_status_id", :default => "Proposal_status_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @proposals.each do |proposal| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= proposal.id %>
+          </td>
+                    <td>
+            <%= link_to proposal.proposal_status_id, proposal_path(proposal) %>
+          </td>
+                    <td>
+            <%= proposal.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", proposal_path(proposal) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_proposal_path(proposal) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", proposal_path(proposal), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Proposal Status</th>
-    <th>Funding Plan Quote</th>
-  </tr>
-  <% for proposal in @proposals %>
-    <tr>
-      <td><%= proposal.proposal_status_id %></td>
-      <td><%= proposal.funding_plan_quote_id %></td>
-      <td><%= link_to "Show", proposal %></td>
-      <td><%= link_to "Edit", edit_proposal_path(proposal) %></td>
-      <td><%= link_to "Destroy", proposal, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Proposal", new_proposal_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

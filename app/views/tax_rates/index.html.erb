@@ -1,21 +1,48 @@
-<% title "Tax Rates" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", tax_rates_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_tax_rate_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> TaxRates</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.tax_rate.tax_rate_type_id", :default => t("activerecord.labels.tax_rate_type_id", :default => "Tax_rate_type_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @tax_rates.each do |tax_rate| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= tax_rate.id %>
+          </td>
+                    <td>
+            <%= link_to tax_rate.tax_rate_type_id, tax_rate_path(tax_rate) %>
+          </td>
+                    <td>
+            <%= tax_rate.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", tax_rate_path(tax_rate) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_tax_rate_path(tax_rate) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", tax_rate_path(tax_rate), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Tax Rate Type</th>
-    <th>Name</th>
-    <th>Value</th>
-  </tr>
-  <% for tax_rate in @tax_rates %>
-    <tr>
-      <td><%= tax_rate.tax_rate_type_id %></td>
-      <td><%= tax_rate.name %></td>
-      <td><%= tax_rate.value %></td>
-      <td><%= link_to "Show", tax_rate %></td>
-      <td><%= link_to "Edit", edit_tax_rate_path(tax_rate) %></td>
-      <td><%= link_to "Destroy", tax_rate, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Tax Rate", new_tax_rate_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

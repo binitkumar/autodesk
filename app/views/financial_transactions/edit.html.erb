@@ -1,8 +1,19 @@
-<% title "Edit Financial Transaction" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", financial_transactions_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_financial_transaction_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_financial_transaction_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> FinancialTransaction</h2>
+    <div class="inner">
+      <%= form_for @financial_transaction, :url => financial_transaction_path(@financial_transaction), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @financial_transaction %> |
-  <%= link_to "View All", financial_transactions_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,16 +1,29 @@
-<% title "Proposal" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", proposals_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_proposal_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", proposal_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.proposal.proposal_status_id", :default => t("activerecord.labels.proposal_status_id", :default => "Proposal status")) %>:</b>
+          <%= @proposal.proposal_status_id %>
+        </p>
 
-<p>
-  <strong>Proposal Status:</strong>
-  <%= @proposal.proposal_status_id %>
-</p>
-<p>
-  <strong>Funding Plan Quote:</strong>
-  <%= @proposal.funding_plan_quote_id %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.proposal.funding_plan_quote_id", :default => t("activerecord.labels.funding_plan_quote_id", :default => "Funding plan quote")) %>:</b>
+          <%= @proposal.funding_plan_quote_id %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_proposal_path(@proposal), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), proposal_path(@proposal), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <%= link_to "Edit", edit_proposal_path(@proposal) %> |
-  <%= link_to "Destroy", @proposal, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", proposals_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

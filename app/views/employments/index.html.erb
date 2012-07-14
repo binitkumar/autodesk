@@ -1,23 +1,48 @@
-<% title "Employments" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", employments_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_employment_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Employments</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.employment.employment_type_id", :default => t("activerecord.labels.employment_type_id", :default => "Employment_type_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @employments.each do |employment| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= employment.id %>
+          </td>
+                    <td>
+            <%= link_to employment.employment_type_id, employment_path(employment) %>
+          </td>
+                    <td>
+            <%= employment.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", employment_path(employment) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_employment_path(employment) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", employment_path(employment), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Employment Type</th>
-    <th>Income</th>
-    <th>Customer</th>
-    <th>Primary</th>
-  </tr>
-  <% for employment in @employments %>
-    <tr>
-      <td><%= employment.employment_type_id %></td>
-      <td><%= employment.income_id %></td>
-      <td><%= employment.customer_id %></td>
-      <td><%= employment.primary %></td>
-      <td><%= link_to "Show", employment %></td>
-      <td><%= link_to "Edit", edit_employment_path(employment) %></td>
-      <td><%= link_to "Destroy", employment, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Employment", new_employment_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

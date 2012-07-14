@@ -1,8 +1,19 @@
-<% title "Edit Customer Event" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", customer_events_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_customer_event_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_customer_event_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> CustomerEvent</h2>
+    <div class="inner">
+      <%= form_for @customer_event, :url => customer_event_path(@customer_event), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @customer_event %> |
-  <%= link_to "View All", customer_events_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

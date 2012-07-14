@@ -1,12 +1,19 @@
-<%= form_for @fee_funding_plan do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :fee_id %><br />
-    <%= f.number_field :fee_id %>
-  </p>
-  <p>
-    <%= f.label :funding_plan_id %><br />
-    <%= f.number_field :funding_plan_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :fee_id, t("activerecord.attributes.fee_funding_plan.fee_id", :default => "Fee"), :class => :label %>
+    <%= f.number_field :fee_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :funding_plan_id, t("activerecord.attributes.fee_funding_plan.funding_plan_id", :default => "Funding plan"), :class => :label %>
+    <%= f.number_field :funding_plan_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), fee_funding_plans_path, :class => "text_button_padding link_button" %>
+</div>

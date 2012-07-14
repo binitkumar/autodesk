@@ -1,16 +1,29 @@
-<% title "Base Rate Constraint" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", base_rate_constraints_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_base_rate_constraint_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", base_rate_constraint_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.base_rate_constraint.base_rate_id", :default => t("activerecord.labels.base_rate_id", :default => "Base rate")) %>:</b>
+          <%= @base_rate_constraint.base_rate_id %>
+        </p>
 
-<p>
-  <strong>Base Rate:</strong>
-  <%= @base_rate_constraint.base_rate_id %>
-</p>
-<p>
-  <strong>Constraint:</strong>
-  <%= @base_rate_constraint.constraint_id %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.base_rate_constraint.constraint_id", :default => t("activerecord.labels.constraint_id", :default => "Constraint")) %>:</b>
+          <%= @base_rate_constraint.constraint_id %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_base_rate_constraint_path(@base_rate_constraint), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), base_rate_constraint_path(@base_rate_constraint), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <%= link_to "Edit", edit_base_rate_constraint_path(@base_rate_constraint) %> |
-  <%= link_to "Destroy", @base_rate_constraint, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", base_rate_constraints_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

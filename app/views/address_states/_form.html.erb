@@ -1,16 +1,25 @@
-<%= form_for @address_state do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :address_id %><br />
-    <%= f.number_field :address_id %>
-  </p>
-  <p>
-    <%= f.label :state_id %><br />
-    <%= f.number_field :state_id %>
-  </p>
-  <p>
-    <%= f.label :order %><br />
-    <%= f.number_field :order %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :address_id, t("activerecord.attributes.address_state.address_id", :default => "Address"), :class => :label %>
+    <%= f.number_field :address_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :state_id, t("activerecord.attributes.address_state.state_id", :default => "State"), :class => :label %>
+    <%= f.number_field :state_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :order, t("activerecord.attributes.address_state.order", :default => "Order"), :class => :label %>
+    <%= f.number_field :order, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), address_states_path, :class => "text_button_padding link_button" %>
+</div>

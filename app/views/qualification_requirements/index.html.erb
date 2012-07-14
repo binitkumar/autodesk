@@ -1,19 +1,48 @@
-<% title "Qualification Requirements" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", qualification_requirements_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_qualification_requirement_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> QualificationRequirements</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.qualification_requirement.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @qualification_requirements.each do |qualification_requirement| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= qualification_requirement.id %>
+          </td>
+                    <td>
+            <%= link_to qualification_requirement.value, qualification_requirement_path(qualification_requirement) %>
+          </td>
+                    <td>
+            <%= qualification_requirement.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", qualification_requirement_path(qualification_requirement) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_qualification_requirement_path(qualification_requirement) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", qualification_requirement_path(qualification_requirement), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-    <th>Metric</th>
-  </tr>
-  <% for qualification_requirement in @qualification_requirements %>
-    <tr>
-      <td><%= qualification_requirement.value %></td>
-      <td><%= qualification_requirement.metric_id %></td>
-      <td><%= link_to "Show", qualification_requirement %></td>
-      <td><%= link_to "Edit", edit_qualification_requirement_path(qualification_requirement) %></td>
-      <td><%= link_to "Destroy", qualification_requirement, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Qualification Requirement", new_qualification_requirement_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

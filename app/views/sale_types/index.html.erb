@@ -1,17 +1,48 @@
-<% title "Sale Types" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", sale_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_sale_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> SaleTypes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.sale_type.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @sale_types.each do |sale_type| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= sale_type.id %>
+          </td>
+                    <td>
+            <%= link_to sale_type.value, sale_type_path(sale_type) %>
+          </td>
+                    <td>
+            <%= sale_type.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_type_path(sale_type) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_sale_type_path(sale_type) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_type_path(sale_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for sale_type in @sale_types %>
-    <tr>
-      <td><%= sale_type.value %></td>
-      <td><%= link_to "Show", sale_type %></td>
-      <td><%= link_to "Edit", edit_sale_type_path(sale_type) %></td>
-      <td><%= link_to "Destroy", sale_type, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Sale Type", new_sale_type_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,19 +1,48 @@
-<% title "Contact Numbers" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", contact_numbers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_contact_number_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> ContactNumbers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.contact_number.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @contact_numbers.each do |contact_number| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= contact_number.id %>
+          </td>
+                    <td>
+            <%= link_to contact_number.value, contact_number_path(contact_number) %>
+          </td>
+                    <td>
+            <%= contact_number.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", contact_number_path(contact_number) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_contact_number_path(contact_number) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", contact_number_path(contact_number), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-    <th>Contact Number Type</th>
-  </tr>
-  <% for contact_number in @contact_numbers %>
-    <tr>
-      <td><%= contact_number.value %></td>
-      <td><%= contact_number.contact_number_type_id %></td>
-      <td><%= link_to "Show", contact_number %></td>
-      <td><%= link_to "Edit", edit_contact_number_path(contact_number) %></td>
-      <td><%= link_to "Destroy", contact_number, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Contact Number", new_contact_number_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

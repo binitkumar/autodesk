@@ -1,16 +1,29 @@
-<% title "Product Purchase" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", product_purchases_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_product_purchase_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", product_purchase_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.product_purchase.product_id", :default => t("activerecord.labels.product_id", :default => "Product")) %>:</b>
+          <%= @product_purchase.product_id %>
+        </p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @product_purchase.product_id %>
-</p>
-<p>
-  <strong>Purchase:</strong>
-  <%= @product_purchase.purchase_id %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.product_purchase.purchase_id", :default => t("activerecord.labels.purchase_id", :default => "Purchase")) %>:</b>
+          <%= @product_purchase.purchase_id %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_product_purchase_path(@product_purchase), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), product_purchase_path(@product_purchase), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <%= link_to "Edit", edit_product_purchase_path(@product_purchase) %> |
-  <%= link_to "Destroy", @product_purchase, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", product_purchases_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

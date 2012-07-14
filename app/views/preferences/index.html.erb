@@ -1,23 +1,48 @@
-<% title "Preferences" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", preferences_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_preference_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Preferences</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.preference.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @preferences.each do |preference| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= preference.id %>
+          </td>
+                    <td>
+            <%= link_to preference.value, preference_path(preference) %>
+          </td>
+                    <td>
+            <%= preference.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", preference_path(preference) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_preference_path(preference) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", preference_path(preference), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-    <th>Preference Type</th>
-    <th>Dealer</th>
-    <th>User</th>
-  </tr>
-  <% for preference in @preferences %>
-    <tr>
-      <td><%= preference.value %></td>
-      <td><%= preference.preference_type_id %></td>
-      <td><%= preference.dealer_id %></td>
-      <td><%= preference.user_id %></td>
-      <td><%= link_to "Show", preference %></td>
-      <td><%= link_to "Edit", edit_preference_path(preference) %></td>
-      <td><%= link_to "Destroy", preference, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Preference", new_preference_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

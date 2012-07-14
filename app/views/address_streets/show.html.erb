@@ -1,20 +1,34 @@
-<% title "Address Street" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", address_streets_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_address_street_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", address_street_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.address_street.address_id", :default => t("activerecord.labels.address_id", :default => "Address")) %>:</b>
+          <%= @address_street.address_id %>
+        </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @address_street.address_id %>
-</p>
-<p>
-  <strong>Street:</strong>
-  <%= @address_street.street_id %>
-</p>
-<p>
-  <strong>Order:</strong>
-  <%= @address_street.order %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.address_street.street_id", :default => t("activerecord.labels.street_id", :default => "Street")) %>:</b>
+          <%= @address_street.street_id %>
+        </p>
 
-<p>
-  <%= link_to "Edit", edit_address_street_path(@address_street) %> |
-  <%= link_to "Destroy", @address_street, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", address_streets_path %>
-</p>
+        <p>
+          <b><%= t("activerecord.attributes.address_street.order", :default => t("activerecord.labels.order", :default => "Order")) %>:</b>
+          <%= @address_street.order %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_address_street_path(@address_street), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), address_street_path(@address_street), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,8 +1,19 @@
-<% title "Edit Product Purchase" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", product_purchases_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_product_purchase_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_product_purchase_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> ProductPurchase</h2>
+    <div class="inner">
+      <%= form_for @product_purchase, :url => product_purchase_path(@product_purchase), :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", @product_purchase %> |
-  <%= link_to "View All", product_purchases_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,17 +1,48 @@
-<% title "Employers" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", employers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_employer_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Employers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.employer.name", :default => t("activerecord.labels.name", :default => "Name")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @employers.each do |employer| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= employer.id %>
+          </td>
+                    <td>
+            <%= link_to employer.name, employer_path(employer) %>
+          </td>
+                    <td>
+            <%= employer.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", employer_path(employer) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_employer_path(employer) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", employer_path(employer), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-  <% for employer in @employers %>
-    <tr>
-      <td><%= employer.name %></td>
-      <td><%= link_to "Show", employer %></td>
-      <td><%= link_to "Edit", edit_employer_path(employer) %></td>
-      <td><%= link_to "Destroy", employer, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Employer", new_employer_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

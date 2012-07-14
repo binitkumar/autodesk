@@ -1,19 +1,48 @@
-<% title "Product Purchases" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", product_purchases_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_product_purchase_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> ProductPurchases</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.product_purchase.product_id", :default => t("activerecord.labels.product_id", :default => "Product_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @product_purchases.each do |product_purchase| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= product_purchase.id %>
+          </td>
+                    <td>
+            <%= link_to product_purchase.product_id, product_purchase_path(product_purchase) %>
+          </td>
+                    <td>
+            <%= product_purchase.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", product_purchase_path(product_purchase) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_product_purchase_path(product_purchase) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", product_purchase_path(product_purchase), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Purchase</th>
-  </tr>
-  <% for product_purchase in @product_purchases %>
-    <tr>
-      <td><%= product_purchase.product_id %></td>
-      <td><%= product_purchase.purchase_id %></td>
-      <td><%= link_to "Show", product_purchase %></td>
-      <td><%= link_to "Edit", edit_product_purchase_path(product_purchase) %></td>
-      <td><%= link_to "Destroy", product_purchase, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Product Purchase", new_product_purchase_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -1,21 +1,48 @@
-<% title "Address Name Numbers" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", address_name_numbers_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_address_name_number_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> AddressNameNumbers</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.address_name_number.address_id", :default => t("activerecord.labels.address_id", :default => "Address_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @address_name_numbers.each do |address_name_number| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= address_name_number.id %>
+          </td>
+                    <td>
+            <%= link_to address_name_number.address_id, address_name_number_path(address_name_number) %>
+          </td>
+                    <td>
+            <%= address_name_number.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", address_name_number_path(address_name_number) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_address_name_number_path(address_name_number) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", address_name_number_path(address_name_number), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Address</th>
-    <th>Name Number</th>
-    <th>Order</th>
-  </tr>
-  <% for address_name_number in @address_name_numbers %>
-    <tr>
-      <td><%= address_name_number.address_id %></td>
-      <td><%= address_name_number.name_number_id %></td>
-      <td><%= address_name_number.order %></td>
-      <td><%= link_to "Show", address_name_number %></td>
-      <td><%= link_to "Edit", edit_address_name_number_path(address_name_number) %></td>
-      <td><%= link_to "Destroy", address_name_number, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Address Name Number", new_address_name_number_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

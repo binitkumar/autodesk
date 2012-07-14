@@ -1,17 +1,48 @@
-<% title "Referral Types" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", referral_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_referral_type_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> ReferralTypes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.referral_type.value", :default => t("activerecord.labels.value", :default => "Value")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @referral_types.each do |referral_type| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= referral_type.id %>
+          </td>
+                    <td>
+            <%= link_to referral_type.value, referral_type_path(referral_type) %>
+          </td>
+                    <td>
+            <%= referral_type.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", referral_type_path(referral_type) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_referral_type_path(referral_type) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", referral_type_path(referral_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Value</th>
-  </tr>
-  <% for referral_type in @referral_types %>
-    <tr>
-      <td><%= referral_type.value %></td>
-      <td><%= link_to "Show", referral_type %></td>
-      <td><%= link_to "Edit", edit_referral_type_path(referral_type) %></td>
-      <td><%= link_to "Destroy", referral_type, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Referral Type", new_referral_type_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

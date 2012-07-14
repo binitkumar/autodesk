@@ -1,21 +1,48 @@
-<% title "Incomes" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", incomes_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_income_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Incomes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.income.income_type_id", :default => t("activerecord.labels.income_type_id", :default => "Income_type_id")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @incomes.each do |income| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= income.id %>
+          </td>
+                    <td>
+            <%= link_to income.income_type_id, income_path(income) %>
+          </td>
+                    <td>
+            <%= income.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", income_path(income) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_income_path(income) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", income_path(income), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Income Type</th>
-    <th>Value</th>
-    <th>Currency</th>
-  </tr>
-  <% for income in @incomes %>
-    <tr>
-      <td><%= income.income_type_id %></td>
-      <td><%= income.value %></td>
-      <td><%= income.currency_id %></td>
-      <td><%= link_to "Show", income %></td>
-      <td><%= link_to "Edit", edit_income_path(income) %></td>
-      <td><%= link_to "Destroy", income, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Income", new_income_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

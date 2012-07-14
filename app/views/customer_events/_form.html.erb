@@ -1,12 +1,19 @@
-<%= form_for @customer_event do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :customer_id %><br />
-    <%= f.number_field :customer_id %>
-  </p>
-  <p>
-    <%= f.label :event_id %><br />
-    <%= f.number_field :event_id %>
-  </p>
-  <p><%= f.submit %></p>
-<% end %>
+
+  <div class="group">
+    <%= f.label :customer_id, t("activerecord.attributes.customer_event.customer_id", :default => "Customer"), :class => :label %>
+    <%= f.number_field :customer_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+
+  <div class="group">
+    <%= f.label :event_id, t("activerecord.attributes.customer_event.event_id", :default => "Event"), :class => :label %>
+    <%= f.number_field :event_id, :class => 'number_field' %>
+    <span class="description">Ex: a simple text</span>
+  </div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), customer_events_path, :class => "text_button_padding link_button" %>
+</div>

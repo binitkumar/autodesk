@@ -1,12 +1,24 @@
-<% title "Role" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", roles_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_role_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", role_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.role.value", :default => t("activerecord.labels.value", :default => "Value")) %>:</b>
+          <%= @role.value %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_role_path(@role), :class => "button" %>
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), role_path(@role), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Value:</strong>
-  <%= @role.value %>
-</p>
-
-<p>
-  <%= link_to "Edit", edit_role_path(@role) %> |
-  <%= link_to "Destroy", @role, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", roles_path %>
-</p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>
