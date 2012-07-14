@@ -1,0 +1,16 @@
+<% title "Base Rate" %>
+
+<p>
+  <strong>Funding Plan:</strong>
+  <%= @base_rate.funding_plan_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @base_rate.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_base_rate_path(@base_rate) %> |
+  <%= link_to "Destroy", @base_rate, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", base_rates_path %>
+</p>

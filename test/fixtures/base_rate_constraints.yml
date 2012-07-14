@@ -1,0 +1,7 @@
+one:
+  base_rate_id: 1
+  constraint_id: 1
+
+two:
+  base_rate_id: 1
+  constraint_id: 1

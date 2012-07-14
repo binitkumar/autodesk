@@ -1,0 +1,11 @@
+one:
+  constraint_type_id: 1
+  name: MyString
+  upper_value: 1.5
+  lower_value: 1.5
+
+two:
+  constraint_type_id: 1
+  name: MyString
+  upper_value: 1.5
+  lower_value: 1.5

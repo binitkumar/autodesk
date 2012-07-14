@@ -1,0 +1,17 @@
+<% title "Constraint Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for constraint_type in @constraint_types %>
+    <tr>
+      <td><%= constraint_type.value %></td>
+      <td><%= link_to "Show", constraint_type %></td>
+      <td><%= link_to "Edit", edit_constraint_type_path(constraint_type) %></td>
+      <td><%= link_to "Destroy", constraint_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Constraint Type", new_constraint_type_path %></p>

@@ -1,0 +1,12 @@
+<%= form_for @base_rate_constraint do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :base_rate_id %><br />
+    <%= f.number_field :base_rate_id %>
+  </p>
+  <p>
+    <%= f.label :constraint_id %><br />
+    <%= f.number_field :constraint_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

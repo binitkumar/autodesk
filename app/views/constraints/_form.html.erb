@@ -1,0 +1,20 @@
+<%= form_for @constraint do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :constraint_type_id %><br />
+    <%= f.number_field :constraint_type_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :upper_value %><br />
+    <%= f.text_field :upper_value %>
+  </p>
+  <p>
+    <%= f.label :lower_value %><br />
+    <%= f.text_field :lower_value %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

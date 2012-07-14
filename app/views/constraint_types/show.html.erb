@@ -1,0 +1,12 @@
+<% title "Constraint Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @constraint_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_constraint_type_path(@constraint_type) %> |
+  <%= link_to "Destroy", @constraint_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", constraint_types_path %>
+</p>

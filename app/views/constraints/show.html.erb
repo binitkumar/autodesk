@@ -1,0 +1,24 @@
+<% title "Constraint" %>
+
+<p>
+  <strong>Constraint Type:</strong>
+  <%= @constraint.constraint_type_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @constraint.name %>
+</p>
+<p>
+  <strong>Upper Value:</strong>
+  <%= @constraint.upper_value %>
+</p>
+<p>
+  <strong>Lower Value:</strong>
+  <%= @constraint.lower_value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_constraint_path(@constraint) %> |
+  <%= link_to "Destroy", @constraint, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", constraints_path %>
+</p>

@@ -1,0 +1,19 @@
+<% title "Base Rates" %>
+
+<table>
+  <tr>
+    <th>Funding Plan</th>
+    <th>Value</th>
+  </tr>
+  <% for base_rate in @base_rates %>
+    <tr>
+      <td><%= base_rate.funding_plan_id %></td>
+      <td><%= base_rate.value %></td>
+      <td><%= link_to "Show", base_rate %></td>
+      <td><%= link_to "Edit", edit_base_rate_path(base_rate) %></td>
+      <td><%= link_to "Destroy", base_rate, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Base Rate", new_base_rate_path %></p>

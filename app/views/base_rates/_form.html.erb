@@ -1,0 +1,12 @@
+<%= form_for @base_rate do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :funding_plan_id %><br />
+    <%= f.number_field :funding_plan_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

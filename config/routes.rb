@@ -1,5 +1,13 @@
 Autobase::Application.routes.draw do
   
+  resources :base_rate_constraints
+
+  resources :constraint_types
+
+  resources :constraints
+
+  resources :base_rates
+
   resources :fee_types
 
   resources :fees

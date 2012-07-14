@@ -1,0 +1,16 @@
+<% title "Base Rate Constraint" %>
+
+<p>
+  <strong>Base Rate:</strong>
+  <%= @base_rate_constraint.base_rate_id %>
+</p>
+<p>
+  <strong>Constraint:</strong>
+  <%= @base_rate_constraint.constraint_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_base_rate_constraint_path(@base_rate_constraint) %> |
+  <%= link_to "Destroy", @base_rate_constraint, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", base_rate_constraints_path %>
+</p>

@@ -1,0 +1,19 @@
+<% title "Base Rate Constraints" %>
+
+<table>
+  <tr>
+    <th>Base Rate</th>
+    <th>Constraint</th>
+  </tr>
+  <% for base_rate_constraint in @base_rate_constraints %>
+    <tr>
+      <td><%= base_rate_constraint.base_rate_id %></td>
+      <td><%= base_rate_constraint.constraint_id %></td>
+      <td><%= link_to "Show", base_rate_constraint %></td>
+      <td><%= link_to "Edit", edit_base_rate_constraint_path(base_rate_constraint) %></td>
+      <td><%= link_to "Destroy", base_rate_constraint, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Base Rate Constraint", new_base_rate_constraint_path %></p>
