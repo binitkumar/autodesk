@@ -21,4 +21,5 @@ class Vehicle < ActiveRecord::Base
   
   has_many :purchase_vehicles
   has_many :purchases, :through => :purchase_vehicles
+  
 end
