@@ -1,0 +1,24 @@
+<% title "Quote Vehicle" %>
+
+<p>
+  <strong>Quote:</strong>
+  <%= @quote_vehicle.quote_id %>
+</p>
+<p>
+  <strong>Vehicle:</strong>
+  <%= @quote_vehicle.vehicle_id %>
+</p>
+<p>
+  <strong>Tax Rate:</strong>
+  <%= @quote_vehicle.tax_rate_id %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @quote_vehicle.price %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_quote_vehicle_path(@quote_vehicle) %> |
+  <%= link_to "Destroy", @quote_vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", quote_vehicles_path %>
+</p>

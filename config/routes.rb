@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :proposal_statuses
+
+  resources :quote_vehicles
+
   resources :product_quotes
 
   resources :quotes

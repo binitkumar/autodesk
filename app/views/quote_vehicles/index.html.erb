@@ -1,0 +1,23 @@
+<% title "Quote Vehicles" %>
+
+<table>
+  <tr>
+    <th>Quote</th>
+    <th>Vehicle</th>
+    <th>Tax Rate</th>
+    <th>Price</th>
+  </tr>
+  <% for quote_vehicle in @quote_vehicles %>
+    <tr>
+      <td><%= quote_vehicle.quote_id %></td>
+      <td><%= quote_vehicle.vehicle_id %></td>
+      <td><%= quote_vehicle.tax_rate_id %></td>
+      <td><%= quote_vehicle.price %></td>
+      <td><%= link_to "Show", quote_vehicle %></td>
+      <td><%= link_to "Edit", edit_quote_vehicle_path(quote_vehicle) %></td>
+      <td><%= link_to "Destroy", quote_vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Quote Vehicle", new_quote_vehicle_path %></p>
