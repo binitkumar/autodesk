@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :product_quotes
+
+  resources :quotes
+
   resources :comments
 
   resources :base_rate_constraints

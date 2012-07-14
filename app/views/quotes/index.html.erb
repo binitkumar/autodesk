@@ -1,0 +1,25 @@
+<% title "Quotes" %>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Dealer</th>
+    <th>Quote Type</th>
+    <th>Comment Originator</th>
+    <th>Time</th>
+  </tr>
+  <% for quote in @quotes %>
+    <tr>
+      <td><%= quote.customer_id %></td>
+      <td><%= quote.dealer_id %></td>
+      <td><%= quote.quote_type_id %></td>
+      <td><%= quote.comment_originator_id %></td>
+      <td><%= quote.time %></td>
+      <td><%= link_to "Show", quote %></td>
+      <td><%= link_to "Edit", edit_quote_path(quote) %></td>
+      <td><%= link_to "Destroy", quote, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Quote", new_quote_path %></p>

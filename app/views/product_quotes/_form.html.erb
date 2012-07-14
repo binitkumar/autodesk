@@ -1,0 +1,24 @@
+<%= form_for @product_quote do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :product_id %><br />
+    <%= f.number_field :product_id %>
+  </p>
+  <p>
+    <%= f.label :quote_id %><br />
+    <%= f.number_field :quote_id %>
+  </p>
+  <p>
+    <%= f.label :tax_rate_id %><br />
+    <%= f.number_field :tax_rate_id %>
+  </p>
+  <p>
+    <%= f.label :currency_id %><br />
+    <%= f.number_field :currency_id %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

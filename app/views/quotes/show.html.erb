@@ -1,0 +1,28 @@
+<% title "Quote" %>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @quote.customer_id %>
+</p>
+<p>
+  <strong>Dealer:</strong>
+  <%= @quote.dealer_id %>
+</p>
+<p>
+  <strong>Quote Type:</strong>
+  <%= @quote.quote_type_id %>
+</p>
+<p>
+  <strong>Comment Originator:</strong>
+  <%= @quote.comment_originator_id %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @quote.time %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_quote_path(@quote) %> |
+  <%= link_to "Destroy", @quote, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", quotes_path %>
+</p>

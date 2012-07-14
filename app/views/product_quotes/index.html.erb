@@ -1,0 +1,25 @@
+<% title "Product Quotes" %>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Quote</th>
+    <th>Tax Rate</th>
+    <th>Currency</th>
+    <th>Price</th>
+  </tr>
+  <% for product_quote in @product_quotes %>
+    <tr>
+      <td><%= product_quote.product_id %></td>
+      <td><%= product_quote.quote_id %></td>
+      <td><%= product_quote.tax_rate_id %></td>
+      <td><%= product_quote.currency_id %></td>
+      <td><%= product_quote.price %></td>
+      <td><%= link_to "Show", product_quote %></td>
+      <td><%= link_to "Edit", edit_product_quote_path(product_quote) %></td>
+      <td><%= link_to "Destroy", product_quote, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Product Quote", new_product_quote_path %></p>

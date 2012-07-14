@@ -1,0 +1,28 @@
+<% title "Product Quote" %>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product_quote.product_id %>
+</p>
+<p>
+  <strong>Quote:</strong>
+  <%= @product_quote.quote_id %>
+</p>
+<p>
+  <strong>Tax Rate:</strong>
+  <%= @product_quote.tax_rate_id %>
+</p>
+<p>
+  <strong>Currency:</strong>
+  <%= @product_quote.currency_id %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @product_quote.price %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_product_quote_path(@product_quote) %> |
+  <%= link_to "Destroy", @product_quote, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", product_quotes_path %>
+</p>
