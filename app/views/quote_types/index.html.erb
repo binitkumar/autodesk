@@ -1,0 +1,17 @@
+<% title "Quote Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for quote_type in @quote_types %>
+    <tr>
+      <td><%= quote_type.value %></td>
+      <td><%= link_to "Show", quote_type %></td>
+      <td><%= link_to "Edit", edit_quote_type_path(quote_type) %></td>
+      <td><%= link_to "Destroy", quote_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Quote Type", new_quote_type_path %></p>

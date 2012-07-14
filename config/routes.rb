@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :dealer_quote_types
+
+  resources :quote_types
+
   resources :proposals
 
   resources :funding_plan_quotes

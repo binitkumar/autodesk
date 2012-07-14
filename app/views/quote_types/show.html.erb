@@ -1,0 +1,12 @@
+<% title "Quote Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @quote_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_quote_type_path(@quote_type) %> |
+  <%= link_to "Destroy", @quote_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", quote_types_path %>
+</p>

@@ -1,0 +1,19 @@
+<% title "Dealer Quote Types" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Quote Type</th>
+  </tr>
+  <% for dealer_quote_type in @dealer_quote_types %>
+    <tr>
+      <td><%= dealer_quote_type.dealer_id %></td>
+      <td><%= dealer_quote_type.quote_type_id %></td>
+      <td><%= link_to "Show", dealer_quote_type %></td>
+      <td><%= link_to "Edit", edit_dealer_quote_type_path(dealer_quote_type) %></td>
+      <td><%= link_to "Destroy", dealer_quote_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Quote Type", new_dealer_quote_type_path %></p>

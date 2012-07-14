@@ -1,0 +1,16 @@
+<% title "Dealer Quote Type" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_quote_type.dealer_id %>
+</p>
+<p>
+  <strong>Quote Type:</strong>
+  <%= @dealer_quote_type.quote_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_quote_type_path(@dealer_quote_type) %> |
+  <%= link_to "Destroy", @dealer_quote_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_quote_types_path %>
+</p>
