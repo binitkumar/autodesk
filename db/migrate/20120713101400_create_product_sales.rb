@@ -4,6 +4,7 @@ class CreateProductSales < ActiveRecord::Migration
       t.integer :product_id
       t.integer :sale_id
       t.integer :tax_rate_id
+      t.integer :currency_id
       t.float :price
       t.timestamps
     end
