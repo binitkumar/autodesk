@@ -1,21 +1,13 @@
 
-  <div class="group">
-    <%= f.label :make_id, t("activerecord.attributes.vehicle.make_id", :default => "Make"), :class => :label %>
-    <%= f.number_field :make_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
+  <%= f.inputs do %>
+    
+    <%= f.input :make_id, :wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'number_field' } %>
 
-  <div class="group">
-    <%= f.label :model_id, t("activerecord.attributes.vehicle.model_id", :default => "Model"), :class => :label %>
-    <%= f.number_field :model_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
+    <%= f.input :model_id, :wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'number_field' } %>
 
-  <div class="group">
-    <%= f.label :trim_id, t("activerecord.attributes.vehicle.trim_id", :default => "Trim"), :class => :label %>
-    <%= f.number_field :trim_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
+    <%= f.input :trim_id, :wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'number_field' } %>
+    
+  <% end -%>
 <div class="group navform wat-cf">
   <button class="button" type="submit">
     <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
