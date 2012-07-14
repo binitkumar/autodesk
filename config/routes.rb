@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :comments
+
   resources :base_rate_constraints
 
   resources :constraint_types
