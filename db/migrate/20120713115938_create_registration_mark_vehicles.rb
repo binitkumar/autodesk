@@ -3,6 +3,7 @@ class CreateRegistrationMarkVehicles < ActiveRecord::Migration
     create_table :registration_mark_vehicles do |t|
       t.integer :registration_mark_id
       t.integer :vehicle_id
+      t.boolean :current
       t.timestamps
     end
   end
