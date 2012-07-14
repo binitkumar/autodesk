@@ -1,9 +1,0 @@
-one:
-  fee_type_id: 1
-  name: MyString
-  value: 1.5
-
-two:
-  fee_type_id: 1
-  name: MyString
-  value: 1.5

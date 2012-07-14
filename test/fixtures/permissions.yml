@@ -1,9 +1,0 @@
-one:
-  dealer_user_id: 1
-  action: MyString
-  target: MyString
-
-two:
-  dealer_user_id: 1
-  action: MyString
-  target: MyString

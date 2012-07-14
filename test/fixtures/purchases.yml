@@ -1,9 +1,0 @@
-one:
-  dealer_id: 1
-  purchase_type_id: 1
-  tax_rate_id: 1
-
-two:
-  dealer_id: 1
-  purchase_type_id: 1
-  tax_rate_id: 1

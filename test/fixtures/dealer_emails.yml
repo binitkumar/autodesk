@@ -1,9 +1,0 @@
-one:
-  dealer_id: 1
-  email_id: 1
-  primary: false
-
-two:
-  dealer_id: 1
-  email_id: 1
-  primary: false

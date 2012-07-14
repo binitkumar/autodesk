@@ -1,7 +1,0 @@
-one:
-  value: MyString
-  feature_type_id: 1
-
-two:
-  value: MyString
-  feature_type_id: 1
