@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/pilu/web-app-theme.git
-  revision: b7310fe5001ed03b965049f293fce3527ae98dae
+  remote: git://github.com/chonan/web-app-theme.git
+  revision: 40bc3a889ac036614d7d590abe46e14f662ba339
   specs:
     web-app-theme (0.8.0)
       rails (~> 3.2.0)
