@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :purchase_vehicles
+
   resources :quote_users
 
   resources :dealer_quote_types

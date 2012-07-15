@@ -1,0 +1,16 @@
+<% title "Purchase Vehicle" %>
+
+<p>
+  <strong>Purchase:</strong>
+  <%= @purchase_vehicle.purchase_id %>
+</p>
+<p>
+  <strong>Vehicle:</strong>
+  <%= @purchase_vehicle.vehicle_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_purchase_vehicle_path(@purchase_vehicle) %> |
+  <%= link_to "Destroy", @purchase_vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", purchase_vehicles_path %>
+</p>
