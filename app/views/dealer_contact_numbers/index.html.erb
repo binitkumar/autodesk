@@ -1,0 +1,21 @@
+<% title "Dealer Contact Numbers" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Contact Number</th>
+    <th>Primary</th>
+  </tr>
+  <% for dealer_contact_number in @dealer_contact_numbers %>
+    <tr>
+      <td><%= dealer_contact_number.dealer_id %></td>
+      <td><%= dealer_contact_number.contact_number_id %></td>
+      <td><%= dealer_contact_number.primary %></td>
+      <td><%= link_to "Show", dealer_contact_number %></td>
+      <td><%= link_to "Edit", edit_dealer_contact_number_path(dealer_contact_number) %></td>
+      <td><%= link_to "Destroy", dealer_contact_number, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Contact Number", new_dealer_contact_number_path %></p>
