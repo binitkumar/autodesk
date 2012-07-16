@@ -1,0 +1,32 @@
+<% title "Target" %>
+
+<p>
+  <strong>Metric:</strong>
+  <%= @target.metric_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @target.value %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @target.name %>
+</p>
+<p>
+  <strong>Goal High:</strong>
+  <%= @target.goal_high %>
+</p>
+<p>
+  <strong>Time Start:</strong>
+  <%= @target.time_start %>
+</p>
+<p>
+  <strong>Time End:</strong>
+  <%= @target.time_end %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_target_path(@target) %> |
+  <%= link_to "Destroy", @target, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", targets_path %>
+</p>

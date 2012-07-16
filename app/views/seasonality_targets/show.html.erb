@@ -1,0 +1,16 @@
+<% title "Seasonality Target" %>
+
+<p>
+  <strong>Seasonality:</strong>
+  <%= @seasonality_target.seasonality_id %>
+</p>
+<p>
+  <strong>Target:</strong>
+  <%= @seasonality_target.target_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_seasonality_target_path(@seasonality_target) %> |
+  <%= link_to "Destroy", @seasonality_target, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", seasonality_targets_path %>
+</p>

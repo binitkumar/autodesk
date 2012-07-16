@@ -1,0 +1,21 @@
+<% title "Period Values" %>
+
+<table>
+  <tr>
+    <th>Seasonality</th>
+    <th>Period</th>
+    <th>Value</th>
+  </tr>
+  <% for period_value in @period_values %>
+    <tr>
+      <td><%= period_value.seasonality_id %></td>
+      <td><%= period_value.period %></td>
+      <td><%= period_value.value %></td>
+      <td><%= link_to "Show", period_value %></td>
+      <td><%= link_to "Edit", edit_period_value_path(period_value) %></td>
+      <td><%= link_to "Destroy", period_value, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Period Value", new_period_value_path %></p>

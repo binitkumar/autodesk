@@ -1,0 +1,12 @@
+<% title "Seasonality" %>
+
+<p>
+  <strong>Seasonality Type:</strong>
+  <%= @seasonality.seasonality_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_seasonality_path(@seasonality) %> |
+  <%= link_to "Destroy", @seasonality, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", seasonalities_path %>
+</p>

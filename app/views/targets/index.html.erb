@@ -1,0 +1,27 @@
+<% title "Targets" %>
+
+<table>
+  <tr>
+    <th>Metric</th>
+    <th>Value</th>
+    <th>Name</th>
+    <th>Goal High</th>
+    <th>Time Start</th>
+    <th>Time End</th>
+  </tr>
+  <% for target in @targets %>
+    <tr>
+      <td><%= target.metric_id %></td>
+      <td><%= target.value %></td>
+      <td><%= target.name %></td>
+      <td><%= target.goal_high %></td>
+      <td><%= target.time_start %></td>
+      <td><%= target.time_end %></td>
+      <td><%= link_to "Show", target %></td>
+      <td><%= link_to "Edit", edit_target_path(target) %></td>
+      <td><%= link_to "Destroy", target, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Target", new_target_path %></p>

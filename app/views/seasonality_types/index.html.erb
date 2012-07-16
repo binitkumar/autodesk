@@ -1,0 +1,17 @@
+<% title "Seasonality Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for seasonality_type in @seasonality_types %>
+    <tr>
+      <td><%= seasonality_type.value %></td>
+      <td><%= link_to "Show", seasonality_type %></td>
+      <td><%= link_to "Edit", edit_seasonality_type_path(seasonality_type) %></td>
+      <td><%= link_to "Destroy", seasonality_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Seasonality Type", new_seasonality_type_path %></p>

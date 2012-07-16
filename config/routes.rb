@@ -1,5 +1,21 @@
 Autobase::Application.routes.draw do
   
+  resources :period_values
+
+  resources :seasonality_types
+
+  resources :seasonalities
+
+  resources :seasonality_targets
+
+  resources :supplier_targets
+
+  resources :target_users
+
+  resources :dealer_targets
+
+  resources :targets
+
   resources :dealer_contact_numbers
 
   resources :purchase_vehicles

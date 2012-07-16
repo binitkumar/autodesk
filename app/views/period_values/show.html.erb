@@ -1,0 +1,20 @@
+<% title "Period Value" %>
+
+<p>
+  <strong>Seasonality:</strong>
+  <%= @period_value.seasonality_id %>
+</p>
+<p>
+  <strong>Period:</strong>
+  <%= @period_value.period %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @period_value.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_period_value_path(@period_value) %> |
+  <%= link_to "Destroy", @period_value, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", period_values_path %>
+</p>

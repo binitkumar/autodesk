@@ -1,0 +1,19 @@
+<% title "Target Users" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Target</th>
+  </tr>
+  <% for target_user in @target_users %>
+    <tr>
+      <td><%= target_user.user_id %></td>
+      <td><%= target_user.target_id %></td>
+      <td><%= link_to "Show", target_user %></td>
+      <td><%= link_to "Edit", edit_target_user_path(target_user) %></td>
+      <td><%= link_to "Destroy", target_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Target User", new_target_user_path %></p>

@@ -1,0 +1,19 @@
+<% title "Dealer Targets" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Target</th>
+  </tr>
+  <% for dealer_target in @dealer_targets %>
+    <tr>
+      <td><%= dealer_target.dealer_id %></td>
+      <td><%= dealer_target.target_id %></td>
+      <td><%= link_to "Show", dealer_target %></td>
+      <td><%= link_to "Edit", edit_dealer_target_path(dealer_target) %></td>
+      <td><%= link_to "Destroy", dealer_target, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Target", new_dealer_target_path %></p>

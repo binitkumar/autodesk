@@ -1,0 +1,28 @@
+<%= form_for @target do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :metric_id %><br />
+    <%= f.number_field :metric_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :goal_high %><br />
+    <%= f.check_box :goal_high %>
+  </p>
+  <p>
+    <%= f.label :time_start %><br />
+    <%= f.time_select :time_start %>
+  </p>
+  <p>
+    <%= f.label :time_end %><br />
+    <%= f.time_select :time_end %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

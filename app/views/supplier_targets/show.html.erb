@@ -1,0 +1,16 @@
+<% title "Supplier Target" %>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @supplier_target.supplier_id %>
+</p>
+<p>
+  <strong>Target:</strong>
+  <%= @supplier_target.target_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_supplier_target_path(@supplier_target) %> |
+  <%= link_to "Destroy", @supplier_target, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", supplier_targets_path %>
+</p>

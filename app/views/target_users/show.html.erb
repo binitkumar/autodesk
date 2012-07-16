@@ -1,0 +1,16 @@
+<% title "Target User" %>
+
+<p>
+  <strong>User:</strong>
+  <%= @target_user.user_id %>
+</p>
+<p>
+  <strong>Target:</strong>
+  <%= @target_user.target_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_target_user_path(@target_user) %> |
+  <%= link_to "Destroy", @target_user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", target_users_path %>
+</p>

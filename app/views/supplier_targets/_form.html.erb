@@ -1,0 +1,12 @@
+<%= form_for @supplier_target do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :supplier_id %><br />
+    <%= f.number_field :supplier_id %>
+  </p>
+  <p>
+    <%= f.label :target_id %><br />
+    <%= f.number_field :target_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
