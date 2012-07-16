@@ -1,0 +1,12 @@
+<%= form_for @metric do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :operation_type_id %><br />
+    <%= f.number_field :operation_type_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

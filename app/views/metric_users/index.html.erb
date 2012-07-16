@@ -1,0 +1,19 @@
+<% title "Metric Users" %>
+
+<table>
+  <tr>
+    <th>Metric</th>
+    <th>User</th>
+  </tr>
+  <% for metric_user in @metric_users %>
+    <tr>
+      <td><%= metric_user.metric_id %></td>
+      <td><%= metric_user.user_id %></td>
+      <td><%= link_to "Show", metric_user %></td>
+      <td><%= link_to "Edit", edit_metric_user_path(metric_user) %></td>
+      <td><%= link_to "Destroy", metric_user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Metric User", new_metric_user_path %></p>

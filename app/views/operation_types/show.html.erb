@@ -1,0 +1,12 @@
+<% title "Operation Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @operation_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_operation_type_path(@operation_type) %> |
+  <%= link_to "Destroy", @operation_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", operation_types_path %>
+</p>

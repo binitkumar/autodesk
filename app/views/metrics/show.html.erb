@@ -1,0 +1,16 @@
+<% title "Metric" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @metric.name %>
+</p>
+<p>
+  <strong>Operation Type:</strong>
+  <%= @metric.operation_type_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_metric_path(@metric) %> |
+  <%= link_to "Destroy", @metric, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", metrics_path %>
+</p>

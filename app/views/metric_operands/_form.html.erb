@@ -1,0 +1,16 @@
+<%= form_for @metric_operand do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :metric_id %><br />
+    <%= f.number_field :metric_id %>
+  </p>
+  <p>
+    <%= f.label :operand_id %><br />
+    <%= f.number_field :operand_id %>
+  </p>
+  <p>
+    <%= f.label :side %><br />
+    <%= f.text_field :side %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

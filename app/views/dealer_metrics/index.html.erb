@@ -1,0 +1,19 @@
+<% title "Dealer Metrics" %>
+
+<table>
+  <tr>
+    <th>Metric</th>
+    <th>Dealer</th>
+  </tr>
+  <% for dealer_metric in @dealer_metrics %>
+    <tr>
+      <td><%= dealer_metric.metric_id %></td>
+      <td><%= dealer_metric.dealer_id %></td>
+      <td><%= link_to "Show", dealer_metric %></td>
+      <td><%= link_to "Edit", edit_dealer_metric_path(dealer_metric) %></td>
+      <td><%= link_to "Destroy", dealer_metric, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer Metric", new_dealer_metric_path %></p>

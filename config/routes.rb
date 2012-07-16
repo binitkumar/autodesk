@@ -1,5 +1,23 @@
 Autobase::Application.routes.draw do
   
+  resources :operands
+
+  resources :metric_operands
+
+  resources :metrics
+
+  resources :operand_reporting_categories
+
+  resources :reporting_categories
+
+  resources :operation_types
+
+  resources :reporting_category_metrics
+
+  resources :dealer_metrics
+
+  resources :metric_users
+
   resources :period_values
 
   resources :seasonality_types

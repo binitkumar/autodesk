@@ -1,0 +1,16 @@
+<% title "Reporting Category" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reporting_category.name %>
+</p>
+<p>
+  <strong>Parent Reporting Category:</strong>
+  <%= @reporting_category.parent_reporting_category_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_reporting_category_path(@reporting_category) %> |
+  <%= link_to "Destroy", @reporting_category, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", reporting_categories_path %>
+</p>

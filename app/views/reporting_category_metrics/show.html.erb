@@ -1,0 +1,16 @@
+<% title "Reporting Category Metric" %>
+
+<p>
+  <strong>Reporting Category:</strong>
+  <%= @reporting_category_metric.reporting_category_id %>
+</p>
+<p>
+  <strong>Metric:</strong>
+  <%= @reporting_category_metric.metric_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_reporting_category_metric_path(@reporting_category_metric) %> |
+  <%= link_to "Destroy", @reporting_category_metric, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", reporting_category_metrics_path %>
+</p>

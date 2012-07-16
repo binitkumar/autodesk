@@ -1,0 +1,16 @@
+<% title "Operand Reporting Category" %>
+
+<p>
+  <strong>Operand:</strong>
+  <%= @operand_reporting_category.operand_id %>
+</p>
+<p>
+  <strong>Reporting Category:</strong>
+  <%= @operand_reporting_category.reporting_category_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_operand_reporting_category_path(@operand_reporting_category) %> |
+  <%= link_to "Destroy", @operand_reporting_category, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", operand_reporting_categories_path %>
+</p>

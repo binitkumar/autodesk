@@ -1,0 +1,16 @@
+<% title "Dealer Metric" %>
+
+<p>
+  <strong>Metric:</strong>
+  <%= @dealer_metric.metric_id %>
+</p>
+<p>
+  <strong>Dealer:</strong>
+  <%= @dealer_metric.dealer_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_dealer_metric_path(@dealer_metric) %> |
+  <%= link_to "Destroy", @dealer_metric, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", dealer_metrics_path %>
+</p>

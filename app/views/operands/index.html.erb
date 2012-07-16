@@ -1,0 +1,23 @@
+<% title "Operands" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Object</th>
+    <th>Attribute</th>
+    <th>Metric</th>
+  </tr>
+  <% for operand in @operands %>
+    <tr>
+      <td><%= operand.name %></td>
+      <td><%= operand.object %></td>
+      <td><%= operand.attribute %></td>
+      <td><%= operand.metric_id %></td>
+      <td><%= link_to "Show", operand %></td>
+      <td><%= link_to "Edit", edit_operand_path(operand) %></td>
+      <td><%= link_to "Destroy", operand, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Operand", new_operand_path %></p>

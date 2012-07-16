@@ -1,0 +1,19 @@
+<% title "Reporting Categories" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Parent Reporting Category</th>
+  </tr>
+  <% for reporting_category in @reporting_categories %>
+    <tr>
+      <td><%= reporting_category.name %></td>
+      <td><%= reporting_category.parent_reporting_category_id %></td>
+      <td><%= link_to "Show", reporting_category %></td>
+      <td><%= link_to "Edit", edit_reporting_category_path(reporting_category) %></td>
+      <td><%= link_to "Destroy", reporting_category, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Reporting Category", new_reporting_category_path %></p>

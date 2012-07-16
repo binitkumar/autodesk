@@ -1,0 +1,19 @@
+<% title "Operand Reporting Categories" %>
+
+<table>
+  <tr>
+    <th>Operand</th>
+    <th>Reporting Category</th>
+  </tr>
+  <% for operand_reporting_category in @operand_reporting_categories %>
+    <tr>
+      <td><%= operand_reporting_category.operand_id %></td>
+      <td><%= operand_reporting_category.reporting_category_id %></td>
+      <td><%= link_to "Show", operand_reporting_category %></td>
+      <td><%= link_to "Edit", edit_operand_reporting_category_path(operand_reporting_category) %></td>
+      <td><%= link_to "Destroy", operand_reporting_category, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Operand Reporting Category", new_operand_reporting_category_path %></p>

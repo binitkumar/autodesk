@@ -1,0 +1,24 @@
+<% title "Operand" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @operand.name %>
+</p>
+<p>
+  <strong>Object:</strong>
+  <%= @operand.object %>
+</p>
+<p>
+  <strong>Attribute:</strong>
+  <%= @operand.attribute %>
+</p>
+<p>
+  <strong>Metric:</strong>
+  <%= @operand.metric_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_operand_path(@operand) %> |
+  <%= link_to "Destroy", @operand, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", operands_path %>
+</p>

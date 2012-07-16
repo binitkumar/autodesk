@@ -1,0 +1,20 @@
+<%= form_for @operand do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :object %><br />
+    <%= f.text_field :object %>
+  </p>
+  <p>
+    <%= f.label :attribute %><br />
+    <%= f.text_field :attribute %>
+  </p>
+  <p>
+    <%= f.label :metric_id %><br />
+    <%= f.number_field :metric_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
