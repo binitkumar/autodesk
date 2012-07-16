@@ -4,7 +4,6 @@ class CreateQuotes < ActiveRecord::Migration
       t.integer :customer_id
       t.integer :dealer_id
       t.integer :quote_type_id
-      t.integer :comment_originator_id
       t.time :time
       t.timestamps
     end
