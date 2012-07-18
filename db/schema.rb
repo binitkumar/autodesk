@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120714113259) do
+ActiveRecord::Schema.define(:version => 20120716155030) do
 
   create_table "address_customers", :force => true do |t|
     t.integer  "address_id"
@@ -232,6 +232,13 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "dealer_metrics", :force => true do |t|
+    t.integer  "metric_id"
+    t.integer  "dealer_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "dealer_product_types", :force => true do |t|
     t.integer  "dealer_id"
     t.integer  "product_type_id"
@@ -258,6 +265,13 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.integer  "supplier_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "dealer_targets", :force => true do |t|
+    t.integer  "dealer_id"
+    t.integer  "target_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "dealer_tax_rates", :force => true do |t|
@@ -491,6 +505,28 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "metric_operands", :force => true do |t|
+    t.integer  "metric_id"
+    t.integer  "operand_id"
+    t.string   "side"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "metric_users", :force => true do |t|
+    t.integer  "metric_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "metrics", :force => true do |t|
+    t.string   "name"
+    t.integer  "operation_type_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
   create_table "mileage_readings", :force => true do |t|
     t.integer  "vehicle_id"
     t.integer  "value"
@@ -510,6 +546,36 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "operand_reporting_categories", :force => true do |t|
+    t.integer  "operand_id"
+    t.integer  "reporting_category_id"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
+  create_table "operands", :force => true do |t|
+    t.string   "name"
+    t.string   "object"
+    t.string   "attribute"
+    t.integer  "metric_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "operation_types", :force => true do |t|
+    t.string   "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "period_values", :force => true do |t|
+    t.integer  "seasonality_id"
+    t.integer  "period"
+    t.float    "value"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "permissions", :force => true do |t|
@@ -606,6 +672,13 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "purchase_vehicles", :force => true do |t|
+    t.integer  "purchase_id"
+    t.integer  "vehicle_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "purchases", :force => true do |t|
     t.integer  "dealer_id"
     t.integer  "purchase_type_id"
@@ -654,10 +727,9 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.integer  "customer_id"
     t.integer  "dealer_id"
     t.integer  "quote_type_id"
-    t.integer  "comment_originator_id"
     t.time     "time"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "referral_sale_users", :force => true do |t|
@@ -691,6 +763,20 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "reporting_categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "parent_reporting_category_id"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+  end
+
+  create_table "reporting_category_metrics", :force => true do |t|
+    t.integer  "reporting_category_id"
+    t.integer  "metric_id"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "role_users", :force => true do |t|
@@ -739,6 +825,25 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "seasonalities", :force => true do |t|
+    t.integer  "seasonality_type_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  create_table "seasonality_targets", :force => true do |t|
+    t.integer  "seasonality_id"
+    t.integer  "target_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "seasonality_types", :force => true do |t|
+    t.string   "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "states", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
@@ -751,6 +856,13 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "supplier_targets", :force => true do |t|
+    t.integer  "supplier_id"
+    t.integer  "target_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "supplier_users", :force => true do |t|
     t.integer  "user_id"
     t.integer  "supplier_id"
@@ -760,6 +872,24 @@ ActiveRecord::Schema.define(:version => 20120714113259) do
 
   create_table "suppliers", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "target_users", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "target_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "targets", :force => true do |t|
+    t.integer  "metric_id"
+    t.float    "value"
+    t.string   "name"
+    t.boolean  "goal_high"
+    t.time     "time_start"
+    t.time     "time_end"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
