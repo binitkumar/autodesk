@@ -5,6 +5,8 @@ class Purchase < ActiveRecord::Base
   belongs_to :purchase_type
   belongs_to :tax_rate
   
+  has_many :financial_transactions, :as => :financial_transaction_originator
+  
   has_many :product_purchases
   has_many :products, :through => :product:purchases
   

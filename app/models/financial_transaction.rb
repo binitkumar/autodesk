@@ -6,6 +6,8 @@ class FinancialTransaction < ActiveRecord::Base
   belongs_to :financial_transaction_method
   belongs_to :currency
   
+  belongs_to :financial_transaction_originator, :polymorphic => true
+  
   has_many :financial_transaction_sales
   has_many :sales, :through => :financial_transaction_sales
 

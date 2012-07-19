@@ -3,6 +3,8 @@ class Customer < ActiveRecord::Base
   
   belongs_to :customer_type
   
+  has_many :financial_transactions, :as => :financial_transaction_originator
+  
   has_many :quotes
   has_many :sales
   has_many :employments

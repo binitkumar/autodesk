@@ -3,6 +3,8 @@ class Supplier < ActiveRecord::Base
   
   has_many :funding_plans
   
+  has_many :financial_transactions, :as => :financial_transaction_originator
+  
   has_many :dealer_suppliers
   has_many :dealers, :through => :dealer_suppliers
   
