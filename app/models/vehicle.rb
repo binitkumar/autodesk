@@ -7,6 +7,8 @@ class Vehicle < ActiveRecord::Base
   
   has_many :mileage_readings
   
+  has_many :comments, :as => :comment_originator
+  
   has_many :registration_mark_vehicles
   has_many :registration_marks, :through => :registration_mark_vehicles
   

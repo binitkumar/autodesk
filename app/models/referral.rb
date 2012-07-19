@@ -3,6 +3,8 @@ class Referral < ActiveRecord::Base
   
   belongs_to :referral_type
   
+  has_many :comments, :as => :comment_originator
+  
   has_many :referral_sale_users
   has_many :sale_users, :through => :referral_sale_users
 end

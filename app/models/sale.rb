@@ -5,6 +5,8 @@ class Sale < ActiveRecord::Base
   belongs_to :customer
   belongs_to :sale_type
   
+  has_many :comments, :as => :comment_originator
+  
   has_many :product_sales
   has_many :products, :through => :product_sales
   

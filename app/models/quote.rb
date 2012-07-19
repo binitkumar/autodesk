@@ -5,6 +5,8 @@ class Quote < ActiveRecord::Base
   belongs_to :dealer
   belongs_to :quote_type
   
+  has_many :comments, :as => :comment_originator
+  
   has_many :quote_users
   has_many :users, :through => :quote_users
   

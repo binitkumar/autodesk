@@ -4,4 +4,6 @@ class Proposal < ActiveRecord::Base
   belongs_to :proposal_status
   belongs_to :funding_plan_quote
   
+  has_many :comments, :as => :comment_originator
+  
 end
