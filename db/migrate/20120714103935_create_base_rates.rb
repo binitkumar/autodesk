@@ -2,6 +2,7 @@ class CreateBaseRates < ActiveRecord::Migration
   def self.up
     create_table :base_rates do |t|
       t.integer :funding_plan_id
+      t.integer :base_rate_type_id
       t.float :value
       t.timestamps
     end

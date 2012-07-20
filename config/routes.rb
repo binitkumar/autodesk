@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :base_rate_types
+
   resources :operands
 
   resources :metric_operands

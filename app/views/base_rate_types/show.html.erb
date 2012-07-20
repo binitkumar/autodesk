@@ -1,0 +1,12 @@
+<% title "Base Rate Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @base_rate_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_base_rate_type_path(@base_rate_type) %> |
+  <%= link_to "Destroy", @base_rate_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", base_rate_types_path %>
+</p>

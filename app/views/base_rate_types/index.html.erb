@@ -1,0 +1,17 @@
+<% title "Base Rate Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for base_rate_type in @base_rate_types %>
+    <tr>
+      <td><%= base_rate_type.value %></td>
+      <td><%= link_to "Show", base_rate_type %></td>
+      <td><%= link_to "Edit", edit_base_rate_type_path(base_rate_type) %></td>
+      <td><%= link_to "Destroy", base_rate_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Base Rate Type", new_base_rate_type_path %></p>
