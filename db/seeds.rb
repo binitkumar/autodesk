@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+require 'ffaker'
+
 makes = Make.create([
   {value: 'BMW'}, 
   {value: 'Mercedes'},
@@ -35,3 +37,23 @@ trims = Trim.create([
   {model_id: '6', value: 'Match'},
   {model_id: '6', value: 'Club'}
 ])
+
+customer_types = CustomerType.create([
+  {value: 'Individual'},
+  {value: 'Partnership'},
+  {value: 'Limited Company'}
+])
+
+x = 1
+300.times do
+  # create the customer
+  customer = Customer.create(customer_type_id: '1')
+  
+  # create an address for the customer
+  address = Address.create(city: Faker::Address.city, country: 'UK')
+  address.postcodes.create(value: Faker::Address.uk_postcode)
+  address.name_numbers.create(value: Random.rand(495))
+  address.streets.create(value: Faker::Address.street_name + " " + Faker::Address.street_suffix)
+  address.states.create(value: Faker::Address.uk_county)
+  
+end
