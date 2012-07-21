@@ -1,0 +1,16 @@
+<%= form_for @appraisal do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :dealer_id %><br />
+    <%= f.number_field :dealer_id %>
+  </p>
+  <p>
+    <%= f.label :vehicle_id %><br />
+    <%= f.number_field :vehicle_id %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,16 @@
+<% title "Valuation" %>
+
+<p>
+  <strong>Appraisal:</strong>
+  <%= @valuation.appraisal_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%= @valuation.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_valuation_path(@valuation) %> |
+  <%= link_to "Destroy", @valuation, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", valuations_path %>
+</p>

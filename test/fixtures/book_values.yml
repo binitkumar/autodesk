@@ -1,0 +1,15 @@
+one:
+  trim_id: 1
+  supplier_id: 1
+  date: 2012-07-21
+  mileage: 1
+  registration_date_start: 2012-07-21
+  registration_date_end: 2012-07-21
+
+two:
+  trim_id: 1
+  supplier_id: 1
+  date: 2012-07-21
+  mileage: 1
+  registration_date_start: 2012-07-21
+  registration_date_end: 2012-07-21

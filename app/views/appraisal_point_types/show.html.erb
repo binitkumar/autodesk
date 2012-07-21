@@ -1,0 +1,12 @@
+<% title "Appraisal Point Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @appraisal_point_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_appraisal_point_type_path(@appraisal_point_type) %> |
+  <%= link_to "Destroy", @appraisal_point_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", appraisal_point_types_path %>
+</p>

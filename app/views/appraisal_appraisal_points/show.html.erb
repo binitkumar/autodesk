@@ -1,0 +1,16 @@
+<% title "Appraisal Appraisal Point" %>
+
+<p>
+  <strong>Appraisal:</strong>
+  <%= @appraisal_appraisal_point.appraisal_id %>
+</p>
+<p>
+  <strong>Appraisal Point:</strong>
+  <%= @appraisal_appraisal_point.appraisal_point_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_appraisal_appraisal_point_path(@appraisal_appraisal_point) %> |
+  <%= link_to "Destroy", @appraisal_appraisal_point, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", appraisal_appraisal_points_path %>
+</p>

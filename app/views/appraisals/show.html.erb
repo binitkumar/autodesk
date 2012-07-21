@@ -1,0 +1,20 @@
+<% title "Appraisal" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @appraisal.dealer_id %>
+</p>
+<p>
+  <strong>Vehicle:</strong>
+  <%= @appraisal.vehicle_id %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @appraisal.time %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_appraisal_path(@appraisal) %> |
+  <%= link_to "Destroy", @appraisal, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", appraisals_path %>
+</p>

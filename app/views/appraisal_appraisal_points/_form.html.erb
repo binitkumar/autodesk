@@ -1,0 +1,12 @@
+<%= form_for @appraisal_appraisal_point do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :appraisal_id %><br />
+    <%= f.number_field :appraisal_id %>
+  </p>
+  <p>
+    <%= f.label :appraisal_point_id %><br />
+    <%= f.number_field :appraisal_point_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,2 @@
+module AppraisalPointsHelper
+end

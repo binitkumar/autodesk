@@ -1,0 +1,2 @@
+module AppraisalPointTypeDealersHelper
+end

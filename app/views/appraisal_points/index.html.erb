@@ -1,0 +1,19 @@
+<% title "Appraisal Points" %>
+
+<table>
+  <tr>
+    <th>Appraisal Point Type</th>
+    <th>Value</th>
+  </tr>
+  <% for appraisal_point in @appraisal_points %>
+    <tr>
+      <td><%= appraisal_point.appraisal_point_type_id %></td>
+      <td><%= appraisal_point.value %></td>
+      <td><%= link_to "Show", appraisal_point %></td>
+      <td><%= link_to "Edit", edit_appraisal_point_path(appraisal_point) %></td>
+      <td><%= link_to "Destroy", appraisal_point, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Appraisal Point", new_appraisal_point_path %></p>

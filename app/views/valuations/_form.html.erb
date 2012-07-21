@@ -1,0 +1,12 @@
+<%= form_for @valuation do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :appraisal_id %><br />
+    <%= f.number_field :appraisal_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

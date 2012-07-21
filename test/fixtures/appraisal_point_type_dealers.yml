@@ -1,0 +1,9 @@
+one:
+  appraisal_point_type_id: 1
+  dealer_id: 1
+  required: false
+
+two:
+  appraisal_point_type_id: 1
+  dealer_id: 1
+  required: false

@@ -1,0 +1,21 @@
+<% title "Appraisal Point Type Dealers" %>
+
+<table>
+  <tr>
+    <th>Appraisal Point Type</th>
+    <th>Dealer</th>
+    <th>Required</th>
+  </tr>
+  <% for appraisal_point_type_dealer in @appraisal_point_type_dealers %>
+    <tr>
+      <td><%= appraisal_point_type_dealer.appraisal_point_type_id %></td>
+      <td><%= appraisal_point_type_dealer.dealer_id %></td>
+      <td><%= appraisal_point_type_dealer.required %></td>
+      <td><%= link_to "Show", appraisal_point_type_dealer %></td>
+      <td><%= link_to "Edit", edit_appraisal_point_type_dealer_path(appraisal_point_type_dealer) %></td>
+      <td><%= link_to "Destroy", appraisal_point_type_dealer, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Appraisal Point Type Dealer", new_appraisal_point_type_dealer_path %></p>

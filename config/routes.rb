@@ -1,5 +1,21 @@
 Autobase::Application.routes.draw do
   
+  resources :appraisal_point_type_dealers
+
+  resources :appraisal_appraisal_points
+
+  resources :appraisal_point_types
+
+  resources :appraisal_users
+
+  resources :book_values
+
+  resources :appraisal_points
+
+  resources :valuations
+
+  resources :appraisals
+
   resources :base_rate_types
 
   resources :operands

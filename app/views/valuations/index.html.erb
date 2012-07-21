@@ -1,0 +1,19 @@
+<% title "Valuations" %>
+
+<table>
+  <tr>
+    <th>Appraisal</th>
+    <th>Value</th>
+  </tr>
+  <% for valuation in @valuations %>
+    <tr>
+      <td><%= valuation.appraisal_id %></td>
+      <td><%= valuation.value %></td>
+      <td><%= link_to "Show", valuation %></td>
+      <td><%= link_to "Edit", edit_valuation_path(valuation) %></td>
+      <td><%= link_to "Destroy", valuation, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Valuation", new_valuation_path %></p>

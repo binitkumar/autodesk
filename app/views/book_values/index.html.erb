@@ -1,0 +1,27 @@
+<% title "Book Values" %>
+
+<table>
+  <tr>
+    <th>Trim</th>
+    <th>Supplier</th>
+    <th>Date</th>
+    <th>Mileage</th>
+    <th>Registration Date Start</th>
+    <th>Registration Date End</th>
+  </tr>
+  <% for book_value in @book_values %>
+    <tr>
+      <td><%= book_value.trim_id %></td>
+      <td><%= book_value.supplier_id %></td>
+      <td><%= book_value.date %></td>
+      <td><%= book_value.mileage %></td>
+      <td><%= book_value.registration_date_start %></td>
+      <td><%= book_value.registration_date_end %></td>
+      <td><%= link_to "Show", book_value %></td>
+      <td><%= link_to "Edit", edit_book_value_path(book_value) %></td>
+      <td><%= link_to "Destroy", book_value, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Book Value", new_book_value_path %></p>
