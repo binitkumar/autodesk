@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716155030) do
+ActiveRecord::Schema.define(:version => 20120721134239) do
 
   create_table "address_customers", :force => true do |t|
     t.integer  "address_id"
@@ -69,6 +69,50 @@ ActiveRecord::Schema.define(:version => 20120716155030) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "appraisal_appraisal_points", :force => true do |t|
+    t.integer  "appraisal_id"
+    t.integer  "appraisal_point_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "appraisal_point_type_dealers", :force => true do |t|
+    t.integer  "appraisal_point_type_id"
+    t.integer  "dealer_id"
+    t.boolean  "required"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  create_table "appraisal_point_types", :force => true do |t|
+    t.string   "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "appraisal_points", :force => true do |t|
+    t.integer  "appraisal_point_type_id"
+    t.string   "value"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  create_table "appraisal_users", :force => true do |t|
+    t.integer  "appraisal_id"
+    t.integer  "user_id"
+    t.integer  "role_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "appraisals", :force => true do |t|
+    t.integer  "dealer_id"
+    t.integer  "vehicle_id"
+    t.time     "time"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "base_rate_constraints", :force => true do |t|
     t.integer  "base_rate_id"
     t.integer  "constraint_id"
@@ -76,11 +120,29 @@ ActiveRecord::Schema.define(:version => 20120716155030) do
     t.datetime "updated_at",    :null => false
   end
 
+  create_table "base_rate_types", :force => true do |t|
+    t.string   "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "base_rates", :force => true do |t|
     t.integer  "funding_plan_id"
+    t.integer  "base_rate_type_id"
     t.float    "value"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "book_values", :force => true do |t|
+    t.integer  "trim_id"
+    t.integer  "supplier_id"
+    t.date     "date"
+    t.integer  "mileage"
+    t.date     "registration_date_start"
+    t.date     "registration_date_end"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "comments", :force => true do |t|
@@ -934,6 +996,13 @@ ActiveRecord::Schema.define(:version => 20120716155030) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "valuations", :force => true do |t|
+    t.integer  "appraisal_id"
+    t.float    "value"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "vehicles", :force => true do |t|
     t.integer  "make_id"
