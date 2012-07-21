@@ -15,7 +15,7 @@ class Address < ActiveRecord::Base
   has_many :address_name_numbers
   has_many :name_numbers, :through => :address_name_numbers
   
-  has_many :aaddress_streets
+  has_many :address_streets
   has_many :streets, :through => :address_streets
   
   has_many :address_states
