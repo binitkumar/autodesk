@@ -21,8 +21,8 @@ class Customer < ActiveRecord::Base
   has_many :customer_dealers
   has_many :dealers, :through => :customer_dealers
   
-  has_many :customer_addresses
-  has_many :addresses, :through => :customer_addresses
+  has_many :address_customers
+  has_many :addresses, :through => :address_customers
   
   has_many :customer_features
   has_many :features, :through => :customer_features
