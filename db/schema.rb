@@ -401,7 +401,6 @@ ActiveRecord::Schema.define(:version => 20120721134239) do
 
   create_table "employments", :force => true do |t|
     t.integer  "employment_type_id"
-    t.integer  "income_id"
     t.integer  "customer_id"
     t.boolean  "primary"
     t.datetime "created_at",         :null => false
@@ -557,6 +556,7 @@ ActiveRecord::Schema.define(:version => 20120721134239) do
     t.integer  "income_type_id"
     t.float    "value"
     t.integer  "currency_id"
+    t.integer  "employment_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
