@@ -4,6 +4,7 @@ class CreateIncomes < ActiveRecord::Migration
       t.integer :income_type_id
       t.float :value
       t.integer :currency_id
+      t.integer :employment_id
       t.timestamps
     end
   end
