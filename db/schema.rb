@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120721134239) do
+=======
+ActiveRecord::Schema.define(:version => 20120720141238) do
+>>>>>>> Rebuilt database
 
   create_table "address_customers", :force => true do |t|
     t.integer  "address_id"
@@ -132,6 +136,7 @@ ActiveRecord::Schema.define(:version => 20120721134239) do
     t.float    "value"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+<<<<<<< HEAD
   end
 
   create_table "book_values", :force => true do |t|
@@ -143,6 +148,8 @@ ActiveRecord::Schema.define(:version => 20120721134239) do
     t.date     "registration_date_end"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
+=======
+>>>>>>> Rebuilt database
   end
 
   create_table "comments", :force => true do |t|
