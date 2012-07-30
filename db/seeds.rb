@@ -22,6 +22,15 @@ def rand_in_range(from, to)
   rand * (to - from) + from
 end
 
+make1 = Make.create(value: 'Abarth')
+make1_model1 = make1.models.create(value: '500C (10 on)')
+make1_model1_trim1 = make1_model1.trims.create(value: '1.4 16v')
+make_1model1_trim1_model_years = make1_model1_trim1.model_years.create([
+  {value: '2010/10'},
+  {value: '2010/60'}
+  ])
+
+
 makes = Make.create([
   {value: 'Abarth'},
   {value: 'Aixam'},
