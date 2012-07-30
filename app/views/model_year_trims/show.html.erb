@@ -1,0 +1,16 @@
+<% title "Model Year Trim" %>
+
+<p>
+  <strong>Model Year:</strong>
+  <%= @model_year_trim.model_year_id %>
+</p>
+<p>
+  <strong>Trim:</strong>
+  <%= @model_year_trim.trim_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_model_year_trim_path(@model_year_trim) %> |
+  <%= link_to "Destroy", @model_year_trim, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", model_year_trims_path %>
+</p>

@@ -1,0 +1,12 @@
+<% title "Model Year" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @model_year.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_model_year_path(@model_year) %> |
+  <%= link_to "Destroy", @model_year, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", model_years_path %>
+</p>

@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :model_year_trims
+
+  resources :model_years
+
   resources :appraisal_point_type_dealers
 
   resources :appraisal_appraisal_points

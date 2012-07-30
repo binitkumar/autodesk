@@ -1,0 +1,17 @@
+<% title "Model Years" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for model_year in @model_years %>
+    <tr>
+      <td><%= model_year.value %></td>
+      <td><%= link_to "Show", model_year %></td>
+      <td><%= link_to "Edit", edit_model_year_path(model_year) %></td>
+      <td><%= link_to "Destroy", model_year, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Model Year", new_model_year_path %></p>

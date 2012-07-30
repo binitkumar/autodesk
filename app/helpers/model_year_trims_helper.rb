@@ -1,0 +1,2 @@
+module ModelYearTrimsHelper
+end
