@@ -1,0 +1,16 @@
+<% title "Address Supplier" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_supplier.address_id %>
+</p>
+<p>
+  <strong>Supplier:</strong>
+  <%= @address_supplier.supplier_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_address_supplier_path(@address_supplier) %> |
+  <%= link_to "Destroy", @address_supplier, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", address_suppliers_path %>
+</p>

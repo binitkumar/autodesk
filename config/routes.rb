@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :address_suppliers
+
   resources :model_year_trims
 
   resources :model_years

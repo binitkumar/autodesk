@@ -21,4 +21,7 @@ class Address < ActiveRecord::Base
   has_many :address_states
   has_many :states, :through => :address_states
   
+  has_many :address_suppliers
+  has_many :suppliers, :through => :address_suppliers
+  
 end
