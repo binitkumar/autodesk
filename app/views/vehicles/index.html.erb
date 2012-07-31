@@ -11,10 +11,10 @@
       <table class="table">
         <tr>
           <th class="first">ID</th>
-                    <th>
+          <th>
             <%= t("activerecord.attributes.vehicle.make_id", :default => t("activerecord.labels.make_id", :default => "Make_id")) %>
           </th>
-                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th><%= t("activerecord.attributes.vehicle.model_year_id", :default => t("activerecord.labels.model_year_id", :default => "Model_year_id")) %></th>
           <th class="last">&nbsp;</th>
         </tr>
         <% @vehicles.each do |vehicle| -%>
@@ -23,10 +23,10 @@
             <%= vehicle.id %>
           </td>
                     <td>
-            <%= link_to vehicle.make_id, vehicle_path(vehicle) %>
+            <%= vehicle.trim.value %>
           </td>
                     <td>
-            <%= vehicle.created_at %>
+            <%= vehicle.model_year.value %>
           </td>
           <td class="last">
             <%= link_to "#{t("web-app-theme.show", :default => "Show")}", vehicle_path(vehicle) %> |
