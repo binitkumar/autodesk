@@ -4,6 +4,7 @@ class CreateVehicles < ActiveRecord::Migration
       t.integer :make_id
       t.integer :model_id
       t.integer :trim_id
+      t.integer :model_year_id
       t.timestamps
     end
   end

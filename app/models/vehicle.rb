@@ -1,7 +1,8 @@
 class Vehicle < ActiveRecord::Base
-  attr_accessible :make_id, :model_id, :trim_id
+  attr_accessible :make_id, :model_id, :trim_id, :model_year_id
   
   belongs_to :trim
+  belongs_to :model_year
   
   has_many :mileage_readings
   
