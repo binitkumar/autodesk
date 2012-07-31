@@ -1,5 +1,18 @@
-<% title "New Model Year" %>
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", model_years_path  %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_model_year_path %></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 class="title"><%= t("web-app-theme.new", :default => "New")%>  ModelYear</h2>
+    <div class="inner">
+      <%= form_for :model_year, :url => model_years_path, :html => { :class => :form } do |f| -%>
+        <%= render :partial => "form", :locals => {:f => f} %>
+      <% end -%>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<p><%= link_to "Back to List", model_years_path %></p>
+<% content_for :sidebar, render(:partial => 'sidebar') -%>
