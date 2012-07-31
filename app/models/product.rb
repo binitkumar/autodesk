@@ -9,6 +9,6 @@ class Product < ActiveRecord::Base
   has_many :product_quotes
   has_many :quotes, :through => :product_quotes
   
-  has_many :product_purchases
-  has_many :purchases, :through => :product_purchases
+  has_many :purchases, :as => :purchase_item_type
+  
 end

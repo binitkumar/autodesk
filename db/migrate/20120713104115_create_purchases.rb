@@ -4,6 +4,8 @@ class CreatePurchases < ActiveRecord::Migration
       t.integer :dealer_id
       t.integer :purchase_type_id
       t.integer :tax_rate_id
+      t.integer :supplier_id
+      t.float :value
       t.timestamps
     end
   end
