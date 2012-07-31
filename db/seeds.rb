@@ -217,7 +217,7 @@ end
 puts 'customer creation done'
 
 # create some vehicles and purchases
-500.times do
+100.times do
   
   # select a random dealer
   dealer = Dealer.where(:id => 1 + Random.rand(9)).first
@@ -229,7 +229,7 @@ puts 'customer creation done'
   vehicle = Vehicle.create(trim_id: trim.id, model_year_id: model_year_array[Random.rand(model_year_array.length - 1)])
   
   # create a purchase for the vehicle
-  dealer.suppliers.all(:select => "suppliers.id").collect(&:id)
+  dealer_suppliers_array = dealer.suppliers.all(:select => "suppliers.id").collect(&:id)
   purchase = dealer.purchases.create(purchase_type_id: 1 + Random.rand(3), supplier_id: dealer_suppliers_array[Random.rand(dealer_suppliers_array.length - 1)], tax_rate_id: '1', value: rand_price(10000,85000))
 
 end
