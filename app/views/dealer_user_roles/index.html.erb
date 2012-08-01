@@ -1,0 +1,19 @@
+<% title "Dealer User Roles" %>
+
+<table>
+  <tr>
+    <th>Dealer User</th>
+    <th>Role</th>
+  </tr>
+  <% for dealer_user_role in @dealer_user_roles %>
+    <tr>
+      <td><%= dealer_user_role.dealer_user_id %></td>
+      <td><%= dealer_user_role.role_id %></td>
+      <td><%= link_to "Show", dealer_user_role %></td>
+      <td><%= link_to "Edit", edit_dealer_user_role_path(dealer_user_role) %></td>
+      <td><%= link_to "Destroy", dealer_user_role, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Dealer User Role", new_dealer_user_role_path %></p>

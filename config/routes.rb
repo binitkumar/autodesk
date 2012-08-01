@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :dealer_user_roles
+
   resources :address_suppliers
 
   resources :model_year_trims
