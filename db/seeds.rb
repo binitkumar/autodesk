@@ -135,21 +135,21 @@ puts "vehicles seeded!"
 # create some dealers
 10.times do
   # create the dealer
-  dealer = Dealer.find_or_create_by_name(name: Faker::Company.name)
+  dealer = Dealer.where(name: Faker::Company.name).first_or_create
   
   # create an address for the dealer
   dealer_address = dealer.build_address(city: Faker::Address.city, country: 'UK')
-  dealer_address.postcodes.find_or_create_by_value(value: Faker::Address.uk_postcode)
-  dealer_address.name_numbers.find_or_create_by_value(value: 1 + Random.rand(495))
-  dealer_address.streets.find_or_create_by_value(value: Faker::Address.street_name + " " + Faker::Address.street_suffix)
-  dealer_address.states.find_or_create_by_value(value: Faker::Address.uk_county)
+  dealer_address.postcodes << Postcode.where(value: Faker::Address.uk_postcode).first_or_create
+  dealer_address.name_numbers << NameNumber.where(value: 1 + Random.rand(495)).first_or_create
+  dealer_address.streets << Street.where(value: Faker::Address.street_name + " " + Faker::Address.street_suffix).first_or_create
+  dealer_address.states << State.where(value: Faker::Address.uk_county).first_or_create
   
   # create some users
   10.times do
-    user = dealer.users.create(first_name: Faker::Name.first_name, last_name: Faker::Name.first_name, email: Faker::Internet.email, password: 'password')
+    user = dealer.users << User.where(first_name: Faker::Name.first_name, last_name: Faker::Name.first_name, email: Faker::Internet.email, password: 'password').first_or_create
+    
     # add a random role to the user
-    role = Role.where(:id => 1 + Random.rand(4))
-    user.roles << role
+    user.roles << Role.where(:id => 1 + Random.rand(4))
   end
 end
 puts 'create dealers done'
@@ -157,14 +157,14 @@ puts 'create dealers done'
 # create some suppliers
 15.times do
   # create the supplier
-  supplier = Supplier.find_or_create_by_name(name: Faker::Company.name)
+  supplier = Supplier.where(name: Faker::Company.name).first_or_create
   
   # create an address for the supplier
   supplier_address = supplier.addresses.create(city: Faker::Address.city, country: 'UK')
-  supplier_address.postcodes.find_or_create_by_value(value: Faker::Address.uk_postcode)
-  supplier_address.name_numbers.find_or_create_by_value(value: 1 + Random.rand(495))
-  supplier_address.streets.find_or_create_by_value(value: Faker::Address.street_name + " " + Faker::Address.street_suffix)
-  supplier_address.states.find_or_create_by_value(value: Faker::Address.uk_county)
+  supplier_address.postcodes << Postcode.where(value: Faker::Address.uk_postcode).first_or_create
+  supplier_address.name_numbers << NameNumber.where(value: 1 + Random.rand(495)).first_or_create
+  supplier_address.streets << Street.where(value: Faker::Address.street_name + " " + Faker::Address.street_suffix).first_or_create
+  supplier_address.states << State.where(value: Faker::Address.uk_county).first_or_create
 end
 puts 'create suppliers done'
 
@@ -173,9 +173,10 @@ puts 'create suppliers done'
   # select a random dealer
   dealer = Dealer.where(:id => 1 + Random.rand(9)).first
   
-  supplier_id = 1 + Random.rand(14)
-  if dealer.suppliers.where(:id => supplier_id) == false
-    dealer.suppliers.find_or_create_by_name(name: Supplier.where(:id => supplier_id).first.name)
+  # associate the suppliers
+  supplier = Supplier.where(:id => 1 + Random.rand(14)).first
+  if dealer.suppliers.where(:id => supplier.id) == false
+    dealer.suppliers << supplier
   end
 end
 puts 'associate suppliers with dealers done'
@@ -189,30 +190,30 @@ puts 'associate suppliers with dealers done'
   customer = dealer.customers.create(customer_type_id: '1')
   
   # create an address for the customer
-  address = customer.addresses.create(city: Faker::Address.city, country: 'UK')
-  address.postcodes.find_or_create_by_value(value: Faker::Address.uk_postcode)
-  address.name_numbers.find_or_create_by_value(value: Random.rand(495))
-  address.streets.find_or_create_by_value(value: Faker::Address.street_name + " " + Faker::Address.street_suffix)
-  address.states.find_or_create_by_value(value: Faker::Address.uk_county)
+  customer_address = customer.addresses.create(city: Faker::Address.city, country: 'UK')
+  customer_address.postcodes << Postcode.where(value: Faker::Address.uk_postcode).first_or_create
+  customer_address.name_numbers << NameNumber.where(value: 1 + Random.rand(495)).first_or_create
+  customer_address.streets << Street.where(value: Faker::Address.street_name + " " + Faker::Address.street_suffix).first_or_create
+  customer_address.states << State.where(value: Faker::Address.uk_county).first_or_create
   
   # create some contact details for the customer
-  customer.emails.find_or_create_by_value(value: Faker::Internet.email)
-  customer.contact_numbers.find_or_create_by_value(value: Faker::PhoneNumber.phone_number)
+  customer.emails << Email.where(value: Faker::Internet.email).first_or_create
+  customer.contact_numbers << ContactNumber.where(value: Faker::PhoneNumber.phone_number).first_or_create
   
   # create an employment for the customer
   employment = customer.employments.create(employment_type_id: '1', primary: 'true')
   employment.build_income(value: rand_price(10000,85000), currency_id: '1', income_type_id: '1')
-  employer = employment.employers.find_or_create_by_name(name: Faker::Company.name)
-  employer_address = employer.addresses.find_or_create_by_city_and_country(city: Faker::Address.city, country: 'UK')
-  employer_address.postcodes.find_or_create_by_value(value: Faker::Address.uk_postcode)
-  employer_address.name_numbers.find_or_create_by_value(value: 1 + Random.rand(495))
-  employer_address.streets.find_or_create_by_value(value: Faker::Address.street_name + " " + Faker::Address.street_suffix)
-  employer_address.states.find_or_create_by_value(value: Faker::Address.uk_county)
+  employer = employment.employers << Employer.where(name: Faker::Company.name).first_or_create
+  employer_address = customer.addresses.create(city: Faker::Address.city, country: 'UK')
+  employer_address.postcodes << Postcode.where(value: Faker::Address.uk_postcode).first_or_create
+  employer_address.name_numbers << NameNumber.where(value: 1 + Random.rand(495)).first_or_create
+  employer_address.streets << Street.where(value: Faker::Address.street_name + " " + Faker::Address.street_suffix).first_or_create
+  employer_address.states << State.where(value: Faker::Address.uk_county).first_or_create
   
   # add customer's name and dob
-  customer.features.create(feature_type_id: '1', value: Faker::Name.first_name)
-  customer.features.create(feature_type_id: '2', value: Faker::Name.last_name)
-  customer.features.create(feature_type_id: '3', value: rand_time(60.years.ago, 20.years.ago))
+  customer.features << Feature.where(feature_type_id: '1', value: Faker::Name.first_name).first_or_create
+  customer.features << Feature.where(feature_type_id: '2', value: Faker::Name.last_name).first_or_create
+  customer.features << Feature.where(feature_type_id: '3', value: rand_time(60.years.ago, 20.years.ago)).first_or_create
 end
 puts 'customer creation done'
 
@@ -225,7 +226,6 @@ puts 'customer creation done'
   # add vehicle
   trim = Trim.where(:id => 1 + Random.rand(1150)).first
   model_year_array = trim.model_years.all(:select => "model_years.id").collect(&:id)
-  puts model_year_array.to_s
   vehicle = Vehicle.create(trim_id: trim.id, model_year_id: model_year_array[Random.rand(model_year_array.length - 1)])
   
   # create a purchase for the vehicle
