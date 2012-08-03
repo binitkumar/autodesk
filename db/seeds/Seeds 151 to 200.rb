@@ -2273,7 +2273,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Saloon (96-03)').first_or_create
 trim = model.trims.where(value: '520i 4d (96)').first_or_create
@@ -3773,7 +3778,12 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Saloon (88-96)').first_or_create
 trim = model.trims.where(value: '518i 4d').first_or_create
@@ -4388,7 +4398,12 @@ values = [
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Touring (10 on)').first_or_create
 trim = model.trims.where(value: '535i SE 5d').first_or_create
@@ -6694,7 +6709,12 @@ model = make.models.where(value: '5-Series Touring (10 on)').first_or_create
 trim = model.trims.where(value: '530d (258bhp) BluePerform M Sport (Prof Media) 5d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Touring (03-10)').first_or_create
 trim = model.trims.where(value: '520i ES 5d').first_or_create
@@ -8832,7 +8852,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Touring (97-04)').first_or_create
 trim = model.trims.where(value: '520i 5d (97)').first_or_create
@@ -9856,7 +9881,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '5-Series Touring (92-97)').first_or_create
 trim = model.trims.where(value: '520i 5d').first_or_create
@@ -10276,7 +10306,12 @@ values = [
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '6-Series Convertible (11 on)').first_or_create
 trim = model.trims.where(value: '640i SE 2d Auto').first_or_create
@@ -10342,7 +10377,12 @@ trim = model.trims.where(value: '640d M Sport 2d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '6-Series Convertible (04-10)').first_or_create
 trim = model.trims.where(value: '630i 2d').first_or_create
@@ -10958,7 +10998,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '6-Series Coupe (11 on)').first_or_create
 trim = model.trims.where(value: '640i SE 2d Auto').first_or_create
@@ -11020,7 +11065,12 @@ trim = model.trims.where(value: '640d M Sport 2d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '6-Series Coupé (04-10)').first_or_create
 trim = model.trims.where(value: '630i 2d').first_or_create
@@ -11636,7 +11686,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '6-Series M6 (05-10)').first_or_create
 trim = model.trims.where(value: '5.0 V10 2d SMG').first_or_create
@@ -11707,7 +11762,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '7-Series (08 on)').first_or_create
 trim = model.trims.where(value: '740i 4d Auto').first_or_create
@@ -12053,7 +12113,12 @@ trim = model.trims.where(value: '740d Luxury Edition 4d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '7-Series (02-08)').first_or_create
 trim = model.trims.where(value: '735i 4d Auto').first_or_create
@@ -12839,7 +12904,12 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '7-Series (94-02)').first_or_create
 trim = model.trims.where(value: '730i V8 4d Auto').first_or_create
@@ -13106,7 +13176,12 @@ values = [
  {value: '2001 (51)'},
  {value: '2002 (51)'},
  {value: '2002 (02)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: '8-Series (90-00)').first_or_create
 trim = model.trims.where(value: '850i 2d').first_or_create
@@ -13248,7 +13323,12 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Alpina Convertible (00 on)').first_or_create
 trim = model.trims.where(value: 'B3 3.3 2d Switch-tronic').first_or_create
@@ -13341,7 +13421,12 @@ trim = model.trims.where(value: 'B6 V8 Bi Turbo 2d Switch-Tronic').first_or_crea
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Alpina Coupé (00 on)').first_or_create
 trim = model.trims.where(value: 'B6 V8 2d Switch-tronic').first_or_create
@@ -13492,7 +13577,12 @@ trim = model.trims.where(value: 'B3 GT3 3.0 Bi Turbo 2d Switch-Tronic').first_or
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Alpina Saloon (00 on)').first_or_create
 trim = model.trims.where(value: 'B10 3.3 4d').first_or_create
@@ -13664,7 +13754,12 @@ trim = model.trims.where(value: 'D5 3.0 Bi Turbo 4d Switch-Tronic').first_or_cre
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Alpina Touring (00 on)').first_or_create
 trim = model.trims.where(value: 'B5 V8 5d Switch-tronic').first_or_create
@@ -13834,7 +13929,12 @@ trim = model.trims.where(value: 'D5 3.0 Bi Turbo 5d Switch-Tronic').first_or_cre
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X1 (09 on)').first_or_create
 trim = model.trims.where(value: 'sDrive 18d SE 5d').first_or_create
@@ -14072,7 +14172,12 @@ trim = model.trims.where(value: 'sDrive 20d Efficient Dynamics 5d').first_or_cre
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X3 (11 on)').first_or_create
 trim = model.trims.where(value: 'xDrive20d M Sport 4d').first_or_create
@@ -14290,7 +14395,12 @@ trim = model.trims.where(value: 'xDrive35d SE (Professional Media) 5d Step Auto'
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X3 (04 on)').first_or_create
 trim = model.trims.where(value: '2.5i SE 5d').first_or_create
@@ -15646,7 +15756,12 @@ values = [
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X5 (07 on)').first_or_create
 trim = model.trims.where(value: '3.0si SE (7 Seat) 5d Auto').first_or_create
@@ -16713,7 +16828,12 @@ model = make.models.where(value: 'X5 (07 on)').first_or_create
 trim = model.trims.where(value: 'xDrive M50d M Performance (7 Seat) 5d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X5 (00-06)').first_or_create
 trim = model.trims.where(value: '3.0i 5d (01)').first_or_create
@@ -17439,7 +17559,12 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'X6 (08 on)').first_or_create
 trim = model.trims.where(value: '3.5i xDrive 5d Step Auto').first_or_create
@@ -17746,7 +17871,12 @@ model = make.models.where(value: 'X6 (08 on)').first_or_create
 trim = model.trims.where(value: 'xDrive M50d M Performance 5d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z3 M Coupé (98-02)').first_or_create
 trim = model.trims.where(value: '3.2 2d (98)').first_or_create
@@ -17777,7 +17907,12 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z3 Roadster (96-02)').first_or_create
 trim = model.trims.where(value: '1.9 2d').first_or_create
@@ -18268,7 +18403,12 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z4 Coupé (06-08)').first_or_create
 trim = model.trims.where(value: '3.0si SE 2d').first_or_create
@@ -18336,7 +18476,12 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z4 M (06-08)').first_or_create
 trim = model.trims.where(value: '3.2 Coupé 2d').first_or_create
@@ -18362,7 +18507,12 @@ values = [
  {value: '2007 (07)'},
  {value: '2007 (57)'},
  {value: '2008 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z4 Roadster (09 on)').first_or_create
 trim = model.trims.where(value: '23i sDrive 2d').first_or_create
@@ -18738,7 +18888,12 @@ trim = model.trims.where(value: '28i sDrive M Sport 2d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z4 Roadster (03-08)').first_or_create
 trim = model.trims.where(value: '2.2i SE 2d').first_or_create
@@ -19301,7 +19456,12 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'BMW').first_or_create
 model = make.models.where(value: 'Z8 (00-02)').first_or_create
 trim = model.trims.where(value: '5.0 V8 2d (LHD)').first_or_create
@@ -19314,7 +19474,12 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'BLS Saloon (06 on)').first_or_create
 trim = model.trims.where(value: '2.0T SE 4d').first_or_create
@@ -19800,7 +19965,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'BLS Wagon (08 on)').first_or_create
 trim = model.trims.where(value: '2.0T Elegance 5d').first_or_create
@@ -19994,7 +20164,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'CTS (08 on)').first_or_create
 trim = model.trims.where(value: '2.8 V6 Sport Luxury 4d Auto').first_or_create
@@ -20024,7 +20199,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'CTS (05-07)').first_or_create
 trim = model.trims.where(value: '2.8 V6 Elegance 4d Auto').first_or_create
@@ -20071,7 +20251,12 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'Escalade Station Wagon (05 on)').first_or_create
 trim = model.trims.where(value: '6.0 V8 Vortec 6000 5d Auto').first_or_create
@@ -20126,7 +20311,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'Seville (98-04)').first_or_create
 trim = model.trims.where(value: '4.6 V8 STS 4d Auto').first_or_create
@@ -20149,7 +20339,12 @@ values = [
  {value: '2003 (03)'},
  {value: '2003 (53)'},
  {value: '2004 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'SRX (07-08)').first_or_create
 trim = model.trims.where(value: '3.6 V6 VVT Elegance 5d Auto').first_or_create
@@ -20208,7 +20403,12 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'STS (08 on)').first_or_create
 trim = model.trims.where(value: '3.6 V6 Sport Luxury 4d Auto').first_or_create
@@ -20242,7 +20442,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Cadillac').first_or_create
 model = make.models.where(value: 'XLR (05-06)').first_or_create
 trim = model.trims.where(value: '4.6 V8 2d Auto').first_or_create
@@ -20251,7 +20456,12 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Aveo (11 on)').first_or_create
 trim = model.trims.where(value: '1.2 LS 5d').first_or_create
@@ -20335,7 +20545,12 @@ trim = model.trims.where(value: '1.3 (95bhp) LTZ 5d').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Aveo (08-11)').first_or_create
 trim = model.trims.where(value: '1.2 S 3d').first_or_create
@@ -20466,7 +20681,12 @@ values = [
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Blazer Station Wagon (98-04)').first_or_create
 trim = model.trims.where(value: '4.3 V6 4WD 5d').first_or_create
@@ -20551,7 +20771,12 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Captiva (07 on)').first_or_create
 trim = model.trims.where(value: '2.4i LS 5d').first_or_create
@@ -20875,7 +21100,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Cruze (11 on)').first_or_create
 trim = model.trims.where(value: '1.6 LS 5d').first_or_create
@@ -20991,7 +21221,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Cruze (09-11)').first_or_create
 trim = model.trims.where(value: '1.6 S A/C 4d').first_or_create
@@ -21188,7 +21423,12 @@ trim = model.trims.where(value: '2.0 VCDi (163bhp) LT 4d Auto').first_or_create
 values = [
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Epica Saloon (08-09)').first_or_create
 trim = model.trims.where(value: '2.0 LS 4d').first_or_create
@@ -21240,7 +21480,12 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Chevrolet').first_or_create
 model = make.models.where(value: 'Kalos (05-08)').first_or_create
 trim = model.trims.where(value: '1.2 S 3d').first_or_create
@@ -21435,4 +21680,8 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+

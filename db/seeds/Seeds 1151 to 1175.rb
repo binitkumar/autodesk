@@ -178,7 +178,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (87-93)').first_or_create
 trim = model.trims.where(value: '1.6 2d').first_or_create
@@ -220,7 +224,11 @@ model = make.models.where(value: 'Astra Convertible (87-93)').first_or_create
 trim = model.trims.where(value: '2.0i GTE 2d').first_or_create
 values = [
  {value: '1992 (J)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Coupé (00-04)').first_or_create
 trim = model.trims.where(value: '1.8i 16v 2d').first_or_create
@@ -567,7 +575,11 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Estate (04-10)').first_or_create
 trim = model.trims.where(value: '1.4i 16V Life 5d').first_or_create
@@ -2562,7 +2574,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Estate (98-04)').first_or_create
 trim = model.trims.where(value: '1.4i 16V LS 5d').first_or_create
@@ -3975,7 +3991,11 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Estate (91-98)').first_or_create
 trim = model.trims.where(value: '1.4 Merit (60ps) 5d').first_or_create
@@ -4814,7 +4834,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra GTC Coupe (11 on)').first_or_create
 trim = model.trims.where(value: '1.4T 16V Sport 3d').first_or_create
@@ -4986,7 +5010,11 @@ trim = model.trims.where(value: '2.0 CDTi 16V SRi 3d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Hatchback (09 on)').first_or_create
 trim = model.trims.where(value: '1.4T 16V Exclusiv (140bhp) 5d').first_or_create
@@ -6295,7 +6323,11 @@ trim = model.trims.where(value: '1.7 CDTi 16V ecoFLEX Tech Line (130bhp) (99g/Km
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Hatchback (04-10)').first_or_create
 trim = model.trims.where(value: '1.4 Expression 5d').first_or_create
@@ -9040,7 +9072,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Hatchback (98-05)').first_or_create
 trim = model.trims.where(value: '1.4i 16V Envoy 5d').first_or_create
@@ -11999,7 +12035,11 @@ values = [
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Hatchback (91-98)').first_or_create
 trim = model.trims.where(value: '1.4i Expression (60ps) 3d').first_or_create
@@ -13841,7 +13881,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Saloon (98-04)').first_or_create
 trim = model.trims.where(value: '1.6i LS 4d').first_or_create
@@ -14481,7 +14525,11 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Saloon (92-98)').first_or_create
 trim = model.trims.where(value: '1.4 Merit (60ps) 4d').first_or_create
@@ -15071,7 +15119,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Sport Hatch (05-10)').first_or_create
 trim = model.trims.where(value: '1.4i 16V SXi 3d').first_or_create
@@ -16573,7 +16625,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Sports Tourer (10 on)').first_or_create
 trim = model.trims.where(value: '1.7 CDTi 16V ecoFLEX Exclusiv (125bhp) 5d').first_or_create
@@ -17219,7 +17275,11 @@ model = make.models.where(value: 'Astra Sports Tourer (10 on)').first_or_create
 trim = model.trims.where(value: '1.7 CDTi 16V ecoFLEX ES (130bhp) (Start/Stop) 5d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra TwinTop (06-10)').first_or_create
 trim = model.trims.where(value: '1.6 16V 2d').first_or_create
@@ -17786,7 +17846,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra VXR (05-10)').first_or_create
 trim = model.trims.where(value: '2.0T 16V VXR 3d').first_or_create
@@ -17808,7 +17872,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Calibra (90-98)').first_or_create
 trim = model.trims.where(value: '2.0i 3d').first_or_create
@@ -18393,7 +18461,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Carlton Saloon (86-94)').first_or_create
 trim = model.trims.where(value: 'Lotus 3.6 Twin Turbo 4d').first_or_create
@@ -18403,7 +18475,11 @@ values = [
  {value: '1993 (K)'},
  {value: '1993 (L)'},
  {value: '1994 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Cavalier Hatchback (88-95)').first_or_create
 trim = model.trims.where(value: '1.4 Concept 5d').first_or_create
@@ -19429,7 +19505,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Cavalier Saloon (88-95)').first_or_create
 trim = model.trims.where(value: '1.4 4d').first_or_create
@@ -20511,7 +20591,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Combo Tour (07 on)').first_or_create
 trim = model.trims.where(value: '1.4i 1700 5d').first_or_create
@@ -20576,7 +20660,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Corsa Cabriolet (98-99)').first_or_create
 trim = model.trims.where(value: '1.4i 2d').first_or_create
@@ -20600,7 +20688,11 @@ values = [
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Corsa Hatchback (06 on)').first_or_create
 trim = model.trims.where(value: '1.0i 12V Expression 3d').first_or_create
@@ -24946,7 +25038,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 
 make = Make.where(value: 'Vauxhall').first_or_create
@@ -26974,4 +27070,7 @@ trim = model.trims.where(value: '1.3 CDTi ecoFLEX Active (AC) 5d').first_or_crea
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

@@ -1387,7 +1387,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Espace (97-03)').first_or_create
 trim = model.trims.where(value: '2.0 RT 5d Auto (5 Seat)').first_or_create
@@ -1843,7 +1847,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Espace (91-97)').first_or_create
 trim = model.trims.where(value: '2.1 Turbo D RN 5d').first_or_create
@@ -2020,7 +2028,11 @@ values = [
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Grand Espace (03-12)').first_or_create
 trim = model.trims.where(value: '2.0T Expression 5d').first_or_create
@@ -3276,7 +3288,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Grand Espace (98-03)').first_or_create
 trim = model.trims.where(value: '2.2 RT-X dT 5d').first_or_create
@@ -3518,7 +3534,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Grand Modus (08-12)').first_or_create
 trim = model.trims.where(value: '1.2 Expression 5d').first_or_create
@@ -3819,7 +3839,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Grand Scenic (09 on)').first_or_create
 trim = model.trims.where(value: '1.4 16v TCE Expression 5d').first_or_create
@@ -4890,7 +4914,11 @@ model = make.models.where(value: 'Grand Scenic (09 on)').first_or_create
 trim = model.trims.where(value: '1.2 TCE Dynamique TomTom (Luxe pack) 5d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Grand Scenic (04-09)').first_or_create
 trim = model.trims.where(value: '1.6 VVT Authenthique 5d').first_or_create
@@ -7095,7 +7123,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'GTA & A610 (86-96)').first_or_create
 trim = model.trims.where(value: 'V6 Turbo 2+2 2d').first_or_create
@@ -7132,7 +7164,11 @@ values = [
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Kangoo (09-12)').first_or_create
 trim = model.trims.where(value: '1.6 8V Extreme 5d').first_or_create
@@ -7468,7 +7504,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Kangoo (99-08)').first_or_create
 trim = model.trims.where(value: '1.4 RN 5d').first_or_create
@@ -8046,7 +8086,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Koleos (08-10)').first_or_create
 trim = model.trims.where(value: '2.0 dCi Dynamique 2WD 5d').first_or_create
@@ -8169,7 +8213,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Coupé (08-12)').first_or_create
 trim = model.trims.where(value: '2.0T 3d').first_or_create
@@ -8387,7 +8435,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Estate (95-01)').first_or_create
 trim = model.trims.where(value: '1.8 RN 5d').first_or_create
@@ -9706,7 +9758,11 @@ values = [
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Hatchback (07-12)').first_or_create
 trim = model.trims.where(value: '2.0 16V Expression 5d').first_or_create
@@ -10818,7 +10874,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Hatchback (01-07)').first_or_create
 trim = model.trims.where(value: '1.6 16V Authentique 5d').first_or_create
@@ -13068,7 +13128,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Hatchback (94-01)').first_or_create
 trim = model.trims.where(value: '1.8 RN 5d').first_or_create
@@ -14334,7 +14398,11 @@ values = [
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Sport Tourer (08-12)').first_or_create
 trim = model.trims.where(value: '2.0 16V Expression 5d').first_or_create
@@ -15446,7 +15514,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Laguna Sport Tourer (01-07)').first_or_create
 trim = model.trims.where(value: '1.8 16V Dynamique 5d').first_or_create
@@ -17450,7 +17522,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Cabriolet (06-09)').first_or_create
 trim = model.trims.where(value: '1.6 VVT Extreme 2d').first_or_create
@@ -18070,7 +18146,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Cabriolet (03-05)').first_or_create
 trim = model.trims.where(value: '1.6 VVT Extreme 2d').first_or_create
@@ -18479,7 +18559,11 @@ trim = model.trims.where(value: '1.9 dCi Monaco (130bhp) 2d').first_or_create
 values = [
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Cabriolet (97-03)').first_or_create
 trim = model.trims.where(value: '1.6e 2d').first_or_create
@@ -18967,7 +19051,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Coupe (09 on)').first_or_create
 trim = model.trims.where(value: '1.6 16V (110bhp) Expression 3d').first_or_create
@@ -19815,7 +19903,11 @@ model = make.models.where(value: 'Megane Coupe (09 on)').first_or_create
 trim = model.trims.where(value: '1.5 dCi (110bhp) Expression+ 3d EDC').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Coupé (96-03)').first_or_create
 trim = model.trims.where(value: '1.6e 2d').first_or_create
@@ -20661,7 +20753,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Coupe Cabriolet (10 on)').first_or_create
 trim = model.trims.where(value: '1.4 16V TCE Dynamique TomTom 2d').first_or_create
@@ -20833,7 +20929,11 @@ model = make.models.where(value: 'Megane Coupe Cabriolet (10 on)').first_or_crea
 trim = model.trims.where(value: '1.4 16V TCE Floride 2d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Hatchback (08 on)').first_or_create
 trim = model.trims.where(value: '1.6 16V Extreme 5d').first_or_create
@@ -21758,7 +21858,11 @@ model = make.models.where(value: 'Megane Hatchback (08 on)').first_or_create
 trim = model.trims.where(value: '1.6 dCi (130bhp) Dynamique TomTom 5d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Hatchback (06-09)').first_or_create
 trim = model.trims.where(value: '1.4 Authentique 5d').first_or_create
@@ -23390,7 +23494,11 @@ values = [
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Hatchback (02-06)').first_or_create
 trim = model.trims.where(value: '1.4 Extreme 3d').first_or_create
@@ -25271,7 +25379,11 @@ values = [
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Hatchback (96-02)').first_or_create
 trim = model.trims.where(value: '1.4e RN 5d').first_or_create
@@ -27456,7 +27568,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Renaultsport (10 on)').first_or_create
 trim = model.trims.where(value: '2.0 T 16V Renaultsport (250bhp) Cup 3d').first_or_create
@@ -27542,7 +27658,11 @@ model = make.models.where(value: 'Megane Renaultsport (10 on)').first_or_create
 trim = model.trims.where(value: '2.0 T 16V Renaultsport (265bhp) (CupChass + Recaro) 3d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Renaultsport (06-09)').first_or_create
 trim = model.trims.where(value: '2.0 T 16V Renaultsport F1 Team (225bhp) 3d').first_or_create
@@ -27750,7 +27870,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Saloon (06-09)').first_or_create
 trim = model.trims.where(value: '1.4 Expression 4d').first_or_create
@@ -28309,7 +28433,11 @@ values = [
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Saloon (03-06)').first_or_create
 trim = model.trims.where(value: '1.4 Expression 4d').first_or_create
@@ -29149,7 +29277,11 @@ values = [
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Saloon (96-03)').first_or_create
 trim = model.trims.where(value: '1.6e RN 4d Auto').first_or_create
@@ -30299,7 +30431,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Scenic (97-99)').first_or_create
 trim = model.trims.where(value: '1.6e RN 5d').first_or_create
@@ -30919,7 +31055,11 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Sport Tourer (09 on)').first_or_create
 trim = model.trims.where(value: '1.4 TCE Dynamique 5d').first_or_create
@@ -31832,7 +31972,11 @@ model = make.models.where(value: 'Megane Sport Tourer (09 on)').first_or_create
 trim = model.trims.where(value: '1.5 dCi (110bhp) Expression+ 5d EDC').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Sport Tourer (03-06)').first_or_create
 trim = model.trims.where(value: '1.4 Expression 5d').first_or_create
@@ -32672,7 +32816,11 @@ values = [
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Megane Tourer (06-09)').first_or_create
 trim = model.trims.where(value: '1.4 Expression 5d').first_or_create
@@ -33346,7 +33494,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Modus (04-12)').first_or_create
 trim = model.trims.where(value: '1.2 Authentique 5d').first_or_create
@@ -34720,7 +34872,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Safrane Hatchback (93-00)').first_or_create
 trim = model.trims.where(value: '2.5 TD Executive 5d Auto').first_or_create
@@ -34730,7 +34886,11 @@ values = [
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Scenic (09 on)').first_or_create
 trim = model.trims.where(value: '1.4 TCE Expression 5d').first_or_create
@@ -35815,7 +35975,11 @@ model = make.models.where(value: 'Scenic (09 on)').first_or_create
 trim = model.trims.where(value: '1.2 TCE Dynamique TomTom (Luxe Pack) 5d').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Scenic (03-09)').first_or_create
 trim = model.trims.where(value: '1.4 Authentique 5d').first_or_create
@@ -38094,7 +38258,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Scenic (99-03)').first_or_create
 trim = model.trims.where(value: '1.4 16V 5d').first_or_create
@@ -40173,7 +40341,11 @@ values = [
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Sport Spider (96-98)').first_or_create
 trim = model.trims.where(value: 'Sport Spider 2d (2 Seat)').first_or_create
@@ -40184,7 +40356,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Twingo (07 on)').first_or_create
 trim = model.trims.where(value: '1.2 Extreme 3d').first_or_create
@@ -40377,7 +40553,11 @@ trim = model.trims.where(value: '1.2 16V Dynamique (2012) 3d').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Twingo Renaultsport (08 on)').first_or_create
 trim = model.trims.where(value: '1.6 VVT Renaultsport (133bhp) 3d').first_or_create
@@ -40438,7 +40618,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Vel Satis (02-04)').first_or_create
 trim = model.trims.where(value: '2.0 T 16V Expression 5d').first_or_create
@@ -40639,7 +40823,11 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Renault').first_or_create
 model = make.models.where(value: 'Wind (10-12)').first_or_create
 trim = model.trims.where(value: '1.2 TCE GT Line 2d').first_or_create
@@ -40770,7 +40958,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Rolls-Royce ').first_or_create
 model = make.models.where(value: 'Corniche (72-02)').first_or_create
 trim = model.trims.where(value: '2d Auto (00)').first_or_create
@@ -40785,7 +40977,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Rolls-Royce ').first_or_create
 model = make.models.where(value: 'Ghost (10 on)').first_or_create
 trim = model.trims.where(value: '4d').first_or_create
@@ -40806,4 +41002,7 @@ trim = model.trims.where(value: 'EWB 4d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

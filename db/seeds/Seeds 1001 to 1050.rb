@@ -15058,4 +15058,7 @@ values = [
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

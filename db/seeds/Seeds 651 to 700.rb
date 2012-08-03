@@ -61,7 +61,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CL (00-05)').first_or_create
 trim = model.trims.where(value: 'CL500 2d Auto (00)').first_or_create
@@ -207,7 +211,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CL (92-99)').first_or_create
 trim = model.trims.where(value: '500 SEC 2d Auto').first_or_create
@@ -282,7 +290,11 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CL AMG (07 on)').first_or_create
 trim = model.trims.where(value: 'CL 65 Bi-Turbo 2d Auto').first_or_create
@@ -348,7 +360,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLC Coupé (08-10)').first_or_create
 trim = model.trims.where(value: '180K SE 3d').first_or_create
@@ -1422,7 +1438,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLK AMG (02-09)').first_or_create
 trim = model.trims.where(value: 'CLK55 Coupé 2d Tip Auto (02)').first_or_create
@@ -1543,7 +1563,11 @@ values = [
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLK Cabriolet (03-09)').first_or_create
 trim = model.trims.where(value: '200K Elegance 2d (03)').first_or_create
@@ -2304,7 +2328,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLK Cabriolet (98-03)').first_or_create
 trim = model.trims.where(value: '230K Elegance 2d').first_or_create
@@ -2849,7 +2877,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLK Coupé (02-09)').first_or_create
 trim = model.trims.where(value: '200K Elegance 2d (02)').first_or_create
@@ -3971,7 +4003,11 @@ values = [
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLK Coupé (97-02)').first_or_create
 trim = model.trims.where(value: '200 Elegance 2d').first_or_create
@@ -4462,7 +4498,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLS AMG (11 on)').first_or_create
 trim = model.trims.where(value: 'CLS 63 4d Tip Auto').first_or_create
@@ -4471,7 +4511,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLS AMG (05-10)').first_or_create
 trim = model.trims.where(value: 'CLS55 4d Auto').first_or_create
@@ -4534,7 +4578,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLS Coupé (11 on)').first_or_create
 trim = model.trims.where(value: 'CLS 500 BlueEFFICIENCY Sport AMG 4d Tip Auto').first_or_create
@@ -4621,7 +4669,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'CLS Coupé (05-10)').first_or_create
 trim = model.trims.where(value: 'CLS350 4d Tip Auto').first_or_create
@@ -4850,7 +4902,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class AMG (09 on)').first_or_create
 trim = model.trims.where(value: 'E63 Estate 5d Auto').first_or_create
@@ -4924,7 +4980,11 @@ trim = model.trims.where(value: 'E63 Estate Bi-Turbo (Performance Pack Plus) 5d 
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class AMG (02-08)').first_or_create
 trim = model.trims.where(value: 'E55K 4d Tip Auto Saloon').first_or_create
@@ -4998,7 +5058,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Cabriolet (10 on)').first_or_create
 trim = model.trims.where(value: 'E200 CGI BlueEFFICIENCY SE 2d').first_or_create
@@ -5765,7 +5829,11 @@ trim = model.trims.where(value: 'E500 BlueEFFICIENCY Sport Edition 125 2d Tip Au
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Coupé (09 on)').first_or_create
 trim = model.trims.where(value: 'E250 CGI BlueEFFICIENCY SE 2d Tip Auto').first_or_create
@@ -7314,7 +7382,11 @@ trim = model.trims.where(value: 'E500 BlueEFF Sport Edition 125 (Panoramic Roof)
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Estate (10 on)').first_or_create
 trim = model.trims.where(value: 'E200 CGI BlueEFFICIENCY SE 5d').first_or_create
@@ -8852,7 +8924,11 @@ model = make.models.where(value: 'E-Class Estate (10 on)').first_or_create
 trim = model.trims.where(value: 'E220 CDI BlueEFF Executive SE (Ext) 5d Tip Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Estate (03-08)').first_or_create
 trim = model.trims.where(value: 'E200K Classic 5d').first_or_create
@@ -10361,7 +10437,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Estate (96-03)').first_or_create
 trim = model.trims.where(value: 'E200 Classic 5d').first_or_create
@@ -11556,7 +11636,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Estate (86-96)').first_or_create
 trim = model.trims.where(value: '200 TE 5d').first_or_create
@@ -11964,7 +12048,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Saloon (09 on)').first_or_create
 trim = model.trims.where(value: 'E200 CGi BlueEFFICIENCY SE 4d Tip Auto').first_or_create
@@ -13860,7 +13948,11 @@ model = make.models.where(value: 'E-Class Saloon (09 on)').first_or_create
 trim = model.trims.where(value: 'E220 CDI BlueEFF Executive SE (Ext) 4d Tip Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Saloon (02-08)').first_or_create
 trim = model.trims.where(value: 'E200K Classic 4d').first_or_create
@@ -15656,7 +15748,11 @@ trim = model.trims.where(value: 'E280 CDI Executive SE 4d Tip Auto').first_or_cr
 values = [
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Saloon (95-02)').first_or_create
 trim = model.trims.where(value: 'E200 Classic 4d').first_or_create
@@ -17468,7 +17564,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'E-Class Saloon (85-95)').first_or_create
 trim = model.trims.where(value: '200 E 4d').first_or_create
@@ -18126,7 +18226,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'G-Class (10 on)').first_or_create
 trim = model.trims.where(value: 'G350 CDI 5d Tip Auto').first_or_create
@@ -18148,7 +18252,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'GL-Class (06 on)').first_or_create
 trim = model.trims.where(value: 'GL500 5d Tip Auto').first_or_create
@@ -18334,7 +18442,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'M-Class (12 on)').first_or_create
 trim = model.trims.where(value: '2.2 CDi ML250 BlueTEC Sport 5d Auto').first_or_create
@@ -18370,7 +18482,11 @@ model = make.models.where(value: 'M-Class (12 on)').first_or_create
 trim = model.trims.where(value: '3.0 CDi ML350 BlueTEC Sport (Command) 5d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'M-Class (05-11)').first_or_create
 trim = model.trims.where(value: 'ML350 5d Tip Auto').first_or_create
@@ -19036,7 +19152,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'M-Class (98-04)').first_or_create
 trim = model.trims.where(value: 'ML320 5d Auto').first_or_create
@@ -19326,7 +19446,11 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'M-Class AMG (06-10)').first_or_create
 trim = model.trims.where(value: 'ML63 5d Tip Auto').first_or_create
@@ -19358,7 +19482,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'R-Class (06 on)').first_or_create
 trim = model.trims.where(value: 'R350 5d Auto').first_or_create
@@ -20096,7 +20224,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'S-Class (06 on)').first_or_create
 trim = model.trims.where(value: 'S280 4d Auto').first_or_create
@@ -20678,7 +20810,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'S-Class (99-05)').first_or_create
 trim = model.trims.where(value: 'S280 4d Auto (99)').first_or_create
@@ -21304,7 +21440,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'S-Class (91-99)').first_or_create
 trim = model.trims.where(value: '300 SEL 4d Auto (4)').first_or_create
@@ -21743,7 +21883,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'S-Class AMG (07 on)').first_or_create
 trim = model.trims.where(value: 'S63 4d Auto').first_or_create
@@ -21841,7 +21985,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SL-Class (02-11)').first_or_create
 trim = model.trims.where(value: 'SL 350 2d Seq Auto').first_or_create
@@ -22131,7 +22279,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SL-Class (89-02)').first_or_create
 trim = model.trims.where(value: '300 SL 2d Auto').first_or_create
@@ -22551,7 +22703,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SL-Class AMG (02-11)').first_or_create
 trim = model.trims.where(value: 'SL 55 AMG 2d Auto').first_or_create
@@ -22670,13 +22826,21 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLK AMG (12 on)').first_or_create
 trim = model.trims.where(value: 'SLK 55 2d Tip Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLK AMG (04-10)').first_or_create
 trim = model.trims.where(value: '55 2d Tip Auto').first_or_create
@@ -22713,7 +22877,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLK Roadster (11 on)').first_or_create
 trim = model.trims.where(value: '200 BlueEFFICIENCY 2d').first_or_create
@@ -22921,7 +23089,11 @@ trim = model.trims.where(value: '250 CDI BlueEFFICIENCY AMG Sport 2d Tip Auto').
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLK Roadster (04-11)').first_or_create
 trim = model.trims.where(value: '200K 2d').first_or_create
@@ -23661,7 +23833,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLK Roadster (96-04)').first_or_create
 trim = model.trims.where(value: '230K 2d Auto').first_or_create
@@ -24026,7 +24202,11 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'SLS-Class AMG (10 on)').first_or_create
 trim = model.trims.where(value: 'SLS 63 2d Auto').first_or_create
@@ -24046,7 +24226,11 @@ trim = model.trims.where(value: 'SLS 63 (2011) 2d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'Vaneo (02-05)').first_or_create
 trim = model.trims.where(value: '1.6 Trend 5d').first_or_create
@@ -24735,7 +24919,11 @@ values = [
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'V-Class (96-02)').first_or_create
 trim = model.trims.where(value: 'V230 Trend 5d').first_or_create
@@ -25021,7 +25209,11 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Mercedes-Benz').first_or_create
 model = make.models.where(value: 'Viano (04 on)').first_or_create
 trim = model.trims.where(value: '3.2 Ambiente 5d Tip Auto').first_or_create
@@ -26050,7 +26242,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'MG Motor UK').first_or_create
 model = make.models.where(value: 'MG6 (11 on)').first_or_create
 trim = model.trims.where(value: '1.8T S Saloon 4d').first_or_create
@@ -26118,4 +26314,7 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

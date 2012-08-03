@@ -3717,7 +3717,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S40 (96-04)').first_or_create
 trim = model.trims.where(value: '1.8i 4d').first_or_create
@@ -6162,7 +6166,11 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S60 (10 on)').first_or_create
 trim = model.trims.where(value: 'T3 (150bhp) ES 4d').first_or_create
@@ -7621,7 +7629,11 @@ model = make.models.where(value: 'S60 (10 on)').first_or_create
 trim = model.trims.where(value: 'DRIVe (115bhp) R DESIGN Premium 4d Powershift').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S60 (00-08)').first_or_create
 trim = model.trims.where(value: '2.0T S 4d (00)').first_or_create
@@ -10539,7 +10551,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S70 (96-99)').first_or_create
 trim = model.trims.where(value: '2.0 10V 4d').first_or_create
@@ -11735,7 +11751,11 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S80 (06 on)').first_or_create
 trim = model.trims.where(value: '2.5T S 4d').first_or_create
@@ -14896,7 +14916,11 @@ trim = model.trims.where(value: 'D3 (163bhp) Executive (Start Stop) 4d Geartroni
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S80 (98-05)').first_or_create
 trim = model.trims.where(value: '2.4 (140bhp) 4d').first_or_create
@@ -16334,7 +16358,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'S90 (96-98)').first_or_create
 trim = model.trims.where(value: '3.0 (180bhp) 4d').first_or_create
@@ -16522,7 +16550,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V40 (96-04)').first_or_create
 trim = model.trims.where(value: '1.8i 5d').first_or_create
@@ -18927,7 +18959,11 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V50 (04-12)').first_or_create
 trim = model.trims.where(value: '1.8 S 5d').first_or_create
@@ -22660,7 +22696,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V60 (10 on)').first_or_create
 trim = model.trims.where(value: 'DRIVe (115bhp) ES 5d').first_or_create
@@ -24212,7 +24252,11 @@ model = make.models.where(value: 'V60 (10 on)').first_or_create
 trim = model.trims.where(value: 'DRIVe (115bhp) R DESIGN Premium 5d Powershift').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V70 (07 on)').first_or_create
 trim = model.trims.where(value: '2.0 SE 5d').first_or_create
@@ -27999,7 +28043,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 
 make = Make.where(value: 'Volvo').first_or_create
@@ -28302,7 +28350,11 @@ model = make.models.where(value: 'V70 (07 on)').first_or_create
 trim = model.trims.where(value: 'DRIVe (115bhp) R DESIGN (Start Stop) 5d Powershift').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V70 (00-07)').first_or_create
 trim = model.trims.where(value: '2.3 T5 5d').first_or_create
@@ -32057,7 +32109,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V70 (96-01)').first_or_create
 trim = model.trims.where(value: '2.0 10V 5d').first_or_create
@@ -33881,7 +33937,11 @@ trim = model.trims.where(value: '2.3 T5 S 5d Geartronic').first_or_create
 values = [
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'V90 (96-98)').first_or_create
 trim = model.trims.where(value: '3.0 5d').first_or_create
@@ -34054,7 +34114,11 @@ values = [
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'XC60 (08 on)').first_or_create
 trim = model.trims.where(value: 'T6 SE 5d Geartronic').first_or_create
@@ -35845,7 +35909,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'XC70 (07 on)').first_or_create
 trim = model.trims.where(value: '3.2 SE 5d Geartronic').first_or_create
@@ -37014,7 +37082,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'XC70 (00-07)').first_or_create
 trim = model.trims.where(value: '2.4T S 5d').first_or_create
@@ -37821,7 +37893,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Volvo').first_or_create
 model = make.models.where(value: 'XC90 (02 on)').first_or_create
 trim = model.trims.where(value: '2.9 T6 S 5d Geartronic').first_or_create
@@ -39443,4 +39519,7 @@ trim = model.trims.where(value: '2.4 D5 (200bhp) ES Premium 5d Geartronic').firs
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

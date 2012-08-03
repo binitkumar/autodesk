@@ -132,7 +132,11 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Lantra Saloon (95-01)').first_or_create
 trim = model.trims.where(value: '1.6 Si 4d').first_or_create
@@ -309,7 +313,11 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Matrix (01-10)').first_or_create
 trim = model.trims.where(value: '1.6 GSi 5d').first_or_create
@@ -715,7 +723,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Santa Fe (06 on)').first_or_create
 trim = model.trims.where(value: '2.7 V6 CDX 5d Auto (5 Seats)').first_or_create
@@ -1464,7 +1476,11 @@ trim = model.trims.where(value: '2.2 CRDi Premium (Media Pack) (7 Seats) 5d Auto
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Santa Fe (01-05)').first_or_create
 trim = model.trims.where(value: '2.4 5d').first_or_create
@@ -1646,7 +1662,11 @@ trim = model.trims.where(value: '2.4 CDX 5d').first_or_create
 values = [
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Sonata (05-10)').first_or_create
 trim = model.trims.where(value: '2.4 CDX 4d').first_or_create
@@ -1834,7 +1854,11 @@ values = [
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Sonata (01-04)').first_or_create
 trim = model.trims.where(value: '2.0 CDX 4d').first_or_create
@@ -1890,7 +1914,11 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Sonata (98-01)').first_or_create
 trim = model.trims.where(value: '2.0 GSi 4d').first_or_create
@@ -1986,7 +2014,11 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Terracan (03-07)').first_or_create
 trim = model.trims.where(value: '2.9 CRTD 5d').first_or_create
@@ -2058,7 +2090,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Trajet (00-06)').first_or_create
 trim = model.trims.where(value: '2.0 GSi 5d').first_or_create
@@ -2315,7 +2351,11 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Tucson (04-09)').first_or_create
 trim = model.trims.where(value: '2.0 GSI 5d 2WD').first_or_create
@@ -2673,7 +2713,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'Veloster (12 on)').first_or_create
 trim = model.trims.where(value: '1.6 GDi 4dr 4d').first_or_create
@@ -2739,7 +2783,11 @@ model = make.models.where(value: 'Veloster (12 on)').first_or_create
 trim = model.trims.where(value: '1.6 GDi Sport (Media Pack) 4d DCT').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Hyundai').first_or_create
 model = make.models.where(value: 'XG30 (00-03)').first_or_create
 trim = model.trims.where(value: '3.0 V6 4d Auto').first_or_create
@@ -2755,7 +2803,11 @@ values = [
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'EX (09 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 5d').first_or_create
@@ -2911,7 +2963,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'FX (09 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 GT 5d Auto').first_or_create
@@ -3158,7 +3214,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'G Convertible (09 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 GT 2d').first_or_create
@@ -3206,7 +3266,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'G Coupe (09 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 2d').first_or_create
@@ -3440,7 +3504,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'G Saloon (09 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 4d').first_or_create
@@ -3748,7 +3816,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Infiniti').first_or_create
 model = make.models.where(value: 'M (10 on)').first_or_create
 trim = model.trims.where(value: '3.7 V6 4d Auto').first_or_create
@@ -3897,7 +3969,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'S-Type (99-07)').first_or_create
 trim = model.trims.where(value: '3.0 V6 4d').first_or_create
@@ -5492,7 +5568,11 @@ values = [
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XF R (09 on)').first_or_create
 trim = model.trims.where(value: '5.0 V8 Supercharged 4d Auto').first_or_create
@@ -5520,7 +5600,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XF Saloon (08 on)').first_or_create
 trim = model.trims.where(value: '3.0 V6 Luxury 4d Auto').first_or_create
@@ -5996,7 +6080,11 @@ model = make.models.where(value: 'XF Saloon (08 on)').first_or_create
 trim = model.trims.where(value: '2.2d Sport 4d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJ Saloon (10 on)').first_or_create
 trim = model.trims.where(value: '5.0 V8 Premium Luxury 4d Auto').first_or_create
@@ -6172,7 +6260,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJ Saloon (03-09)').first_or_create
 trim = model.trims.where(value: 'XJ6 3.0 V6 4d Auto').first_or_create
@@ -6749,7 +6841,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJ Saloon (94-03)').first_or_create
 trim = model.trims.where(value: '3.2 4d').first_or_create
@@ -7468,7 +7564,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJ Saloon (81-94)').first_or_create
 trim = model.trims.where(value: '3.2 Sovereign 4d').first_or_create
@@ -7715,7 +7815,11 @@ values = [
  {value: '1993 (L)'},
  {value: '1994 (L)'},
  {value: '1994 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJ XJR (03-08)').first_or_create
 trim = model.trims.where(value: '4.2 V8 4d Auto').first_or_create
@@ -7771,7 +7875,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJS (81-96)').first_or_create
 trim = model.trims.where(value: '4.0 2d').first_or_create
@@ -7856,7 +7964,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XJSC Convertible (88-96)').first_or_create
 trim = model.trims.where(value: '4.0 2d').first_or_create
@@ -7941,7 +8053,11 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XK Convertible (06 on)').first_or_create
 trim = model.trims.where(value: '4.2 V8 2d Auto').first_or_create
@@ -8035,7 +8151,11 @@ model = make.models.where(value: 'XK Convertible (06 on)').first_or_create
 trim = model.trims.where(value: '5.0 V8 Artisan Special Edition 2d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XK Coupé (06 on)').first_or_create
 trim = model.trims.where(value: '4.2 V8 2d Auto').first_or_create
@@ -8142,7 +8262,11 @@ model = make.models.where(value: 'XK Coupé (06 on)').first_or_create
 trim = model.trims.where(value: '5.0 V8 Artisan Special Edition 2d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XK R (06 on)').first_or_create
 trim = model.trims.where(value: '4.2 Supercharged V8 Convertible 2d Auto').first_or_create
@@ -8248,7 +8372,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 
 
@@ -8480,7 +8608,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'XK8 Coupé (96-05)').first_or_create
 trim = model.trims.where(value: '4.0 Sport 2d Auto').first_or_create
@@ -8709,7 +8841,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'X-Type Estate (04-10)').first_or_create
 trim = model.trims.where(value: '2.0 V6 SE 5d Auto').first_or_create
@@ -10439,7 +10575,11 @@ values = [
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jaguar').first_or_create
 model = make.models.where(value: 'X-Type Saloon (01-10)').first_or_create
 trim = model.trims.where(value: '2.5 V6 4d').first_or_create
@@ -12381,7 +12521,11 @@ values = [
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Cherokee (08-10)').first_or_create
 trim = model.trims.where(value: '2.8 CRD Limited 5d').first_or_create
@@ -12411,7 +12555,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Cherokee (01-07)').first_or_create
 trim = model.trims.where(value: '2.4 Sport 5d (01)').first_or_create
@@ -12714,7 +12862,11 @@ values = [
  {value: '2005 (05)'},
  {value: '2005 (55)'},
  {value: '2006 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Cherokee (93-01)').first_or_create
 trim = model.trims.where(value: '2.5 Sport 5d').first_or_create
@@ -13065,7 +13217,11 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Commander (06-09)').first_or_create
 trim = model.trims.where(value: '5.7 V8 Limited 5d Auto').first_or_create
@@ -13119,7 +13275,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Compass (11 on)').first_or_create
 trim = model.trims.where(value: '2.0 Limited (2WD) 5d').first_or_create
@@ -13215,7 +13375,11 @@ trim = model.trims.where(value: '2.2 CRD Sport + (2WD) 5d').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Compass (07-09)').first_or_create
 trim = model.trims.where(value: '2.4 Limited 5d').first_or_create
@@ -13262,7 +13426,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee (11 on)').first_or_create
 trim = model.trims.where(value: '3.0 CRD Limited 5d Auto').first_or_create
@@ -13293,7 +13461,11 @@ trim = model.trims.where(value: '3.0 CRD Overland Summit 5d Auto').first_or_crea
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee (05-10)').first_or_create
 trim = model.trims.where(value: '4.7 V8 Limited 5d Auto').first_or_create
@@ -13468,7 +13640,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee (99-04)').first_or_create
 trim = model.trims.where(value: '4.0 Limited 5d Auto').first_or_create
@@ -13690,7 +13866,11 @@ trim = model.trims.where(value: '2.7 CRD Platinum 5d Auto').first_or_create
 values = [
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee (94-99)').first_or_create
 trim = model.trims.where(value: '4.0 Limited 5d Auto').first_or_create
@@ -13821,14 +14001,22 @@ values = [
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee SRT (11 on)').first_or_create
 trim = model.trims.where(value: '6.4 V8 SRT-8 5d Auto').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Jeep').first_or_create
 model = make.models.where(value: 'Grand Cherokee SRT-8 (06-10)').first_or_create
 trim = model.trims.where(value: '6.1 V8 5d Auto').first_or_create
@@ -13848,4 +14036,7 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

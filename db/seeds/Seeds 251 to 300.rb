@@ -145,7 +145,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'C-Zero (11 on)').first_or_create
 trim = model.trims.where(value: 'Electric 5d Auto').first_or_create
@@ -154,7 +159,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Dispatch Combi (07 on)').first_or_create
 trim = model.trims.where(value: '1.6 HDi L1 (6 Seat) 6d').first_or_create
@@ -398,7 +408,12 @@ trim = model.trims.where(value: '2.0 HDi (125bhp) L2 SX (9 Seat) 5d').first_or_c
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'DS3 (10 on)').first_or_create
 trim = model.trims.where(value: '1.4 VTi 16V DSign 3d').first_or_create
@@ -743,7 +758,12 @@ trim = model.trims.where(value: '1.6 e-HDi (110bhp) Airdream Ultra Prestige 3d')
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'DS3 Racing (11-11)').first_or_create
 trim = model.trims.where(value: '1.6 THP 16V Racing Black 3d').first_or_create
@@ -765,7 +785,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'DS4 (11 on)').first_or_create
 trim = model.trims.where(value: '1.6 VTi 16V DSign 5d').first_or_create
@@ -879,7 +904,12 @@ model = make.models.where(value: 'DS4 (11 on)').first_or_create
 trim = model.trims.where(value: '1.6 THP 16V (160bhp) DStyle 5d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'DS5 (12 on)').first_or_create
 trim = model.trims.where(value: '1.6 THP 16V DStyle 5d').first_or_create
@@ -1005,7 +1035,12 @@ model = make.models.where(value: 'DS5 (12 on)').first_or_create
 trim = model.trims.where(value: '2.0 HDi Hybrid4 DSign 5d Auto').first_or_create
 values = [
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Grand C4 Picasso (07 on)').first_or_create
 trim = model.trims.where(value: '1.8i 16V LX 5d').first_or_create
@@ -1764,7 +1799,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Nemo Multispace (09 on)').first_or_create
 trim = model.trims.where(value: '1.4i 8v 5d').first_or_create
@@ -1849,7 +1889,12 @@ trim = model.trims.where(value: '1.3 HDi (non Start/Stop) 5d').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Saxo (96-03)').first_or_create
 trim = model.trims.where(value: '1.1i X 3d').first_or_create
@@ -2996,7 +3041,12 @@ values = [
  {value: '2001 (51)'},
  {value: '2002 (51)'},
  {value: '2002 (02)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Synergie (95-02)').first_or_create
 trim = model.trims.where(value: '2.0i LX 5d (5 Seat)').first_or_create
@@ -3640,7 +3690,12 @@ values = [
  {value: '2001 (51)'},
  {value: '2002 (51)'},
  {value: '2002 (02)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xantia Estate (95-01)').first_or_create
 trim = model.trims.where(value: '1.9 TD SX 5d').first_or_create
@@ -4607,7 +4662,12 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xantia Hatchback (93-01)').first_or_create
 trim = model.trims.where(value: '1.9 D 5d').first_or_create
@@ -6419,7 +6479,12 @@ values = [
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Coupé (00-04)').first_or_create
 trim = model.trims.where(value: '1.6i 16V VTR 3d').first_or_create
@@ -6479,7 +6544,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Coupé (98-00)').first_or_create
 trim = model.trims.where(value: '1.6i VTR 3d').first_or_create
@@ -6605,7 +6675,12 @@ values = [
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Estate (00-04)').first_or_create
 trim = model.trims.where(value: '1.4i L 5d').first_or_create
@@ -6843,7 +6918,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Estate (98-00)').first_or_create
 trim = model.trims.where(value: '1.4i X 5d').first_or_create
@@ -7115,7 +7195,12 @@ values = [
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Hatchback (00-04)').first_or_create
 trim = model.trims.where(value: '1.4i L 5d').first_or_create
@@ -7542,7 +7627,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Hatchback (97-00)').first_or_create
 trim = model.trims.where(value: '1.4i X 5d').first_or_create
@@ -8018,7 +8108,12 @@ values = [
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Citroën').first_or_create
 model = make.models.where(value: 'Xsara Picasso (00-10)').first_or_create
 trim = model.trims.where(value: '1.6i LX 5d').first_or_create
@@ -8616,7 +8711,12 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Corvette').first_or_create
 model = make.models.where(value: 'C6 Convertible (05 on)').first_or_create
 trim = model.trims.where(value: '6.0 V8 2d').first_or_create
@@ -8705,7 +8805,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Corvette').first_or_create
 model = make.models.where(value: 'C6 Coupé (05 on)').first_or_create
 trim = model.trims.where(value: '6.0 V8 2d').first_or_create
@@ -8857,7 +8962,12 @@ values = [
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '348 Convertible (93-95)').first_or_create
 trim = model.trims.where(value: 'Spider 2d').first_or_create
@@ -8868,7 +8978,12 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '348 Coupé (89-94)').first_or_create
 trim = model.trims.where(value: 'tb 2d').first_or_create
@@ -8930,7 +9045,12 @@ values = [
  {value: '1993 (L)'},
  {value: '1994 (L)'},
  {value: '1994 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '360 Coupé (99-04)').first_or_create
 trim = model.trims.where(value: 'Modena 2d').first_or_create
@@ -8992,7 +9112,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '360 Spider (00-04)').first_or_create
 trim = model.trims.where(value: 'Spider 2d').first_or_create
@@ -9034,7 +9159,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '456 (93-03)').first_or_create
 trim = model.trims.where(value: 'GT 2d (93)').first_or_create
@@ -9120,7 +9250,12 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '458 (10 on)').first_or_create
 trim = model.trims.where(value: 'Italia 2d').first_or_create
@@ -9129,7 +9264,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '512 (92-95)').first_or_create
 trim = model.trims.where(value: 'TR 2d').first_or_create
@@ -9141,7 +9281,12 @@ values = [
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '550 (96-02)').first_or_create
 trim = model.trims.where(value: 'Maranello 2d').first_or_create
@@ -9164,7 +9309,12 @@ values = [
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '575 Convertible (00-06)').first_or_create
 trim = model.trims.where(value: 'Barchetta Pininfarina 2d').first_or_create
@@ -9208,7 +9358,12 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '575 Coupé (02-05)').first_or_create
 trim = model.trims.where(value: 'Maranello 2d').first_or_create
@@ -9244,7 +9399,12 @@ values = [
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '599 GTB Coupé (06 on)').first_or_create
 trim = model.trims.where(value: 'GTB Fiorano 2d').first_or_create
@@ -9292,7 +9452,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: '612 (04-10)').first_or_create
 trim = model.trims.where(value: 'Scaglietti 2d').first_or_create
@@ -9342,7 +9507,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'California (09 on)').first_or_create
 trim = model.trims.where(value: '2+ F1 2d').first_or_create
@@ -9357,7 +9527,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'Enzo (02-04)').first_or_create
 trim = model.trims.where(value: '2d').first_or_create
@@ -9370,7 +9545,12 @@ values = [
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'F355 Convertible (94-99)').first_or_create
 trim = model.trims.where(value: 'Spider 2d').first_or_create
@@ -9403,7 +9583,12 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'F355 Coupé (94-99)').first_or_create
 trim = model.trims.where(value: 'Berlinetta 2d').first_or_create
@@ -9473,7 +9658,12 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'F430 Convertible (05-09)').first_or_create
 trim = model.trims.where(value: 'Spider 2d').first_or_create
@@ -9515,7 +9705,12 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'F430 Coupé (05-10)').first_or_create
 trim = model.trims.where(value: '2d').first_or_create
@@ -9580,7 +9775,12 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'F512 (95-97)').first_or_create
 trim = model.trims.where(value: 'M 2d').first_or_create
@@ -9591,14 +9791,24 @@ values = [
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Ferrari').first_or_create
 model = make.models.where(value: 'FF Coupe (11 on)').first_or_create
 trim = model.trims.where(value: '2d').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: '500 C (09 on)').first_or_create
 trim = model.trims.where(value: '1.2 Pop 2d').first_or_create
@@ -10164,7 +10374,12 @@ trim = model.trims.where(value: '1.2 byGucci 2d Dualogic').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: '500 Hatchback (08 on)').first_or_create
 trim = model.trims.where(value: '1.2 Pop 3d').first_or_create
@@ -11315,7 +11530,12 @@ trim = model.trims.where(value: '1.2 byGucci 3d Dualogic').first_or_create
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Barchetta (95-05)').first_or_create
 trim = model.trims.where(value: '1.8 16V 2d (LHD)').first_or_create
@@ -11356,7 +11576,12 @@ values = [
  {value: '1999 (T)'},
  {value: '1999 (V)'},
  {value: '2000 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Brava (95-02)').first_or_create
 trim = model.trims.where(value: '1.6 SX 5d').first_or_create
@@ -11838,7 +12063,12 @@ values = [
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Bravo (07 on)').first_or_create
 trim = model.trims.where(value: '1.4 5d').first_or_create
@@ -12384,7 +12614,12 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Bravo (95-02)').first_or_create
 trim = model.trims.where(value: '1.4 S 3d').first_or_create
@@ -12773,7 +13008,12 @@ values = [
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Cinquecento (93-98)').first_or_create
 trim = model.trims.where(value: 'Sporting 3d').first_or_create
@@ -12849,7 +13089,12 @@ values = [
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
+
 make = Make.where(value: 'Fiat').first_or_create
 model = make.models.where(value: 'Coupé (95-00)').first_or_create
 trim = model.trims.where(value: '16V 2d').first_or_create
@@ -12955,4 +13200,8 @@ values = [
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+

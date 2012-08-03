@@ -11,7 +11,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -26,7 +30,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -41,7 +49,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -56,7 +68,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -71,7 +87,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -86,7 +106,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -101,7 +125,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -116,7 +144,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -129,7 +161,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (02-06)').first_or_create
@@ -142,7 +178,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (00-02)').first_or_create
 trim = model.trims.where(value: '1.4 VVTi GS 5d').first_or_create
@@ -155,7 +195,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (00-02)').first_or_create
@@ -167,7 +211,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (00-02)').first_or_create
@@ -181,7 +229,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (00-02)').first_or_create
@@ -193,7 +245,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
 trim = model.trims.where(value: '1.3 Sportif 5d').first_or_create
@@ -204,7 +260,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
@@ -219,7 +279,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
@@ -228,7 +292,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
@@ -238,7 +306,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
@@ -251,7 +323,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (97-00)').first_or_create
@@ -264,7 +340,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (92-97)').first_or_create
 trim = model.trims.where(value: '1.3 GLi 5d').first_or_create
@@ -276,7 +356,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (92-97)').first_or_create
@@ -288,7 +372,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Estate (92-97)').first_or_create
@@ -300,7 +388,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
 trim = model.trims.where(value: '1.4 VVT-i T2 3d (02)').first_or_create
@@ -314,7 +406,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -329,7 +425,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -344,7 +444,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -359,7 +463,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -374,7 +482,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -389,7 +501,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -404,7 +520,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -419,7 +539,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -434,7 +558,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -449,7 +577,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -464,7 +596,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -479,7 +615,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -494,7 +634,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -509,7 +653,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -524,7 +672,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -536,7 +688,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -551,7 +707,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -565,7 +725,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -579,7 +743,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -592,7 +760,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -605,7 +777,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -618,7 +794,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -631,7 +811,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -644,7 +828,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -657,7 +845,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -667,7 +859,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -677,7 +873,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -687,7 +887,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -697,7 +901,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -707,7 +915,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -717,7 +929,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -732,7 +948,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -747,7 +967,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -762,7 +986,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -777,7 +1005,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -792,7 +1024,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -807,7 +1043,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -822,7 +1062,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -837,7 +1081,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -852,7 +1100,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -867,7 +1119,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -882,7 +1138,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -897,7 +1157,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -912,7 +1176,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -927,7 +1195,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -942,7 +1214,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -957,7 +1233,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -971,7 +1251,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -985,7 +1269,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -999,7 +1287,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1013,7 +1305,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1027,7 +1323,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1041,7 +1341,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1055,7 +1359,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1069,7 +1377,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1083,7 +1395,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1097,7 +1413,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1111,7 +1431,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1125,7 +1449,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1139,7 +1467,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1152,7 +1484,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1165,7 +1501,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1178,7 +1518,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1190,7 +1534,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1201,7 +1549,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1212,7 +1564,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1223,7 +1579,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (02-06)').first_or_create
@@ -1234,7 +1594,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
 trim = model.trims.where(value: '1.4 VVTi S 3d').first_or_create
@@ -1247,7 +1611,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1261,7 +1629,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1275,7 +1647,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1289,7 +1665,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1303,7 +1683,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1317,7 +1701,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1331,7 +1719,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1343,7 +1735,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1357,7 +1753,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1371,7 +1771,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1385,7 +1789,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1399,7 +1807,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1412,7 +1824,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1425,7 +1841,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1438,7 +1858,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1450,7 +1874,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1462,7 +1890,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1474,7 +1906,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1486,7 +1922,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1498,7 +1938,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (00-02)').first_or_create
@@ -1510,7 +1954,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
 trim = model.trims.where(value: '1.3 Sportif 3d').first_or_create
@@ -1521,7 +1969,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1533,7 +1985,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1545,7 +2001,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1557,7 +2017,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1572,7 +2036,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1587,7 +2055,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1602,7 +2074,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1617,7 +2093,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1632,7 +2112,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1647,7 +2131,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1662,7 +2150,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1674,7 +2166,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1686,7 +2182,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1698,7 +2198,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1710,7 +2214,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1725,7 +2233,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1740,7 +2252,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1754,7 +2270,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1768,7 +2288,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1782,7 +2306,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1791,7 +2319,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1805,7 +2337,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1818,7 +2354,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1829,7 +2369,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1842,7 +2386,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1855,7 +2403,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1868,7 +2420,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1881,7 +2437,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1894,7 +2454,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1907,7 +2471,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1920,7 +2488,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1932,7 +2504,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1944,7 +2520,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1955,7 +2535,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1965,7 +2549,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (97-00)').first_or_create
@@ -1975,7 +2563,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
 trim = model.trims.where(value: '1.3 GLi Liftback 5d').first_or_create
@@ -1988,7 +2580,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2001,7 +2597,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2014,7 +2614,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2028,7 +2632,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2042,7 +2650,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2055,7 +2667,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2068,7 +2684,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2081,7 +2701,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2089,7 +2713,11 @@ trim = model.trims.where(value: '1.3 GLi SE Liftback 5d').first_or_create
 trim.model_years.where([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2102,7 +2730,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2115,7 +2747,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2128,7 +2764,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2141,7 +2781,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2154,7 +2798,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2164,7 +2812,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2174,7 +2826,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2184,7 +2840,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2194,7 +2854,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2204,7 +2868,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2214,7 +2882,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2224,7 +2896,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2235,7 +2911,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2245,7 +2925,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2255,7 +2939,11 @@ trim.model_years.where([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2268,7 +2956,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2282,7 +2974,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2296,7 +2992,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2306,7 +3006,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2316,7 +3020,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2326,7 +3034,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2340,7 +3052,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2350,7 +3066,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2360,7 +3080,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2369,7 +3093,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2379,7 +3107,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2391,7 +3123,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2402,7 +3138,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2413,7 +3153,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2425,7 +3169,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2437,7 +3185,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2449,7 +3201,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2459,7 +3215,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2469,7 +3229,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2479,7 +3243,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2491,7 +3259,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2503,7 +3275,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2515,7 +3291,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2527,7 +3307,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2538,7 +3322,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2548,7 +3336,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2559,7 +3351,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2569,7 +3365,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2579,7 +3379,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2589,7 +3393,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2599,7 +3407,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2609,7 +3421,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2618,7 +3434,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2627,7 +3447,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2636,7 +3460,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2645,7 +3473,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2654,7 +3486,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2663,7 +3499,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2672,7 +3512,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2681,7 +3525,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2690,7 +3538,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2699,7 +3551,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Hatchback (92-97)').first_or_create
@@ -2708,7 +3564,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
 trim = model.trims.where(value: '1.4 VVT-i T2 4d (02)').first_or_create
@@ -2722,7 +3582,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2737,7 +3601,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2752,7 +3620,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2766,7 +3638,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2780,7 +3656,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2794,7 +3674,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2809,7 +3693,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2824,7 +3712,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2839,7 +3731,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2854,7 +3750,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2868,7 +3768,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2881,7 +3785,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2894,7 +3802,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2908,7 +3820,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (02-06)').first_or_create
@@ -2920,7 +3836,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (97-00)').first_or_create
 trim = model.trims.where(value: '1.3 Sportif 4d').first_or_create
@@ -2931,7 +3851,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (97-00)').first_or_create
@@ -2946,7 +3870,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (97-00)').first_or_create
@@ -2955,7 +3883,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
 trim = model.trims.where(value: '1.3 GLi 4d').first_or_create
@@ -2967,7 +3899,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
@@ -2980,7 +3916,11 @@ trim.model_years.where([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
@@ -2988,7 +3928,11 @@ trim = model.trims.where(value: '1.6 GLi 4d Auto').first_or_create
 trim.model_years.where([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
@@ -2998,7 +3942,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
@@ -3010,7 +3958,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Saloon (92-97)').first_or_create
@@ -3019,7 +3971,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
 trim = model.trims.where(value: '1.6 VVT-i T2 5d').first_or_create
@@ -3039,7 +3995,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3060,7 +4020,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3074,7 +4038,11 @@ trim.model_years.where([
  {value: '2005 (05)'},
  {value: '2005 (55)'},
  {value: '2006 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3095,7 +4063,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3116,7 +4088,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3137,7 +4113,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3158,7 +4138,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3172,7 +4156,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3186,7 +4174,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3200,7 +4192,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3216,7 +4212,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3232,7 +4232,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3248,7 +4252,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3264,7 +4272,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3279,7 +4291,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3294,7 +4310,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3309,7 +4329,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3323,7 +4347,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3337,7 +4365,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3351,7 +4383,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3362,7 +4398,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3373,7 +4413,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3384,7 +4428,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3398,7 +4446,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3412,7 +4464,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3426,7 +4482,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3440,7 +4500,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3454,7 +4518,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3468,7 +4536,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (04-09)').first_or_create
@@ -3482,7 +4554,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
 trim = model.trims.where(value: '1.6 VVT-i T2 5d').first_or_create
@@ -3493,7 +4569,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3505,7 +4585,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3517,7 +4601,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3529,7 +4617,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3541,7 +4633,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3553,7 +4649,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3565,7 +4665,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Corolla Verso (02-03)').first_or_create
@@ -3577,7 +4681,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
 trim = model.trims.where(value: '1.0 VVT-i 3d').first_or_create
@@ -3591,7 +4699,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3606,7 +4718,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3621,7 +4737,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3636,7 +4756,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3651,7 +4775,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3666,7 +4794,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3681,7 +4813,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3696,7 +4832,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3711,7 +4851,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3726,7 +4870,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3741,7 +4889,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3756,7 +4908,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3771,7 +4927,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3786,7 +4946,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3801,7 +4965,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3816,7 +4984,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3831,7 +5003,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3846,7 +5022,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3861,7 +5041,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3876,7 +5060,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3891,7 +5079,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3906,7 +5098,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3921,7 +5117,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3936,7 +5136,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3951,7 +5155,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3966,7 +5174,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3981,7 +5193,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -3996,7 +5212,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4011,7 +5231,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4026,7 +5250,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4041,7 +5269,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4056,7 +5288,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4071,7 +5307,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4086,7 +5326,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4101,7 +5345,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4116,7 +5364,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4124,7 +5376,11 @@ trim = model.trims.where(value: '1.0 VVT-i Leather 3d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4132,7 +5388,11 @@ trim = model.trims.where(value: '1.0 VVT-i Leather 3d Multidrive').first_or_crea
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4140,7 +5400,11 @@ trim = model.trims.where(value: '1.0 VVT-i iSports Leather 3d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'IQ (09 on)').first_or_create
@@ -4148,7 +5412,11 @@ trim = model.trims.where(value: '1.0 VVT-i iSports Leather 3d Multidrive').first
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
 trim = model.trims.where(value: '3.0 D-4D LC3 (173bhp) 5 Seats 5d Auto').first_or_create
@@ -4160,7 +5428,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4173,7 +5445,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4186,7 +5462,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4197,7 +5477,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4208,7 +5492,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4219,7 +5507,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4230,7 +5522,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4238,7 +5534,11 @@ trim = model.trims.where(value: '3.0 D-4D LC5 (190bhp) 5d Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4246,7 +5546,11 @@ trim = model.trims.where(value: '4.5 D-4D V8 5d Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (09 on)').first_or_create
@@ -4254,7 +5558,11 @@ trim = model.trims.where(value: '4.5 D-4D V8 (Premium ICE) 5d Auto').first_or_cr
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
 trim = model.trims.where(value: 'II Turbo Station Wagon 3d (88)').first_or_create
@@ -4264,7 +5572,11 @@ trim.model_years.where([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
  {value: '1994 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4278,7 +5590,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4296,7 +5612,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4310,7 +5630,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4325,7 +5649,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4337,7 +5665,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4349,7 +5681,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4361,7 +5697,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4371,7 +5711,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
@@ -4381,14 +5725,22 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (81-98)').first_or_create
 trim = model.trims.where(value: '4.2 TD VX 5d Auto').first_or_create
 trim.model_years.where([
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
 trim = model.trims.where(value: '4.0 V6 VVTi LC3 5d Auto').first_or_create
@@ -4399,7 +5751,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4413,7 +5769,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4427,7 +5787,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4441,7 +5805,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4455,7 +5823,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4469,7 +5841,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4483,7 +5859,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4497,7 +5877,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4511,7 +5895,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4525,7 +5913,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4538,7 +5930,11 @@ trim.model_years.where([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4551,7 +5947,11 @@ trim.model_years.where([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4563,7 +5963,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4580,7 +5984,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4597,7 +6005,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4614,7 +6026,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4632,7 +6048,11 @@ trim.model_years.where([
  {value: '2007 (07)'},
  {value: '2007 (57)'},
  {value: '2008 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4649,7 +6069,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4666,7 +6090,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4685,7 +6113,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4702,7 +6134,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4719,7 +6155,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4730,7 +6170,11 @@ trim.model_years.where([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4747,7 +6191,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4764,7 +6212,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4777,7 +6229,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4790,7 +6246,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4806,7 +6266,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4823,7 +6287,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4840,7 +6308,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4856,7 +6328,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4866,7 +6342,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser (03-09)').first_or_create
@@ -4880,7 +6360,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (02-06)').first_or_create
 trim = model.trims.where(value: '4.7 V8 5d Auto').first_or_create
@@ -4899,7 +6383,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (02-06)').first_or_create
@@ -4919,7 +6407,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (02-06)').first_or_create
@@ -4939,7 +6431,11 @@ trim.model_years.where([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
 trim = model.trims.where(value: '4.7 V8 VX 5d Auto (Active)').first_or_create
@@ -4958,7 +6454,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -4978,7 +6478,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -4998,7 +6502,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -5018,7 +6526,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -5032,7 +6544,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -5044,7 +6560,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Amazon (98-02)').first_or_create
@@ -5056,7 +6576,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
 trim = model.trims.where(value: '3.4 V6 VX 5d Auto').first_or_create
@@ -5077,7 +6601,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5097,7 +6625,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5109,7 +6641,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5129,7 +6665,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5149,7 +6689,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5169,7 +6713,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5180,7 +6728,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5193,7 +6745,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5208,7 +6764,11 @@ trim.model_years.where([
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
  {value: '2002 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5221,7 +6781,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5234,7 +6798,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5247,7 +6815,11 @@ trim.model_years.where([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5261,7 +6833,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5275,7 +6851,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5289,7 +6869,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5303,7 +6887,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser Colorado (96-02)').first_or_create
@@ -5317,7 +6905,11 @@ trim.model_years.where([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser V8 (08-11)').first_or_create
 trim = model.trims.where(value: '4.5 D-4D V8 5d Auto').first_or_create
@@ -5334,7 +6926,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser V8 (08-11)').first_or_create
@@ -5348,7 +6944,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser V8 (08-11)').first_or_create
@@ -5361,7 +6961,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser V8 (08-11)').first_or_create
@@ -5374,7 +6978,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Land Cruiser V8 (08-11)').first_or_create
@@ -5385,7 +6993,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (90-00)').first_or_create
 trim = model.trims.where(value: 'Sports 2d').first_or_create
@@ -5393,7 +7005,11 @@ trim.model_years.where([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
  {value: '1993 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (90-00)').first_or_create
@@ -5401,7 +7017,11 @@ trim = model.trims.where(value: 'Sports 2d Auto').first_or_create
 trim.model_years.where([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (90-00)').first_or_create
@@ -5424,7 +7044,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (90-00)').first_or_create
@@ -5447,7 +7071,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (90-00)').first_or_create
@@ -5458,7 +7086,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
 trim = model.trims.where(value: '1.8 VVTi 2d').first_or_create
@@ -5483,7 +7115,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5509,7 +7145,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5535,7 +7175,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5558,7 +7202,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5581,7 +7229,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5604,7 +7256,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5618,7 +7274,11 @@ trim.model_years.where([
  {value: '2005 (05)'},
  {value: '2005 (55)'},
  {value: '2006 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'MR2 (00-06)').first_or_create
@@ -5627,7 +7287,11 @@ trim.model_years.where([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Paseo (96-99)').first_or_create
 trim = model.trims.where(value: '1.5 ST 2d').first_or_create
@@ -5637,7 +7301,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Paseo (96-99)').first_or_create
@@ -5648,7 +7316,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Paseo (96-99)').first_or_create
@@ -5663,7 +7335,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
 trim = model.trims.where(value: '2.0 GS 5d (7 Seat)').first_or_create
@@ -5681,7 +7357,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5700,7 +7380,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5710,7 +7394,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5720,7 +7408,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5730,7 +7422,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5740,7 +7436,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5758,7 +7458,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5776,7 +7480,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5794,7 +7502,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5812,7 +7524,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5830,7 +7546,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5846,7 +7566,11 @@ trim.model_years.where([
  {value: '2000 (W)'},
  {value: '2000 (X)'},
  {value: '2001 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5864,7 +7588,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Picnic (97-01)').first_or_create
@@ -5878,7 +7606,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
 trim = model.trims.where(value: '2.4 GS 5d (8 Seat)').first_or_create
@@ -5895,7 +7627,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5913,7 +7649,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5931,7 +7671,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5949,7 +7693,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5967,7 +7715,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5983,7 +7735,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -5999,7 +7755,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6015,7 +7775,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6031,7 +7795,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6046,7 +7814,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6061,7 +7833,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6075,7 +7851,11 @@ trim.model_years.where([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6091,7 +7871,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6105,7 +7889,11 @@ trim.model_years.where([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6121,7 +7909,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6135,7 +7927,11 @@ trim.model_years.where([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6151,7 +7947,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6167,7 +7967,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6179,7 +7983,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6191,7 +7999,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (00-05)').first_or_create
@@ -6203,7 +8015,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
 trim = model.trims.where(value: '2.4i 4d').first_or_create
@@ -6213,7 +8029,11 @@ trim.model_years.where([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
  {value: '1994 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6224,7 +8044,11 @@ trim.model_years.where([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
  {value: '1994 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6236,7 +8060,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6259,7 +8087,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6282,7 +8114,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6293,7 +8129,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6313,7 +8153,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6333,7 +8177,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6347,7 +8195,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6361,7 +8213,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6372,7 +8228,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6383,7 +8243,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6393,7 +8257,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6403,7 +8271,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Previa (90-00)').first_or_create
@@ -6414,7 +8286,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
 trim = model.trims.where(value: '1.5 VVTi LE 5d CVT Auto').first_or_create
@@ -6424,7 +8300,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6435,7 +8315,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6450,7 +8334,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6465,7 +8353,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6480,7 +8372,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6495,7 +8391,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6510,7 +8410,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6525,7 +8429,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6540,7 +8448,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6551,7 +8463,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6559,7 +8475,11 @@ trim = model.trims.where(value: '1.8 VVTi T3 (Leather) 5d CVT Auto').first_or_cr
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6567,7 +8487,11 @@ trim = model.trims.where(value: '1.8 VVTi T3 (Nav) 5d CVT Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6575,7 +8499,11 @@ trim = model.trims.where(value: '1.8 VVTi T3 (Nav/Leather) 5d CVT Auto').first_o
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6583,7 +8511,11 @@ trim = model.trims.where(value: '1.8 VVTi T4 (Nav) 5d CVT Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (09 on)').first_or_create
@@ -6591,7 +8523,11 @@ trim = model.trims.where(value: '1.8 VVTi T4 (Nav/Leather) 5d CVT Auto').first_o
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (04-09)').first_or_create
 trim = model.trims.where(value: '1.5 VVTi T3 Hybrid 5d CVT Auto').first_or_create
@@ -6613,7 +8549,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (04-09)').first_or_create
@@ -6636,7 +8576,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Hatchback (04-09)').first_or_create
@@ -6660,7 +8604,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Saloon (00-03)').first_or_create
 trim = model.trims.where(value: '1.5 VVTi Hybrid 4d Auto').first_or_create
@@ -6676,7 +8624,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Prius Saloon (00-03)').first_or_create
@@ -6692,7 +8644,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
 trim = model.trims.where(value: '2.0 VVT-i XT3 5d').first_or_create
@@ -6708,7 +8664,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6725,7 +8685,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6742,7 +8706,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6759,7 +8727,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6776,7 +8748,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6793,7 +8769,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6810,7 +8790,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6827,7 +8811,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6844,7 +8832,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6859,7 +8851,11 @@ trim.model_years.where([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6875,7 +8871,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6891,7 +8891,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6907,7 +8911,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6918,7 +8926,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6931,7 +8943,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6944,7 +8960,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6957,7 +8977,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6970,7 +8994,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6983,7 +9011,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -6996,7 +9028,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7009,7 +9045,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7022,7 +9062,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7035,7 +9079,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7048,7 +9096,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7061,7 +9113,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7074,7 +9130,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7087,7 +9147,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7100,7 +9164,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7111,7 +9179,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7122,7 +9194,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7135,7 +9211,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7148,7 +9228,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7161,7 +9245,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7174,7 +9262,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7187,7 +9279,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7200,7 +9296,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7213,7 +9313,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7226,7 +9330,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7239,7 +9347,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7252,7 +9364,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7265,7 +9381,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7278,7 +9398,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7291,7 +9415,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7304,7 +9432,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7317,7 +9449,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7330,7 +9466,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7338,7 +9478,11 @@ trim = model.trims.where(value: '2.0 V-matic XT-R Touch and Go 5d M-Drive S').fi
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7346,7 +9490,11 @@ trim = model.trims.where(value: '2.0 V-matic XT-R Style/Touch and Go 5d M-Drive 
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7354,7 +9502,11 @@ trim = model.trims.where(value: '2.2 D-4D XT-R Touch and Go 5d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7362,7 +9514,11 @@ trim = model.trims.where(value: '2.2 D-4D XT-R Style/Touch and Go 5d').first_or_
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7370,7 +9526,11 @@ trim = model.trims.where(value: '2.2 D-CAT XT-R Touch and Go 5d Auto').first_or_
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (06 on)').first_or_create
@@ -7378,7 +9538,11 @@ trim = model.trims.where(value: '2.2 D-CAT XT-R Style/Touch and Go 5d Auto').fir
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
 trim = model.trims.where(value: '1.8 NV 3d').first_or_create
@@ -7395,7 +9559,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7413,7 +9581,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7431,7 +9603,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7449,7 +9625,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7467,7 +9647,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7485,7 +9669,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7503,7 +9691,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7520,7 +9712,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7537,7 +9733,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7551,7 +9751,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7565,7 +9769,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7579,7 +9787,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7593,7 +9805,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7607,7 +9823,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7621,7 +9841,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7635,7 +9859,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7649,7 +9877,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7663,7 +9895,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7677,7 +9913,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7691,7 +9931,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7705,7 +9949,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7719,7 +9967,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7733,7 +9985,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7747,7 +10003,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7761,7 +10021,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7775,7 +10039,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7789,7 +10057,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7803,7 +10075,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7817,7 +10093,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7831,7 +10111,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7845,7 +10129,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7859,7 +10147,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7873,7 +10165,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7887,7 +10183,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7901,7 +10201,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7915,7 +10219,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7929,7 +10237,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7943,7 +10255,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7957,7 +10273,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7971,7 +10291,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7985,7 +10309,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -7999,7 +10327,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8013,7 +10345,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8027,7 +10363,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8041,7 +10381,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8053,7 +10397,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8065,7 +10413,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8077,7 +10429,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8089,7 +10445,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8100,7 +10460,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8111,7 +10475,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8122,7 +10490,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8133,7 +10505,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8144,7 +10520,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8155,7 +10535,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8166,7 +10550,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8177,7 +10565,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8188,7 +10580,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8198,7 +10594,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8208,7 +10608,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8218,7 +10622,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8228,7 +10636,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8238,7 +10650,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8248,7 +10664,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8258,7 +10678,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8268,7 +10692,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8278,7 +10706,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8288,7 +10720,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8298,7 +10734,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8308,7 +10748,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8318,7 +10762,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8328,7 +10776,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8338,7 +10790,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8348,7 +10804,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8358,7 +10818,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8368,7 +10832,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8378,7 +10846,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (00-05)').first_or_create
@@ -8388,7 +10860,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
 trim = model.trims.where(value: '2.0 3d').first_or_create
@@ -8397,7 +10873,11 @@ trim.model_years.where([
  {value: '1994 (M)'},
  {value: '1995 (M)'},
  {value: '1995 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8418,7 +10898,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8440,7 +10924,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8454,7 +10942,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8475,7 +10967,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8496,7 +10992,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8506,7 +11006,11 @@ trim.model_years.where([
  {value: '1996 (P)'},
  {value: '1997 (P)'},
  {value: '1997 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8515,7 +11019,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8524,7 +11032,11 @@ trim.model_years.where([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8535,7 +11047,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8546,7 +11062,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8557,7 +11077,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8568,7 +11092,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8585,7 +11113,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8602,7 +11134,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8612,7 +11148,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8625,7 +11165,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8638,7 +11182,11 @@ trim.model_years.where([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8654,7 +11202,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8669,7 +11221,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8681,7 +11237,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8693,7 +11253,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8705,7 +11269,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8717,7 +11285,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8728,7 +11300,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8739,7 +11315,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8753,7 +11333,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8767,7 +11351,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8779,7 +11367,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8791,7 +11383,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8803,7 +11399,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8815,7 +11415,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8827,7 +11431,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8839,7 +11447,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8851,7 +11463,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8862,7 +11478,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8873,7 +11493,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8884,7 +11508,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8895,7 +11523,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8906,7 +11538,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8917,7 +11553,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8927,7 +11567,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8937,7 +11581,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8947,7 +11595,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8957,7 +11609,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8967,7 +11623,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'RAV4 (94-00)').first_or_create
@@ -8977,7 +11637,11 @@ trim.model_years.where([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
 trim = model.trims.where(value: '1.3 Sportif 3d').first_or_create
@@ -8988,7 +11652,11 @@ trim.model_years.where([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9001,7 +11669,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9014,7 +11686,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9027,7 +11703,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9040,7 +11720,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9053,7 +11737,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9066,7 +11754,11 @@ trim.model_years.where([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9079,7 +11771,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9091,7 +11787,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9103,7 +11803,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9115,7 +11819,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9127,7 +11835,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9139,7 +11851,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9151,7 +11867,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9163,7 +11883,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9175,7 +11899,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9187,7 +11915,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9199,7 +11931,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Starlet (96-99)').first_or_create
@@ -9210,7 +11946,11 @@ trim.model_years.where([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (93-96)').first_or_create
 trim = model.trims.where(value: '3.0 Turbo 3d').first_or_create
@@ -9223,7 +11963,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (93-96)').first_or_create
@@ -9237,7 +11981,11 @@ trim.model_years.where([
  {value: '1995 (N)'},
  {value: '1996 (N)'},
  {value: '1996 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (86-93)').first_or_create
 trim = model.trims.where(value: '3.0 3d').first_or_create
@@ -9246,7 +11994,11 @@ trim.model_years.where([
  {value: '1992 (K)'},
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (86-93)').first_or_create
@@ -9256,7 +12008,11 @@ trim.model_years.where([
  {value: '1992 (K)'},
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (86-93)').first_or_create
@@ -9266,7 +12022,11 @@ trim.model_years.where([
  {value: '1992 (K)'},
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Supra (86-93)').first_or_create
@@ -9276,7 +12036,11 @@ trim.model_years.where([
  {value: '1992 (K)'},
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
 trim = model.trims.where(value: '1.3 Dual VVT-i 2WD 5d').first_or_create
@@ -9291,7 +12055,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9307,7 +12075,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9323,7 +12095,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9339,7 +12115,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9355,7 +12135,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9371,7 +12155,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9387,7 +12175,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Urban Cruiser (09 on)').first_or_create
@@ -9403,7 +12195,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
 trim = model.trims.where(value: '1.6 VVTi LE 5d').first_or_create
@@ -9413,7 +12209,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9424,7 +12224,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9439,7 +12243,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9450,7 +12258,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9464,7 +12276,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9475,7 +12291,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9487,7 +12307,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9498,7 +12322,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9513,7 +12341,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9527,7 +12359,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9539,7 +12375,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9554,7 +12394,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9566,7 +12410,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9578,7 +12426,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9593,7 +12445,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9605,7 +12461,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9617,7 +12477,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9629,7 +12493,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9641,7 +12509,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9653,7 +12525,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9665,7 +12541,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9677,7 +12557,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9689,7 +12573,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9704,7 +12592,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9716,7 +12608,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9728,7 +12624,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9743,7 +12643,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9757,7 +12661,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9771,7 +12679,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9784,7 +12696,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9798,7 +12714,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9809,7 +12729,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9820,7 +12744,11 @@ trim.model_years.where([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9834,7 +12762,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9847,7 +12779,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9860,7 +12796,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9873,7 +12813,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9886,7 +12830,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9899,7 +12847,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9912,7 +12864,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9925,7 +12881,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9938,7 +12898,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9951,7 +12915,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9964,7 +12932,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9977,7 +12949,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -9990,7 +12966,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10003,7 +12983,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10016,7 +13000,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10029,7 +13017,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10042,7 +13034,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10055,7 +13051,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10068,7 +13068,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10081,7 +13085,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10094,7 +13102,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10107,7 +13119,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10120,7 +13136,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10128,7 +13148,11 @@ trim = model.trims.where(value: '1.6 V-matic TR Nav/Lthr 5d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10136,7 +13160,11 @@ trim = model.trims.where(value: '1.8 V-matic TR Nav/Lthr 5d M-Drive S').first_or
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10144,7 +13172,11 @@ trim = model.trims.where(value: '2.0 D-4D TR Nav/Lthr 5d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10152,7 +13184,11 @@ trim = model.trims.where(value: '2.2 D-CAT TR Nav/Lthr 5d Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10160,7 +13196,11 @@ trim = model.trims.where(value: '2.0 D-4D T Spirit Nav/Lthr 5d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso (09 on)').first_or_create
@@ -10168,7 +13208,11 @@ trim = model.trims.where(value: '2.2 D-CAT T Spirit Nav/Lthr 5d Auto').first_or_
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
 trim = model.trims.where(value: '1.33 Dual VVT-i TR 5d').first_or_create
@@ -10176,7 +13220,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10185,7 +13233,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10194,7 +13246,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10203,7 +13259,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10212,7 +13272,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10221,7 +13285,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10230,7 +13298,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10239,7 +13311,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10248,7 +13324,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10257,7 +13337,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10266,7 +13350,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10275,7 +13363,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10284,7 +13376,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10293,7 +13389,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10302,7 +13402,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Verso S (11 on)').first_or_create
@@ -10311,7 +13415,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
 trim = model.trims.where(value: '1.0 VVT-i T2 3d').first_or_create
@@ -10319,7 +13427,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10328,7 +13440,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10337,7 +13453,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10346,7 +13466,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10355,7 +13479,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10364,7 +13492,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10373,7 +13505,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10382,7 +13518,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10391,7 +13531,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10400,7 +13544,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10409,7 +13557,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10418,7 +13570,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10427,7 +13583,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10436,7 +13596,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10445,7 +13609,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10454,7 +13622,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10463,7 +13635,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10472,7 +13648,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10481,7 +13661,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10490,7 +13674,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10499,7 +13687,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10508,7 +13700,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10517,7 +13713,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10526,7 +13726,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10535,7 +13739,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (11 on)').first_or_create
@@ -10544,7 +13752,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
 trim = model.trims.where(value: '1.0 16v VVT-i S 3d').first_or_create
@@ -10563,7 +13775,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10583,7 +13799,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10603,7 +13823,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10623,7 +13847,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10637,7 +13865,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10647,7 +13879,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10661,7 +13897,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10675,7 +13915,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10695,7 +13939,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10705,7 +13953,11 @@ trim.model_years.where([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10725,7 +13977,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10745,7 +14001,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10765,7 +14025,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10782,7 +14046,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10793,7 +14061,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10810,7 +14082,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10826,7 +14102,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10842,7 +14122,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10856,7 +14140,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10870,7 +14158,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10883,7 +14175,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10896,7 +14192,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10909,7 +14209,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10922,7 +14226,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10935,7 +14243,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10948,7 +14260,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10960,7 +14276,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10972,7 +14292,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10984,7 +14308,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -10996,7 +14324,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11008,7 +14340,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11020,7 +14356,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11031,7 +14371,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11042,7 +14386,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11053,7 +14401,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11064,7 +14416,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11075,7 +14431,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11089,7 +14449,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11103,7 +14467,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11116,7 +14484,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11130,7 +14502,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11144,7 +14520,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11158,7 +14538,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11172,7 +14556,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11186,7 +14574,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11200,7 +14592,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11214,7 +14610,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11228,7 +14628,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11242,7 +14646,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11256,7 +14664,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11270,7 +14682,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11284,7 +14700,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11298,7 +14718,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11312,7 +14736,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11326,7 +14754,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11340,7 +14772,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11354,7 +14790,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11368,7 +14808,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11380,7 +14824,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11392,7 +14840,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11404,7 +14856,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11416,7 +14872,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11427,7 +14887,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11438,7 +14902,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11449,7 +14917,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris (99-05)').first_or_create
@@ -11460,7 +14932,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
 trim = model.trims.where(value: '1.0 VVT-i Ion 3d').first_or_create
@@ -11471,7 +14947,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11483,7 +14963,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11507,7 +14991,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11531,7 +15019,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11543,7 +15035,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11555,7 +15051,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11573,7 +15073,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11590,7 +15094,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11607,7 +15115,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11624,7 +15136,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11641,7 +15157,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11658,7 +15178,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11676,7 +15200,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11693,7 +15221,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11710,7 +15242,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11727,7 +15263,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11744,7 +15284,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11761,7 +15305,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11778,7 +15326,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11795,7 +15347,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11812,7 +15368,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11829,7 +15389,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11846,7 +15410,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11863,7 +15431,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11876,7 +15448,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11889,7 +15465,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11902,7 +15482,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11915,7 +15499,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11928,7 +15516,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11941,7 +15533,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11954,7 +15550,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11967,7 +15567,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11982,7 +15586,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -11997,7 +15605,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12012,7 +15624,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12027,7 +15643,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12042,7 +15662,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12057,7 +15681,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12072,7 +15700,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12087,7 +15719,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12107,7 +15743,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12127,7 +15767,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12144,7 +15788,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12157,7 +15805,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12174,7 +15826,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12191,7 +15847,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12208,7 +15868,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12221,7 +15885,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12238,7 +15906,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12255,7 +15927,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12268,7 +15944,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12281,7 +15961,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12294,7 +15978,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12307,7 +15995,11 @@ trim.model_years.where([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12318,7 +16010,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12329,7 +16025,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12340,7 +16040,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12351,7 +16055,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12362,7 +16070,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12373,7 +16085,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12384,7 +16100,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12395,7 +16115,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12406,7 +16130,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12417,7 +16145,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Hatchback (06-11)').first_or_create
@@ -12428,7 +16160,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
 trim = model.trims.where(value: '1.3 VVT-i SR 3d').first_or_create
@@ -12439,7 +16175,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12451,7 +16191,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12463,7 +16207,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12475,7 +16223,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12491,7 +16243,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12506,7 +16262,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12518,7 +16278,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12530,7 +16294,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12542,7 +16310,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12554,7 +16326,11 @@ trim.model_years.where([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12567,7 +16343,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12580,7 +16360,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12593,7 +16377,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12606,7 +16394,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12619,7 +16411,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12632,7 +16428,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12645,7 +16445,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12658,7 +16462,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12669,7 +16477,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12680,7 +16492,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12691,7 +16507,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12702,7 +16522,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12713,7 +16537,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12724,7 +16552,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12735,7 +16567,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris SR (07-09)').first_or_create
@@ -12746,7 +16582,11 @@ trim.model_years.where([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris T Sport (01-05)').first_or_create
 trim = model.trims.where(value: '1.5 VVT-i 3d').first_or_create
@@ -12761,7 +16601,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris T Sport (01-05)').first_or_create
@@ -12775,7 +16619,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
 trim = model.trims.where(value: '1.3 16v VVT-i 5d').first_or_create
@@ -12786,7 +16634,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12798,7 +16650,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12810,7 +16666,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12822,7 +16682,11 @@ trim.model_years.where([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12837,7 +16701,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12852,7 +16720,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12867,7 +16739,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12882,7 +16758,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12894,7 +16774,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12906,7 +16790,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12923,7 +16811,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12940,7 +16832,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12954,7 +16850,11 @@ trim.model_years.where([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12971,7 +16871,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -12988,7 +16892,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Toyota').first_or_create
 model = make.models.where(value: 'Yaris Verso (00-05)').first_or_create
@@ -13005,7 +16913,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
 trim = model.trims.where(value: '1.0 12V Expression 5d').first_or_create
@@ -13014,7 +16926,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13031,7 +16947,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13041,7 +16961,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13051,7 +16975,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13066,7 +16994,11 @@ trim.model_years.where([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13081,7 +17013,11 @@ trim.model_years.where([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13097,7 +17033,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13113,7 +17053,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13129,7 +17073,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13145,7 +17093,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13155,7 +17107,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13165,7 +17121,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13181,7 +17141,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13197,7 +17161,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13213,7 +17181,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13229,7 +17201,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13239,7 +17215,11 @@ trim.model_years.where([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13255,7 +17235,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13266,7 +17250,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13277,7 +17265,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13288,7 +17280,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13299,7 +17295,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13310,7 +17310,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13321,7 +17325,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13332,7 +17340,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13343,7 +17355,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13352,7 +17368,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13361,7 +17381,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (08 on)').first_or_create
@@ -13370,7 +17394,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
 trim = model.trims.where(value: '1.0i 12V 5d').first_or_create
@@ -13386,7 +17414,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13403,7 +17435,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13416,7 +17452,11 @@ trim.model_years.where([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13432,7 +17472,11 @@ trim.model_years.where([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13455,7 +17499,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13472,7 +17520,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13486,7 +17538,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13503,7 +17559,11 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Agila (00-07)').first_or_create
@@ -13520,20 +17580,32 @@ trim.model_years.where([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Ampera Hatchback (12 on)').first_or_create
 trim = model.trims.where(value: 'Positiv 5d Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Ampera Hatchback (12 on)').first_or_create
 trim = model.trims.where(value: 'Electron 5d Auto').first_or_create
 trim.model_years.where([
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
 trim = model.trims.where(value: '2.4i 16v E 5d').first_or_create
@@ -13543,7 +17615,11 @@ trim.model_years.where([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13558,7 +17634,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13573,7 +17653,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13588,7 +17672,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13603,7 +17691,11 @@ trim.model_years.where([
  {value: '2009 (09)'},
  {value: '2009 (59)'},
  {value: '2010 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13622,7 +17714,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13641,7 +17737,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13654,7 +17754,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13667,7 +17771,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13678,7 +17786,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13689,7 +17801,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13700,7 +17816,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13711,7 +17831,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13722,7 +17846,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13732,7 +17860,11 @@ trim.model_years.where([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13743,7 +17875,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13753,7 +17889,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13763,7 +17903,11 @@ trim.model_years.where([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Antara (07 on)').first_or_create
@@ -13771,7 +17915,11 @@ trim = model.trims.where(value: '2.4i 16v Exclusiv 5d').first_or_create
 trim.model_years.where([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
 trim = model.trims.where(value: '1.8 16V 2d').first_or_create
@@ -13792,7 +17940,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13814,7 +17966,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13835,7 +17991,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13856,7 +18016,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13875,7 +18039,11 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13886,7 +18054,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13897,7 +18069,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13908,7 +18084,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13919,7 +18099,11 @@ trim.model_years.where([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13934,7 +18118,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13949,7 +18137,11 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13964,7 +18156,10 @@ trim.model_years.where([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Astra Convertible (01-05)').first_or_create
@@ -13975,4 +18170,7 @@ trim.model_years.where([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end

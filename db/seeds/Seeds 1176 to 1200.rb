@@ -2856,7 +2856,11 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Corsa Hatchback (00-04)').first_or_create
 trim = model.trims.where(value: '1.0i 12V Expression 3d (00)').first_or_create
@@ -4143,7 +4147,11 @@ values = [
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Corsa Hatchback (93-00)').first_or_create
 trim = model.trims.where(value: '1.2 LS 3d').first_or_create
@@ -6055,7 +6063,11 @@ values = [
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Corsa VXR (07 on)').first_or_create
 trim = model.trims.where(value: '1.6T 16v VXR 3d').first_or_create
@@ -6137,7 +6149,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Frontera (91-03)').first_or_create
 trim = model.trims.where(value: '2.0i Sport 3d').first_or_create
@@ -7002,7 +7018,11 @@ values = [
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Insignia Hatchback (09 on)').first_or_create
 trim = model.trims.where(value: '1.6T 16V Exclusiv 5d').first_or_create
@@ -9877,7 +9897,11 @@ trim = model.trims.where(value: '2.0 CDTi ecoFLEX Tech Line (160bhp) (Start Stop
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Insignia Saloon (09 on)').first_or_create
 trim = model.trims.where(value: '1.6T 16V Exclusiv 4d').first_or_create
@@ -12246,7 +12270,11 @@ trim = model.trims.where(value: '2.0 CDTi ecoFLEX Elite Nav (160bhp) (Start Stop
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Insignia Sports Tourer (09 on)').first_or_create
 trim = model.trims.where(value: '1.8i 16V Exclusiv 5d').first_or_create
@@ -15057,7 +15085,11 @@ trim = model.trims.where(value: '2.0 CDTi (160bhp) ecoFLEX Tech Line (Start Stop
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Insignia VXR (09 on)').first_or_create
 trim = model.trims.where(value: '2.8T V6 4X4 VXR Saloon 4d Auto').first_or_create
@@ -15239,7 +15271,11 @@ values = [
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Meriva (10 on)').first_or_create
 trim = model.trims.where(value: '1.4T 16V S 5d').first_or_create
@@ -15873,7 +15909,11 @@ trim = model.trims.where(value: '1.7 CDTi 16V (110bhp) SE 5d Auto').first_or_cre
 values = [
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Meriva (03-10)').first_or_create
 trim = model.trims.where(value: '1.6 8V Life 5d').first_or_create
@@ -17878,7 +17918,11 @@ values = [
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Meriva VXR (06-09)').first_or_create
 trim = model.trims.where(value: '1.6T 16V VXR 5d').first_or_create
@@ -17896,7 +17940,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Monaro (04-06)').first_or_create
 trim = model.trims.where(value: '5.7 V8 2d').first_or_create
@@ -17956,7 +18004,11 @@ values = [
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Monterey (94-99)').first_or_create
 trim = model.trims.where(value: '3.2i V6 RS 3d').first_or_create
@@ -18132,7 +18184,11 @@ values = [
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Nova Hatchback (83-94)').first_or_create
 trim = model.trims.where(value: '1.0 Spin 3d').first_or_create
@@ -18567,7 +18623,11 @@ values = [
  {value: '1992 (K)'},
  {value: '1993 (K)'},
  {value: '1993 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Nova Saloon (83-93)').first_or_create
 trim = model.trims.where(value: '1.0 Trip 4d').first_or_create
@@ -18690,7 +18750,11 @@ trim = model.trims.where(value: '1.4i Luxe Cat 4d').first_or_create
 values = [
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Omega Estate (94-03)').first_or_create
 trim = model.trims.where(value: '2.0i 16V GLS 5d Auto (94)').first_or_create
@@ -21780,7 +21844,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Omega Saloon (94-03)').first_or_create
 trim = model.trims.where(value: '2.0i 16V CD 4d Auto (94)').first_or_create
@@ -24823,7 +24891,11 @@ values = [
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Signum (03-08)').first_or_create
 trim = model.trims.where(value: '2.0 T Elegance 5d (03)').first_or_create
@@ -26165,7 +26237,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Sintra (97-99)').first_or_create
 trim = model.trims.where(value: '2.2 16V CD 5d (5 Seat)').first_or_create
@@ -26225,7 +26301,11 @@ values = [
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Tigra (94-01)').first_or_create
 trim = model.trims.where(value: '1.4i 16V 3d').first_or_create
@@ -26455,7 +26535,11 @@ values = [
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Tigra (04-09)').first_or_create
 trim = model.trims.where(value: '1.4i 16V 2d').first_or_create
@@ -27022,7 +27106,11 @@ values = [
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Vectra Estate (05-08)').first_or_create
 trim = model.trims.where(value: '1.8i Exclusiv 5d').first_or_create
@@ -28547,7 +28635,11 @@ values = [
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Vectra Estate (03-05)').first_or_create
 trim = model.trims.where(value: '1.8 Energy 5d').first_or_create
@@ -30022,7 +30114,11 @@ values = [
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.where(value: 'Vauxhall').first_or_create
 model = make.models.where(value: 'Vectra Estate (96-02)').first_or_create
 trim = model.trims.where(value: '2.0 SRi 5d').first_or_create
@@ -33001,4 +33097,7 @@ values = [
  {value: '2001 (51)'},
  {value: '2002 (51)'},
  {value: '2002 (02)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
