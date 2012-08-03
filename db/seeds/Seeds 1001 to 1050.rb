@@ -12,7 +12,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -28,7 +31,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -44,7 +50,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -57,7 +66,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -70,7 +82,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (V)'},
  {value: '2000 (V)'},
  {value: '2000 (W)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -86,7 +101,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -102,7 +120,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -117,7 +138,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -130,7 +154,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -143,7 +170,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -156,7 +186,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -169,7 +202,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -182,7 +218,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -195,7 +234,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (X)'},
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -217,7 +259,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -237,7 +282,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -258,7 +306,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -280,7 +331,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -302,7 +356,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -324,7 +381,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -346,7 +406,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -368,7 +431,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -390,7 +456,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -412,7 +481,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -434,7 +506,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -456,7 +531,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -477,7 +555,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -498,7 +579,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -519,7 +603,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -539,7 +626,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -558,7 +648,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -571,7 +664,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -586,7 +682,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -597,7 +696,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -608,7 +710,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -619,7 +724,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -630,7 +738,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -644,7 +755,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -655,7 +769,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -666,7 +783,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -677,7 +797,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Hatchback (98-05)')
@@ -688,7 +811,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
 trim = model.trims.find_or_create_by_value(value: '2.0 FSI Scout 4x4 5d')
@@ -705,7 +832,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
@@ -723,7 +853,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
@@ -736,7 +869,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
@@ -749,7 +885,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
@@ -765,7 +904,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia Scout (07-12)')
@@ -776,7 +918,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
 trim = model.trims.find_or_create_by_value(value: '2.0T FSI Estate 5d')
@@ -797,7 +943,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -819,7 +968,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -836,7 +988,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -853,7 +1008,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -868,7 +1026,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -883,7 +1044,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -898,7 +1062,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -913,7 +1080,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -926,7 +1096,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -939,7 +1112,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -952,7 +1128,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -965,7 +1144,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -978,7 +1160,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -994,7 +1179,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1010,7 +1198,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1026,7 +1217,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1042,7 +1236,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1058,7 +1255,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1074,7 +1274,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1090,7 +1293,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (05 on)')
@@ -1106,7 +1312,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (01-05)')
 trim = model.trims.find_or_create_by_value(value: '1.8T vRS Hatchback 5d')
@@ -1127,7 +1337,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Octavia vRS (01-05)')
@@ -1144,7 +1357,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
 trim = model.trims.find_or_create_by_value(value: '1.2 12V 1 5d')
@@ -1158,7 +1375,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1173,7 +1393,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1189,7 +1412,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1205,7 +1431,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1221,7 +1450,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1237,7 +1469,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1253,7 +1488,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1269,7 +1507,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1284,7 +1525,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1300,7 +1544,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1316,7 +1563,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1332,7 +1582,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1348,7 +1601,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1368,7 +1624,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1388,7 +1647,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1408,7 +1670,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1428,7 +1693,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1448,7 +1716,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1460,7 +1731,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1475,7 +1749,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1490,7 +1767,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1505,7 +1785,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1520,7 +1803,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1535,7 +1821,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1550,7 +1839,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1565,7 +1857,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1580,7 +1875,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1595,7 +1893,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1608,7 +1909,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1621,7 +1925,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1634,7 +1941,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1647,7 +1957,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1660,7 +1973,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1673,7 +1989,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1686,7 +2005,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1699,7 +2021,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1712,7 +2037,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1725,7 +2053,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1738,7 +2069,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1751,7 +2085,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1764,7 +2101,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1774,7 +2114,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1784,7 +2127,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1794,7 +2140,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1804,7 +2153,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1814,7 +2166,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1824,7 +2179,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Roomster (06 on)')
@@ -1834,7 +2192,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
 trim = model.trims.find_or_create_by_value(value: '1.8T Classic 4d')
@@ -1854,7 +2216,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1875,7 +2240,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1895,7 +2263,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1915,7 +2286,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1936,7 +2310,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1958,7 +2335,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1970,7 +2350,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (03)'},
  {value: '2003 (53)'},
  {value: '2004 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -1991,7 +2374,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2012,7 +2398,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2034,7 +2423,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2046,7 +2438,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (03)'},
  {value: '2003 (53)'},
  {value: '2004 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2064,7 +2459,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2083,7 +2481,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2101,7 +2502,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2120,7 +2524,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2138,7 +2545,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2155,7 +2565,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2174,7 +2587,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2186,7 +2602,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2198,7 +2617,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2210,7 +2632,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2222,7 +2647,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2236,7 +2664,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2248,7 +2679,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2260,7 +2694,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2274,7 +2711,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2286,7 +2726,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2300,7 +2743,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2310,7 +2756,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2325,7 +2774,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2340,7 +2792,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2355,7 +2810,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2367,7 +2825,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2382,7 +2843,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2396,7 +2860,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2411,7 +2878,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2426,7 +2896,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2438,7 +2911,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2453,7 +2929,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2467,7 +2946,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2482,7 +2964,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2497,7 +2982,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2512,7 +3000,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2526,7 +3017,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2540,7 +3034,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2554,7 +3051,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2568,7 +3068,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2581,7 +3084,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2594,7 +3100,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2607,7 +3116,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb (02-08)')
@@ -2619,7 +3131,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
 trim = model.trims.find_or_create_by_value(value: '1.4 TSI S 5d')
@@ -2631,7 +3147,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2644,7 +3163,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2657,7 +3179,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2669,7 +3194,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2682,7 +3210,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2695,7 +3226,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2708,7 +3242,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2721,7 +3258,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2734,7 +3274,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2746,7 +3289,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2759,7 +3305,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2772,7 +3321,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2785,7 +3337,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2798,7 +3353,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2811,7 +3369,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2824,7 +3385,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2837,7 +3401,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2850,7 +3417,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2863,7 +3433,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2876,7 +3449,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2889,7 +3465,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2902,7 +3481,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2915,7 +3497,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2928,7 +3513,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2939,7 +3527,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2950,7 +3541,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2961,7 +3555,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2972,7 +3569,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2983,7 +3583,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -2994,7 +3597,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3005,7 +3611,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3015,7 +3624,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3025,7 +3637,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3035,7 +3650,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3045,7 +3663,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3055,7 +3676,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3065,7 +3689,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3075,7 +3702,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3083,7 +3713,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0T FSI Elegance (L+K Luxury
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3091,7 +3724,10 @@ trim = model.trims.find_or_create_by_value(value: '3.6 V6 Elegance 4X4 (L+K Luxu
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3099,7 +3735,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3107,7 +3746,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3115,7 +3757,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3123,7 +3768,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3131,7 +3779,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Estate (10 on)')
@@ -3139,7 +3790,11 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
 trim = model.trims.find_or_create_by_value(value: '1.4 TSI S 5d')
@@ -3154,7 +3809,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3170,7 +3828,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3186,7 +3847,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3201,7 +3865,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3214,7 +3881,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3227,7 +3897,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3243,7 +3916,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3259,7 +3935,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3275,7 +3954,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3290,7 +3972,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3303,7 +3988,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3316,7 +4004,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3332,7 +4023,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3348,7 +4042,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3364,7 +4061,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3380,7 +4080,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3396,7 +4099,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3412,7 +4118,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3428,7 +4137,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3441,7 +4153,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3454,7 +4169,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3470,7 +4188,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3486,7 +4207,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3502,7 +4226,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3517,7 +4244,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3531,7 +4261,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3545,7 +4278,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3559,7 +4295,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3573,7 +4312,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3587,7 +4329,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3601,7 +4346,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3612,7 +4360,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3623,7 +4374,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3634,7 +4388,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3645,7 +4402,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3656,7 +4416,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3667,7 +4430,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3678,7 +4444,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3688,7 +4457,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3698,7 +4470,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3708,7 +4483,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3718,7 +4496,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3728,7 +4509,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3738,7 +4522,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3748,7 +4535,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3756,7 +4546,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0T FSI Elegance (L+K Luxury
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3764,7 +4557,10 @@ trim = model.trims.find_or_create_by_value(value: '3.6 V6 Elegance 4X4 (L+K Luxu
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3772,7 +4568,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3780,7 +4579,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3788,7 +4590,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (140bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3796,7 +4601,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3804,7 +4612,10 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Superb Hatchback (08 on)')
@@ -3812,7 +4623,11 @@ trim = model.trims.find_or_create_by_value(value: '2.0 TDI CR (170bhp) Elegance 
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
 trim = model.trims.find_or_create_by_value(value: '1.2 TSI E 5d')
@@ -3824,7 +4639,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3837,7 +4655,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3850,7 +4671,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3863,7 +4687,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3876,7 +4703,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3889,7 +4719,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3902,7 +4735,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3915,7 +4751,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3928,7 +4767,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3941,7 +4783,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3954,7 +4799,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3967,7 +4815,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3980,7 +4831,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -3993,7 +4847,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4006,7 +4863,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4019,7 +4879,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4032,7 +4895,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4045,7 +4911,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4058,7 +4927,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4071,7 +4943,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4084,7 +4959,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4095,7 +4973,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4106,7 +4987,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4117,7 +5001,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4128,7 +5015,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4139,7 +5029,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4150,7 +5043,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4160,7 +5056,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4170,7 +5069,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4180,7 +5082,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4190,7 +5095,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4200,7 +5108,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4210,7 +5121,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4220,7 +5134,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4230,7 +5147,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Skoda')
 model = make.models.find_or_create_by_value(value: 'Yeti (09 on)')
@@ -4240,7 +5160,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
 trim = model.trims.find_or_create_by_value(value: 'Cabrio and Passion 2d Auto (02)')
@@ -4251,7 +5175,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4262,7 +5189,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4275,7 +5205,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4288,7 +5221,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4301,7 +5237,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4314,7 +5253,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4327,7 +5269,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Cabriolet (01-04)')
@@ -4338,7 +5283,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
 trim = model.trims.find_or_create_by_value(value: 'Smartand Pure 2d Auto (01)')
@@ -4349,7 +5298,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4361,7 +5313,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4373,7 +5328,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (02)'},
  {value: '2002 (52)'},
  {value: '2003 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4385,7 +5343,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4398,7 +5359,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4411,7 +5375,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4424,7 +5391,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4437,7 +5407,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4450,7 +5423,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4461,7 +5437,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'City Coupé (00-04)')
@@ -4472,7 +5451,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (53)'},
  {value: '2004 (04)'},
  {value: '2004 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Crossblade (02-03)')
 trim = model.trims.find_or_create_by_value(value: '(70bhp) 2d (LHD)')
@@ -4483,7 +5466,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
 trim = model.trims.find_or_create_by_value(value: '1.1 Pulse 5d')
@@ -4496,7 +5483,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4510,7 +5500,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4524,7 +5517,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4538,7 +5534,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4552,7 +5551,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4566,7 +5568,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4580,7 +5585,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4594,7 +5602,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4608,7 +5619,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4622,7 +5636,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4636,7 +5653,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4650,7 +5670,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4664,7 +5687,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4678,7 +5704,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4692,7 +5721,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4706,7 +5738,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4720,7 +5755,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4734,7 +5772,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4748,7 +5789,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4761,7 +5805,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4774,7 +5821,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4786,7 +5836,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4796,7 +5849,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4806,7 +5862,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4816,7 +5875,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Forfour (04-06)')
@@ -4826,7 +5888,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
 trim = model.trims.find_or_create_by_value(value: 'Pure 2d Auto')
@@ -4838,7 +5904,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4851,7 +5920,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4864,7 +5936,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4880,7 +5955,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4896,7 +5974,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4909,7 +5990,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4922,7 +6006,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4935,7 +6022,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4947,7 +6037,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4959,7 +6052,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4971,7 +6067,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4983,7 +6082,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -4995,7 +6097,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5007,7 +6112,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5021,7 +6129,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5035,7 +6146,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5049,7 +6163,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5063,7 +6180,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5077,7 +6197,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5091,7 +6214,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5105,7 +6231,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5119,7 +6248,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5133,7 +6265,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5147,7 +6282,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5160,7 +6298,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5171,7 +6312,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5182,7 +6326,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5193,7 +6340,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5203,7 +6353,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (07 on)')
@@ -5213,7 +6366,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
 trim = model.trims.find_or_create_by_value(value: 'Pure 2d Auto')
@@ -5230,7 +6387,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5248,7 +6408,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5262,7 +6425,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (05)'},
  {value: '2005 (55)'},
  {value: '2006 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5280,7 +6446,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5298,7 +6467,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5307,7 +6479,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5325,7 +6500,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5337,7 +6515,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5347,7 +6528,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5359,7 +6543,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Cabriolet (04-07)')
@@ -5371,7 +6558,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
 trim = model.trims.find_or_create_by_value(value: 'Pure Auto (61bhp) 2d')
@@ -5383,7 +6574,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5396,7 +6590,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5409,7 +6606,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5422,7 +6622,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5438,7 +6641,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5454,7 +6660,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5467,7 +6676,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5480,7 +6692,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5493,7 +6708,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5506,7 +6724,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5518,7 +6739,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5530,7 +6754,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5542,7 +6769,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5554,7 +6784,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5566,7 +6799,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5578,7 +6814,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5590,7 +6829,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5601,7 +6843,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5612,7 +6857,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5626,7 +6874,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5640,7 +6891,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5654,7 +6908,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5668,7 +6925,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5682,7 +6942,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5696,7 +6959,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5710,7 +6976,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5724,7 +6993,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5738,7 +7010,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5752,7 +7027,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5765,7 +7043,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5777,7 +7058,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5789,7 +7073,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5800,7 +7087,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5811,7 +7101,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5822,7 +7115,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5832,7 +7128,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5842,7 +7141,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupe (07 on)')
@@ -5852,7 +7154,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
 trim = model.trims.find_or_create_by_value(value: 'Pure 2d Auto')
@@ -5869,7 +7175,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5887,7 +7196,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5901,7 +7213,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (05)'},
  {value: '2005 (55)'},
  {value: '2006 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5910,7 +7225,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (53)'},
  {value: '2004 (53)'},
  {value: '2004 (04)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5928,7 +7246,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5946,7 +7267,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5964,7 +7288,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5974,7 +7301,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5984,7 +7314,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -5996,7 +7329,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Fortwo Coupé (04-07)')
@@ -6008,7 +7344,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
 trim = model.trims.find_or_create_by_value(value: '(61bhp) 2d Auto (LHD)')
@@ -6018,7 +7358,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (03)'},
  {value: '2003 (53)'},
  {value: '2004 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6028,7 +7371,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6047,7 +7393,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6066,7 +7415,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6084,7 +7436,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6102,7 +7457,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6120,7 +7478,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster (03-07)')
@@ -6132,7 +7493,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
 trim = model.trims.find_or_create_by_value(value: '(80bhp) 2d Auto (LHD)')
@@ -6141,7 +7506,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
@@ -6160,7 +7528,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
@@ -6179,7 +7550,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
@@ -6197,7 +7571,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
@@ -6207,7 +7584,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Smart')
 model = make.models.find_or_create_by_value(value: 'Roadster Coupé (03-07)')
@@ -6219,7 +7599,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (11 on)')
 trim = model.trims.find_or_create_by_value(value: '2.0 S 5d')
@@ -6227,7 +7611,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (11 on)')
@@ -6236,7 +7623,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (11 on)')
@@ -6245,7 +7635,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (11 on)')
@@ -6254,7 +7647,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (11 on)')
@@ -6263,7 +7659,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (97-99)')
 trim = model.trims.find_or_create_by_value(value: '2.3 16V GLS 3d Auto')
@@ -6275,7 +7675,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (97-99)')
@@ -6287,7 +7690,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (97-99)')
@@ -6297,7 +7703,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Korando (97-99)')
@@ -6307,7 +7716,11 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
 trim = model.trims.find_or_create_by_value(value: '2.0 S 2WD 5d')
@@ -6325,7 +7738,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6344,7 +7760,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6363,7 +7782,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6376,7 +7798,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6389,7 +7814,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6402,7 +7830,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6416,7 +7847,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6430,7 +7864,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Kyron (06-10)')
@@ -6444,7 +7881,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
 trim = model.trims.find_or_create_by_value(value: '2.9 D S 5d')
@@ -6457,7 +7898,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6471,7 +7915,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6485,7 +7932,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6499,7 +7949,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6513,7 +7966,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6525,7 +7981,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6535,7 +7994,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Musso (95-99)')
@@ -6545,7 +8007,11 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (R)'},
  {value: '1998 (R)'},
  {value: '1998 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
 trim = model.trims.find_or_create_by_value(value: '320 SX 5d Auto (7 Seat)')
@@ -6561,7 +8027,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6578,7 +8047,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6595,7 +8067,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6612,7 +8087,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6629,7 +8107,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6646,7 +8127,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6663,7 +8147,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6678,7 +8165,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6693,7 +8183,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6708,7 +8201,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6723,7 +8219,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6738,7 +8237,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6753,7 +8255,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6768,7 +8273,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6783,7 +8291,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6798,7 +8309,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6811,7 +8325,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6824,7 +8341,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6836,7 +8356,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6852,7 +8375,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6866,7 +8392,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6879,7 +8408,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6895,7 +8427,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6909,7 +8444,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6925,7 +8463,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6939,7 +8480,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6953,7 +8497,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6969,7 +8516,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6985,7 +8535,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -6999,7 +8552,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7015,7 +8571,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7025,7 +8584,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7035,7 +8597,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7045,7 +8610,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7055,7 +8623,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7065,7 +8636,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7075,7 +8649,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (06)'},
  {value: '2006 (56)'},
  {value: '2007 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7085,7 +8662,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7095,7 +8675,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7105,7 +8688,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7115,7 +8701,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7125,7 +8714,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7135,7 +8727,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7145,7 +8740,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7155,7 +8753,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7165,7 +8766,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (07)'},
  {value: '2007 (57)'},
  {value: '2008 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7175,7 +8779,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (07)'},
  {value: '2007 (57)'},
  {value: '2008 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7195,7 +8802,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7215,7 +8825,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7232,7 +8845,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7246,7 +8862,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7256,7 +8875,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7264,7 +8886,10 @@ trim = model.trims.find_or_create_by_value(value: '270 EX (7 Seat) 5d Tip Auto')
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7272,7 +8897,10 @@ trim = model.trims.find_or_create_by_value(value: '270 S (7 Seat) 5d')
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rexton (03 on)')
@@ -7280,7 +8908,11 @@ trim = model.trims.find_or_create_by_value(value: '270 S (7 Seat) 5d Tip Auto')
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
 trim = model.trims.find_or_create_by_value(value: '270 S 5d')
@@ -7305,7 +8937,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7318,7 +8953,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7328,7 +8966,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7338,7 +8979,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7352,7 +8996,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7366,7 +9013,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7379,7 +9029,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7396,7 +9049,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7416,7 +9072,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7436,7 +9095,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7456,7 +9118,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Rodius (05 on)')
@@ -7467,7 +9132,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (58)'},
  {value: '2009 (58)'},
  {value: '2009 (09)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Sports Pick-up (04-05)')
 trim = model.trims.find_or_create_by_value(value: '290 Twin Cab 4d')
@@ -7479,7 +9148,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'SsangYong')
 model = make.models.find_or_create_by_value(value: 'Sports Pick-up (04-05)')
@@ -7492,7 +9164,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'B9 Tribeca (06-07)')
 trim = model.trims.find_or_create_by_value(value: '3.0 S5 5d Auto')
@@ -7502,7 +9178,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'B9 Tribeca (06-07)')
@@ -7513,7 +9192,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'B9 Tribeca (06-07)')
@@ -7524,7 +9206,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
 trim = model.trims.find_or_create_by_value(value: '2.0 X 5d')
@@ -7540,7 +9226,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7557,7 +9246,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7574,7 +9266,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7591,7 +9286,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7608,7 +9306,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7625,7 +9326,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7638,7 +9342,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7653,7 +9360,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7667,7 +9377,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (08 on)')
@@ -7675,7 +9388,11 @@ trim = model.trims.find_or_create_by_value(value: '2.0D XS 5d')
 trim.model_years.find_or_create_by_value([
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
 trim = model.trims.find_or_create_by_value(value: '2.0 AWD S-Turbo 5d')
@@ -7684,7 +9401,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7694,7 +9414,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7710,7 +9433,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7726,7 +9452,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7742,7 +9471,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7758,7 +9490,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7774,7 +9509,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7790,7 +9528,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7803,7 +9544,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7819,7 +9563,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7829,7 +9576,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7842,7 +9592,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7854,7 +9607,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7869,7 +9625,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7880,7 +9639,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (55)'},
  {value: '2006 (55)'},
  {value: '2006 (06)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7892,7 +9654,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7909,7 +9674,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7921,7 +9689,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7939,7 +9710,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7957,7 +9731,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7974,7 +9751,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -7991,7 +9771,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8008,7 +9791,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8025,7 +9811,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8036,7 +9825,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8047,7 +9839,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8061,7 +9856,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8075,7 +9873,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8089,7 +9890,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (02-08)')
@@ -8103,7 +9907,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
 trim = model.trims.find_or_create_by_value(value: '2.0 AWD GLS 5d')
@@ -8117,7 +9925,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8132,7 +9943,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8147,7 +9961,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8162,7 +9979,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8184,7 +10004,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8206,7 +10029,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8228,7 +10054,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8250,7 +10079,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8268,7 +10100,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8286,7 +10121,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8304,7 +10142,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8322,7 +10163,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Forester (97-03)')
@@ -8335,7 +10179,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
 trim = model.trims.find_or_create_by_value(value: '1.5 R 5d')
@@ -8352,7 +10200,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8368,7 +10219,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8379,7 +10233,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (08)'},
  {value: '2008 (58)'},
  {value: '2009 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8395,7 +10252,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8410,7 +10270,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8425,7 +10288,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8444,7 +10310,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8462,7 +10331,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8479,7 +10351,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (10)'},
  {value: '2010 (60)'},
  {value: '2011 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8496,7 +10371,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8513,7 +10391,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8529,7 +10410,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8543,7 +10427,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8556,7 +10443,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (59)'},
  {value: '2010 (59)'},
  {value: '2010 (10)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8573,7 +10463,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8584,7 +10477,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8595,7 +10491,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8606,7 +10505,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza (07 on)')
@@ -8617,7 +10519,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
 trim = model.trims.find_or_create_by_value(value: '1.6 TS 4WD 5d')
@@ -8633,7 +10539,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8650,7 +10559,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8667,7 +10579,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8684,7 +10599,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8695,7 +10613,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8712,7 +10633,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8729,7 +10653,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8745,7 +10672,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8761,7 +10691,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8772,7 +10705,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (00-05)')
@@ -8783,7 +10719,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
 trim = model.trims.find_or_create_by_value(value: '1.6 GL 2WD 5d')
@@ -8797,7 +10737,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8812,7 +10755,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8825,7 +10771,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8838,7 +10787,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8864,7 +10816,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8887,7 +10842,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8910,7 +10868,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8932,7 +10893,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8952,7 +10916,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Estate (93-01)')
@@ -8968,7 +10935,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
 trim = model.trims.find_or_create_by_value(value: '2.0 R Sport 4d')
@@ -8981,7 +10952,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -8997,7 +10971,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9014,7 +10991,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9031,7 +11011,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9048,7 +11031,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9058,7 +11044,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9071,7 +11060,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9084,7 +11076,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9098,7 +11093,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9112,7 +11110,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9125,7 +11126,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (05-08)')
@@ -9136,7 +11140,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
 trim = model.trims.find_or_create_by_value(value: '2.0 GX 4WD 4d')
@@ -9152,7 +11160,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9169,7 +11180,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9186,7 +11200,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9201,7 +11218,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9215,7 +11235,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9229,7 +11252,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9241,7 +11267,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9258,7 +11287,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9275,7 +11307,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9292,7 +11327,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9308,7 +11346,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9324,7 +11365,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9335,7 +11379,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (04)'},
  {value: '2004 (54)'},
  {value: '2005 (54)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9346,7 +11393,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9357,7 +11407,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (00-05)')
@@ -9367,7 +11420,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
 trim = model.trims.find_or_create_by_value(value: '1.6 LX 2WD 4d')
@@ -9381,7 +11438,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9396,7 +11456,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9409,7 +11472,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9422,7 +11488,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9448,7 +11517,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9460,7 +11532,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9483,7 +11558,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9506,7 +11584,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9528,7 +11609,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9539,7 +11623,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9558,7 +11645,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9568,7 +11658,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (R)'},
  {value: '1998 (S)'},
  {value: '1999 (S)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9579,7 +11672,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (T)'},
  {value: '1999 (V)'},
  {value: '2000 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9590,7 +11686,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (T)'},
  {value: '1999 (V)'},
  {value: '2000 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9606,7 +11705,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9619,7 +11721,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Saloon (93-01)')
@@ -9632,7 +11737,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2001 (X)'},
  {value: '2001 (Y)'},
  {value: '2001 (51)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
 trim = model.trims.find_or_create_by_value(value: '2.0 R 5d')
@@ -9642,7 +11751,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9655,7 +11767,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9671,7 +11786,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (57)'},
  {value: '2008 (57)'},
  {value: '2008 (08)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9688,7 +11806,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9705,7 +11826,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9719,7 +11843,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9733,7 +11860,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9747,7 +11877,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza Sports Wagon (05-08)')
@@ -9758,7 +11891,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza STi (08 on)')
 trim = model.trims.find_or_create_by_value(value: '2.5 WRX STI 5d')
@@ -9775,7 +11912,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza STi (08 on)')
@@ -9792,7 +11932,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (60)'},
  {value: '2011 (60)'},
  {value: '2011 (11)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza STi (08 on)')
@@ -9803,7 +11946,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Impreza STi (08 on)')
@@ -9814,7 +11960,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Justy (07-09)')
 trim = model.trims.find_or_create_by_value(value: '1.0 R 5d')
@@ -9827,7 +11977,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Justy (07-09)')
@@ -9837,7 +11990,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Justy (96-02)')
 trim = model.trims.find_or_create_by_value(value: '1.3 GX 4WD 3d')
@@ -9861,7 +12018,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Justy (96-02)')
@@ -9886,7 +12046,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
 trim = model.trims.find_or_create_by_value(value: '2.5 GX 5d')
@@ -9907,7 +12071,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -9929,7 +12096,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -9951,7 +12121,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -9973,7 +12146,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -9995,7 +12171,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10017,7 +12196,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10039,7 +12221,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10061,7 +12246,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10080,7 +12268,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10099,7 +12290,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10118,7 +12312,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10134,7 +12331,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10148,7 +12348,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10162,7 +12365,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2003 (52)'},
  {value: '2003 (03)'},
  {value: '2003 (53)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10172,7 +12378,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10182,7 +12391,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10192,7 +12404,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (98-03)')
@@ -10202,7 +12417,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (52)'},
  {value: '2003 (52)'},
  {value: '2003 (03)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
 trim = model.trims.find_or_create_by_value(value: '1.8 GL Eco 5d')
@@ -10210,7 +12429,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
  {value: '1993 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10219,7 +12441,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
  {value: '1993 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10227,7 +12452,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8i GL 5d')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10235,7 +12463,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8 GL Cat 5d')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10243,7 +12474,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8 GL Cat 5d Auto')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10251,7 +12485,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8i GL 5d Auto')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10268,7 +12505,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10287,7 +12527,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10298,7 +12541,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1993 (K)'},
  {value: '1993 (L)'},
  {value: '1994 (L)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10310,7 +12556,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1993 (L)'},
  {value: '1994 (L)'},
  {value: '1994 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10329,7 +12578,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10346,7 +12598,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10360,7 +12615,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1995 (M)'},
  {value: '1995 (N)'},
  {value: '1996 (N)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10371,7 +12629,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1994 (L)'},
  {value: '1994 (M)'},
  {value: '1995 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10390,7 +12651,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10409,7 +12673,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10421,7 +12688,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10433,7 +12703,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10447,7 +12720,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10462,7 +12738,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10477,7 +12756,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10492,7 +12774,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10507,7 +12792,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10519,7 +12807,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10531,7 +12822,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10543,7 +12837,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10555,7 +12852,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10569,7 +12869,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10583,7 +12886,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Estate (89-00)')
@@ -10597,7 +12903,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2000 (V)'},
  {value: '2000 (W)'},
  {value: '2000 (X)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
 trim = model.trims.find_or_create_by_value(value: '2.0i 4d')
@@ -10609,7 +12919,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10622,7 +12935,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10635,7 +12951,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10648,7 +12967,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10661,7 +12983,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10674,7 +12999,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10687,7 +13015,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10700,7 +13031,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10713,7 +13047,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10726,7 +13063,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10742,7 +13082,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10756,7 +13099,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10768,7 +13114,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10780,7 +13129,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10792,7 +13144,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10804,7 +13159,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10816,7 +13174,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10830,7 +13191,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10844,7 +13208,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10858,7 +13225,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10872,7 +13242,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10892,7 +13265,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10912,7 +13288,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10929,7 +13308,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10946,7 +13328,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10963,7 +13348,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10980,7 +13368,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -10995,7 +13386,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -11010,7 +13404,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (03-10)')
@@ -11025,7 +13422,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2010 (59)'},
  {value: '2010 (10)'},
  {value: '2010 (60)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
 trim = model.trims.find_or_create_by_value(value: '2.5 GX 4d')
@@ -11042,7 +13443,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
@@ -11060,7 +13464,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
@@ -11078,7 +13485,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
@@ -11095,7 +13505,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
@@ -11112,7 +13525,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (99-02)')
@@ -11129,14 +13545,21 @@ trim.model_years.find_or_create_by_value([
  {value: '2002 (51)'},
  {value: '2002 (02)'},
  {value: '2002 (52)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
 trim = model.trims.find_or_create_by_value(value: '1.8 GL Cat 4d')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11144,7 +13567,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8 GL Cat 4d Auto')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11153,7 +13579,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
  {value: '1993 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11162,7 +13591,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
  {value: '1993 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11170,7 +13602,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8i GL 4d')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11178,7 +13613,10 @@ trim = model.trims.find_or_create_by_value(value: '1.8i GL 4d Auto')
 trim.model_years.find_or_create_by_value([
  {value: '1992 (J)'},
  {value: '1992 (K)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11195,7 +13633,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11212,7 +13653,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11224,7 +13668,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1993 (L)'},
  {value: '1994 (L)'},
  {value: '1994 (M)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11243,7 +13690,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1997 (P)'},
  {value: '1997 (R)'},
  {value: '1998 (R)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11260,7 +13710,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1996 (N)'},
  {value: '1996 (P)'},
  {value: '1997 (P)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11279,7 +13732,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11298,7 +13754,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1998 (S)'},
  {value: '1999 (S)'},
  {value: '1999 (T)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11313,7 +13772,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11328,7 +13790,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11340,7 +13805,10 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Saloon (89-99)')
@@ -11352,7 +13820,11 @@ trim.model_years.find_or_create_by_value([
  {value: '1999 (S)'},
  {value: '1999 (T)'},
  {value: '1999 (V)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
 trim = model.trims.find_or_create_by_value(value: '2.0i 5d')
@@ -11364,7 +13836,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11377,7 +13852,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11390,7 +13868,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11403,7 +13884,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11416,7 +13900,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11429,7 +13916,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11442,7 +13932,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11455,7 +13948,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11468,7 +13964,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11480,7 +13979,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2004 (54)'},
  {value: '2005 (54)'},
  {value: '2005 (05)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11498,7 +14000,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11514,7 +14019,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11529,7 +14037,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2007 (56)'},
  {value: '2007 (07)'},
  {value: '2007 (57)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11543,7 +14054,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11557,7 +14071,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11571,7 +14088,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11585,7 +14105,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11599,7 +14122,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11613,7 +14139,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11627,7 +14156,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11641,7 +14173,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11655,7 +14190,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11669,7 +14207,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11686,7 +14227,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11703,7 +14247,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11717,7 +14264,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11731,7 +14281,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11745,7 +14298,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11757,7 +14313,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11769,7 +14328,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11781,7 +14343,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Sports Tourer (03-09)')
@@ -11793,7 +14358,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
 trim = model.trims.find_or_create_by_value(value: '2.5i SE 5d Lineartronic')
@@ -11806,7 +14375,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11820,7 +14392,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11834,7 +14409,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11848,7 +14426,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11862,7 +14443,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11873,7 +14457,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Legacy Tourer (09 on)')
@@ -11884,7 +14471,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
 trim = model.trims.find_or_create_by_value(value: '2.5i SE Outback 5d Lineartronic')
@@ -11897,7 +14488,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11911,7 +14505,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11925,7 +14522,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11939,7 +14539,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11953,7 +14556,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11964,7 +14570,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (09 on)')
@@ -11975,7 +14584,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2011 (60)'},
  {value: '2011 (11)'},
  {value: '2011 (61)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
 trim = model.trims.find_or_create_by_value(value: '2.5i Outback 5d')
@@ -11987,7 +14600,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12003,7 +14619,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12016,7 +14635,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12029,7 +14651,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2005 (54)'},
  {value: '2005 (05)'},
  {value: '2005 (55)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12047,7 +14672,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12065,7 +14693,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (56)'},
  {value: '2007 (56)'},
  {value: '2007 (07)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12077,7 +14708,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12089,7 +14723,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12101,7 +14738,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12113,7 +14753,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12125,7 +14768,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12137,7 +14783,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2006 (55)'},
  {value: '2006 (06)'},
  {value: '2006 (56)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12151,7 +14800,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12165,7 +14817,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12179,7 +14834,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12193,7 +14851,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12207,7 +14868,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12221,7 +14885,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12238,7 +14905,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12255,7 +14925,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12268,7 +14941,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2008 (57)'},
  {value: '2008 (08)'},
  {value: '2008 (58)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12282,7 +14958,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12296,7 +14975,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12310,7 +14992,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12322,7 +15007,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12334,7 +15022,10 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
 
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'Outback (03-09)')
@@ -12346,7 +15037,11 @@ trim.model_years.find_or_create_by_value([
  {value: '2009 (58)'},
  {value: '2009 (09)'},
  {value: '2009 (59)'},
-])
+]
+values.each do |item|
+  trim.model_years << ModelYear.where(item).first_or_create
+end
+
 make = Make.find_or_create_by_value(value: 'Subaru')
 model = make.models.find_or_create_by_value(value: 'SVX (92-97)')
 trim = model.trims.find_or_create_by_value(value: '3.3 4WD 2d Auto')
