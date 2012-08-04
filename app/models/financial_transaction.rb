@@ -8,7 +8,8 @@ class FinancialTransaction < ActiveRecord::Base
   
   belongs_to :financial_transaction_originator, :polymorphic => true
   
-  has_many :financial_transaction_sales
-  has_many :sales, :through => :financial_transaction_sales
+  has_many :financial_transaction_funding_plan_sales
+  has_many :funding_plan_sales, :through => :financial_transaction_funding_plan_sales
+  has_many :sales, :through => :funding_plan_sales
 
 end

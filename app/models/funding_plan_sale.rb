@@ -4,4 +4,7 @@ class FundingPlanSale < ActiveRecord::Base
   belongs_to :funding_plan
   belongs_to :sale
   
+  has_many :financial_transaction_funding_plan_sales
+  has_many :funding_plan_sales, :through => :financial_transaction_funding_plan_sales
+  
 end

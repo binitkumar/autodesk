@@ -16,10 +16,9 @@ class Sale < ActiveRecord::Base
   has_many :sale_vehicles
   has_many :vehicles, :through => :sale_vehicles
   
-  has_many :financial_transaction_sales
-  has_many :financial_transactions, :through => :financial_transaction_sales
-  
   has_many :funding_plan_sales
   has_many :funding_plans, :through => :funding_plan_sales
+  has_many :financial_transaction_funding_plan_sales, :through => :funding_plan_sales
+  has_many :financial_transactions, :through => :financial_transaction_funding_plan_sales
   
 end
