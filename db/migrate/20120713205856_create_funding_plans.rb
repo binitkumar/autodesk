@@ -4,11 +4,13 @@ class CreateFundingPlans < ActiveRecord::Migration
       t.integer :funding_type_id
       t.integer :supplier_id
       t.string :name
-      t.float :difference_in_charges
-      t.integer :commission_max_term
+      t.integer :maximum_term
+      t.float :commission_difference_in_charges
+      t.integer :commission_maximum_term
       t.float :commission_minimum
+      t.float :commission_maximum_absolute
+      t.float :commission_maximum_relative
       t.float :commission_fixed
-      t.integer :max_term
       t.timestamps
     end
   end
