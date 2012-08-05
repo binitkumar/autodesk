@@ -1,0 +1,19 @@
+<% title "Commission Plans" %>
+
+<table>
+  <tr>
+    <th>Dealer</th>
+    <th>Name</th>
+  </tr>
+  <% for commission_plan in @commission_plans %>
+    <tr>
+      <td><%= commission_plan.dealer_id %></td>
+      <td><%= commission_plan.name %></td>
+      <td><%= link_to "Show", commission_plan %></td>
+      <td><%= link_to "Edit", edit_commission_plan_path(commission_plan) %></td>
+      <td><%= link_to "Destroy", commission_plan, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Commission Plan", new_commission_plan_path %></p>

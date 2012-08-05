@@ -1,5 +1,9 @@
 Autobase::Application.routes.draw do
   
+  resources :commission_structures
+
+  resources :commission_plans
+
   resources :dealer_user_roles
 
   resources :address_suppliers

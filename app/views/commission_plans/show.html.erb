@@ -1,0 +1,16 @@
+<% title "Commission Plan" %>
+
+<p>
+  <strong>Dealer:</strong>
+  <%= @commission_plan.dealer_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @commission_plan.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_commission_plan_path(@commission_plan) %> |
+  <%= link_to "Destroy", @commission_plan, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", commission_plans_path %>
+</p>

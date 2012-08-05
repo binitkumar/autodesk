@@ -1,0 +1,24 @@
+<%= form_for @commission_structure do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :commission_plan_id %><br />
+    <%= f.number_field :commission_plan_id %>
+  </p>
+  <p>
+    <%= f.label :commission_percentage %><br />
+    <%= f.text_field :commission_percentage %>
+  </p>
+  <p>
+    <%= f.label :commission_fixed %><br />
+    <%= f.text_field :commission_fixed %>
+  </p>
+  <p>
+    <%= f.label :commission_minimum %><br />
+    <%= f.text_field :commission_minimum %>
+  </p>
+  <p>
+    <%= f.label :commission_maximum %><br />
+    <%= f.text_field :commission_maximum %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

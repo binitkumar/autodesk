@@ -1,0 +1,2 @@
+module CommissionStructuresHelper
+end

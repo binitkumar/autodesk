@@ -1,0 +1,25 @@
+<% title "Commission Structures" %>
+
+<table>
+  <tr>
+    <th>Commission Plan</th>
+    <th>Commission Percentage</th>
+    <th>Commission Fixed</th>
+    <th>Commission Minimum</th>
+    <th>Commission Maximum</th>
+  </tr>
+  <% for commission_structure in @commission_structures %>
+    <tr>
+      <td><%= commission_structure.commission_plan_id %></td>
+      <td><%= commission_structure.commission_percentage %></td>
+      <td><%= commission_structure.commission_fixed %></td>
+      <td><%= commission_structure.commission_minimum %></td>
+      <td><%= commission_structure.commission_maximum %></td>
+      <td><%= link_to "Show", commission_structure %></td>
+      <td><%= link_to "Edit", edit_commission_structure_path(commission_structure) %></td>
+      <td><%= link_to "Destroy", commission_structure, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Commission Structure", new_commission_structure_path %></p>
