@@ -97,34 +97,34 @@ tax_rates = TaxRate.create([
 
 # add vehicle makes, models (1,319), trims (42,737) and model years
 fileArray = [
-  'Seeds 1 to 50'
-  #'Seeds 1101 to 1150',
-  #Seeds 1251 to 1300, 
-  #Seeds 251 to 300, 
-  #Seeds 451 to 500, 
-  #Seeds 601 to 650, 
-  #Seeds 801 to 850, 
-  #Seeds 1001 to 1050, 
-  #Seeds 1151 to 1175, 
-  #Seeds 1301 to 1350, 
-  #Seeds 301 to 350, 
-  #Seeds 501 to 550, 
-  #Seeds 651 to 700, 
-  #Seeds 851 to 900, 
-  #Seeds 101 to 150, 
-  #Seeds 1176 to 1200, 
-  #Seeds 151 to 200, 
-  #Seeds 351 to 400, 
-  #Seeds 51 to 100, 
-  #Seeds 701 to 750, 
-  #Seeds 901 to 950, 
-  #Seeds 1051 to 1100, 
-  #Seeds 1201 to 1250, 
-  #Seeds 201 to 250, 
-  #Seeds 401 to 450, 
-  #Seeds 551 to 600, 
-  #Seeds 751 to 800, 
-  #Seeds 951 to 1000
+  'Seeds 1 to 50',
+  'Seeds 1101 to 1150',
+  'Seeds 1251 to 1300', 
+  'Seeds 251 to 300', 
+  'Seeds 451 to 500', 
+  'Seeds 601 to 650', 
+  'Seeds 801 to 850', 
+  'Seeds 1001 to 1050', 
+  'Seeds 1151 to 1175', 
+  'Seeds 1301 to 1350', 
+  'Seeds 301 to 350', 
+  'Seeds 501 to 550', 
+  'Seeds 651 to 700', 
+  'Seeds 851 to 900', 
+  'Seeds 101 to 150', 
+  'Seeds 1176 to 1200', 
+  'Seeds 151 to 200', 
+  'Seeds 351 to 400', 
+  'Seeds 51 to 100', 
+  'Seeds 701 to 750', 
+  'Seeds 901 to 950', 
+  'Seeds 1051 to 1100', 
+  'Seeds 1201 to 1250', 
+  'Seeds 201 to 250', 
+  'Seeds 401 to 450', 
+  'Seeds 551 to 600', 
+  'Seeds 751 to 800', 
+  'Seeds 951 to 1000'
 ]
 fileArray.each do |part|
   require File.expand_path(File.dirname(__FILE__))+"/seeds/#{part}.rb"
@@ -148,10 +148,27 @@ puts "vehicles seeded!"
   10.times do
     user = dealer.users << User.where(first_name: Faker::Name.first_name, last_name: Faker::Name.first_name, email: Faker::Internet.email, password: 'password').first_or_create
     
-    # add a random role to the user
-    user.roles << Role.where(:id => 1 + Random.rand(4))
+    # add a random role to the user for the dealership
+    dealer.users.where(:id => user.id).first.roles << Role.where(:id => 1 + Random.rand(4))
   end
 end
+
+# create some additional user roles for other dealerships
+10.times do
+  # select a random dealer
+  dealer = Dealer.where(:id => 1 + Random.rand(9)).first
+  
+  # select a random user
+  user = User.where(:id => 1+ Random.rand(50)).first
+  
+  # add the user to the dealership
+  dealer.users << user
+  
+  # add a random role to the user for the dealership
+  dealer.users.where(:id => user.id).first.roles << Role.where(:id => 1 + Random.rand(4))
+  
+end
+
 puts 'create dealers done'
 
 # create some suppliers
