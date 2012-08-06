@@ -23,4 +23,7 @@ class FundingPlan < ActiveRecord::Base
   has_many :funding_plan_quotes
   has_many :quotes, :through => :funding_plan_quotes
   
+  has_many :commission_plan_funding_plans
+  has_many :commission_plans, :through => :commission_plan_funding_plans
+  
 end

@@ -43,4 +43,7 @@ class User < ActiveRecord::Base
   has_many :supplier_users
   has_many :suppliers, :through => :supplier_users
   
+  has_many :commission_plan_users
+  has_many :commission_plans, :through => :commission_plan_users
+  
 end
