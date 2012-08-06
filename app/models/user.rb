@@ -27,6 +27,8 @@ class User < ActiveRecord::Base
   
   has_many :dealer_users
   has_many :dealers, :through => :dealer_users
+  has_many :dealer_user_roles, :through => :dealer_users
+  has_many :roles, :through => :dealer_user_roles
   
   has_many :event_users
   has_many :events, :through => :event_users

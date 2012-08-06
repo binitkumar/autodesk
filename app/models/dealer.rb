@@ -36,6 +36,8 @@ class Dealer < ActiveRecord::Base
   
   has_many :dealer_users
   has_many :users, :through => :dealer_users
+  has_many :dealer_user_roles, :through => :dealer_users
+  has_many :roles, :through => :dealer_user_roles
   
   has_many :dealer_fee_types
   has_many :fee_types, :through => :dealer_fee_types
