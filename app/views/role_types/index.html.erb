@@ -1,0 +1,17 @@
+<% title "Role Types" %>
+
+<table>
+  <tr>
+    <th>Value</th>
+  </tr>
+  <% for role_type in @role_types %>
+    <tr>
+      <td><%= role_type.value %></td>
+      <td><%= link_to "Show", role_type %></td>
+      <td><%= link_to "Edit", edit_role_type_path(role_type) %></td>
+      <td><%= link_to "Destroy", role_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Role Type", new_role_type_path %></p>

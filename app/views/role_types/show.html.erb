@@ -1,0 +1,12 @@
+<% title "Role Type" %>
+
+<p>
+  <strong>Value:</strong>
+  <%= @role_type.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_role_type_path(@role_type) %> |
+  <%= link_to "Destroy", @role_type, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", role_types_path %>
+</p>
