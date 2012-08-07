@@ -1,5 +1,7 @@
 Autobase::Application.routes.draw do
   
+  resources :role_types
+
   resources :commission_structures
 
   resources :commission_plans
