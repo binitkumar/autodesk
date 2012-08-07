@@ -1,2 +1,0 @@
-module MetricUsersHelper
-end

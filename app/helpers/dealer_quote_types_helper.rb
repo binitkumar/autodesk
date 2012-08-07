@@ -1,2 +1,0 @@
-module DealerQuoteTypesHelper
-end
