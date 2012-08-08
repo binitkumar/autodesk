@@ -156,7 +156,7 @@ puts "vehicles seeded!"
     # associate the user with the dealer
     dealer.users << user
     # add a random role to the user for the dealership
-    user.dealers.where(:id => dealer.id).first.roles.create(:role_type_id => 1 + Random.rand(4))
+    dealer.users.where(:id => user.id).first.build_role(:role_type_id => 1 + Random.rand(4))
   end
 end
 

@@ -5,6 +5,6 @@ class DealerUser < ActiveRecord::Base
   belongs_to :user, :inverse_of => :dealer_users
   
   has_many :permissions
-  has_many :roles, :as => :role_originator
+  belongs_to :role, :as => :role_originator
   
 end
