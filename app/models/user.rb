@@ -22,22 +22,23 @@ class User < ActiveRecord::Base
   has_many :target_users
   has_many :targets, :through => :target_users
   
-  has_many :email_users
-  has_many :emails, :through => :email_users
-  
   has_many :dealer_users
   has_many :dealers, :through => :dealer_users
-  has_many :dealer_user_roles, :through => :dealer_users
-  has_many :roles, :through => :dealer_user_roles
+  #has_many :roles, :through => :dealer_users
+
+  has_many :sale_users
+  has_many :sales, :through => :sale_users
+  #has_many :roles, :through => :dealer_users
   
+  has_many :appraisal_users
+  has_many :appraisals, :through => :appraisal_users
+  #has_many :roles, :through => :dealer_users
+
   has_many :event_users
   has_many :events, :through => :event_users
   
   has_many :quote_users
   has_many :quotes, :through => :quote_users
-  
-  has_many :sale_users
-  has_many :sales, :through => :sale_users
   
   has_many :metric_users
   has_many :metrics, :through => :metric_users

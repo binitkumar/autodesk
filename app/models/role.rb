@@ -1,11 +1,9 @@
 class Role < ActiveRecord::Base
-  attr_accessible :value
+  attr_accessible :role_type_id
   
-  has_many :sale_users
-  has_many :sales, :through => :sale_users
-  
-  has_many :dealer_user_roles
-  has_many :dealer_users, :through => :dealer_user_roles
-  has_many :users, :through => :dealer_users
+  belongs_to :role_type
+  belongs_to :dealer_user, :polymorphic => true
+  belongs_to :sale_user, :polymorphic => true
+  belongs_to :appraisal_user, :polymorphic => true
   
 end

@@ -3,7 +3,6 @@ class CreateAppraisalUsers < ActiveRecord::Migration
     create_table :appraisal_users do |t|
       t.integer :appraisal_id
       t.integer :user_id
-      t.integer :role_id
       t.timestamps
     end
   end
