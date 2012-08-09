@@ -169,7 +169,7 @@ end
   user = User.where(:id => 1+ Random.rand(50)).first
   
   # create a new role for the user, or find an existing role of that type
-  role = user.roles.where(:role_type_id => 1 + Random.rand(4)).first_or_create
+  role = user.roles.create(:role_type_id => 1 + Random.rand(4))
   
   # associate the role with the dealership
   dealer.roles << role
