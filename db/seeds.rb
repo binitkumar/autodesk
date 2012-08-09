@@ -153,28 +153,27 @@ puts "vehicles seeded!"
     user.last_name = Faker::Name.last_name
     user.password = 'password'
     user.password_confirmation = 'password'
-    # associate the user with the dealer
-    dealer.users << user
+    user.save
     # add a random role to the user for the dealership
-    dealer.users.where(:id => user.id).first.build_role(:role_type_id => 1 + Random.rand(4))
+    role = user.roles.where(:role_type_id => 1 + Random.rand(4)).first_or_create
+    dealer.roles << role
   end
 end
 
 # create some additional user roles for other dealerships
-#10.times do
+10.times do
   # select a random dealer
- # dealer = Dealer.where(:id => 1 + Random.rand(9)).first
+  dealer = Dealer.where(:id => 1 + Random.rand(9)).first
   
   # select a random user
-  #user = User.where(:id => 1+ Random.rand(50)).first
+  user = User.where(:id => 1+ Random.rand(50)).first
   
-  # add the user to the dealership
-#  dealer.users << user
+  # create a new role for the user, or find an existing role of that type
+  role = user.roles.where(:role_type_id => 1 + Random.rand(4)).first_or_create
   
-  # add a random role to the user for the dealership
- # dealer.users.where(:id => user.id).first.roles << Role.where(:id => 1 + Random.rand(4))
-  
-#end
+  # associate the role with the dealership
+  dealer.roles << role
+end
 
 puts 'create dealers done'
 
