@@ -8,6 +8,7 @@ class CreateFinancialTransactions < ActiveRecord::Migration
       t.float :value
       t.time :time
       t.boolean :debit
+      t.references :financial_transaction_originator, :polymorphic => true
       t.timestamps
     end
   end

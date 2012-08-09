@@ -7,7 +7,7 @@ class Appraisal < ActiveRecord::Base
   has_many :appraisal_appraisal_points
   has_many :appraisal_points, :through => :appraisal_appraisal_points
   
-  has_many :appraisal_users
-  has_many :users, :through => :appraisal_users
+  has_many :roles, :as => :role_originator
+  has_many :users, :through => :roles
   
 end

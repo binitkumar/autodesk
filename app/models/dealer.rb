@@ -34,9 +34,8 @@ class Dealer < ActiveRecord::Base
   has_many :dealer_quote_types
   has_many :quote_types, :through => :dealer_quote_types
   
-  has_many :dealer_users
-  has_many :users, :through => :dealer_users
-  has_many :roles, :through => :dealer_users
+  has_many :roles, :as => :role_originator
+  has_many :users, :through => :roles
   
   has_many :dealer_fee_types
   has_many :fee_types, :through => :dealer_fee_types

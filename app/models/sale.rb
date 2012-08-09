@@ -10,8 +10,8 @@ class Sale < ActiveRecord::Base
   has_many :product_sales
   has_many :products, :through => :product_sales
   
-  has_many :sale_users
-  has_many :users, :through => :sale_users
+  has_many :roles, :as => :role_originator
+  has_many :users, :through => :roles
   
   has_many :sale_vehicles
   has_many :vehicles, :through => :sale_vehicles

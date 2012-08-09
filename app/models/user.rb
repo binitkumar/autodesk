@@ -21,18 +21,11 @@ class User < ActiveRecord::Base
   
   has_many :target_users
   has_many :targets, :through => :target_users
-  
-  has_many :dealer_users
-  has_many :dealers, :through => :dealer_users
-  #has_many :roles, :through => :dealer_users
 
-  has_many :sale_users
-  has_many :sales, :through => :sale_users
-  #has_many :roles, :through => :dealer_users
-  
-  has_many :appraisal_users
-  has_many :appraisals, :through => :appraisal_users
-  #has_many :roles, :through => :dealer_users
+  has_many :roles
+  has_many :sales, :through => :roles
+  has_many :appraisals, :through => :roles
+  has_many :dealers, :through => :roles
 
   has_many :event_users
   has_many :events, :through => :event_users
