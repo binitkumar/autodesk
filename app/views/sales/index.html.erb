@@ -1,48 +1,54 @@
-<div class="block">
-  <div class="secondary-navigation">
-    <ul class="wat-cf">
-      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", sales_path  %></li>
-      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_sale_path %></li>
-    </ul>
-  </div>
-  <div class="content">
-    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Sales</h2>
-    <div class="inner">
-      <table class="table">
-        <tr>
-          <th class="first">ID</th>
-                    <th>
-            <%= t("activerecord.attributes.sale.dealer_id", :default => t("activerecord.labels.dealer_id", :default => "Dealer_id")) %>
-          </th>
-                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
-          <th class="last">&nbsp;</th>
-        </tr>
-        <% @sales.each do |sale| -%>
-        <tr class="<%= cycle("odd", "even") %>">
-          <td>
-            <%= sale.id %>
-          </td>
-                    <td>
-            <%= link_to sale.dealer_id, sale_path(sale) %>
-          </td>
-                    <td>
-            <%= sale.created_at %>
-          </td>
-          <td class="last">
-            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_path(sale) %> |
-            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_sale_path(sale) %> |
-            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_path(sale), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
-          </td>
-        </tr>
-        <% end -%>
-      </table>
-      <div class="actions-bar wat-cf">
-        <div class="actions">
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
-<% content_for :sidebar, render(:partial => 'sidebar') -%>
+<div class="container">
+	<ul class="breadcrumb">
+		<li><a href="#">Home</a><span class="divider">&raquo;</span></li>
+		<li><a href="#">Library</a><span class="divider">&raquo;</span></li>
+		<li class="active">Data</li>
+	</ul>
+		<div class="row">
+			<div class = "span12">
+				<div class="nonboxy-widget">
+	    			<div class="widget-head">
+						<h5>Sales</h5>
+					</div>
+      				<table class="data-tbl-simple table table-bordered">
+        			<thead>
+						<tr>
+	          				<th class="first">ID</th>
+	                    	<th>
+								<%= t("activerecord.attributes.sale.dealer_id", :default => t("activerecord.labels.dealer_id", :default => "Dealer_id")) %>
+	          				</th>
+	                    	<th>
+								<%= t("web-app-theme.created_at", :default => "Created at")  %>
+							</th>
+	          				<th class="last">
+								&nbsp;
+							</th>
+	        			</tr>
+					</thead>
+					<tbody>
+        				<% @sales.each do |sale| -%>
+	        			<tr class="<%= cycle("odd", "even") %>">
+	          				<td>
+	            				<%= sale.id %>
+	          				</td>
+	                    	<td>
+	            				<%= link_to sale.dealer_id, sale_path(sale) %>
+	          				</td>
+	                    	<td>
+	            				<%= sale.created_at %>
+	          				</td>
+	          				<td class="last">
+	            				<%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_path(sale) %> |
+	            				<%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_sale_path(sale) %> |
+	            				<%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_path(sale), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+	          				</td>
+	        			</tr>
+	        			<% end -%>
+					</tbody>
+      			</table>
+	    		</div>
+			</div>
+		</div>
+	</div>
+</div>
