@@ -14,12 +14,14 @@
       				<table class="data-tbl-simple table table-bordered">
         			<thead>
 						<tr>
-	          				<th class="first">Customer</th>
+	          				<th class="first">
+								ID
+							</th>
 	                    	<th>
-								
+								Customer
 	          				</th>
 	                    	<th>
-								<%= t("web-app-theme.created_at", :default => "Created at")  %>
+								Vehicle
 							</th>
 	          				<th class="last">
 								&nbsp;
@@ -36,7 +38,7 @@
 	            				<%= link_to sale.customer.features.where(:feature_type_id => "1").first.value + " " + sale.customer.features.where(:feature_type_id => "2").first.value, customer_path(sale.customer) %>
 	          				</td>
 	                    	<td>
-	            				<%= link_to sale.vehicles.first.make.value + " " + sale.vehicles.first.model.value, vehicle_path(sale.vehicles.first) %>
+	            				<%= link_to sale.vehicles.first.trim.model.make.value + " " + sale.vehicles.first.trim.model.value, vehicle_path(sale.vehicles.first) %>
 	          				</td>
 	          				<td class="last">
 	            				<%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_path(sale) %> |
