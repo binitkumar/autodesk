@@ -28,6 +28,9 @@ gem 'ffaker'
 # Use the jqplot gem as the js files do not play nicely with the asset pipeline
 gem 'jqplot-rails', :git => 'https://github.com/eightbitraptor/jqplot-rails.git'
 
+# Use the datatables gem as the js files do not play nicely with the asset pipeline
+gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatables-rails.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
