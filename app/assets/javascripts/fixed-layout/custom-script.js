@@ -1,14 +1,3 @@
-/*==========================
-TOUCHY SCROLL FOR SIDEBAR
-==========================*/
-$("#sidebar").niceScroll({
-    cursorcolor: "#2f2e2e",
-    cursoropacitymax: 0.7,
-    boxzoom: false,
-    touchbehavior: true
-});
-
-
 $(function () {
 	/*=========
 	Mini Chart
@@ -83,33 +72,11 @@ $(function () {
         fillColor: false,
         lineColor: 'red'
     });
-	/*colorbox*/
-	$(".group1").colorbox({rel:'group1'});
-	$(".portfolio a").colorbox();
-	$(".group4").colorbox({rel:'group4', slideshow:true});
-	$(".inline-modal").colorbox({inline:true, width:"50%"});
-	$(".ajax").colorbox();
-	$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
-	$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
 	/*==Color Picker==*/
     $('.colorpicker').colorpicker();
 	/*==Date Picker==*/
     $('#datepicker').datepicker();
-	/*==Text Editor==*/
-    $("#editor").cleditor(); 
-	 $("#inbox-editor").cleditor({
-		width:        99+'%', // width not including margins, borders or padding
-          height:       500, // height not including margins, borders or padding 
-	 }); /*== make code pretty ==*/
-	 
-	  $("#post-editor").cleditor({
-		width:        99+'%', // width not including margins, borders or padding
-          height:      250, // height not including margins, borders or padding 
-	 }); /*== make code pretty ==*/
-	 
-	 
 	$('.checkall').checkAll('.tr_select input:checkbox');
-	
 	$('.checkall-user').checkAll('.tr-user-check input:checkbox');
 	$('.checkall-task').checkAll('.tr-task-check input:checkbox');
 	/*== make code pretty ==*/
@@ -132,29 +99,6 @@ $(function () {
         placement: 'right'
     });
 	
-
-	/*======================
-	RATY
-	========================*/
-    $('.star').raty({
-        half: true,
-        start: 3.3
-    });
-	
-	   // button state demo
-    $('#fat-btn')
-      .click(function () {
-        var btn = $(this)
-        btn.button('loading')
-        setTimeout(function () {
-          btn.button('reset')
-        }, 3000)
-      })
-	  
-	  $('.accordion_mnu').initMenu();
-	  	/*==JQUERY SELECTBOX==*/
-	$(".chzn-select").chosen(); 
-	$(".chzn-select-deselect").chosen({allow_single_deselect: true});
 	/*======================
 	Tags Input
 	========================*/ 
@@ -164,17 +108,6 @@ $(function () {
 				});
 /*==JQUERY UNIFORM==*/
 	$(".checkbox-b,.rem_me,.radio-b,input[type='file']").uniform();
-	
-	/*===================
-	LIST-ACCORDION
-	===================*/	  
-
-	$('#list-accordion').accordion({
-		header: ".title",
-		autoheight: false
-	});
-	
-
 	
 		/*==INPUT MASK==*/
 	$("#date").mask("99/99/9999");
@@ -194,88 +127,6 @@ $('#popover').popover();
 
 
 });
-
-/*==============================
-	  NOTY TOP
-	================================*/
-	
-	$('.alert_t').click(function() {
-		
-		var noty_id = noty({
-			layout : 'top',
-			text: 'noty - a jquery notification library!',
-			modal : true,
-			type:'alert',
-			
-			 });
-		  });
-
-	$('.error_t').click(function() {
-		
-		var noty_id = noty({
-			layout : 'top',
-			text: 'noty - a jquery notification library!',
-			modal : true,
-			type : 'error', 
-			 });
-		  });
-		  
-	$('.success_t').click(function() {
-		
-		var noty_id = noty({
-			layout : 'top',
-			text: 'noty - a jquery notification library!',
-			modal : true,
-			type : 'success', 
-			 });
-		  });
-		  
-	$('.info_t').click(function() {
-		
-		var noty_id = noty({
-			layout : 'top',
-			text: 'noty - a jquery notification library!',
-			modal : true,
-			type : 'information', 
-			 });
-		  });
-	
-	$('.confirm_t').click(function() {
-		
-		var noty_id = noty({
-			layout : 'top',
-			text: 'noty - a jquery notification library!',
-			modal : true,
-			buttons: [
-				{type: 'btn btn-success', text: 'Ok', click: function($noty) {
-		  
-					// this = button element
-					// $noty = $noty element
-		  
-					$noty.close();
-					noty({force: true, text: 'You clicked "Ok" button', type: 'success'});
-				  }
-				},
-				{type: 'button btn btn-warning', text: 'Cancel', click: function($noty) {
-					$noty.close();
-					noty({force: true, text: 'You clicked "Cancel" button', type: 'error'});
-				  }
-				}
-				],
-			 type : 'success', 
-			 });
-		 
-});
-
-
-$(function () {
-    var elf = $('#file-manager').elfinder({
-        url: 'php/connector.php' // connector URL (REQUIRED)
-        // lang: 'ru',             // language (OPTIONAL)
-    }).elfinder('instance');
-});
-
-
 
 
 /*==================
@@ -382,46 +233,6 @@ $(function () {
 
 });
 
-
-$(function() {
-	$("#uploader").pluploadQueue({
-		// General settings
-		runtimes : 'gears,flash,silverlight,browserplus,html5',
-		url : 'upload.php',
-		max_file_size : '10mb',
-		chunk_size : '1mb',
-		unique_names : true,
-		// Resize images on clientside if we can
-		resize : {width : 320, height : 240, quality : 90},
-		// Specify what files to browse for
-		filters : [
-			{title : "Image files", extensions : "jpg,gif,png"},
-			{title : "Zip files", extensions : "zip"}
-		],
-		// Flash settings
-		flash_swf_url : 'js/plupupload/plupload.flash.swf',
-		// Silverlight settings
-		silverlight_xap_url : 'js/plupupload/plupload.silverlight.xap'
-	});
-	// Client side form validation
-	$('.upload-form').submit(function(e) {
-        var uploader = $('#uploader').pluploadQueue();
-        // Files in queue upload them first
-        if (uploader.files.length > 0) {
-            // When all files are uploaded submit form
-            uploader.bind('StateChanged', function() {
-                if (uploader.files.length === (uploader.total.uploaded + uploader.total.failed)) {
-                    $('upload-form')[0].submit();
-                }
-
-            });
-            uploader.start();
-        } else {
-            alert('You must queue at least one file.');
-        }
-        return false;
-    });
-});
 
 $(function () {
     // validate signup form on keyup and submit
@@ -578,21 +389,13 @@ $(function () {
         "oLanguage": {
             "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
         },
-        "sDom": '<"tbl-tools-searchbox"fl<"clear">>,<"tbl_tools"CT<"clear">>,<"table_content"t>,<"widget-bottom"p<"clear">>',
-
-        "oTableTools": {
-            "sSwfPath": "swf/copy_cvs_xls_pdf.swf"
-        }
+        "sDom": '<"tbl-tools-searchbox"fl<"clear">>,<"tbl_tools"CT<"clear">>,<"table_content"t>,<"widget-bottom"p<"clear">>'
     });
     $("div.tbl-tools-searchbox select").addClass('tbl_length');
 /* $(".tbl_length").chosen({
         disable_search_threshold: 4
     });*/
 });
-
-
-
-
 
 
  $(function() {

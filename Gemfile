@@ -31,6 +31,10 @@ gem 'jqplot-rails', :git => 'https://github.com/eightbitraptor/jqplot-rails.git'
 # Use the datatables gem as the js files do not play nicely with the asset pipeline
 gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatables-rails.git'
 
+# Use the bootstrap gem as the js files do not play nicely with the asset pipeline
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'bootstrap-colorpicker-rails', :git => 'https://github.com/alessani/bootstrap-colorpicker-rails.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
