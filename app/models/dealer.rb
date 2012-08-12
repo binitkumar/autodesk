@@ -63,9 +63,9 @@ class Dealer < ActiveRecord::Base
   has_many :dealer_product_types
   has_many :product_types, :through => :dealer_product_types
   
-  #def vehicle_inventory
-  #  vehicle_inventory = self.vehicles
-  #  return vehicle_inventory
-  #end
+  def vehicle_inventory
+    vehicle_inventory = self.vehicles - Vehicle.where(:id => self.sales(:select => "vehicles.id").collect(&:id)).all(:select => "vehicles.id").collect(&:id)
+    return vehicle_inventory
+  end
   
 end
