@@ -14,9 +14,9 @@
       				<table class="data-tbl-simple table table-bordered">
         			<thead>
 						<tr>
-	          				<th class="first">ID</th>
+	          				<th class="first">Customer</th>
 	                    	<th>
-								<%= t("activerecord.attributes.sale.dealer_id", :default => t("activerecord.labels.dealer_id", :default => "Dealer_id")) %>
+								
 	          				</th>
 	                    	<th>
 								<%= t("web-app-theme.created_at", :default => "Created at")  %>
@@ -27,16 +27,16 @@
 	        			</tr>
 					</thead>
 					<tbody>
-        				<% @sales.each do |sale| -%>
+        				<% @sales.each do |sale| %>
 	        			<tr class="<%= cycle("odd", "even") %>">
 	          				<td>
 	            				<%= sale.id %>
 	          				</td>
 	                    	<td>
-	            				<%= link_to sale.dealer_id, sale_path(sale) %>
+	            				<%= link_to sale.customer.features.where(:feature_type_id => "1").first.value + " " + sale.customer.features.where(:feature_type_id => "2").first.value, customer_path(sale.customer) %>
 	          				</td>
 	                    	<td>
-	            				<%= sale.created_at %>
+	            				<%= link_to sale.vehicles.first.make.value + " " + sale.vehicles.first.model.value, vehicle_path(sale.vehicles.first) %>
 	          				</td>
 	          				<td class="last">
 	            				<%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_path(sale) %> |
@@ -44,7 +44,7 @@
 	            				<%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_path(sale), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
 	          				</td>
 	        			</tr>
-	        			<% end -%>
+	        			<% end %>
 					</tbody>
       			</table>
 	    		</div>
