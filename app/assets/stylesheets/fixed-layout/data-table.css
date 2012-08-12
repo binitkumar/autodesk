@@ -36,11 +36,11 @@
 	position: relative;
 	clear: both;
 	zoom: 1; /* Feeling sorry for IE */
-	border-top:#ddd 1px solid;
-	border-bottom:#ddd 1px solid;
-	-moz-box-shadow: 0 0 3px #ddd;
-	-webkit-box-shadow: 0 0 3px #ddd;
-	box-shadow: 0 0 3px #ddd;
+	/*border-top:#ddd 1px solid;*/
+	/*border-bottom:#ddd 1px solid;*/
+	/*-moz-box-shadow: 0 0 3px #ddd;*/
+	/*-webkit-box-shadow: 0 0 3px #ddd;*/
+	/*box-shadow: 0 0 3px #ddd;*/
 }
 .dataTables_processing {
 	position: absolute;
