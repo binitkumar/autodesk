@@ -15,7 +15,7 @@
 //= require fixed-layout/jquery-ui-1.8.16.custom.min.js	
 //= require fixed-layout/jquery-ui-1.8.17.custom.min.js	
 //= require fixed-layout/jquery-ui-1.8.22.custom.min.js	
-//= require fixed-layout/data-table.jquery.js
+//= require dataTables/jquery.dataTables
 //= require fixed-layout/TableTools.min.js
 //= require fixed-layout/ColVis.min.js							
 //= require fixed-layout/jquery.multiFieldExtender.min.js
