@@ -19,8 +19,7 @@
 //= require fixed-layout/TableTools.min.js
 //= require fixed-layout/ColVis.min.js							
 //= require fixed-layout/jquery.multiFieldExtender.min.js
-//= require fixed-layout/TableTools.min.js			
-//= require fixed-layout/data-table.jquery.js				
+//= require fixed-layout/TableTools.min.js							
 //= require fixed-layout/jquery.nicescroll.min.js		
 //= require fixed-layout/prettify.js
 //= require fixed-layout/accordion.jquery.js						
