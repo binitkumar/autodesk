@@ -6,6 +6,7 @@ class CreatePurchases < ActiveRecord::Migration
       t.integer :tax_rate_id
       t.integer :supplier_id
       t.float :value
+      t.references :purchase_item, :polymorphic => true
       t.timestamps
     end
   end

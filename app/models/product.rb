@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
   has_many :product_quotes
   has_many :quotes, :through => :product_quotes
   
-  has_many :purchases, :as => :purchase_item_type
+  has_many :purchases, :as => :purchase_item
   
   has_many :commission_plan_products
   has_many :commission_plans, :through => :commission_plan_products

@@ -6,7 +6,7 @@ class Purchase < ActiveRecord::Base
   belongs_to :tax_rate
   belongs_to :supplier
   
-  belongs_to :purchase_item_type, :polymorphic => true
+  belongs_to :purchase_item, :polymorphic => true
   
   has_many :comments, :as => :comment_originator
   has_many :financial_transactions, :as => :financial_transaction_originator

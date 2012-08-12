@@ -7,7 +7,7 @@ class Vehicle < ActiveRecord::Base
   has_many :mileage_readings
   
   has_many :comments, :as => :comment_originator
-  has_many :purchases, :as => :purchase_item_type
+  has_many :purchases, :as => :purchase_item
   
   has_many :registration_mark_vehicles
   has_many :registration_marks, :through => :registration_mark_vehicles
@@ -20,9 +20,6 @@ class Vehicle < ActiveRecord::Base
   
   has_many :quote_vehicles
   has_many :quotes, :through => :quote_vehicles
-  
-  has_many :purchase_vehicles
-  has_many :purchases, :through => :purchase_vehicles
   
   validate :model_year_valid_for_trim
 

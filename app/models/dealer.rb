@@ -7,8 +7,10 @@ class Dealer < ActiveRecord::Base
   has_many :quotes
   has_many :financial_transactions
   has_many :preferences
-  has_many :purchases
   has_many :sales
+  
+  has_many :purchases
+  has_many :vehicles, :through => :purchases, :source => :purchase_item, :source_type => 'Vehicle'
   
   has_many :customer_dealers
   has_many :customers, :through => :customer_dealers
@@ -60,5 +62,10 @@ class Dealer < ActiveRecord::Base
   
   has_many :dealer_product_types
   has_many :product_types, :through => :dealer_product_types
+  
+  #def vehicle_inventory
+  #  vehicle_inventory = self.vehicles
+  #  return vehicle_inventory
+  #end
   
 end

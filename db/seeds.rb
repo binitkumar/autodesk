@@ -192,14 +192,14 @@ end
 puts 'create suppliers done'
 
 # associate suppliers with dealers
-50.times do
-  # select a random dealer
-  dealer = Dealer.where(:id => 1 + Random.rand(9)).first
-  
-  # associate the suppliers
-  supplier = Supplier.where(:id => 1 + Random.rand(14)).first
-  if dealer.suppliers.where(:id => supplier.id) == false
-    dealer.suppliers << supplier
+dealers = Dealer.all
+dealers.each do |dealer|
+  5.times do
+    # associate the suppliers
+    supplier = Supplier.where(:id => 1 + Random.rand(14)).first
+    if dealer.suppliers.where(:id => supplier.id).length == 0
+      dealer.suppliers << supplier
+    end
   end
 end
 puts 'associate suppliers with dealers done'
@@ -253,7 +253,9 @@ puts 'customer creation done'
   
   # create a purchase for the vehicle
   dealer_suppliers_array = dealer.suppliers.all(:select => "suppliers.id").collect(&:id)
-  purchase = dealer.purchases.create(purchase_type_id: 1 + Random.rand(3), supplier_id: dealer_suppliers_array[Random.rand(dealer_suppliers_array.length - 1)], tax_rate_id: '1', value: rand_price(10000,85000))
+  purchase = dealer.purchases.create(purchase_type_id: 1 + Random.rand(3), supplier_id: dealer_suppliers_array[Random.rand(dealer_suppliers_array.length - 1)], 
+                                    tax_rate_id: '1', value: rand_price(10000,85000))
+  vehicle.purchases << purchase
 
 end
 puts 'create vehicles and purchases done'
@@ -274,5 +276,8 @@ puts 'create vehicles and purchases done'
   
   # add a user
   sale.users << dealer.users.where(:id => 1 + Random.rand(9))
+  
+  # add a vehicle
+  sale.vehicles << dealer.vehicles[Random.rand(dealer.vehicles.length - 1)]
 end
 puts 'create sales done'
