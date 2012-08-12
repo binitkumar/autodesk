@@ -261,7 +261,7 @@ end
 puts 'create vehicles and purchases done'
 
 # create some sales
-500.times do
+150.times do
   # select a random dealer
   dealer = Dealer.where(:id => 1 + Random.rand(9)).first
   
