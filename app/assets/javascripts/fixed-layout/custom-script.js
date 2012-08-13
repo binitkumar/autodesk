@@ -301,7 +301,7 @@ $(function () {
         "oLanguage": {
             "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
         },
-        "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
+        "sDom": '<"table_top clearfix"f<"table_top_add_new">l<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
 		"aoColumnDefs": [
 			{ "bSortable": false, "aTargets": ["actions"] },
 			{ "sWidth": "110px", "aTargets": ["actions"] }
@@ -312,6 +312,8 @@ $(function () {
 		disable_search_threshold: 4	
 	});
 		*/
+
+	$("div.table_top_add_new").html('<a class="btn" href="../sales/new"><i class="color-icons add_co"></i>New Sale</a>');
 
 });
 

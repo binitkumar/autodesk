@@ -1235,6 +1235,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 }
 .table_top {
 	padding:10px 0 15px 0;
+	vertical-align: text-center;
 }
 .table_top input, .table_top select, .tbl-searchbox input, .tbl-searchbox select {
 	margin:0px;
@@ -1263,9 +1264,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 	float: right;
 }
 .dataTables_filter {
-	width: 40%;
+	width: 287px;
 	float: left;
 	text-align: left;
+}
+.table_top_add_new {
+	width: 100px;
+	height: 30px;
+	float: left;
+	vertical-align: text-center;
+	padding-left: 10px;
+}
+.table_top_add_new a {
+	height: 19px;
 }
 .dataTables_filter input {
 	border: 1px solid #D8D8D8;
