@@ -163,9 +163,6 @@ table.display {
 	 * then filling in the gaps with other borders.
 	 */
 }
-table.display thead {
-	background:url(assets/fixed-layout/layout-sprite.png) repeat-x 0 -751px;
-}
 table.display thead th {
 	padding: 10px 10px 10px 10px;
 	border-top: 1px solid #ccc;
@@ -174,8 +171,11 @@ table.display thead th {
 	cursor: pointer;
  * cursor: hand;
 }
-table.display tfoot {
-	background:url(assets/fixed-layout/layout-sprite.png) repeat-x 0 -751px;
+th.actions {
+	text-align: center;
+}
+td.actions {
+	text-align: center;
 }
 table.display tfoot th {
 	padding: 10px;

@@ -98,18 +98,11 @@ $(function () {
 	 $('.tip-right').tooltip({
         placement: 'right'
     });
-	
-	/*======================
-	Tags Input
-	========================*/ 
-			$('#tags_1').tagsInput({
-				width:'99%',
-				'defaultText':'add a test tag'
-				});
+
 /*==JQUERY UNIFORM==*/
 	$(".checkbox-b,.rem_me,.radio-b,input[type='file']").uniform();
 	
-		/*==INPUT MASK==*/
+/*==INPUT MASK==*/
 	$("#date").mask("99/99/9999");
 	$("#phone").mask("(999) 999-9999");
 	$("#mobile").mask("(999) 999-9999");
@@ -308,35 +301,17 @@ $(function () {
         "oLanguage": {
             "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
         },
-        "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>'
-
+        "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
+		"aoColumnDefs": [
+			{ "bSortable": false, "aTargets": ["actions"] },
+			{ "sWidth": "110px", "aTargets": ["actions"] }
+		]
     });
     $("div.table_top select").addClass('tbl_length');
 /*$(".tbl_length").chosen({
 		disable_search_threshold: 4	
 	});
 		*/
-
-});
-
-$(function () {
-    $('.data-tbl-inbox').dataTable({
-			 "aoColumnDefs": [
-						{ "bSortable": false, "aTargets": [ 0,1 ] }
-					],
-					"aaSorting": [[1, 'asc']],
-        "sPaginationType": "full_numbers",
-        "iDisplayLength": 10,
-        "oLanguage": {
-            "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Message per page:</span>",
-        },
-        "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>'
-
-    });
-    $("div.table_top select").addClass('tbl_length');
-$(".tbl_length").chosen({
-		disable_search_threshold: 4	
-	});
 
 });
 
@@ -398,29 +373,7 @@ $(function () {
 });
 
 
- $(function() {
-                /* tells us if we dragged the box */
-                var dragged = false;
-				
-                /* timeout for moving the mox when scrolling the window */
-                var moveBoxTimeout;
-				
-                /* make the actionsBox draggable */
-                $('#actionsBox').draggable({
-                    start: function(event, ui) {
-                        dragged = true;
-                    },
-                    stop: function(event, ui) {
-                        var $actionsBox = $('#actionsBox');
-                        /*
-                        calculate the current distance from the window's top until the element
-                        this value is going to be used further, to move the box after we scroll
-                         */
-                        $actionsBox.data('distanceTop',parseFloat($actionsBox.css('top'),10) - $(document).scrollTop());
-                    }
-                });
-				
-                /*
+ $(function() { /*
                 when clicking on an input (checkbox),
                 change the class of the table row,
                 and show the actions box (if any checked)
@@ -467,14 +420,6 @@ $(function () {
                         });
                     }
                 }
-				
-                /*
-                when scrolling, move the box to the right place
-                 */
-                $(window).scroll(function(){
-                    clearTimeout(moveBoxTimeout);
-                    moveBoxTimeout = setTimeout(showActionsBox,500);
-                });
 				
                 /* open sub box menu for other actions */
                 $('#toggleBoxMenu').toggle(

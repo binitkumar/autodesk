@@ -1,11 +1,5 @@
-
 <div class="container">
-	<ul class="breadcrumb">
-		<li><a href="#">Home</a><span class="divider">&raquo;</span></li>
-		<li><a href="#">Library</a><span class="divider">&raquo;</span></li>
-		<li class="active">Data</li>
-	</ul>
-		<div class="row">
+	<div class="row">
 			<div class = "span12">
 				<div class="nonboxy-widget">
 	    			<div class="widget-head">
@@ -23,8 +17,11 @@
 	                    	<th>
 								Vehicle
 							</th>
-	          				<th class="last">
-								&nbsp;
+	          				<th>
+								Date of Sale
+							</th>
+							<th class="actions">
+								Actions
 							</th>
 	        			</tr>
 					</thead>
@@ -40,8 +37,11 @@
 	                    	<td>
 	            				<%= link_to sale.vehicles.first.trim.model.make.value + " " + sale.vehicles.first.trim.model.value, vehicle_path(sale.vehicles.first) %>
 	          				</td>
-	          				<td class="last">
-	            				<%= link_to "#{t("web-app-theme.show", :default => "Show")}", sale_path(sale) %> |
+							<td>
+								<%= sale.date %>
+							</td>
+	          				<td class="actions">
+	            				<%= link_to "#{t("web-app-theme.show", :default => "Show", :class => "color-icons page_white_edit_co")}", sale_path(sale) %> |
 	            				<%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_sale_path(sale) %> |
 	            				<%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_path(sale), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
 	          				</td>
@@ -52,5 +52,4 @@
 	    		</div>
 			</div>
 		</div>
-	</div>
 </div>

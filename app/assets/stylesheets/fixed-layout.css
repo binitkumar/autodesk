@@ -1,18 +1,14 @@
 /* 
  * This css will include all fixed-layout css
  *
- *= require fixed-layout/jquery.plupload.queue.css
  *= require fixed-layout/bootstrap-responsive.css
  *= require fixed-layout/bootstrap.css
  *= require fixed-layout/data-table.css
- *= require fixed-layout/elfinder.min.css
- *= require fixed-layout/elfinder.theme.css
  *= require fixed-layout/font-awesome.css
  *= require fixed-layout/fullcalendar.css
  *= require fixed-layout/icons-sprite.css
  *= require fixed-layout/jquery-ui-1.8.16.custom.css
  *= require fixed-layout/jquery.jqplot.css
- *= require fixed-layout/prettify.css
  *= require fixed-layout/styles.css
  *= require fixed-layout/theme-default.css
  *= require_self
