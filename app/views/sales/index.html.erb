@@ -8,7 +8,13 @@
       				<table class="data-tbl-simple table table-bordered">
         			<thead>
 						<tr>
-	          				<th class="first">
+	          				<th class="editpath">
+								Edit Link
+							</th>
+							<th class="deletepath">
+								Delete Link
+							</th>
+							<th class="first">
 								ID
 							</th>
 	                    	<th>
@@ -20,15 +26,18 @@
 	          				<th>
 								Date of Sale
 							</th>
-							<th class="actions">
-								Actions
-							</th>
 	        			</tr>
 					</thead>
 					<tbody>
         				<% @sales.each do |sale| %>
-	        			<tr class="<%= cycle("odd", "even") %>">
+						<tr class="<%= cycle("odd", "even") %>">
 	          				<td>
+								<%= edit_sale_path(sale) %>
+							</td>
+							<td>
+								<%= sale_path(sale) %>
+							</td>
+							<td>
 	            				<%= sale.id %>
 	          				</td>
 	                    	<td>
@@ -40,11 +49,6 @@
 							<td>
 								<%= sale.date %>
 							</td>
-	          				<td class="actions">
-	            				<%= link_to "#{t("web-app-theme.show", :default => "Show", :class => "color-icons page_white_edit_co")}", sale_path(sale) %> |
-	            				<%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_sale_path(sale) %> |
-	            				<%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", sale_path(sale), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
-	          				</td>
 	        			</tr>
 	        			<% end %>
 					</tbody>
