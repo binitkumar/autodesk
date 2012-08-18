@@ -303,7 +303,7 @@ $(function () {
         },
         "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
 		"aoColumnDefs": [
-			{ "bSortable": false, "aTargets": ["actions"] },
+			{ "bVisible": false, "aTargets": ["editpath","deletepath"] },
 			{ "sWidth": "110px", "aTargets": ["actions"] }
 		]
     });
