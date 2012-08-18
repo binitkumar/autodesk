@@ -1,4 +1,4 @@
-#sidebar {
+#table-controls {
 	background:#e8e8e8;
 	border-right:#1d1c1c 1px solid;
 }
@@ -24,7 +24,7 @@
 */
 }
 
-#slideout {
+#table-controls {
   	position: fixed;
   	top: 250px;
   	right: 0;
