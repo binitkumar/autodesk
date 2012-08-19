@@ -303,7 +303,7 @@ $(function () {
         },
         "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
 		"aoColumnDefs": [
-			{ "bVisible": false, "aTargets": ["editpath","deletepath"] },
+			{ "bVisible": false, "aTargets": ["hide"] },
 			{ "sWidth": "110px", "aTargets": ["actions"] }
 		]
     });
@@ -317,9 +317,9 @@ $(function () {
 	$(".data-tbl-simple tbody").delegate("tr", "click", function() {
 	  	var editpath = $("td:first", this).text();
 	  	var deletepath = $("td:eq(1)", this).text();
-		console.log(editpath);
-	  	$("#slideout-edit-link").attr("href", editpath);
-		$("#slideout-delete-link").attr("href", deletepath);
+		/* Use column 1 and 2 of the table to get edit/delete links */
+	  	$("#tablecontrols-edit-link").attr("href", editpath);
+		$("#tablecontrols-delete-link").attr("href", deletepath);
 	});
 
 });
