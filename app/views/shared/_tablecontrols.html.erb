@@ -1,5 +1,5 @@
 <div id="table-controls">
 	<a id="tablecontrols-new-link" href="../sales/new"><i class="dashboard-icons-colors plus_sl"></i></a><br>
-	<a id="tablecontrols-edit-link" href="../sales/1/edit" disabled="true"><i class="dashboard-icons-colors edit_sl"></i></a><br>
-	<a id="tablecontrols-delete-link" href="../sales/1/edit" disabled="true"><i class="dashboard-icons-colors busy_sl"></i></a>
+	<a id="tablecontrols-edit-link" href="../sales/1/edit"><i class="dashboard-icons-colors edit_sl"></i></a><br>
+	<%= link_to '<i class="dashboard-icons-colors busy_sl"></i>'.html_safe, '/sales/1', :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :id => 'tablecontrols-delete-link' %>
 </div>

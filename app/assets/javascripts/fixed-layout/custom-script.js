@@ -308,14 +308,12 @@ $(function () {
 		]
     });
     $("div.table_top select").addClass('tbl_length');
-/*$(".tbl_length").chosen({
-		disable_search_threshold: 4	
-	});
-		*/
 	
 	/* Get the edit and delete button links */
 	$(".data-tbl-simple tbody").delegate("tr", "click", function() {
-	  	var editpath = $("td:first", this).text();
+	  	$(".row_selected").removeClass('row_selected');
+		$(this).addClass('row_selected');
+		var editpath = $("td:first", this).text();
 	  	var deletepath = $("td:eq(1)", this).text();
 		/* Use column 1 and 2 of the table to get edit/delete links */
 	  	$("#tablecontrols-edit-link").attr("href", editpath);

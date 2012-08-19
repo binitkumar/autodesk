@@ -253,9 +253,16 @@ table.display tr.even.gradeU {
 tr.odd {
 	background-color: #E2E4FF;
 }
+tr.odd.row_selected {
+	background-color: #9FAFD1;
+}
 tr.even {
 	background-color: white;
 }
+tr.even.row_selected {
+	background-color: #B0BED9;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Misc
  */
