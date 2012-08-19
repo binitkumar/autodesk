@@ -329,11 +329,11 @@ td.details {
  *cursor: hand;
 }
 .paging_full_numbers a.paginate_button {
-	color: #fff !important;
+	color: #fff;
 	text-shadow:1px 1px 0px #333;
 }
 .paging_full_numbers .last {
-	border-right: 1px solid #08598d !important;
+	border-right: 1px solid #08598d;
 }
 .paginate_button_disabled a {
 }

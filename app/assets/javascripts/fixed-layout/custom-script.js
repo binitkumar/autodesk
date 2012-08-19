@@ -294,8 +294,10 @@ $(function () {
 /*======================
 	DATA TABLE
 ========================*/
+var oTable;
+
 $(function () {
-    $('.data-tbl-simple').dataTable({
+    oTable = $('.data-tbl-simple').dataTable({
         "sPaginationType": "full_numbers",
         "iDisplayLength": 10,
         "oLanguage": {
@@ -313,51 +315,18 @@ $(function () {
 	$(".data-tbl-simple tbody").delegate("tr", "click", function() {
 	  	$(".row_selected").removeClass('row_selected');
 		$(this).addClass('row_selected');
-		var editpath = $("td:first", this).text();
-	  	var deletepath = $("td:eq(1)", this).text();
+		var data = oTable.fnGetData(this);
+		var editpath = data[0];
+	  	var deletepath = data[1];
 		/* Use column 1 and 2 of the table to get edit/delete links */
 	  	$("#tablecontrols-edit-link").attr("href", editpath);
 		$("#tablecontrols-delete-link").attr("href", deletepath);
 	});
-
-});
-
-$(function () {
-    $('.data-tbl-striped').dataTable({
-			 "aoColumnDefs": [
-						{ "bSortable": false, "aTargets": [ 0,1,7 ] }
-					],
-					"aaSorting": [[1, 'asc']],
-        "sPaginationType": "full_numbers",
-        "iDisplayLength": 10,
-        "oLanguage": {
-            "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Message per page:</span>",
-        },
-        "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>'
-
-    });
-    $("div.table_top select").addClass('tbl_length');
-$(".tbl_length").chosen({
-		disable_search_threshold: 4	
+	
+	$("div.table_top select").addClass('tbl_length');
+	$(".tbl_length").chosen({
+			disable_search_threshold: 4	
 	});
-
-});
-
-$(function () {
-    $('.data-tbl-boxy').dataTable({
-        "sPaginationType": "full_numbers",
-        "iDisplayLength": 10,
-        "oLanguage": {
-            "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
-        },
-        "sDom": '<"tbl-searchbox clearfix"fl<"clear">>,<"table_content"t>,<"widget-bottom"p<"clear">>'
-
-    });
-    $("div.tbl-searchbox select").addClass('tbl_length');
-/*$(".tbl_length").chosen({
-		disable_search_threshold: 4	
-	});
-		*/
 
 });
 
