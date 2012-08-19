@@ -303,8 +303,8 @@ $(function () {
         },
         "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
 		"aoColumnDefs": [
-			{ "bVisible": false, "aTargets": ["hide"] },
-			{ "sWidth": "110px", "aTargets": ["actions"] }
+			/* Hide any columns with the class "hide" */
+			{ "bVisible": false, "aTargets": ["hide"] }
 		]
     });
     $("div.table_top select").addClass('tbl_length');
