@@ -1,6 +1,5 @@
 <%= render :partial => "shared/tablecontrols" %>
-<% @str = '<div id="newpath" data-newpath="' + new_sale_path + '">'%>
-<%= @str.html_safe %>
+<div id="newpath" data-newpath=<%= new_sale_path -%>></div>
 <div class="container">
 	<div class="row">
 			<div class = "span12">

@@ -84,7 +84,8 @@ $(function () {
 	
 	/*==Tooltip==*/
     $('.text-tip').tooltip({
-        placement: 'top'
+        placement: 'top',
+		trigger: 'focus'
     });
 	 $('.tip-top').tooltip({
         placement: 'top'
