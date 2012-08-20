@@ -25,7 +25,7 @@
  *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
  *     modify that selector.
  *   Note that the path used for Images is relative. All images are by default located in
- *     assets/fixed-layout/ - relative to this CSS file.
+ *     /assets/fixed-layout/ - relative to this CSS file.
  */
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -126,22 +126,22 @@
 	margin-left: 10px;
 }
 .paginate_disabled_previous {
-	background: url('assets/fixed-layout/tbl-img/back_disabled.png') no-repeat top left;
+	background: url('/assets/fixed-layout/tbl-img/back_disabled.png') no-repeat top left;
 }
 .paginate_enabled_previous {
-	background: url('assets/fixed-layout/tbl-img/back_enabled.png') no-repeat top left;
+	background: url('/assets/fixed-layout/tbl-img/back_enabled.png') no-repeat top left;
 }
 .paginate_enabled_previous:hover {
-	background: url('assets/fixed-layout/tbl-img/back_enabled_hover.png') no-repeat top left;
+	background: url('/assets/fixed-layout/tbl-img/back_enabled_hover.png') no-repeat top left;
 }
 .paginate_disabled_next {
-	background: url('assets/fixed-layout/tbl-img/forward_disabled.png') no-repeat top right;
+	background: url('/assets/fixed-layout/tbl-img/forward_disabled.png') no-repeat top right;
 }
 .paginate_enabled_next {
-	background: url('assets/fixed-layout/tbl-img/forward_enabled.png') no-repeat top right;
+	background: url('/assets/fixed-layout/tbl-img/forward_enabled.png') no-repeat top right;
 }
 .paginate_enabled_next:hover {
-	background: url('assets/fixed-layout/tbl-img/forward_enabled_hover.png') no-repeat top right;
+	background: url('/assets/fixed-layout/tbl-img/forward_enabled_hover.png') no-repeat top right;
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * DataTables display
@@ -206,19 +206,19 @@ table.display td input {
  */
 
 .sorting_asc {
-	background: url('assets/fixed-layout/tbl-img/sort_asc.png') no-repeat center right;
+	background: url('/assets/fixed-layout/tbl-img/sort_asc.png') no-repeat center right;
 }
 .sorting_desc {
-	background: url('assets/fixed-layout/tbl-img/sort_desc.png') no-repeat center right;
+	background: url('/assets/fixed-layout/tbl-img/sort_desc.png') no-repeat center right;
 }
 .sorting {
-	background: url('assets/fixed-layout/tbl-img/sort_both.png') no-repeat center right;
+	background: url('/assets/fixed-layout/tbl-img/sort_both.png') no-repeat center right;
 }
 .sorting_asc_disabled {
-	background: url('assets/fixed-layout/tbl-img/sort_asc_disabled.png') no-repeat center right;
+	background: url('/assets/fixed-layout/tbl-img/sort_asc_disabled.png') no-repeat center right;
 }
 .sorting_desc_disabled {
-	background: url('assets/fixed-layout/tbl-img/sort_desc_disabled.png') no-repeat center right;
+	background: url('/assets/fixed-layout/tbl-img/sort_desc_disabled.png') no-repeat center right;
 }
 th:active {
 	outline: none;
@@ -616,48 +616,48 @@ button.DTTT_button {
 
 button.DTTT_button_csv {
 	padding-right: 30px;
-	background:#eee url(assets/fixed-layout/table-tools/csv.png) no-repeat center right;
+	background:#eee url(/assets/fixed-layout/table-tools/csv.png) no-repeat center right;
 }
 button.DTTT_button_csv_hover {
 	padding-right: 30px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/csv_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/csv_hover.png) no-repeat center right;
 }
 button.DTTT_button_xls {
 	padding-right: 30px;
-	background:#eee url(assets/fixed-layout/table-tools/xls.png) no-repeat center right;
+	background:#eee url(/assets/fixed-layout/table-tools/xls.png) no-repeat center right;
 }
 button.DTTT_button_xls_hover {
 	padding-right: 30px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/xls_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/xls_hover.png) no-repeat center right;
 }
 button.DTTT_button_copy {
 	padding-right: 30px;
-	background:#eee url(assets/fixed-layout/table-tools/copy.png) no-repeat center right;
+	background:#eee url(/assets/fixed-layout/table-tools/copy.png) no-repeat center right;
 }
 button.DTTT_button_copy_hover {
 	padding-right: 30px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/copy_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/copy_hover.png) no-repeat center right;
 }
 button.DTTT_button_pdf {
 	padding-right: 30px;
-	background:#eee url(assets/fixed-layout/table-tools/pdf.png) no-repeat center right;
+	background:#eee url(/assets/fixed-layout/table-tools/pdf.png) no-repeat center right;
 }
 button.DTTT_button_pdf_hover {
 	padding-right: 30px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/pdf_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/pdf_hover.png) no-repeat center right;
 }
 button.DTTT_button_print {
 	padding-right: 30px;
-	background:#eee url(assets/fixed-layout/table-tools/print.png) no-repeat center right;
+	background:#eee url(/assets/fixed-layout/table-tools/print.png) no-repeat center right;
 }
 button.DTTT_button_print_hover {
 	padding-right: 30px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/print_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/print_hover.png) no-repeat center right;
 }
 button.DTTT_button_text {
 }
@@ -667,12 +667,12 @@ button.DTTT_button_text_hover {
 }
 button.DTTT_button_collection {
 	padding-right: 17px;
-	background: url(assets/fixed-layout/table-tools/collection.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/collection.png) no-repeat center right;
 }
 button.DTTT_button_collection_hover {
 	padding-right: 17px;
 	border: 1px solid #ccc;
-	background: url(assets/fixed-layout/table-tools/collection_hover.png) no-repeat center right;
+	background: url(/assets/fixed-layout/table-tools/collection_hover.png) no-repeat center right;
 }
 /*
  * SELECTING
@@ -720,7 +720,7 @@ div.DTTT_collection {
 	z-index: 2002;
 }
 div.DTTT_collection_background {
-	background: transparent url(assets/fixed-layout/table-tools/background.png) repeat top left;
+	background: transparent url(/assets/fixed-layout/table-tools/background.png) repeat top left;
 	z-index: 2001;
 }
 div.DTTT_collection button.DTTT_button {
