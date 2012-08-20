@@ -20,7 +20,7 @@ gem 'formtastic'
 gem 'attrtastic'
 
 # Use web-app-theme gem for easy creation of initial layout (repository version not updated; pulling from Github)
-gem 'web-app-theme', :git => 'git://github.com/chonan/web-app-theme.git'
+gem 'web-app-theme', :git => '/Users/henryowens/Documents/web-app-theme'
 
 # Use the ffaker gem to auto-generate test data
 gem 'ffaker'
@@ -33,7 +33,7 @@ gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatabl
 
 # Use the bootstrap gem as the js files do not play nicely with the asset pipeline
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'bootstrap-colorpicker-rails', :git => 'https://github.com/alessani/bootstrap-colorpicker-rails.git'
+gem 'bootstrap-colorpicker-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

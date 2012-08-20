@@ -301,7 +301,7 @@ $(function () {
         "sPaginationType": "full_numbers",
         "iDisplayLength": 10,
         "oLanguage": {
-            "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
+            "sLengthMenu": "<span class='lengthMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
         },
         "sDom": '<"table_top clearfix"fl<"clear">>,<"table_content"t>,<"table_bottom"p<"clear">>',
 		"aoColumnDefs": [
@@ -310,6 +310,9 @@ $(function () {
 		]
     });
     $("div.table_top select").addClass('tbl_length');
+	
+	/* Add the new item path to the sidebar icon */
+	$("#tablecontrols-new-link").attr("href", $("#newpath").attr("data-newpath"));
 	
 	/* Get the edit and delete button links */
 	$(".data-tbl-simple tbody").delegate("tr", "click", function() {
@@ -338,7 +341,7 @@ $(function () {
         "sPaginationType": "full_numbers",
         "iDisplayLength": 10,
         "oLanguage": {
-            "sLengthMenu": "<span class='lenghtMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
+            "sLengthMenu": "<span class='lengthMenu'> _MENU_</span><span class='lengthLabel'>Entries per page:</span>",
         },
         "sDom": '<"tbl-tools-searchbox"fl<"clear">>,<"tbl_tools"CT<"clear">>,<"table_content"t>,<"widget-bottom"p<"clear">>'
     });
