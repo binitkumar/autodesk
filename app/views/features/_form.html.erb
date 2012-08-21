@@ -11,4 +11,14 @@
 			<%= f.text_field :value, :class => 'input-large' %>
 		</div>
 	</div>
+	<% if form_actions_visible == true %>
+		<div class="form-actions">
+			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
+				Save Changes
+			<% end -%>
+			<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
+				Cancel
+			<% end -%>
+		</div>
+	<% end %>
 </fieldset>
