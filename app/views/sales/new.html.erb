@@ -1,5 +1,5 @@
 <div class="container">
-	<%= form_for :sale, :url => sales_path do |f| -%>
+	<%= form_for :sale, :url => sales_path do |sale| -%>
 		<div class="row">
 			<div class="span6">
 				<div class="nonboxy-widget">
@@ -9,8 +9,8 @@
 					<div class="widget-content">
 						<div class="widget-box">
 							<div class = 'form-horizontal well'>
-								<%= f.fields_for :customer do |customer_builder| %>
-						  			<%= render :partial => "customers/form", :locals => {:f => customer_builder, :form_actions_visible => false} %>
+								<%= sale.fields_for :customer do |customer_builder| %>
+						  			<%= render :partial => "customers/form", :locals => {:customer => customer_builder, :form_actions_visible => false} %>
 								<% end -%>
 							</div>
 						</div>
@@ -25,8 +25,8 @@
 					<div class="widget-content">
 						<div class="widget-box">
 							<div class = 'form-horizontal well'>
-								<%= f.fields_for :vehicle do |vehicle_builder| %>
-						  			<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
+								<%= sale.fields_for :vehicles do |vehicle_builder| %>
+						  			<%= render :partial => "vehicles/form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
 								<% end -%>
 							</div>
 						</div>

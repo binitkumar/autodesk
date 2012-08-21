@@ -2,17 +2,11 @@
 	<div class="control-group">
 		<label class="control-label">Customer Type</label>
 		<div class="controls">
-			<%= select("customer", "customer_type_id", CustomerType.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+			<%= collection_select(:customer, :customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
-	<%= f.fields_for :customer do |feature_builder| %>
-		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "First Name", :form_actions_visible => false} %>
-	<% end -%>
-	<%= f.fields_for :customer do |feature_builder| %>
-		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "Last Name", :form_actions_visible => false} %>
-	<% end -%>
-	<%= f.fields_for :customer do |feature_builder| %>
-		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "Date of Birth", :form_actions_visible => false} %>
+	<%= customer.fields_for :features do |features_builder| %>
+		<%= render :partial => "features/fixed_feature", :locals => {:feature => features_builder, :fixed_feature_type => "First Name", :form_actions_visible => false} %>
 	<% end -%>
 	<% if form_actions_visible == true %>
 		<div class="form-actions">
