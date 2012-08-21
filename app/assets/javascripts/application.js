@@ -16,7 +16,8 @@
 //= require jquery.ui.slider
 //= require twitter/bootstrap.js
 //= require bootstrap-colorpicker
-//= require dataTables/jquery.dataTables																							
+//= require dataTables/jquery.dataTables
+//= require chosen-jquery																							
 //= require fixed-layout/smart-wizard.jquery.js			
 //= require fixed-layout/fullcalendar.js				
 //= require fixed-layout/jquery.collapse.js			
@@ -25,8 +26,7 @@
 //= require fixed-layout/inputmask.jquery.js								
 //= require fixed-layout/vaidation.jquery.js
 //= require fixed-layout/check-all.jquery.js			
-//= require fixed-layout/ios-orientationchange-fix.js			
-//= require fixed-layout/chosen.jquery.js			
+//= require fixed-layout/ios-orientationchange-fix.js						
 //= require fixed-layout/jquery-dynamic-form.js													
 //= require jqplot
 //= require jqplot/plugins/BezierCurveRenderer
