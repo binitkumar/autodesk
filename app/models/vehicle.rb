@@ -1,5 +1,6 @@
 class Vehicle < ActiveRecord::Base
-  attr_accessible :trim_id, :model_year_id
+  attr_accessible :trim_id, :model_year_id, :features_attributes, :registration_marks_attributes, :mileage_readings_attributes,
+                  :purchases_attributes, :comments_attributes
   
   belongs_to :trim
   belongs_to :model_year

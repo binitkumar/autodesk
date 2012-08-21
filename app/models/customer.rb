@@ -1,5 +1,6 @@
 class Customer < ActiveRecord::Base
-  attr_accessible :customer_type_id
+  attr_accessible :customer_type_id, :features_attributes, :emails_attributes, :addresses_attributes, :contact_numbers_attributes,
+                  :events_attributes
   
   belongs_to :customer_type
   
@@ -28,5 +29,9 @@ class Customer < ActiveRecord::Base
   has_many :features, :through => :customer_features
   
   accepts_nested_attributes_for :features
+  accepts_nested_attributes_for :emails
+  accepts_nested_attributes_for :addresses
+  accepts_nested_attributes_for :contact_numbers
+  accepts_nested_attributes_for :events
   
 end

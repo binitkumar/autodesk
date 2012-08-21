@@ -1,5 +1,6 @@
 class Sale < ActiveRecord::Base
-  attr_accessible :dealer_id, :customer_id, :date, :sale_type_id
+  attr_accessible :dealer_id, :customer_id, :date, :sale_type_id, :customer_attributes, :vehicles_attributes,
+                  :products_attributes, :comments_attributes
   
   belongs_to :dealer
   belongs_to :customer
