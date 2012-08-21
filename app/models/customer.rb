@@ -27,4 +27,6 @@ class Customer < ActiveRecord::Base
   has_many :customer_features
   has_many :features, :through => :customer_features
   
+  accepts_nested_attributes_for :features
+  
 end
