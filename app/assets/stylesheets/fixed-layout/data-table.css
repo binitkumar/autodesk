@@ -272,7 +272,6 @@ tr.even.row_selected {
 .dataTables_scrollBody {
  *margin-top: -1px;
 }
-
 .top .dataTables_info {
 	float: none;
 }

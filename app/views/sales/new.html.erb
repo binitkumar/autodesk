@@ -1,5 +1,6 @@
 <div class="container">
 	<div class="row">
+		<%= form_for :sale, :url => sales_path do |f| -%>
 		<div class="span7">
 			<div class="nonboxy-widget">
 				<div class="widget-head">
@@ -7,12 +8,15 @@
 				</div>
 				<div class="widget-content">
 					<div class="widget-box">
-						<%= form_for :sale, :url => sales_path, :html => { :class => 'form-horizontal well' } do |f| -%>
-					  		<%= render :partial => "form", :locals => {:f => f} %>
-						<% end -%>
+						<div class = 'form-horizontal well'>
+							<%= f.fields_for :customer do |customer_builder| %>
+					  			<%= render :partial => "customers/form", :locals => {:f => customer_builder} %>
+							<% end -%>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<% end -%>
 	</div>	
 </div>
