@@ -1,5 +1,17 @@
 <fieldset>
 	<div class="control-group">
+		<label class="control-label">Make</label>
+		<div class="controls">
+			<%= select("", "make_id", Make.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Model</label>
+		<div class="controls">
+			<%= select("", "model_id", Model.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+		</div>
+	</div>
+	<div class="control-group">
 		<label class="control-label">Trim</label>
 		<div class="controls">
 			<%= select("vehicle", "trim_id", Trim.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
