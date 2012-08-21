@@ -22,5 +22,8 @@ class Sale < ActiveRecord::Base
   has_many :financial_transactions, :through => :financial_transaction_funding_plan_sales
   
   accepts_nested_attributes_for :customer
+  accepts_nested_attributes_for :vehicles
+  accepts_nested_attributes_for :products
+  accepts_nested_attributes_for :comments
   
 end
