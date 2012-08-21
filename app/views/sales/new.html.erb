@@ -25,7 +25,9 @@
 					<div class="widget-content">
 						<div class="widget-box">
 							<div class = 'form-horizontal well'>
-								Placeholder
+								<%= f.fields_for :customer do |vehicle_builder| %>
+						  			<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
+								<% end -%>
 							</div>
 						</div>
 					</div>

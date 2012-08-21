@@ -1,21 +1,24 @@
-
-  	<%= f.inputs do %>
-    
-    	<%= f.input :make_id, :as => :select, :collection => Make.all,
-	:wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'select' } %>
-
-	    <%= f.input :model_id, :as => :select, :collection => Model.all,
-	:wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'select' } %>
-
-	    <%= f.input :trim_id, :as => :select, :collection => Trim.all,
-	:wrapper_html => { :class => 'group' }, :label_html => { :class => 'label' }, :input_html => { :class => 'select' } %>
-    
-	<% end -%>
-
-<div class="group navform wat-cf">
-  	<button class="button" type="submit">
-    	<%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
-  	</button>
-  	<span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
-	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), vehicles_path, :class => "text_button_padding link_button" %>
-</div>
+<fieldset>
+	<div class="control-group">
+		<label class="control-label">Trim</label>
+		<div class="controls">
+			<%= select("vehicle", "trim_id", Trim.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Model Year</label>
+		<div class="controls">
+			<%= select("vehicle", "model_year_id", ModelYear.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+		</div>
+	</div>
+	<% if form_actions_visible == true %>
+		<div class="form-actions">
+			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
+				Save Changes
+			<% end -%>
+			<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
+				Cancel
+			<% end -%>
+		</div>
+	<% end %>
+</fieldset>
