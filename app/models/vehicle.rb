@@ -21,6 +21,12 @@ class Vehicle < ActiveRecord::Base
   has_many :quote_vehicles
   has_many :quotes, :through => :quote_vehicles
   
+  accepts_nested_attributes_for :features
+  accepts_nested_attributes_for :registration_marks
+  accepts_nested_attributes_for :mileage_readings
+  accepts_nested_attributes_for :purchases
+  accepts_nested_attributes_for :comments
+  
   validate :model_year_valid_for_trim
 
   def model_year_valid_for_trim
