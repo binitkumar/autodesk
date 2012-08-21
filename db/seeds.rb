@@ -33,7 +33,11 @@ customer_types = CustomerType.create([
 feature_types = FeatureType.create([
   {value: 'First Name'},
   {value: 'Last Name'},
-  {value: 'Date of Birth'}
+  {value: 'Name'},
+  {value: 'Date of Birth'},
+  {value: 'Company Registration Number'},
+  {value: 'VAT Number'},
+  {value: 'Date of Incorporation'}
 ])
 
 employment_types = EmploymentType.create([
