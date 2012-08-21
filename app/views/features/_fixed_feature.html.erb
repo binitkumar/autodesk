@@ -1,0 +1,9 @@
+<%= f.hidden_field :feature_type_id, :value => FeatureType.where(:value => fixed_feature_type).first.id %>
+<fieldset>
+	<div class="control-group">
+		<label class="control-label"><Value><%= fixed_feature_type %></label>
+		<div class="controls">
+			<%= f.text_field :value, :class => 'input-large' %>
+		</div>
+	</div>
+</fieldset>

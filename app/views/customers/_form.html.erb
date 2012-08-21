@@ -1,31 +1,19 @@
 <fieldset>
 	<div class="control-group">
-		<label class="control-label" for="input01">First Name</label>
+		<label class="control-label">Customer Type</label>
 		<div class="controls">
-			<input type="text" class="input-large text-tip" id="input01" title="it's a tooltip!">
-			<p class="help-block">
-				 In addition to freeform text, any HTML5 text-based input appears like so.
-			</p>
+			<%= select("customer", "customer_type_id", CustomerType.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label" for="typehead">Auto Complete</label>
-		<div class="controls">
-			<input type="text" class=" input-xlarge" data-provide="typeahead" data-items="5" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]' id="typehead">
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Uneditable input</label>
-		<div class="controls">
-			<span class="input-xlarge uneditable-input">Some value here</span>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label" for="input04">Disable Input</label>
-		<div class="controls">
-			<input type="text" class="input-xlarge disabled" disabled="disabled" placeholder="Disabled input here…" id="input04">
-		</div>
-	</div>
+	<%= f.fields_for :customer do |feature_builder| %>
+		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "First Name"} %>
+	<% end -%>
+	<%= f.fields_for :customer do |feature_builder| %>
+		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "Last Name"} %>
+	<% end -%>
+	<%= f.fields_for :customer do |feature_builder| %>
+		<%= render :partial => "features/fixed_feature", :locals => {:f => feature_builder, :fixed_feature_type => "Date of Birth"} %>
+	<% end -%>
 	<div class="control-group">
 		<label class="control-label">Checkbox</label>
 		<div class="controls">
@@ -85,30 +73,6 @@
 		</div>
 	</div>
 	<div class="control-group">
-		<label class="control-label">Select list</label>
-		<div class="controls">
-			<select>
-				<option>something</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Multicon-select</label>
-		<div class="controls">
-			<select multiple="multiple">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-	</div>
-	<div class="control-group">
 		<label class="control-label">File input</label>
 		<div class="controls">
 			<input class="input-file" type="file">
@@ -121,17 +85,13 @@
 		</div>
 	</div>
 	<div class="form-actions">
-		<button type="submit" class="btn btn-info">Save changes</button>
+		<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
+			Save Changes
+		<% end -%>
 		<button class="btn btn-warning">Cancel</button>
 	</div>
 </fieldset>
 
-
-  <div class="group">
-    <%= f.label :customer_type_id, t("activerecord.attributes.customer.customer_type_id", :default => "Customer type"), :class => :label %>
-    <%= f.number_field :customer_type_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
 <div class="group navform wat-cf">
   <button class="button" type="submit">
     <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
