@@ -122,6 +122,14 @@ $('#popover').popover();
 
 });
 
+/*=========
+Chosen
+===========*/
+
+$(function() {
+	$(".chzn-select").chosen();
+});
+
 
 /*==================
 Slider
@@ -437,58 +445,3 @@ $(function () {
                     alert('checked inputs:\n'+ids);
                 });
             });
-			
-/*===================================
-THEME SWITCHER
-=====================================*/
-
-	$(function()
-	{
-		
-		$('#sidebar-off').click(function()
-		{
-			$(this).attr('disabled','disabled');
-			$(this).siblings('button').removeAttr('disabled');
-			$('#sidebar').addClass('side-hide');
-			$('.top-nav').addClass('full-fluid');
-			$('#main-content').addClass('full-fluid');
-			});
-			
-			$('#sidebar-on').click(function()
-		{
-			$(this).attr('disabled','disabled');
-			$(this).siblings('button').removeAttr('disabled');
-			$('#sidebar').removeClass('side-hide');
-			$('.top-nav').removeClass('full-fluid');
-			$('#main-content').removeClass('full-fluid');
-			});
-			
-			$('#right-sidebar').click(function()
-		{
-			$(this).attr('disabled','disabled');
-			$(this).siblings('button').removeAttr('disabled');
-			$('#sidebar').addClass('right-sidebar');
-			$('.top-nav').addClass('merge-left');
-			$('#main-content').addClass('merge-left');
-			
-			});
-			
-			$('#left-sidebar').click(function()
-		{
-			$(this).attr('disabled','disabled');
-			$(this).siblings('button').removeAttr('disabled');
-			$('#sidebar').removeClass('right-sidebar');
-			$('.top-nav').removeClass('merge-left');
-			$('#main-content').removeClass('merge-left');
-			
-			});
-		});
-		
-		$(function()
-		{
-			$('.theme-color').click(function()
-			{
-				var stylesheet = $(this).attr('title').toLowerCase();
-				$('#themes').attr('href','css'+'/'+stylesheet+'.css');
-				});
-			});
