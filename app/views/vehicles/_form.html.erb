@@ -23,6 +23,9 @@
 			<%= vehicle.collection_select(:model_year_id, ModelYear.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
+	<%= vehicle.fields_for :registration_marks do |registration_mark_builder| %>
+		<%= render :partial => "registration_marks/form", :locals => {:vehicle => registration_mark_builder, :form_actions_visible => false} %>
+	<% end -%>
 	<% if form_actions_visible == true %>
 		<div class="form-actions">
 			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
