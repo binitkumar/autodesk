@@ -25,6 +25,6 @@ class Sale < ActiveRecord::Base
   accepts_nested_attributes_for :customer
   accepts_nested_attributes_for :vehicles
   accepts_nested_attributes_for :products
-  accepts_nested_attributes_for :comments
+  accepts_nested_attributes_for :comments, :reject_if => :all_blank
   
 end

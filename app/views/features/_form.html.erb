@@ -2,13 +2,13 @@
 	<div class="control-group">
 		<label class="control-label">Feature Type</label>
 		<div class="controls">
-			<%= select("feature", "feature_type_id", FeatureType.all.collect {|p| [ p.value, p.id ] }, {}, {:class => "chzn-select"}) %>
+			<%= feature.select(:feature_type_id, FeatureType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Value</label>
 		<div class="controls">
-			<%= f.text_field :value, :class => 'input-large' %>
+			<%= feature.text_field :value, :class => 'input-large' %>
 		</div>
 	</div>
 	<% if form_actions_visible == true %>

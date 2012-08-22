@@ -9,9 +9,9 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
-    @sale.build_customer
-    @sale.vehicles.build
-    3.times {@sale.customer.features.build}
+    @customer = @sale.build_customer
+    @built_vehicle = @sale.vehicles.build
+    @built_vehicle.registration_marks.build
   end
 
   def create

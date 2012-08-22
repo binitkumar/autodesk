@@ -5,9 +5,9 @@
 			<%= customer.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
-	<%= customer.fields_for :features do |features_builder| %>
-		<%= render :partial => "features/fixed_feature", :locals => {:feature => features_builder, :fixed_feature_type => "First Name", :form_actions_visible => false} %>
-	<% end -%>
+	<%= add_feature_field("First Name", customer, false) %>
+	<%= add_feature_field("Last Name", customer, false) %>
+	<%= add_feature_field("Date of Birth", customer, false) %>
 	<% if form_actions_visible == true %>
 		<div class="form-actions">
 			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>

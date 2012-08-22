@@ -22,11 +22,11 @@ class Vehicle < ActiveRecord::Base
   has_many :quote_vehicles
   has_many :quotes, :through => :quote_vehicles
   
-  accepts_nested_attributes_for :features
-  accepts_nested_attributes_for :registration_marks
-  accepts_nested_attributes_for :mileage_readings
+  accepts_nested_attributes_for :features, :reject_if => :all_blank
+  accepts_nested_attributes_for :registration_marks, :reject_if => :all_blank
+  accepts_nested_attributes_for :mileage_readings, :reject_if => :all_blank
   accepts_nested_attributes_for :purchases
-  accepts_nested_attributes_for :comments
+  accepts_nested_attributes_for :comments, :reject_if => :all_blank
   
   validate :model_year_valid_for_trim
 
