@@ -1,5 +1,17 @@
 <fieldset>
 	<div class="control-group">
+		<label class="control-label">Make</label>
+		<div class="controls">
+			<%= collection_select("", "", Make.all, :id, :value, {}, {:class => "chzn-select", :id => "vehicle_make_selector"}) %>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Model</label>
+		<div class="controls">
+			<%= collection_select("","", Model.all, :id, :value, {}, {:class => "chzn-select", :id => "vehicle_model_selector"}) %>
+		</div>
+	</div>
+	<div class="control-group">
 		<label class="control-label">Trim</label>
 		<div class="controls">
 			<%= vehicle.collection_select(:trim_id, Trim.all, :id, :value, {}, {:class => "chzn-select"}) %>

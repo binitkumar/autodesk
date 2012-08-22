@@ -11,7 +11,7 @@ class SalesController < ApplicationController
     @sale = Sale.new
     @sale.build_customer
     @sale.vehicles.build
-    @sale.customer.features.build
+    3.times {@sale.customer.features.build}
   end
 
   def create
