@@ -10,11 +10,13 @@ class SalesController < ApplicationController
   def new
     @sale = Sale.new
     @sale.build_customer
+    @sale.vehicles.build
+    @sale.customer.features.build
   end
 
   def create
     @sale = Sale.new(params[:sale])
-    @customer = @sale.customer.build(params[:customer])
+    #@customer = @sale.customer.build(params[:customer])
     if @sale.save
       redirect_to @sale, :notice => "Successfully created sale."
     else
