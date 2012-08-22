@@ -2,13 +2,13 @@
 	<div class="control-group">
 		<label class="control-label">Trim</label>
 		<div class="controls">
-			<%= collection_select(:vehicle, :trim_id, Trim.all, :id, :value, {}, {:class => "chzn-select"}) %>
+			<%= vehicle.collection_select(:trim_id, Trim.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Model Year</label>
 		<div class="controls">
-			<%= collection_select(:vehicle, :model_year_id, ModelYear.all, :id, :value, {}, {:class => "chzn-select"}) %>
+			<%= vehicle.collection_select(:model_year_id, ModelYear.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
 	<% if form_actions_visible == true %>

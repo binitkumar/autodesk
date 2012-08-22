@@ -2,7 +2,7 @@
 	<div class="control-group">
 		<label class="control-label">Customer Type</label>
 		<div class="controls">
-			<%= collection_select(:customer, :customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
+			<%= customer.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
 	<%= customer.fields_for :features do |features_builder| %>
