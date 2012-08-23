@@ -123,11 +123,24 @@ $('#popover').popover();
 });
 
 /*=========
+Chained
+===========*/
+
+/* Link the model dropdown to the make dropdown */
+$(function(){
+ $('.chained_to_vehicle_make_selector').chainedTo('select#vehicle_make_selector');
+ $('.chained_to_vehicle_model_selector').chainedTo('select#vehicle_model_selector');
+});
+
+/*=========
 Chosen
 ===========*/
 
 $(function() {
 	$(".chzn-select").chosen();
+	$("select#vehicle_make_selector").chosen().change( function() {$(".chained_to_vehicle_make_selector").trigger("liszt:updated"); });
+	$("select#vehicle_model_selector").chosen().change( function() {$(".chained_to_vehicle_model_selector").trigger("liszt:updated"); });
+	$(".chained-child").chosen();
 });
 
 

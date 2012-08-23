@@ -17,7 +17,8 @@
 //= require twitter/bootstrap.js
 //= require bootstrap-colorpicker
 //= require dataTables/jquery.dataTables
-//= require chosen-jquery																							
+//= require chosen-jquery
+//= require fixed-layout/jquery.chained.js																							
 //= require fixed-layout/smart-wizard.jquery.js			
 //= require fixed-layout/fullcalendar.js				
 //= require fixed-layout/jquery.collapse.js			
