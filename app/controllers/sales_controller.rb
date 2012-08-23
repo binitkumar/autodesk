@@ -9,7 +9,7 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
-    @customer = @sale.build_customer
+    @sale.build_customer
     @built_vehicle = @sale.vehicles.build
     @built_vehicle.registration_marks.build
   end
