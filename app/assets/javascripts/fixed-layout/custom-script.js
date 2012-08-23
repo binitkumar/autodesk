@@ -127,22 +127,31 @@ Chained
 ===========*/
 
 /* Link the model dropdown to the make dropdown */
-$(function(){
- $('.chained_to_vehicle_make_selector').chainedTo('select#vehicle_make_selector');
- $('.chained_to_vehicle_model_selector').chainedTo('select#vehicle_model_selector');
+function makeChains(){
+ $('.chained_to_vehicle_make_selector').remoteChainedTo('.chained_parent_vehicle_make_selector', '/models.json');
+ $('.chained_to_vehicle_model_selector').remoteChainedTo('.chained_parent_vehicle_model_selector', '/trims.json');
+ $('.chained_to_vehicle_trim_selector').remoteChainedTo('.chained_parent_vehicle_trim_selector', '/model_years.json');
+}
+
+var chainCall = $.Deferred(function() {
+	makeChains();
 });
+
+
 
 /*=========
 Chosen
 ===========*/
 
-$(function() {
-	$(".chzn-select").chosen();
-	$("select#vehicle_make_selector").chosen().change( function() {$(".chained_to_vehicle_make_selector").trigger("liszt:updated"); });
-	$("select#vehicle_model_selector").chosen().change( function() {$(".chained_to_vehicle_model_selector").trigger("liszt:updated"); });
-	$(".chained-child").chosen();
-});
+chainCall.done(function() { 
+		$(".chzn-select").chosen();
+		$(".chained_parent_vehicle_make_selector").chosen().change( function() {$(".chained_to_vehicle_make_selector").trigger("liszt:updated"); });
+		$(".chained_parent_vehicle_model_selector").chosen().change( function() {$(".chained_to_vehicle_model_selector").trigger("liszt:updated"); });
+		$(".chained_parent_vehicle_trim_selector").chosen().change( function() {$(".chained_to_vehicle_trim_selector").trigger("liszt:updated"); });
+		$(".chained_child").chosen();
+	});
 
+chainCall.resolve();
 
 /*==================
 Slider

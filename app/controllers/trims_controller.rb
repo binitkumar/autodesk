@@ -1,6 +1,13 @@
 class TrimsController < ApplicationController
   def index
     @trims = Trim.all
+    respond_to do |format|
+      format.html
+      format.json do
+        @trims_for_dropdown = Trim.where(:model_id => params[:model_id])
+        render :json => Hash[@trims_for_dropdown.map { |i| [i.id, i.value] }]
+      end
+    end
   end
 
   def show
@@ -38,4 +45,5 @@ class TrimsController < ApplicationController
     @trim.destroy
     redirect_to trims_url, :notice => "Successfully destroyed trim."
   end
+  
 end

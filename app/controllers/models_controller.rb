@@ -1,6 +1,13 @@
 class ModelsController < ApplicationController
   def index
     @models = Model.all
+    respond_to do |format|
+      format.html
+      format.json do
+        @models_for_dropdown = Model.where(:make_id => params[:make_id])
+        render :json => Hash[@models_for_dropdown.map { |i| [i.id, i.value] }]
+      end
+    end
   end
 
   def show
@@ -38,4 +45,5 @@ class ModelsController < ApplicationController
     @model.destroy
     redirect_to models_url, :notice => "Successfully destroyed model."
   end
+
 end

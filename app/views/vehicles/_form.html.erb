@@ -2,25 +2,25 @@
 	<div class="control-group">
 		<label class="control-label">Make</label>
 		<div class="controls">
-			<%= select("", "", options_for_select(@makes_for_dropdown), {:prompt => 'Select Make'}, {:id => "vehicle_make_selector"}) %>
+			<%= select("", "", Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => 'Select Make'}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data_chained_url_name" => "make_id"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Model</label>
 		<div class="controls">
-			<%= select("", "", options_for_select(@models_for_dropdown), {:prompt => 'Select Model'}, {:id => "vehicle_model_selector", :class => "chained_to_vehicle_make_selector"}) %>
+			<%= select("", "", options_for_select([]), {:prompt => 'Select Model'}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data_chained_url_name" => "model_id"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Trim</label>
 		<div class="controls">
-			<%= vehicle.select(:trim_id, options_for_select(@trims_for_dropdown), {:prompt => 'Select Trim'}, {:class => "chained_to_vehicle_model_selector chained-child"}) %>
+			<%= vehicle.select(:trim_id, options_for_select([]), {:prompt => 'Select Trim'}, {:class => "chained_parent_vehicle_trim_selector chained_to_vehicle_model_selector", "data_chained_url_name" => "trim_id"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Model Year</label>
 		<div class="controls">
-			<%= vehicle.collection_select(:model_year_id, ModelYear.all, :id, :value, {}, {:class => "chzn-select"}) %>
+			<%= vehicle.select(:model_year_id, options_for_select([]), {:prompt => 'Select Model Year'}, {:class => "chained_to_vehicle_trim_selector chained_child"}) %>
 		</div>
 	</div>
 	<%= vehicle.fields_for :registration_marks do |registration_mark_builder| %>

@@ -1,6 +1,17 @@
 class ModelYearsController < ApplicationController
   def index
     @model_years = ModelYear.all
+    respond_to do |format|
+      format.html
+      format.json do
+        if params[:trim_id].nil? || params[:trim_id] == ""
+          @model_years_for_dropdown = []
+        else
+          @model_years_for_dropdown = Trim.where(:id => params[:trim_id]).first.model_years
+        end
+        render :json => Hash[@model_years_for_dropdown.map { |i| [i.id, i.value] }]
+      end
+    end
   end
 
   def show
@@ -38,4 +49,5 @@ class ModelYearsController < ApplicationController
     @model_year.destroy
     redirect_to model_years_url, :notice => "Successfully destroyed model year."
   end
+  
 end
