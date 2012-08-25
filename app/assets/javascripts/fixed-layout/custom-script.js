@@ -127,31 +127,19 @@ Chained
 ===========*/
 
 /* Link the model dropdown to the make dropdown */
-function makeChains(){
+$(function makeChains(){
  $('.chained_to_vehicle_make_selector').remoteChainedTo('.chained_parent_vehicle_make_selector', '/models.json');
  $('.chained_to_vehicle_model_selector').remoteChainedTo('.chained_parent_vehicle_model_selector', '/trims.json');
  $('.chained_to_vehicle_trim_selector').remoteChainedTo('.chained_parent_vehicle_trim_selector', '/model_years.json');
-}
-
-var chainCall = $.Deferred(function() {
-	makeChains();
 });
-
-
 
 /*=========
 Chosen
 ===========*/
 
-chainCall.done(function() { 
+$(function() { 
 		$(".chzn-select").chosen();
-		$(".chained_parent_vehicle_make_selector").chosen().change( function() {$(".chained_to_vehicle_make_selector").trigger("liszt:updated"); });
-		$(".chained_parent_vehicle_model_selector").chosen().change( function() {$(".chained_to_vehicle_model_selector").trigger("liszt:updated"); });
-		$(".chained_parent_vehicle_trim_selector").chosen().change( function() {$(".chained_to_vehicle_trim_selector").trigger("liszt:updated"); });
-		$(".chained_child").chosen();
 	});
-
-chainCall.resolve();
 
 /*==================
 Slider

@@ -13,6 +13,11 @@
     $.fn.remoteChained = function(parent_selector, url, options) { 
         
         return this.each(function() {
+	
+			if ($(this).attr("data-chained-children") == "false") {
+				var chainedChildren = false;
+			}
+			var selectId = $(this).attr("id");
             
             /* Save this to self because this changes when scope changes. */            
             var self   = this;
@@ -25,7 +30,7 @@
                     /* Build data array from parents values. */
                     var data = {};
                     $(parent_selector).each(function() {
-                        var id = $(this).attr("data_chained_url_name");
+                        var id = $(this).attr("data-chained-url-name");
                         var value = $(":selected", this).val();
                         data[id] = value;
                     });
@@ -64,12 +69,19 @@
                         
                         /* Force updating the children. */
                         $(self).trigger("change");
+
+						/* Call the Chosen plugin to make the selects more useable */
+						if (chainedChildren == false) {
+							$(self).chosen();
+							$(self).trigger("liszt:updated");
+						}
+						$(parent_selector).chosen().change( function() {$(this).trigger("liszt:updated"); });
                         
                     });
                 });
 
                 /* Force updating the children. */
-                $(this).trigger("change");             
+                $(this).trigger("change");
 
             });
         });

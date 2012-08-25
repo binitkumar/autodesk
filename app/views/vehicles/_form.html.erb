@@ -2,25 +2,25 @@
 	<div class="control-group">
 		<label class="control-label">Make</label>
 		<div class="controls">
-			<%= select("", "", Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => 'Select Make'}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data_chained_url_name" => "make_id"}) %>
+			<%= select("", "", Make.all.collect {|p| [ p.value, p.id ] }, {}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data-chained-url-name" => "make_id", "data-chained-children" => "true"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Model</label>
 		<div class="controls">
-			<%= select("", "", options_for_select([]), {:prompt => 'Select Model'}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data_chained_url_name" => "model_id"}) %>
+			<%= select("", "", options_for_select([]), {}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data-chained-url-name" => "model_id", "data-chained-children" => "true"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Trim</label>
 		<div class="controls">
-			<%= vehicle.select(:trim_id, options_for_select([]), {:prompt => 'Select Trim'}, {:class => "chained_parent_vehicle_trim_selector chained_to_vehicle_model_selector", "data_chained_url_name" => "trim_id"}) %>
+			<%= vehicle.select(:trim_id, options_for_select([]), {}, {:class => "chained_parent_vehicle_trim_selector chained_to_vehicle_model_selector", "data-chained-url-name" => "trim_id", "data-chained-children" => "true"}) %>
 		</div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Model Year</label>
 		<div class="controls">
-			<%= vehicle.select(:model_year_id, options_for_select([]), {:prompt => 'Select Model Year'}, {:class => "chained_to_vehicle_trim_selector chained_child"}) %>
+			<%= vehicle.select(:model_year_id, options_for_select([]), {}, {:class => "chained_to_vehicle_trim_selector chained_child", "data-chained-children" => "false"}) %>
 		</div>
 	</div>
 	<%= vehicle.fields_for :registration_marks do |registration_mark_builder| %>
