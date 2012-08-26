@@ -62,7 +62,8 @@ sale_types = SaleType.create([
   {value: 'Retail'},
   {value: 'Fleet'},
   {value: 'Trade'},
-  {value: 'Write-off'}
+  {value: 'Write-off'},
+  {value: 'Auction'}
 ])
 
 role_types = RoleType.create([
