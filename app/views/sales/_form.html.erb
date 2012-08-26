@@ -13,6 +13,12 @@
 								<%= sale.collection_select(:sale_type_id, SaleType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 							</div>
 						</div>
+						<div class="control-group">
+							<label class="control-label">Date of Sale</label>
+							<div class="controls">
+								<%= sale.text_field(:date, :class => "date") %>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
