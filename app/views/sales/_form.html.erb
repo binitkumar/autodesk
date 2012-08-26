@@ -7,41 +7,23 @@
 			<div class="widget-content">
 				<div class="widget-box">
 					<div class = 'form-horizontal well'>
-						<div class="control-group">
-							<label class="control-label">Sale Type</label>
-							<div class="controls">
-								<%= sale.collection_select(:sale_type_id, SaleType.all, :id, :value, {}, {:class => "chzn-select"}) %>
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label">Sale Type</label>
+								<div class="controls">
+									<%= sale.collection_select(:sale_type_id, SaleType.all, :id, :value, {}, {:class => "chzn-select"}) %>
+								</div>
 							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label">Date of Sale</label>
-							<div class="controls">
-								<%= sale.text_field(:date, :class => "date") %>
+							<div class="control-group">
+								<label class="control-label">Date of Sale</label>
+								<div class="controls">
+									<%= sale.text_field :date, :class => 'date' %>
+								</div>
 							</div>
-						</div>
+						</fieldset>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="span6">
-		<div class="nonboxy-widget">
-			<div class="widget-head">
-				<h5>Team</h5>
-			</div>
-			<div class="widget-content">
-				<div class="widget-box">
-					<div class = 'form-horizontal well'>
-						Placeholder
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="span6">
-		<div class="nonboxy-widget">
 			<div class="widget-head">
 				<h5>Customer</h5>
 			</div>
@@ -51,6 +33,16 @@
 						<%= sale.fields_for :customer do |customer_builder| %>
 				  			<%= render :partial => "customers/form", :locals => {:customer => customer_builder, :form_actions_visible => false} %>
 						<% end -%>
+					</div>
+				</div>
+			</div>
+			<div class="widget-head">
+				<h5>Team</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						Placeholder
 					</div>
 				</div>
 			</div>
@@ -71,12 +63,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="span6">
-		<div class="nonboxy-widget">
 			<div class="widget-head">
 				<h5>Financial</h5>
 			</div>
@@ -87,10 +73,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="span6">
-		<div class="nonboxy-widget">
 			<div class="widget-head">
 				<h5>Products</h5>
 			</div>
