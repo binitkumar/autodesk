@@ -105,8 +105,7 @@ $(function () {
 	
 /*==INPUT MASK==*/
 	$(".date").inputmask("99-99-9999",{ "placeholder": "dd-mm-yyyy" });
-	$(".landline").inputmask("(999) 999-9999");
-	$(".mobile").inputmask("(999) 999-9999");
+	$(".telephone_uk").inputmask("(999)9999 9999");
 	$(".sort-code").inputmask("99-99-99");
 	$(".account-number").inputmask("99999999");	
 
