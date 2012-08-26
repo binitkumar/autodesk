@@ -37,7 +37,9 @@ feature_types = FeatureType.create([
   {value: 'Date of Birth'},
   {value: 'Company Registration Number'},
   {value: 'VAT Number'},
-  {value: 'Date of Incorporation'}
+  {value: 'Date of Incorporation'},
+  {value: 'VIN Number'},
+  {value: 'Date of Registration'}
 ])
 
 employment_types = EmploymentType.create([
@@ -81,6 +83,13 @@ product_types = ProductType.create([
   {value: 'Wheel & Tyre Insurance'},
   {value: 'Key Insurance'},
   {value: 'Service Plan'}
+])
+
+contact_number_types = ContactNumberType.create([
+  {value: 'Home'},
+  {value: 'Work'},
+  {value: 'Mobile'},
+  {value: 'Fax'}
 ])
 
 purchase_types = PurchaseType.create([

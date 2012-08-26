@@ -10,6 +10,7 @@ class SalesController < ApplicationController
   def new
     @sale = Sale.new
     @sale.build_customer
+    @sale.customer.emails.build
     @built_vehicle = @sale.vehicles.build
     @built_vehicle.registration_marks.build
   end

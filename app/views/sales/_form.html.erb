@@ -10,7 +10,7 @@
 						<div class="control-group">
 							<label class="control-label">Sale Type</label>
 							<div class="controls">
-								<%= sale.select(:sale_type, options_for_select(SaleType.all.map {|p| [p.value,p.id]}), {}, {:class => "chzn-select"}) %>
+								<%= sale.select(:sale_type_id, SaleType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 							</div>
 						</div>
 					</div>
@@ -60,6 +60,7 @@
 					<div class = 'form-horizontal well'>
 						<%= sale.fields_for :vehicles do |vehicle_builder| %>
 				  			<%= render :partial => "vehicles/form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
+							<%= render :partial => "vehicles/features_form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
 						<% end -%>
 					</div>
 				</div>
@@ -100,14 +101,7 @@
 <div class="row">
 	<div class="span12">
 		<% if form_actions_visible == true %>
-			<div class="form-actions" align="center">
-				<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
-					Save Changes
-				<% end -%>
-				<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
-					Cancel
-				<% end -%>
-			</div>
+			<%= render :partial => "shared/form_actions" %>
 		<% end %>
 	</div>
 </div>

@@ -6,14 +6,11 @@
 		</div>
 	</div>
 	<%= add_feature_fields(["First Name", "Last Name", "Date of Birth"], customer, false) %>
+	<%= customer.fields_for :emails do |email_builder| %>
+		<%= render :partial => "emails/form", :locals => {:email => email_builder, :form_actions_visible => false} %>
+	<% end -%>
+	<%= add_contact_number_fields(["Home", "Work", "Mobile"], customer, false) %>
 	<% if form_actions_visible == true %>
-		<div class="form-actions">
-			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
-				Save Changes
-			<% end -%>
-			<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
-				Cancel
-			<% end -%>
-		</div>
+		<%= render :partial => "shared/form_actions" %>
 	<% end %>
 </fieldset>

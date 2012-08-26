@@ -23,7 +23,4 @@
 			<%= vehicle.select(:model_year_id, options_for_select([]), {}, {:class => "chained_to_vehicle_trim_selector chained_child", "data-chained-children" => "false"}) %>
 		</div>
 	</div>
-	<%= vehicle.fields_for :registration_marks do |registration_mark_builder| %>
-		<%= render :partial => "registration_marks/form", :locals => {:vehicle => registration_mark_builder, :form_actions_visible => false} %>
-	<% end -%>
 </fieldset>
