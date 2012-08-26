@@ -24,7 +24,7 @@
 //= require fixed-layout/jquery.collapse.js			
 //= require fixed-layout/jquery.sparkline.min.js			
 //= require fixed-layout/uniform.jquery.js
-//= require fixed-layout/inputmask.jquery.js								
+//= require fixed-layout/jquery.inputmask.js								
 //= require fixed-layout/vaidation.jquery.js
 //= require fixed-layout/check-all.jquery.js			
 //= require fixed-layout/ios-orientationchange-fix.js						

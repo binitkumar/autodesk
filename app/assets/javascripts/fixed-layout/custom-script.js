@@ -104,11 +104,11 @@ $(function () {
 	$(".checkbox-b,.rem_me,.radio-b,input[type='file']").uniform();
 	
 /*==INPUT MASK==*/
-	$("#date").mask("99/99/9999");
-	$("#phone").mask("(999) 999-9999");
-	$("#mobile").mask("(999) 999-9999");
-	$("#tin").mask("99-9999999");
-	$("#ssn").mask("999-99-9999");	
+	$(".date").inputmask("99-99-9999",{ "placeholder": "dd-mm-yyyy" });
+	$(".landline").inputmask("(999) 999-9999");
+	$(".mobile").inputmask("(999) 999-9999");
+	$(".sort-code").inputmask("99-99-99");
+	$(".account-number").inputmask("99999999");	
 
 $('#popover').popover();
 
