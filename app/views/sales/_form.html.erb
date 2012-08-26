@@ -1,162 +1,113 @@
-<fieldset>
-	<div class="control-group">
-		<label class="control-label" for="input01">First Name</label>
-		<div class="controls">
-			<input type="text" class="input-large text-tip" id="input01" title="it's a tooltip!">
-			<p class="help-block">
-				 In addition to freeform text, any HTML5 text-based input appears like so.
-			</p>
+<div class="row">
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Details</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						<div class="control-group">
+							<label class="control-label">Sale Type</label>
+							<div class="controls">
+								<%= sale.select(:sale_type, options_for_select(SaleType.all.map {|p| [p.value,p.id]}), {}, {:class => "chzn-select"}) %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label" for="typehead">Auto Complete</label>
-		<div class="controls">
-			<input type="text" class=" input-xlarge" data-provide="typeahead" data-items="5" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]' id="typehead">
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Team</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						Placeholder
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label">Uneditable input</label>
-		<div class="controls">
-			<span class="input-xlarge uneditable-input">Some value here</span>
+</div>
+<div class="row">
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Customer</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						<%= sale.fields_for :customer do |customer_builder| %>
+				  			<%= render :partial => "customers/form", :locals => {:customer => customer_builder, :form_actions_visible => false} %>
+						<% end -%>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label" for="input04">Disable Input</label>
-		<div class="controls">
-			<input type="text" class="input-xlarge disabled" disabled="disabled" placeholder="Disabled input here…" id="input04">
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Vehicle</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						<%= sale.fields_for :vehicles do |vehicle_builder| %>
+				  			<%= render :partial => "vehicles/form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
+						<% end -%>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label">Checkbox</label>
-		<div class="controls">
-			<label class="checkbox">
-			<input type="checkbox" value="option1">
-			Option one</label>
+</div>
+<div class="row">
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Financial</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						Placeholder
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label">Disabled checkbox</label>
-		<div class="controls">
-			<label class="checkbox">
-			<input type="checkbox" disabled="" value="option1">
-			This is a disabled checkbox </label>
+	<div class="span6">
+		<div class="nonboxy-widget">
+			<div class="widget-head">
+				<h5>Products</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box">
+					<div class = 'form-horizontal well'>
+						Placeholder
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="control-group">
-		<label class="control-label">Inline checkboxes</label>
-		<div class="controls">
-			<label class="checkbox inline">
-			<input type="checkbox" value="option1">
-			1 </label>
-			<label class="checkbox inline">
-			<input type="checkbox" value="option2">
-			2 </label>
-			<label class="checkbox inline">
-			<input type="checkbox" value="option3">
-			3 </label>
-		</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<% if form_actions_visible == true %>
+			<div class="form-actions" align="center">
+				<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
+					Save Changes
+				<% end -%>
+				<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
+					Cancel
+				<% end -%>
+			</div>
+		<% end %>
 	</div>
-	<div class="control-group">
-		<label class="control-label">Checkboxes</label>
-		<div class="controls">
-			<label class="checkbox">
-			<input type="checkbox" value="option1" name="optionsCheckboxList1">
-			Option one</label>
-			<label class="checkbox">
-			<input type="checkbox" value="option2" name="optionsCheckboxList2">
-			Option two</label>
-			<label class="checkbox">
-			<input type="checkbox" value="option3" name="optionsCheckboxList3">
-			Option three</label>
-			<p class="help-block">
-				<strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.
-			</p>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Radio buttons</label>
-		<div class="controls">
-			<label class="radio">
-			<input type="radio" checked="" value="option1" name="optionsRadios">
-			Option one</label>
-			<label class="radio">
-			<input type="radio" value="option2" name="optionsRadios">
-			Option two</label>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Select list</label>
-		<div class="controls">
-			<select>
-				<option>something</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Multicon-select</label>
-		<div class="controls">
-			<select multiple="multiple">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">File input</label>
-		<div class="controls">
-			<input class="input-file" type="file">
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Textarea</label>
-		<div class="controls">
-			<textarea class="input-xlarge" rows="3"></textarea>
-		</div>
-	</div>
-	<div class="form-actions">
-		<button type="submit" class="btn btn-info">Save changes</button>
-		<button class="btn btn-warning">Cancel</button>
-	</div>
-</fieldset>
-				
-
-
-
-
-  <div class="group">
-    <%= f.label :dealer_id, t("activerecord.attributes.sale.dealer_id", :default => "Dealer"), :class => :label %>
-    <%= f.number_field :dealer_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
-
-  <div class="group">
-    <%= f.label :customer_id, t("activerecord.attributes.sale.customer_id", :default => "Customer"), :class => :label %>
-    <%= f.number_field :customer_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
-
-  <div class="group">
-    <%= f.label :date, t("activerecord.attributes.sale.date", :default => "Date"), :class => :label %>
-    <%= f.date_select :date, :class => 'date_select' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
-
-  <div class="group">
-    <%= f.label :sale_type_id, t("activerecord.attributes.sale.sale_type_id", :default => "Sale type"), :class => :label %>
-    <%= f.number_field :sale_type_id, :class => 'number_field' %>
-    <span class="description">Ex: a simple text</span>
-  </div>
-<div class="group navform wat-cf">
-  <button class="button" type="submit">
-    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
-  </button>
-  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
-	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), sales_path, :class => "text_button_padding link_button" %>
 </div>

@@ -26,14 +26,4 @@
 	<%= vehicle.fields_for :registration_marks do |registration_mark_builder| %>
 		<%= render :partial => "registration_marks/form", :locals => {:vehicle => registration_mark_builder, :form_actions_visible => false} %>
 	<% end -%>
-	<% if form_actions_visible == true %>
-		<div class="form-actions">
-			<%= content_tag :button, :type => :submit, :class => "btn btn-info" do -%>
-				Save Changes
-			<% end -%>
-			<%= content_tag :button, :type => :cancel, :class => "btn btn-warning" do -%>
-				Cancel
-			<% end -%>
-		</div>
-	<% end %>
 </fieldset>
