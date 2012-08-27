@@ -9,4 +9,9 @@ module ApplicationHelper
       render :partial => type + "/fixed_" + singular_type, :locals => {singular_type.to_sym => y, ('fixed_' + singular_type + '_type').to_sym => fields[i], :form_actions_visible => actions_visible}
     end
   end
+  
+  def link_to_add_fields(type, object_form_builder)
+    link_to "Add new " + type.singularize, "#", "data-partial" => "'" + render(:partial => type + '/form', :locals => {type.singularize.to_sym => object_form_builder, :form_actions_visible => false}) + "'", :class => 'add_fields'
+  end
+  
 end
