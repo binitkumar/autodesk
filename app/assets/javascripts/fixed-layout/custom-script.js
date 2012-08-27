@@ -1,16 +1,6 @@
 $(function () {
 	
 	/*=========
-	Add Form Fields
-	===========*/
-	
-	$('.add_fields').live('click', function(e){
-		alert($(this).parent.attr('class'));
-		e.preventDefault();
-	    $(this).append($(this).data('partial'));
-	});
-	
-	/*=========
 	Mini Chart
 	===========*/
 	

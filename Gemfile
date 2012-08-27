@@ -15,9 +15,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'cancan'
 
-# Use Formtastic and Attrtastic to make creation of forms & show pages quicker
-gem 'formtastic'
-gem 'attrtastic'
+# Use nested form gem to dynamically add form fields in nested forms
+gem 'nested_form'
 
 # Use web-app-theme gem for easy creation of initial layout (repository version not updated; pulling from Github)
 gem 'web-app-theme', :git => '/Users/henryowens/Documents/web-app-theme'

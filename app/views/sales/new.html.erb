@@ -1,5 +1,5 @@
 <div class="container">
-	<%= form_for @sale do |sale| -%>
+	<%= nested_form_for @sale do |sale| -%>
 		<%= render :partial => "form", :locals => {:sale => sale, :form_actions_visible => true} %>
 	<% end -%>	
 </div>

@@ -18,6 +18,7 @@
 //= require bootstrap-colorpicker
 //= require dataTables/jquery.dataTables
 //= require chosen-jquery
+//= require jquery_nested_form
 //= require fixed-layout/jquery.chained.remote.js																							
 //= require fixed-layout/smart-wizard.jquery.js			
 //= require fixed-layout/fullcalendar.js				

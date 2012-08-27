@@ -83,8 +83,8 @@
 					<div class = 'form-horizontal well'>
 						<%= sale.fields_for :products do |products_builder| %>
 				  			<%= render :partial => "products/form", :locals => {:product => products_builder, :form_actions_visible => false} %>
-							<%= link_to_add_fields('products', products_builder) %>
 						<% end -%>
+						<%= sale.link_to_add '<i class="color-icons add_co"></i> Add Product'.html_safe, :products, {:class => 'btn'} %>
 					</div>
 				</div>
 			</div>
