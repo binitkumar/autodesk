@@ -5,11 +5,11 @@
 			<%= customer.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 		</div>
 	</div>
-	<%= add_feature_fields(["First Name", "Last Name", "Date of Birth"], customer, false) %>
+	<%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], customer, false) %>
 	<%= customer.fields_for :emails do |email_builder| %>
 		<%= render :partial => "emails/form", :locals => {:email => email_builder, :form_actions_visible => false} %>
 	<% end -%>
-	<%= add_contact_number_fields(["Home", "Work", "Mobile"], customer, false) %>
+	<%= add_fixed_fields('contact_numbers', ["Home", "Work", "Mobile"], customer, false) %>
 	<% if form_actions_visible == true %>
 		<%= render :partial => "shared/form_actions" %>
 	<% end %>

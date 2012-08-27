@@ -1,20 +1,12 @@
 module ApplicationHelper
   
-  def add_feature_fields(feature_types, object_form_builder, actions_visible)
-    feature_types.length.times {object_form_builder.object.features.build}
+  def add_fixed_fields(type, fields, object_form_builder, actions_visible)
+    singular_type = type.singularize
+    fields.length.times {object_form_builder.object.send(type.to_sym).build}
     i = -1
-    object_form_builder.fields_for :features do |features_builder|
+    object_form_builder.fields_for type do |y|
       i = i + 1
-      render :partial => "features/fixed_feature", :locals => {:feature => features_builder, :fixed_feature_type => feature_types[i], :form_actions_visible => actions_visible}
-    end
-  end
-  
-  def add_contact_number_fields(contact_number_types, object_form_builder, actions_visible)
-    contact_number_types.length.times {object_form_builder.object.contact_numbers.build}
-    i = -1
-    object_form_builder.fields_for :contact_numbers do |contact_numbers_builder|
-      i = i + 1
-      render :partial => "contact_numbers/fixed_contact_number", :locals => {:contact_number => contact_numbers_builder, :fixed_contact_number_type => contact_number_types[i], :form_actions_visible => actions_visible}
+      render :partial => type + "/fixed_" + singular_type, :locals => {singular_type.to_sym => y, ('fixed_' + singular_type + '_type').to_sym => fields[i], :form_actions_visible => actions_visible}
     end
   end
 end
