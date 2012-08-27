@@ -15,8 +15,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'cancan'
 
-# Use nested form gem to dynamically add form fields in nested forms
-gem 'nested_form'
+# Use Cocoon gem to dynamically add form fields in nested forms
+gem 'cocoon'
 
 # Use web-app-theme gem for easy creation of initial layout (repository version not updated; pulling from Github)
 gem 'web-app-theme', :git => '/Users/henryowens/Documents/web-app-theme'
