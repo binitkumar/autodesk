@@ -109,6 +109,13 @@ tax_rates = TaxRate.create([
   {name: 'UK IPT 2012', value: '0.2', tax_rate_type_id: '2'}
 ])
 
+role_types - RoleType.create([
+  {value: 'Sales Executive'},
+  {value: 'Sales Manager'},
+  {value: 'Business Manager'},
+  {value: 'Sales Controller'}
+])
+
 # add vehicle makes, models (1,319), trims (42,737) and model years
 fileArray = [
   'Seeds 1 to 50'
