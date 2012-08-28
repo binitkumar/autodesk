@@ -79,14 +79,12 @@
 				<h5>Products</h5>
 			</div>
 			<div class="widget-content">
-				<div class="widget-box">
-					<div class = 'form-horizontal well cocoon'>
-						<%= sale.fields_for :products do |products_builder| %>
-				  			<%= render :partial => "products/form", :locals => {:product => products_builder, :form_actions_visible => false} %>
-						<% end -%>
-						<div class="add-field-links">
-							<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :products, :partial => 'products/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
-						</div>
+				<div class="widget-box cocoon">
+					<%= sale.fields_for :products do |products_builder| %>
+			  			<%= render :partial => "products/form", :locals => {:product => products_builder, :form_actions_visible => false} %>
+					<% end -%>
+					<div class="add-field-links">
+						<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :products, :partial => 'products/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
 					</div>
 				</div>
 			</div>
