@@ -1,19 +1,21 @@
-<fieldset>
-	<div class="control-group">
-		<label class="control-label">Team Member</label>
-		<div class="controls">
-			<%= role.collection_select(:user_id, User.all, :id, :first_name, {prompt: "Select Team Member"}, {:class => "chzn-select"}) %>
+<div class='nested-fields form-horizontal well'>
+	<fieldset>
+		<div class="control-group">
+			<label class="control-label">Team Member</label>
+			<div class="controls">
+				<%= f.collection_select(:user_id, User.all, :id, :first_name, {prompt: "Select Team Member"}, {:class => "chzn-select"}) %>
+			</div>
 		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Role</label>
-		<div class="controls">
-			<%= role.collection_select(:role_type_id, RoleType.all, :id, :value, {prompt: "Select Role"}, {:class => "chzn-select"}) %>
+		<div class="control-group">
+			<label class="control-label">Role</label>
+			<div class="controls">
+				<%= f.collection_select(:role_type_id, RoleType.all, :id, :value, {prompt: "Select Role"}, {:class => "chzn-select"}) %>
+			</div>
 		</div>
-	</div>
-	<% if form_actions_visible == true %>
-		<div class="form-actions">
-			<%= render :partial => "shared/form_actions" %>
-		</div>
-	<% end %>
-</fieldset>
+		<% if form_actions_visible == true %>
+			<div class="form-actions">
+				<%= render :partial => "shared/form_actions" %>
+			</div>
+		<% end %>
+	</fieldset>
+</div>
