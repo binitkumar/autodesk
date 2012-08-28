@@ -80,12 +80,12 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box">
-					<div class = 'form-horizontal well'>
+					<div class = 'form-horizontal well cocoon'>
 						<%= sale.fields_for :products do |products_builder| %>
 				  			<%= render :partial => "products/form", :locals => {:product => products_builder, :form_actions_visible => false} %>
 						<% end -%>
-						<div>
-							<%= link_to_add_association '<i class="color-icons add_co"></i> Add Product'.html_safe, sale, :products, :partial => 'products/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
+						<div class="add-field-links">
+							<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :products, :partial => 'products/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
 						</div>
 					</div>
 				</div>

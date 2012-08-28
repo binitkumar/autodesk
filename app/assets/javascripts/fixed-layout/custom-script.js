@@ -1,6 +1,16 @@
 $(function () {
 	
 	/*=========
+	New Fields
+	===========*/
+	
+	$('.cocoon').bind('insertion-callback',
+	         function() {
+	           	$(".controls").children('select').chosen();
+	         });
+	
+	
+	/*=========
 	Mini Chart
 	===========*/
 	
