@@ -1,6 +1,6 @@
 class Sale < ActiveRecord::Base
   attr_accessible :dealer_id, :customer_id, :date, :sale_type_id, :customer_attributes, :vehicles_attributes,
-                  :products_attributes, :comments_attributes
+                  :products_attributes, :comments_attributes, :roles_attributes
   
   belongs_to :dealer
   belongs_to :customer
@@ -24,7 +24,8 @@ class Sale < ActiveRecord::Base
   
   accepts_nested_attributes_for :customer
   accepts_nested_attributes_for :vehicles
-  accepts_nested_attributes_for :products
-  accepts_nested_attributes_for :comments, :reject_if => :all_blank
+  accepts_nested_attributes_for :products, :allow_destroy => true
+  accepts_nested_attributes_for :comments, :reject_if => :all_blank, :allow_destroy => true
+  accepts_nested_attributes_for :roles, :allow_destroy => true
   
 end
