@@ -1,13 +1,15 @@
-<fieldset>
-	<div class="control-group">
-		<label class="control-label">Product</label>
-		<div class="controls">
-			<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: "Select Product Type"}, {:class => "chzn-select"}) %>
+<div class='nested-fields'>
+	<fieldset>
+		<div class="control-group">
+			<label class="control-label">Product</label>
+			<div class="controls">
+				<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: "Select Product Type"}, {:class => "chzn-select"}) %>
+			</div>
 		</div>
-	</div>
-	<% if form_actions_visible == true %>
-		<div class="form-actions">
-			<%= render :partial => "shared/form_actions" %>
-		</div>
-	<% end %>
-</fieldset>
+		<% if form_actions_visible == true %>
+			<div class="form-actions">
+				<%= render :partial => "shared/form_actions" %>
+			</div>
+		<% end %>
+	</fieldset>
+</div>
