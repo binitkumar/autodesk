@@ -548,12 +548,25 @@ form {
 }
 fieldset {
 	border: 2px groove threedface #444;
-	-webkit-box-shadow:  0px 0px 0px 0px #000;
-			box-shadow:  0px 0px 0px 0px #000;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-height: 20px;
+	padding: 19px;
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 legend {
-	padding: 0;
-	margin-left: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
 	margin-bottom: -9px;
 	border: 0;
 	color: #999999;
