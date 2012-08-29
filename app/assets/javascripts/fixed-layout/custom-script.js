@@ -6,7 +6,6 @@ $(function () {
 	
 	$('.cocoon').bind('insertion-callback',
 	         function() {
-				alert('it fired');
 	           	$(".chzn-select").chosen();
 	         });
 	

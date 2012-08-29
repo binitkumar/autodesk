@@ -69,11 +69,8 @@
 					<div class = 'form-horizontal'>
 						<%= sale.fields_for :vehicles do |vehicle_builder| %>
 							<fieldset>
-								<legend>Make &amp; Model</legend>
+								<legend>Vehicle Details</legend>
 				  				<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
-							</fieldset>
-							<fieldset>
-								<legend>Vehicle Attributes</legend>
 								<%= render :partial => "vehicles/features_form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
 							</fieldset>
 						<% end -%>
@@ -108,7 +105,7 @@
 </div>
 <% if form_actions_visible == true %>
 	<div class="row">
-		<div class="span6">
+		<div class="span12">
 			<%= render :partial => "shared/form_actions" %>
 		</div>
 	</div>
