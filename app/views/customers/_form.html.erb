@@ -1,16 +1,10 @@
-<fieldset>
-	<div class="control-group">
-		<label class="control-label">Customer Type</label>
-		<div class="controls">
-			<%= customer.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
-		</div>
+<div class="control-group">
+	<label class="control-label">Customer Type</label>
+	<div class="controls">
+		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 	</div>
-</fieldset>
-<%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], customer, false) %>
-<%= customer.fields_for :emails do |email_builder| %>
-	<%= render :partial => "emails/form", :locals => {:email => email_builder, :form_actions_visible => false} %>
-<% end -%>
-<%= add_fixed_fields('contact_numbers', ["Home", "Work", "Mobile"], customer, false) %>
+</div>
+<%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], f, false) %>
 <% if form_actions_visible == true %>
 	<%= render :partial => "shared/form_actions" %>
 <% end %>

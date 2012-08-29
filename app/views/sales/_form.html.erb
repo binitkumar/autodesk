@@ -30,9 +30,16 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box">
-					<div class = 'form-horizontal well'>
+					<div class = 'form-horizontal'>
 						<%= sale.fields_for :customer do |customer_builder| %>
-				  			<%= render :partial => "customers/form", :locals => {:customer => customer_builder, :form_actions_visible => false} %>
+				  			<fieldset>
+								<legend>Customer Details</legend>
+								<%= render :partial => "customers/form", :locals => {:f => customer_builder, :form_actions_visible => false} %>
+							</fieldset>
+							<fieldset>
+								<legend>Customer Contact Details</legend>
+								<%= render :partial => "customers/customer_contact_numbers_fixed", :locals => {:f => customer_builder, :form_actions_visible => false} %>
+							</fieldset>
 						<% end -%>
 					</div>
 				</div>
@@ -59,10 +66,16 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box">
-					<div class = 'form-horizontal well'>
+					<div class = 'form-horizontal'>
 						<%= sale.fields_for :vehicles do |vehicle_builder| %>
-				  			<%= render :partial => "vehicles/form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
-							<%= render :partial => "vehicles/features_form", :locals => {:vehicle => vehicle_builder, :form_actions_visible => false} %>
+							<fieldset>
+								<legend>Make &amp; Model</legend>
+				  				<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
+							</fieldset>
+							<fieldset>
+								<legend>Vehicle Attributes</legend>
+								<%= render :partial => "vehicles/features_form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
+							</fieldset>
 						<% end -%>
 					</div>
 				</div>
@@ -93,10 +106,10 @@
 		</div>
 	</div>
 </div>
-<div class="row">
-	<div class="span12">
-		<% if form_actions_visible == true %>
+<% if form_actions_visible == true %>
+	<div class="row">
+		<div class="span6">
 			<%= render :partial => "shared/form_actions" %>
-		<% end %>
+		</div>
 	</div>
-</div>
+<% end %>
