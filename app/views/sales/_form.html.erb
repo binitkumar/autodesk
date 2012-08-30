@@ -65,16 +65,10 @@
 				<h5>Vehicle</h5>
 			</div>
 			<div class="widget-content">
-				<div class="widget-box">
-					<div class = 'form-horizontal'>
-						<%= sale.fields_for :vehicles do |vehicle_builder| %>
-							<fieldset>
-								<legend>Vehicle Details</legend>
-				  				<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
-								<%= render :partial => "vehicles/features_form", :locals => {:f => vehicle_builder, :form_actions_visible => false} %>
-							</fieldset>
-						<% end -%>
-					</div>
+				<div class="widget-box cocoon">
+					<%= sale.fields_for :vehicles do |vehicles_builder| %>
+			  			<%= render :partial => "vehicles/form_with_features", :locals => {:f => vehicles_builder, :form_actions_visible => false} %>
+					<% end -%>
 				</div>
 			</div>
 			<div class="widget-head">
