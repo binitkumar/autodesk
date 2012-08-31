@@ -109,11 +109,28 @@ tax_rates = TaxRate.create([
   {name: 'UK IPT 2012', value: '0.2', tax_rate_type_id: '2'}
 ])
 
-role_types - RoleType.create([
+role_types = RoleType.create([
   {value: 'Sales Executive'},
   {value: 'Sales Manager'},
   {value: 'Business Manager'},
   {value: 'Sales Controller'}
+])
+
+funding_types = FundingType.create([
+  {value: 'Cash'},
+  {value: 'Hire Purchase'},
+  {value: 'Conditional Sale'},
+  {value: 'Lease Purchase'},
+  {value: 'Personal Contract Purchase'},
+  {value: 'Personal Loan'},
+  {value: 'Business Lease'},
+  {value: 'Personal Contract Hire'},
+  {value: 'Contract Hire'},
+  {value: 'Lease Purchase'}
+])
+
+funding_plans = FundingPlan.create([
+  {funding_type_id: '1', name: 'Cash'}
 ])
 
 # add vehicle makes, models (1,319), trims (42,737) and model years
@@ -209,6 +226,9 @@ puts 'create dealers done'
   supplier_address.name_numbers << NameNumber.where(value: 1 + Random.rand(495)).first_or_create
   supplier_address.streets << Street.where(value: Faker::Address.street_name + " " + Faker::Address.street_suffix).first_or_create
   supplier_address.states << State.where(value: Faker::Address.uk_county).first_or_create
+  
+  # create a finance plan for the supplier
+  
 end
 puts 'create suppliers done'
 
