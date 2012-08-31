@@ -1,25 +1,36 @@
 class SalesController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @sales = Sale.all
+    # @sales is already loaded via loac_and_authorize_resource
   end
 
   def show
     @sale = Sale.find(params[:id])
+    authorize! :show, @sale
   end
 
   def new
     @sale = Sale.new
+    current_ability.attributes_for(:new, Sale).each do |key, value|
+      @sale.send("#{key}=", value)
+    end
     @sale.build_customer
     @sale.customer.emails.build
     @sale.customer.addresses.build
     @built_vehicle = @sale.vehicles.build
     @built_vehicle.registration_marks.build
-    @first_product_sale = @sale.product_sales.build
+    @sale.attributes = params[:sale]
+    authorize! :new, @sale
   end
 
   def create
-    @sale = Sale.new(params[:sale])
-    #@customer = @sale.customer.build(params[:customer])
+    @sale = Sale.new
+    current_ability.attributes_for(:new, Sale).each do |key, value|
+      @sale.send("#{key}=", value)
+    end
+    @sale.attributes = params[:sale]
+    authorize! :create, @sale
     if @sale.save
       redirect_to @sale, :notice => "Successfully created sale."
     else
