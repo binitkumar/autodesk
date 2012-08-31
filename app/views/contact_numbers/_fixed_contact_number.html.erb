@@ -1,10 +1,10 @@
-<%= f.hidden_field :contact_number_type_id, :value => ContactNumberType.where(:value => fixed_contact_number_type).first.id %>
 <div class="control-group">
 	<label class="control-label"><Value><%= fixed_contact_number_type %> Number</label>
 	<div class="controls">
 		<%= f.text_field :value, :class => 'input-large telephone_uk' %>
 	</div>
 </div>
+<%= f.hidden_field :contact_number_type_id, :value => ContactNumberType.where(:value => fixed_contact_number_type).first.id %>
 <% if form_actions_visible == true %>
 	<%= render :partial => "shared/form_actions" %>
 <% end %>

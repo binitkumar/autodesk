@@ -5,6 +5,9 @@
 	</div>
 </div>
 <%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], f, false, false) %>
+<%= f.fields_for :emails do |email_builder| %>
+	<%= render :partial => "emails/form", :locals => {:email => email_builder, :form_actions_visible => false} %>
+<% end -%>
 <% if form_actions_visible == true %>
 	<%= render :partial => "shared/form_actions" %>
 <% end %>
