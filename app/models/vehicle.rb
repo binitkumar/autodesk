@@ -3,6 +3,8 @@ class Vehicle < ActiveRecord::Base
                   :purchases_attributes, :comments_attributes
   
   belongs_to :trim
+  has_one :model, :through => :trim
+  has_one :make, :through => :model
   belongs_to :model_year
   
   has_many :mileage_readings

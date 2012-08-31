@@ -1,5 +1,6 @@
 class SalesController < ApplicationController
   load_and_authorize_resource
+  load_and_authorize_resource :vehicle, :through => :sale
   
   def index
     # @sales is already loaded via loac_and_authorize_resource
@@ -29,7 +30,7 @@ class SalesController < ApplicationController
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
-    @sale.attributes = params[:sale]
+    @sale.update_attributes(params[:sale].except(:vehicle_attributes[0][:make], :vehicle_attributes[:model]))
     authorize! :create, @sale
     if @sale.save
       redirect_to @sale, :notice => "Successfully created sale."
@@ -40,7 +41,16 @@ class SalesController < ApplicationController
 
   def edit
     @sale = Sale.find(params[:id])
-    @sale.build_customer if @sale.customer.nil?
+    if @sale.customer.nil?
+      @sale.build_customer
+      @sale.customer.emails.build
+      @sale.customer.addresses.build
+    end
+    if @sale.vehicles.nil?
+      @built_vehicle = @sale.vehicles.build
+      @built_vehicle.registration_marks.build
+    end
+    authorize! :edit, @sale
   end
 
   def update
@@ -50,11 +60,13 @@ class SalesController < ApplicationController
     else
       render :action => 'edit'
     end
+    authorize! :update, @sale
   end
 
   def destroy
     @sale = Sale.find(params[:id])
     @sale.destroy
     redirect_to sales_url, :notice => "Successfully destroyed sale."
+    authorize! :destroy, @sale
   end
 end
