@@ -1,8 +1,8 @@
-<%= feature.hidden_field :feature_type_id, :value => FeatureType.where(:value => fixed_feature_type).first.id %>
+<%= f.hidden_field :feature_type_id, :value => FeatureType.where(:value => fixed_feature_type).first.id %>
 <div class="control-group">
 	<label class="control-label"><Value><%= fixed_feature_type %></label>
 	<div class="controls">
-		<%= feature.text_field :value, :class => 'input-large' %>
+		<%= f.text_field :value, :class => 'input-large' %>
 	</div>
 </div>
 <% if form_actions_visible == true %>

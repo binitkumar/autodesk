@@ -1,6 +1,6 @@
 class Customer < ActiveRecord::Base
-  attr_accessible :customer_type_id, :features_attributes, :emails_attributes, :addresses_attributes, :contact_numbers_attributes,
-                  :events_attributes
+  attr_accessible :customer_type_id, :features_attributes, :emails_attributes, :addresses_attributes,
+                  :contact_numbers_attributes, :events_attributes
   
   belongs_to :customer_type
   

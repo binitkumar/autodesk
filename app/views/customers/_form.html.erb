@@ -4,7 +4,7 @@
 		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {}, {:class => "chzn-select"}) %>
 	</div>
 </div>
-<%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], f, false) %>
+<%= add_fixed_fields('features', ["First Name", "Last Name", "Date of Birth"], f, false, false) %>
 <% if form_actions_visible == true %>
 	<%= render :partial => "shared/form_actions" %>
 <% end %>

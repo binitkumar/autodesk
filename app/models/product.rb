@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :product_type_id
+  attr_accessible :product_type_id, :product_sales_attributes
   
   belongs_to :product_type
   

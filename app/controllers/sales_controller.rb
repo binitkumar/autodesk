@@ -14,6 +14,7 @@ class SalesController < ApplicationController
     @sale.customer.addresses.build
     @built_vehicle = @sale.vehicles.build
     @built_vehicle.registration_marks.build
+    @first_product_sale = @sale.product_sales.build
   end
 
   def create
