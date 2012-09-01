@@ -1,6 +1,5 @@
 class SalesController < ApplicationController
-  load_and_authorize_resource
-  load_and_authorize_resource :vehicle, :through => :sale
+
   
   def index
     # @sales is already loaded via loac_and_authorize_resource
@@ -26,8 +25,8 @@ class SalesController < ApplicationController
   end
 
   def create
+    params[:sale] = params[:sale].except(["vehicles_attributes"])
     puts "sale params: " + params[:sale].to_s
-    params[:sale] = params[:sale].except([:vehicles_attributes])
     @sale = Sale.new(params[:sale])
     if @sale.save
       redirect_to @sale, :notice => "Successfully created address."
