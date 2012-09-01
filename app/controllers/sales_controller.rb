@@ -26,14 +26,11 @@ class SalesController < ApplicationController
   end
 
   def create
-    @sale = Sale.new
-    current_ability.attributes_for(:new, Sale).each do |key, value|
-      @sale.send("#{key}=", value)
-    end
-    @sale.update_attributes(params[:sale].except(:vehicle_attributes[0][:make], :vehicle_attributes[:model]))
-    authorize! :create, @sale
+    puts "the params with except: " + params[:sale].except(["vehicles_attributes"][0]["model_year_id"]).to_s
+    puts "the params: " + params[:sale].to_s
+    @sale = Sale.new(params[:sale].except(:vehicles_attributes))
     if @sale.save
-      redirect_to @sale, :notice => "Successfully created sale."
+      redirect_to @sale, :notice => "Successfully created address."
     else
       render :action => 'new'
     end

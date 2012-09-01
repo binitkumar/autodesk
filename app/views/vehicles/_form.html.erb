@@ -1,13 +1,13 @@
 <div class="control-group">
 	<label class="control-label">Make</label>
 	<div class="controls">
-		<%= f.select(:make, Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => 'Select Make'}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data-chained-url-name" => "make_id", "data-chained-children" => "true"}) %>
+		<%= select("", "", Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => 'Select Make'}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data-chained-url-name" => "make_id", "data-chained-children" => "true"}) %>
 	</div>
 </div>
 <div class="control-group">
 	<label class="control-label">Model</label>
 	<div class="controls">
-		<%= f.select(:model, options_for_select([]), {:prompt => 'Select Model'}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data-chained-url-name" => "model_id", "data-chained-children" => "true"}) %>
+		<%= select("", "", options_for_select([]), {:prompt => 'Select Model'}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data-chained-url-name" => "model_id", "data-chained-children" => "true"}) %>
 	</div>
 </div>
 <div class="control-group">
