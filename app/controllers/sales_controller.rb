@@ -26,9 +26,9 @@ class SalesController < ApplicationController
   end
 
   def create
-    puts "the params with except: " + params[:sale].except(["vehicles_attributes"][0]["model_year_id"]).to_s
-    puts "the params: " + params[:sale].to_s
-    @sale = Sale.new(params[:sale].except(:vehicles_attributes))
+    puts "sale params: " + params[:sale].to_s
+    params[:sale] = params[:sale].except([:vehicles_attributes])
+    @sale = Sale.new(params[:sale])
     if @sale.save
       redirect_to @sale, :notice => "Successfully created address."
     else
