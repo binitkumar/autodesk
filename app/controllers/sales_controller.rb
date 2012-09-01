@@ -1,5 +1,5 @@
 class SalesController < ApplicationController
-
+  load_and_authorize_resource :except => :create
   
   def index
     # @sales is already loaded via loac_and_authorize_resource
@@ -25,19 +25,19 @@ class SalesController < ApplicationController
   end
 
   def create
-<<<<<<< HEAD
-    params[:sale] = params[:sale].except(["vehicles_attributes"])
-    puts "sale params: " + params[:sale].to_s
-    @sale = Sale.new(params[:sale])
-=======
-    params[:sale] = params[:sale].except(:vehicle_attributes)
     @sale = Sale.new
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
-    @sale.update_attributes(params[:sale])
+    vehicles = params[:sale][:vehicles_attributes]
+    vehicles.each {|key,value| puts "single vehicle" + value.to_s}
+    params[:sale][:vehicles_attributes].each { |key,value|
+      value.delete(:make)
+      value.delete(:model)
+    }
+    puts params[:sale].to_s
+    @sale.attributes = params[:sale]
     authorize! :create, @sale
->>>>>>> Updates to controller for testing
     if @sale.save
       redirect_to @sale, :notice => "Successfully created address."
     else
