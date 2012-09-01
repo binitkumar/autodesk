@@ -29,13 +29,10 @@ class SalesController < ApplicationController
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
-    vehicles = params[:sale][:vehicles_attributes]
-    vehicles.each {|key,value| puts "single vehicle" + value.to_s}
     params[:sale][:vehicles_attributes].each { |key,value|
       value.delete(:make)
       value.delete(:model)
     }
-    puts params[:sale].to_s
     @sale.attributes = params[:sale]
     authorize! :create, @sale
     if @sale.save
