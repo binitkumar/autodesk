@@ -1,5 +1,5 @@
 class SalesController < ApplicationController
-  load_and_authorize_resource :except => :create
+  load_and_authorize_resource :except => [:create, :update]
   
   def index
     # @sales is already loaded via loac_and_authorize_resource
@@ -44,20 +44,28 @@ class SalesController < ApplicationController
 
   def edit
     @sale = Sale.find(params[:id])
-    #if @sale.customer.nil?
-    #  @sale.build_customer
-    #  @sale.customer.emails.build
-    #  @sale.customer.addresses.build
-    #end
-    #if @sale.vehicles.nil?
-    #  @built_vehicle = @sale.vehicles.build
-    #  @built_vehicle.registration_marks.build
-    #end
-    #authorize! :edit, @sale
+    if @sale.customer.nil?
+      @sale.build_customer
+      @sale.customer.emails.build
+      @sale.customer.addresses.build
+    end
+    if @sale.vehicles.nil?
+      @built_vehicle = @sale.vehicles.build
+      @built_vehicle.registration_marks.build
+    end
+    authorize! :edit, @sale
   end
 
   def update
     @sale = Sale.find(params[:id])
+    current_ability.attributes_for(:new, Sale).each do |key, value|
+      @sale.send("#{key}=", value)
+    end
+    params[:sale][:vehicles_attributes].each { |key,value|
+      value.delete(:make)
+      value.delete(:model)
+    }
+    authorize! :update, @sale
     if @sale.update_attributes(params[:sale])
       redirect_to @sale, :notice  => "Successfully updated sale."
     else
