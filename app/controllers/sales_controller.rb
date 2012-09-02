@@ -44,16 +44,16 @@ class SalesController < ApplicationController
 
   def edit
     @sale = Sale.find(params[:id])
-    if @sale.customer.nil?
-      @sale.build_customer
-      @sale.customer.emails.build
-      @sale.customer.addresses.build
-    end
-    if @sale.vehicles.nil?
-      @built_vehicle = @sale.vehicles.build
-      @built_vehicle.registration_marks.build
-    end
-    authorize! :edit, @sale
+    #if @sale.customer.nil?
+    #  @sale.build_customer
+    #  @sale.customer.emails.build
+    #  @sale.customer.addresses.build
+    #end
+    #if @sale.vehicles.nil?
+    #  @built_vehicle = @sale.vehicles.build
+    #  @built_vehicle.registration_marks.build
+    #end
+    #authorize! :edit, @sale
   end
 
   def update
