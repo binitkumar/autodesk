@@ -56,7 +56,6 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-			  		<%= render :partial => "roles/form", :locals => {:f => sale, :form_actions_visible => false} %>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Team Member'.html_safe, sale, :roles, :partial => 'roles/form', :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
