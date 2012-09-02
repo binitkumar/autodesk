@@ -1,1 +1,6 @@
 <%= add_fixed_fields('contact_numbers', ["Home", "Work", "Mobile"], f, false, false) %>
+<% if form_actions_visible == true %>
+	<div class="form-actions">
+		<%= render :partial => "shared/form_actions" %>
+	</div>
+<% end %>

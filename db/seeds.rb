@@ -31,7 +31,7 @@ customer_types = CustomerType.create([
 ])
 
 feature_types = FeatureType.create([
-  {value: 'First Name'},
+  {value: 'First Name(s)'},
   {value: 'Last Name'},
   {value: 'Name'},
   {value: 'Date of Birth'},

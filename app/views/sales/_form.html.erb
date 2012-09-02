@@ -29,7 +29,7 @@
 				<h5>Customer</h5>
 			</div>
 			<div class="widget-content">
-				<div class="widget-box">
+				<div class="widget-box cocoon">
 					<div class = 'form-horizontal'>
 						<%= sale.fields_for :customer do |customer_builder| %>
 				  			<fieldset>
@@ -37,9 +37,16 @@
 								<%= render :partial => "customers/form", :locals => {:f => customer_builder, :form_actions_visible => false} %>
 							</fieldset>
 							<fieldset>
-								<legend>Customer Contact Details</legend>
+								<legend>Customer Contact Numbers</legend>
 								<%= render :partial => "customers/customer_contact_numbers_fixed", :locals => {:f => customer_builder, :form_actions_visible => false} %>
 							</fieldset>
+							<div class="add-field-links">
+								<%= link_to_add_association '<i></i> Add Contact Number'.html_safe, customer_builder, :contact_numbers, :partial => 'contact_numbers/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
+							</div>
+							<%= render :partial => "emails/form", :locals => {:f => customer_builder, :form_actions_visible => false, :legend_type => 'Customer'} %>
+							<div class="add-field-links">
+								<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
+							</div>
 						<% end -%>
 					</div>
 				</div>
@@ -49,11 +56,9 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<%= sale.fields_for :roles do |roles_builder| %>
-			  			<%= render :partial => "roles/form", :locals => {:f => roles_builder, :form_actions_visible => false} %>
-					<% end -%>
+			  		<%= render :partial => "roles/form", :locals => {:f => sale, :form_actions_visible => false} %>
 					<div class="add-field-links">
-						<%= link_to_add_association '<i></i> Add Team Member'.html_safe, sale, :roles, :partial => 'roles/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
+						<%= link_to_add_association '<i></i> Add Team Member'.html_safe, sale, :roles, :partial => 'roles/form', :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
 				</div>
 			</div>
