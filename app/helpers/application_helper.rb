@@ -20,7 +20,6 @@ module ApplicationHelper
       end
       html_array[order_array.index(field)] = render(:partial => type.pluralize + "/fixed_" + type.singularize, :locals => {:f => f, ('fixed_' + type.singularize + '_type').to_sym => field, :form_actions_visible => actions_visibility})
       fields.delete(field)
-      puts order_array.to_s
     end
     html_string = ""
     html_array.each {|html|
