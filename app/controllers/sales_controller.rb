@@ -2,7 +2,7 @@ class SalesController < ApplicationController
   load_and_authorize_resource :except => [:create, :update]
   
   def index
-    # @sales is already loaded via loac_and_authorize_resource
+    # @sales is already loaded via load_and_authorize_resource
   end
 
   def show
