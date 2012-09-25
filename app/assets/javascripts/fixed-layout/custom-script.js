@@ -4,9 +4,24 @@ $(function () {
 	New Fields
 	===========*/
 	
-	$('.cocoon').bind('insertion-callback',
+	$('.cocoon').bind('cocoon:after-insert',
 	         function() {
+				/* create a milliseconds timestamp */
+				var timestamp = new Date().getTime();
 	           	$(".chzn-select").chosen();
+	
+				/* update the id of each chained select with the timestamp to avoid conflicts */
+				$(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).find('select[data-chained]').each(
+					function () {
+						var newId = $(this).attr('id') + '_' + timestamp;
+						$(this).attr('id', newId)
+					});
+					
+				/* chain the selects */
+				$(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).find('select[data-chained-to]').each(
+					function () {
+						$(this).remoteChainedTo('#' + $(this).data('chained-to') + '_' + timestamp, $(this).data('chained-url'));
+					});
 	         });
 	
 	
@@ -137,10 +152,20 @@ Chained
 ===========*/
 
 /* Link the model dropdown to the make dropdown */
+
 $(function makeChains(){
- $('.chained_to_vehicle_make_selector').remoteChainedTo('.chained_parent_vehicle_make_selector', '/models.json');
- $('.chained_to_vehicle_model_selector').remoteChainedTo('.chained_parent_vehicle_model_selector', '/trims.json');
- $('.chained_to_vehicle_trim_selector').remoteChainedTo('.chained_parent_vehicle_trim_selector', '/model_years.json');
+	$('.chained-child').each(function () {
+		$(this).remoteChainedTo('#' + $(this).data('chained-to'), $(this).data('chained-url'));
+	});
+});
+
+/* Link selects within form sections added by Cocoon */
+	
+
+$('#vehicle_cocoon').bind('after-insert',
+	function() {
+    	alert('inserted');
+		
 });
 
 /*=========

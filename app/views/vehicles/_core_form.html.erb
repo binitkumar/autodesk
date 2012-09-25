@@ -1,25 +1,25 @@
 <div class="control-group">
 	<label class="control-label">Make</label>
 	<div class="controls">
-		<%= f.select(:make, Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => "Select Make"}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data-chained-url-name" => "make_id", "data-chained-children" => "true", "data-placeholder" => "Select Make"}) %>
+		<%= f.select(:make, Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => "Select Make"}, {:id => "vehicle_make_selector", "data-chained" => "true",  "data-chained-url-name" => "make_id", "data-chained-children" => "true", "data-chained-parent" => "vehicle_make_selector", "data-placeholder" => "Select Make"}) %>
 	</div>
 </div>
 <div class="control-group">
 	<label class="control-label">Model</label>
 	<div class="controls">
-		<%= f.select(:model, options_for_select([]), {:prompt => "Select Model"}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data-chained-url-name" => "model_id", "data-chained-children" => "true", "data-placeholder" => "Select Model"}) %>
+		<%= f.select(:model, options_for_select([]), {:prompt => "Select Model"}, {:id => "vehicle_model_selector", :class => "chained-child", "data-chained" => "true", "data-chained-url-name" => "model_id", "data-chained-children" => "true", "data-chained-parent" => "vehicle_model_selector", "data-chained-to" => "vehicle_make_selector", "data-chained-url" => "/models.json", "data-placeholder" => "Select Model"}) %>
 	</div>
 </div>
 <div class="control-group">
 	<label class="control-label">Trim</label>
 	<div class="controls">
-		<%= f.select(:trim_id, options_for_select([]), {:prompt => "Select Trim"}, {:class => "chained_parent_vehicle_trim_selector chained_to_vehicle_model_selector", "data-chained-url-name" => "trim_id", "data-chained-children" => "true", "data-placeholder" => "Select Trim"}) %>
+		<%= f.select(:trim_id, options_for_select([]), {:prompt => "Select Trim"}, {:id => "vehicle_trim_selector", :class => "chained-child", "data-chained" => "true", "data-chained-url-name" => "trim_id", "data-chained-children" => "true", "data-chained-parent" => "vehicle_trim_selector", "data-chained-to" => "vehicle_model_selector", "data-chained-url" => "/trims.json", "data-placeholder" => "Select Trim"}) %>
 	</div>
 </div>
 <div class="control-group">
 	<label class="control-label">Model Year</label>
 	<div class="controls">
-		<%= f.select(:model_year_id, options_for_select([]), {:prompt => "Select Model Year"}, {:class => "chained_to_vehicle_trim_selector chained_child", "data-chained-children" => "false", "data-placeholder" => "Select Model Year"}) %>
+		<%= f.select(:model_year_id, options_for_select([]), {:prompt => "Select Model Year"}, {:id => "vehicle_model_year_selector", :class => "chained-child", "data-chained" => "true", "data-chained-children" => "false", "data-chained-to" => "vehicle_trim_selector", "data-chained-url" => "/model_years.json", "data-placeholder" => "Select Model Year"}) %>
 	</div>
 </div>
 <% if form_actions_visible == true %>

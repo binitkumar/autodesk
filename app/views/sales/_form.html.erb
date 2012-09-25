@@ -69,7 +69,7 @@
 				<h5>Vehicle</h5>
 			</div>
 			<div class="widget-content">
-				<div class="widget-box cocoon">
+				<div class="widget-box cocoon" id="vehicle_cocoon">
 					<%= sale.fields_for :vehicles do |vehicles_builder| %>
 			  			<%= render :partial => "vehicles/form", :locals => {:f => vehicles_builder, :form_actions_visible => false, :show_features => true, :fieldset_label => 'Vehicle Details'} %>
 						<div class="add-field-links">
