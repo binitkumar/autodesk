@@ -1,0 +1,31 @@
+<div class="control-group">
+	<label class="control-label">Make</label>
+	<div class="controls">
+		<%= f.select(:make, Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => "Select Make"}, {:id => "vehicle_make_selector", :class => "chained_parent_vehicle_make_selector", "data-chained-url-name" => "make_id", "data-chained-children" => "true", "data-placeholder" => "Select Make"}) %>
+	</div>
+</div>
+<div class="control-group">
+	<label class="control-label">Model</label>
+	<div class="controls">
+		<%= f.select(:model, options_for_select([]), {:prompt => "Select Model"}, {:id => "vehicle_model_selector", :class => "chained_parent_vehicle_model_selector chained_to_vehicle_make_selector", "data-chained-url-name" => "model_id", "data-chained-children" => "true", "data-placeholder" => "Select Model"}) %>
+	</div>
+</div>
+<div class="control-group">
+	<label class="control-label">Trim</label>
+	<div class="controls">
+		<%= f.select(:trim_id, options_for_select([]), {:prompt => "Select Trim"}, {:class => "chained_parent_vehicle_trim_selector chained_to_vehicle_model_selector", "data-chained-url-name" => "trim_id", "data-chained-children" => "true", "data-placeholder" => "Select Trim"}) %>
+	</div>
+</div>
+<div class="control-group">
+	<label class="control-label">Model Year</label>
+	<div class="controls">
+		<%= f.select(:model_year_id, options_for_select([]), {:prompt => "Select Model Year"}, {:class => "chained_to_vehicle_trim_selector chained_child", "data-chained-children" => "false", "data-placeholder" => "Select Model Year"}) %>
+	</div>
+</div>
+<% if form_actions_visible == true %>
+	<div class="row">
+		<div class="span6">
+			<%= render :partial => "shared/form_actions" %>
+		</div>
+	</div>
+<% end %>
