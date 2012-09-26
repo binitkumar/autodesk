@@ -1,7 +1,7 @@
-<%= f.fields_for :registration_marks do |registration_mark_builder| %>
-	<%= render :partial => "registration_marks/form", :locals => {:f => registration_mark_builder, :form_actions_visible => false} %>
-<% end -%>
 <%= add_fixed_fields('features', ["VIN Number", "Date of Registration"], f, false, false) %>
+<div class="add-field-links">
+	<%= link_to_add_association '<i></i> Add Registration Number'.html_safe, f, :registration_marks, :partial => 'registration_marks/form', :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
+</div>
 <% if form_actions_visible == true %>
 	<div class="row">
 		<div class="span6">
