@@ -24,6 +24,25 @@ $(function () {
 					});
 	         });
 	
+	/*=========
+	Customer Type Fields
+	===========*/
+	
+	$('#customer-features').find('input[data-feature-type]').parent().parent().hide();
+	
+	var customerTypeFields = [];
+	customerTypeFields['Individual'] = ['First Name(s)', 'Last Name', 'Date of Birth'];
+	customerTypeFields['Limited Company'] = ['Name', 'Company Number'];
+	customerTypeFields['Partnership'] = ['Name', 'Company Number'];
+	
+	$('#customer-type-selector').chosen().change( function() {
+		$('#customer-features').find('input[data-feature-type]').parent().parent().hide();
+		var visibleFields = customerTypeFields[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
+		console.log(visibleFields);
+		$.each(visibleFields, function(i, field) {
+			$('#customer-features').find('input[data-feature-type="' + field + '"]').parent().parent().show();
+		});
+	});
 	
 	/*=========
 	Mini Chart
