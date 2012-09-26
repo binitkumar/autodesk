@@ -3,6 +3,7 @@ class CreateFundingPlans < ActiveRecord::Migration
     create_table :funding_plans do |t|
       t.integer :funding_type_id
       t.integer :supplier_id
+      t.integer :currency_id
       t.string :name
       t.integer :maximum_term
       t.float :commission_difference_in_charges

@@ -1,7 +1,7 @@
 class FundingPlan < ActiveRecord::Base
-  attr_accessible :funding_type_id, :supplier_id, :name, :commission_difference_in_charges, :maximum_term,
-                  :commission_maximum_term, :commission_minimum, :commission_maximum_absolute, 
-                  :commission_maximum_relative, :commission_fixed
+  attr_accessible :funding_type_id, :supplier_id, :currency_id, :name, :commission_difference_in_charges, 
+                  :maximum_term, :commission_maximum_term, :commission_minimum, 
+                  :commission_maximum_absolute, :commission_maximum_relative, :commission_fixed
   
   belongs_to :funding_type
   belongs_to :supplier

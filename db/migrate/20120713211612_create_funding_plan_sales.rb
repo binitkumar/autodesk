@@ -6,6 +6,8 @@ class CreateFundingPlanSales < ActiveRecord::Migration
       t.float :amount
       t.boolean :fees_spread
       t.float :customer_rate
+      t.integer :term
+      t.float :commission
       t.timestamps
     end
   end
