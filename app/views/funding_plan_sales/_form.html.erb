@@ -1,0 +1,34 @@
+<div class='nested-fields form-horizontal'>
+	<fieldset>
+		<legend>Funding Details</legend>
+		<div class="control-group">
+			<label class="control-label">Funding Plan</label>
+			<div class="controls">
+				<%= f.collection_select(:funding_plan_id, FundingPlan.all, :id, :name, {}, {:class => "chzn-select"}) %>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Amount</label>
+			<div class="controls">
+				<%= f.text_field :amount, :class => 'input-large' %>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Term</label>
+			<div class="controls">
+				<%= f.text_field :term, :class => 'input-large' %>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">Customer Rate</label>
+			<div class="controls">
+				<%= f.text_field :customer_rate, :class => 'input-large' %>
+			</div>
+		</div>
+		<% if form_actions_visible == true %>
+			<div class="form-actions">
+				<%= render :partial => "shared/form_actions" %>
+			</div>
+		<% end %>
+	</fieldset>
+</div>
