@@ -26,7 +26,6 @@ module ApplicationHelper
       html_string = html_string + html.to_s
     }
     return html_string.html_safe
-    
   end
   
 end
