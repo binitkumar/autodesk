@@ -36,10 +36,13 @@
 								<legend>Customer Details</legend>
 								<%= render :partial => "customers/form", :locals => {:f => customer_builder, :form_actions_visible => false} %>
 							</fieldset>
-							<%= render :partial => "emails/form", :locals => {:f => customer_builder, :form_actions_visible => false, :legend_type => 'Customer'} %>
-							<div class="add-field-links">
+							<fieldset>
+								<legend>Customer Emails</legend>
+								<%= render :partial => "emails/form", :locals => {:f => customer_builder, :form_actions_visible => false, :legend_type => 'Customer', :show_add_new_button => true} %>
+								<div class="add-field-links">
 								<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
-							</div>
+								</div>
+							</fieldset>
 							<fieldset>
 								<legend>Customer Contact Numbers</legend>
 								<%= render :partial => "customers/customer_contact_numbers_fixed", :locals => {:f => customer_builder, :form_actions_visible => false} %>
