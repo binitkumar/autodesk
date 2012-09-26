@@ -72,7 +72,7 @@
 				<h5>Vehicle</h5>
 			</div>
 			<div class="widget-content">
-				<div class="widget-box cocoon" id="vehicle_cocoon">
+				<div class="widget-box cocoon">
 					<%= sale.fields_for :vehicles do |vehicles_builder| %>
 			  			<%= render :partial => "vehicles/form", :locals => {:f => vehicles_builder, :form_actions_visible => false, :show_features => true, :fieldset_label => 'Vehicle Details'} %>
 						<div class="add-field-links">
@@ -84,22 +84,22 @@
 				</div>
 			</div>
 			<div class="widget-head">
-				<h5>Financial</h5>
-			</div>
-			<div class="widget-content">
-				<div class="widget-box">
-					<div class = 'form-horizontal well'>
-						Placeholder
-					</div>
-				</div>
-			</div>
-			<div class="widget-head">
 				<h5>Products</h5>
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :product_sales, :partial => 'product_sales/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
+					</div>
+				</div>
+			</div>
+			<div class="widget-head">
+				<h5>Financial</h5>
+			</div>
+			<div class="widget-content">
+				<div class="widget-box cocoon">
+					<div class="add-field-links">
+						<%= link_to_add_association '<i></i> Add Funding Type'.html_safe, sale, :funding_plan_sales, :partial => "funding_plan_sales/form", :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
 				</div>
 			</div>
