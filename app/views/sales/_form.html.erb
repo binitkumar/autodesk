@@ -59,6 +59,11 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
+					<% if sale.object.roles.count > 0 %>
+						<%= sale.fields_for :roles do |roles_builder| %>
+							<%= render :partial => "roles/form", :locals => {:f => roles_builder, :form_actions_visible => false} %>
+						<% end -%>
+					<% end %>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Team Member'.html_safe, sale, :roles, :partial => 'roles/form', :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
