@@ -3,6 +3,7 @@ class FundingPlanSale < ActiveRecord::Base
   
   belongs_to :funding_plan
   has_one :funding_type, :through => :funding_plan
+  has_one :supplier, :through => :funding_plan
   
   belongs_to :sale
   
