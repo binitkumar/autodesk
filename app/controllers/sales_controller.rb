@@ -31,14 +31,18 @@ class SalesController < ApplicationController
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
-    params[:sale][:vehicles_attributes].each { |key,value|
-      value.delete(:make)
-      value.delete(:model)
-    }
-    params[:sale][:funding_plan_sales].each { |key,value|
-      value.delete(:funding_type)
-      value.delete(:supplier)
-    }
+    if !params[:sale][:vehicles_attributes].nil?
+      params[:sale][:vehicles_attributes].each { |key,value|
+        value.delete(:make)
+        value.delete(:model)
+      }
+    end
+    if !params[:sale][:funding_plan_sales_attributes].nil?
+      params[:sale][:funding_plan_sales_attributes].each { |key,value|
+        value.delete(:funding_type)
+        value.delete(:supplier)
+      }
+    end
     @sale.attributes = params[:sale]
     authorize! :create, @sale
     if @sale.save
