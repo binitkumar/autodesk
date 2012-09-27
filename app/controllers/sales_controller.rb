@@ -35,6 +35,7 @@ class SalesController < ApplicationController
     }
     params[:sale][:funding_plan_sales].each { |key,value|
       value.delete(:funding_type)
+      value.delete(:supplier)
     }
     @sale.attributes = params[:sale]
     authorize! :create, @sale
