@@ -19,7 +19,6 @@ class SalesController < ApplicationController
     @sale.customer.emails.build
     @sale.customer.addresses.build
     @built_vehicle = @sale.vehicles.build
-    @built_vehicle.registration_marks.build
     @sale.attributes = params[:sale]
     authorize! :new, @sale
   end
