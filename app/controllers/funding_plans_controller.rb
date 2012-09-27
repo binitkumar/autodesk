@@ -4,7 +4,7 @@ class FundingPlansController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        @funding_plans_for_dropdown = FundingPlan.where(:funding_type_id => params[:funding_type_id])
+        @funding_plans_for_dropdown = FundingPlan.where(:supplier_id => params[:supplier_id])
         render :json => Hash[@funding_plans_for_dropdown.map { |i| [i.id, i.name] }]
       end
     end

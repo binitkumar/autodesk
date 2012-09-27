@@ -1,6 +1,18 @@
 class SuppliersController < ApplicationController
   def index
     @suppliers = Supplier.all
+    respond_to do |format|
+      format.html
+      format.json do
+        if params[:funding_type_id] != '0' && params[:funding_type_id].nil? == false && params[:funding_type_id].empty? == false
+          @suppliers_for_dropdown = Supplier.where(:id => FundingType.find(params[:funding_type_id]).suppliers.map { |i| i.id })
+          render :json => Hash[@suppliers_for_dropdown.map { |i| [i.id, i.name] }]
+        else
+          render :json => Hash[]
+        end
+        
+      end
+    end
   end
 
   def show
