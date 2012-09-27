@@ -1,6 +1,13 @@
 class FundingPlansController < ApplicationController
   def index
     @funding_plans = FundingPlan.all
+    respond_to do |format|
+      format.html
+      format.json do
+        @funding_plans_for_dropdown = FundingPlan.where(:funding_type_id => params[:funding_type_id])
+        render :json => Hash[@funding_plans_for_dropdown.map { |i| [i.id, i.name] }]
+      end
+    end
   end
 
   def show
