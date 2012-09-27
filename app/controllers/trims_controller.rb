@@ -5,7 +5,7 @@ class TrimsController < ApplicationController
       format.html
       format.json do
         @trims_for_dropdown = Trim.where(:model_id => params[:model_id])
-        render :json => Hash[@trims_for_dropdown.map { |i| [i.id, i.value] }]
+        render :json => Hash["" => ""].merge(Hash[@trims_for_dropdown.map { |i| [i.id, i.value] }])
       end
     end
   end

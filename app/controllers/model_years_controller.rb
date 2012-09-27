@@ -9,7 +9,7 @@ class ModelYearsController < ApplicationController
         else
           @model_years_for_dropdown = Trim.where(:id => params[:trim_id]).first.model_years
         end
-        render :json => Hash[@model_years_for_dropdown.map { |i| [i.id, i.value] }]
+        render :json => Hash["" => ""].merge(Hash[@model_years_for_dropdown.map { |i| [i.id, i.value] }])
       end
     end
   end

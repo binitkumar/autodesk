@@ -18,8 +18,9 @@ class SalesController < ApplicationController
     @sale.build_customer
     @sale.customer.emails.build
     @sale.customer.addresses.build
-    @sale.products.build
+    @sale.product_sales.build
     @sale.roles.build
+    @sale.funding_plan_sales.build
     @built_vehicle = @sale.vehicles.build
     @built_vehicle.registration_marks.build
     @sale.attributes = params[:sale]

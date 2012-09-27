@@ -4,8 +4,16 @@ class FundingPlansController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        @funding_plans_for_dropdown = FundingPlan.where(:supplier_id => params[:supplier_id])
-        render :json => Hash[@funding_plans_for_dropdown.map { |i| [i.id, i.name] }]
+        if params[:supplier_id].blank? && !params[:funding_type_id].blank?
+          @funding_plans_for_dropdown = FundingPlan.where(:funding_type_id => params[:funding_type_id])
+        elsif !params[:supplier_id].blank? && params[:funding_type_id].blank?
+          @funding_plans_for_dropdown = FundingPlan.where(:supplier_id => params[:supplier_id])
+        elsif !params[:supplier_id].blank? && !params[:funding_type_id].blank?
+            @funding_plans_for_dropdown = FundingPlan.where(:supplier_id => params[:supplier_id], :funding_type_id => params[:funding_type_id])
+        else
+          @funding_plans_for_dropdown = Hash[]
+        end
+        render :json => Hash["" => ""].merge(Hash[@funding_plans_for_dropdown.map { |i| [i.id, i.name] }])
       end
     end
   end

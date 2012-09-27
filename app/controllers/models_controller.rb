@@ -5,7 +5,7 @@ class ModelsController < ApplicationController
       format.html
       format.json do
         @models_for_dropdown = Model.where(:make_id => params[:make_id])
-        render :json => Hash[@models_for_dropdown.map { |i| [i.id, i.value] }]
+        render :json => Hash["" => ""].merge(Hash[@models_for_dropdown.map { |i| [i.id, i.value] }])
       end
     end
   end

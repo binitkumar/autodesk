@@ -20,7 +20,7 @@ $(function () {
 				/* chain the selects */
 				$(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).find('select[data-chained-to]').each(
 					function () {
-						$(this).remoteChainedTo('#' + $(this).data('chained-to') + '_' + timestamp, $(this).data('chained-url'));
+						$(this).remoteChainedTo($(this).data('chained-to') + '_' + timestamp, $(this).data('chained-url'));
 					});
 	         });
 	
@@ -174,7 +174,7 @@ Chained
 
 $(function makeChains(){
 	$('.chained-child').each(function () {
-		$(this).remoteChainedTo('#' + $(this).data('chained-to'), $(this).data('chained-url'));
+		$(this).remoteChainedTo($(this).data('chained-to'), $(this).data('chained-url'));
 	});
 });
 

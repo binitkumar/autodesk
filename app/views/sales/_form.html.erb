@@ -91,8 +91,8 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<%= sale.fields_for :products do |products_builder| %>
-						<%= render :partial => "products/form", :locals => {:f => products_builder, :form_actions_visible => false} %>
+					<%= sale.fields_for :product_sales do |product_sales_builder| %>
+						<%= render :partial => "product_sales/form", :locals => {:f => product_sales_builder, :form_actions_visible => false} %>
 					<% end -%>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :product_sales, :partial => 'product_sales/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
@@ -104,11 +104,9 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<% if sale.object.funding_plan_sales.count > 0 %>
-						<%= sale.fields_for :funding_plan_sales do |funding_plan_sales_builder| %>
-							<%= render :partial => "funding_plan_sales/form", :locals => {:f => funding_plan_sales_builder, :form_actions_visible => false} %>
-						<% end -%>
-					<% end %>
+					<%= sale.fields_for :funding_plan_sales do |funding_plan_sales_builder| %>
+						<%= render :partial => "funding_plan_sales/form", :locals => {:f => funding_plan_sales_builder, :form_actions_visible => false} %>
+					<% end -%>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Funding Type'.html_safe, sale, :funding_plan_sales, :partial => "funding_plan_sales/form", :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>

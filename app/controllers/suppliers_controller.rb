@@ -6,9 +6,9 @@ class SuppliersController < ApplicationController
       format.json do
         if params[:funding_type_id] != '0' && params[:funding_type_id].nil? == false && params[:funding_type_id].empty? == false
           @suppliers_for_dropdown = Supplier.where(:id => FundingType.find(params[:funding_type_id]).suppliers.map { |i| i.id })
-          render :json => Hash[@suppliers_for_dropdown.map { |i| [i.id, i.name] }]
+          render :json => Hash["" => ""].merge(Hash[@suppliers_for_dropdown.map { |i| [i.id, i.name] }])
         else
-          render :json => Hash[]
+          render :json => Hash["" => ""]
         end
         
       end
