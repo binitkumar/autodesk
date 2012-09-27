@@ -59,11 +59,9 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<% if sale.object.roles.count > 0 %>
-						<%= sale.fields_for :roles do |roles_builder| %>
-							<%= render :partial => "roles/form", :locals => {:f => roles_builder, :form_actions_visible => false} %>
-						<% end -%>
-					<% end %>
+					<%= sale.fields_for :roles do |roles_builder| %>
+						<%= render :partial => "roles/form", :locals => {:f => roles_builder, :form_actions_visible => false} %>
+					<% end -%>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Team Member'.html_safe, sale, :roles, :partial => 'roles/form', :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
@@ -93,11 +91,9 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<% if sale.object.products.count > 0 %>
-						<%= sale.fields_for :products do |products_builder| %>
-							<%= render :partial => "products/form", :locals => {:f => products_builder, :form_actions_visible => false} %>
-						<% end -%>
-					<% end %>
+					<%= sale.fields_for :products do |products_builder| %>
+						<%= render :partial => "products/form", :locals => {:f => products_builder, :form_actions_visible => false} %>
+					<% end -%>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Product'.html_safe, sale, :product_sales, :partial => 'product_sales/form', :render_options => {:locals => {:form_actions_visible => 'false' }}, :class => 'btn' %>
 					</div>
