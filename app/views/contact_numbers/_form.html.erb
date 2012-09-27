@@ -4,7 +4,7 @@
 		<div class="control-group">
 			<label class="control-label">Contact Number Type</label>
 			<div class="controls">
-				<%= f.collection_select(:contact_number_type_id, ContactNumberType.all, :id, :value, {}, {:class => "chzn-select"}) %>
+				<%= f.collection_select(:contact_number_type_id, ContactNumberType.all, :id, :value, {:prompt => ""}, {:class => "chzn-select", "data-placeholder" => "Select Contact Number Type"}) %>
 			</div>
 		</div>
 		<div class="control-group">

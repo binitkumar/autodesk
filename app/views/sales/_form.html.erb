@@ -12,7 +12,7 @@
 							<div class="control-group">
 								<label class="control-label">Sale Type</label>
 								<div class="controls">
-									<%= sale.collection_select(:sale_type_id, SaleType.all, :id, :value, {}, {:class => "chzn-select"}) %>
+									<%= sale.collection_select(:sale_type_id, SaleType.all, :id, :value, {:prompt => ""}, {:class => "chzn-select", "data-placeholder" => "Select Sale Type"}) %>
 								</div>
 							</div>
 							<div class="control-group">

@@ -1,7 +1,7 @@
 <div class="control-group">
 	<label class="control-label"><Value>Product</label>
 	<div class="controls">
-		<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: "Select Product Type"}, {:class => "chzn-select"}) %>
+		<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Product Type"}) %>
 	</div>
 </div>
 <% if form_actions_visible == true %>
