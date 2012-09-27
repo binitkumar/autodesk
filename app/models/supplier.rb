@@ -1,10 +1,12 @@
 class Supplier < ActiveRecord::Base
   attr_accessible :name
   
-  has_many :funding_plans
   has_many :purchases
   
   has_many :financial_transactions, :as => :financial_transaction_originator
+  
+  has_many :funding_plans
+  has_many :funding_types, :through => :funding_plans
   
   has_many :address_suppliers
   has_many :addresses, :through => :address_suppliers
