@@ -33,6 +33,9 @@ class SalesController < ApplicationController
       value.delete(:make)
       value.delete(:model)
     }
+    params[:sale][:funding_plan_sales].each { |key,value|
+      value.delete(:funding_type)
+    }
     @sale.attributes = params[:sale]
     authorize! :create, @sale
     if @sale.save
