@@ -178,15 +178,6 @@ $(function makeChains(){
 	});
 });
 
-/* Link selects within form sections added by Cocoon */
-	
-
-$('#vehicle_cocoon').bind('after-insert',
-	function() {
-    	alert('inserted');
-		
-});
-
 /*=========
 Chosen
 ===========*/
