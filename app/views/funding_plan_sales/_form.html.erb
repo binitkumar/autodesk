@@ -2,9 +2,15 @@
 	<fieldset>
 		<legend>Funding Details</legend>
 		<div class="control-group">
+			<label class="control-label">Funding Type</label>
+			<div class="controls">
+				<%= f.select(:funding_type, FundingType.all.collect {|p| [ p.value, p.id ] }, {:prompt => "Select Funding Type"}, {:id => "funding_type_selector", "data-chained" => "true",  "data-chained-url-name" => "funding_type_id", "data-chained-children" => "true", "data-chained-parent" => "funding_type_selector", "data-placeholder" => "Select Funding Type"}) %>
+			</div>
+		</div>
+		<div class="control-group">
 			<label class="control-label">Funding Plan</label>
 			<div class="controls">
-				<%= f.collection_select(:funding_plan_id, FundingPlan.all, :id, :name, {}, {:class => "chzn-select"}) %>
+				<%= f.select(:funding_plan_id, options_for_select([]), {:prompt => "Select Funding Plan"}, {:id => "funding_plan_selector", :class => "chained-child", "data-chained" => "true", "data-chained-children" => "false", "data-chained-to" => "funding_type_selector", "data-chained-url" => "/funding_plans.json", "data-placeholder" => "Select Funding Plan"}) %>
 			</div>
 		</div>
 		<div class="control-group">
