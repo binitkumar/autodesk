@@ -98,6 +98,11 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
+					<% if sale.object.funding_plan_sales.count > 0 %>
+						<%= sale.fields_for :funding_plan_sales do |funding_plan_sales_builder| %>
+							<%= render :partial => "funding_plan_sales/form", :locals => {:f => funding_plan_sales_builder, :form_actions_visible => false} %>
+						<% end -%>
+					<% end %>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Funding Type'.html_safe, sale, :funding_plan_sales, :partial => "funding_plan_sales/form", :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>
 					</div>
