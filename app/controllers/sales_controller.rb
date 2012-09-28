@@ -21,7 +21,8 @@ class SalesController < ApplicationController
     @sale.product_sales.build
     @sale.roles.build
     @sale.funding_plan_sales.build
-    @built_vehicle = @sale.vehicles.build
+    @built_sale_vehicle = @sale.sale_vehicles.build
+    @built_vehicle = @built_sale_vehicle.build_vehicle
     @built_vehicle.registration_marks.build
     @sale.attributes = params[:sale]
     authorize! :new, @sale

@@ -76,13 +76,11 @@
 			</div>
 			<div class="widget-content">
 				<div class="widget-box cocoon">
-					<%= sale.fields_for :vehicles do |vehicles_builder| %>
-			  			<%= render :partial => "vehicles/form", :locals => {:f => vehicles_builder, :form_actions_visible => false, :show_features => true, :fieldset_label => 'Vehicle Details'} %>
-						<div class="add-field-links">
-						</div>
+					<%= sale.fields_for :sale_vehicles do |sale_vehicles_builder| %>
+						<%= render :partial => "sale_vehicles/form", :locals => {:f => sale_vehicles_builder, :form_actions_visible => false} %>	
 					<% end -%>
 					<div class="add-field-links">
-						<%= link_to_add_association '<i></i> Add Vehicle'.html_safe, sale, :vehicles, :partial => 'vehicles/form', :render_options => {:locals => {:form_actions_visible => 'false', :show_features => true, :fieldset_label => 'Vehicle Details'}}, :class => 'btn' %>
+						<%= link_to_add_association '<i></i> Add Vehicle'.html_safe, sale, :sale_vehicles, :partial => 'sale_vehicles/form', :render_options => {:locals => {:form_actions_visible => 'false', :show_features => true, :fieldset_label => 'Vehicle Details'}}, :class => 'btn' %>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,13 @@
+<div class='nested-fields form-horizontal'>
+	<fieldset>
+		<legend>Vehicle Details</legend>
+		<%= f.fields_for :vehicle do |vehicle_builder| %>
+			<%= render :partial => "vehicles/form", :locals => {:f => vehicle_builder, :f_parent => f, :form_actions_visible => false, :show_features => true, :fieldset_label => 'Vehicle Details'} %>
+		<% end -%>
+	</fieldset>
+	<% if form_actions_visible == true %>
+		<div class="form-actions">
+			<%= render :partial => "shared/form_actions" %>
+		</div>
+	<% end %>
+</div>
