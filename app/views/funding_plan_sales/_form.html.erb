@@ -1,46 +1,48 @@
 <div class='nested-fields form-horizontal'>
-	<fieldset>
-		<legend>Funding Details</legend>
-		<div class="control-group">
-			<label class="control-label">Funding Type</label>
-			<div class="controls">
-				<%= f.select(:funding_type, FundingType.all.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "funding_type_selector", "data-chained" => "true",  "data-chained-url-name" => "funding_type_id", "data-chained-children" => "true", "data-chained-parent" => "funding_type_selector", "data-placeholder" => "Select Funding Type"}) %>
+	<div class="funding-method-container">
+		<fieldset>
+			<legend>Funding Details</legend>
+			<div class="control-group">
+				<label class="control-label">Funding Type</label>
+				<div class="controls">
+					<%= f.select(:funding_type, FundingType.all.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "funding_type_selector", "data-chained" => "true",  "data-chained-url-name" => "funding_type_id", "data-chained-children" => "true", "data-chained-parent" => "funding_type_selector", "data-placeholder" => "Select Funding Type", "data-show-hide-details" => ".funding-method-container,#funding_type_selector,data-funding-field-type,fundingFields"}) %>
+				</div>
 			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label">Funding Supplier</label>
-			<div class="controls">
-				<%= f.select(:supplier, options_for_select([]), {:prompt => ""}, {:id => "funding_supplier_selector", :class => "chained-child", "data-chained" => "true", "data-chained-url-name" => "supplier_id", "data-chained-children" => "true", "data-chained-parent" => "funding_supplier_selector", "data-chained-to" => "#funding_type_selector", "data-chained-url" => "/suppliers.json", "data-placeholder" => "Select Supplier"}) %>
+			<div class="control-group">
+				<label class="control-label">Funding Supplier</label>
+				<div class="controls">
+					<%= f.select(:supplier, options_for_select([]), {:prompt => ""}, {:id => "funding_supplier_selector", :class => "chained-child", "data-chained" => "true", "data-chained-url-name" => "supplier_id", "data-chained-children" => "true", "data-chained-parent" => "funding_supplier_selector", "data-chained-to" => "#funding_type_selector", "data-chained-url" => "/suppliers.json", "data-placeholder" => "Select Supplier"}) %>
+				</div>
 			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label">Funding Plan</label>
-			<div class="controls">
-				<%= f.select(:funding_plan_id, options_for_select([]), {:prompt => ""}, {:id => "funding_plan_selector", :class => "chained-child", "data-chained" => "true", "data-chained-children" => "false", "data-chained-to" => "#funding_supplier_selector, #funding_type_selector", "data-chained-url" => "/funding_plans.json", "data-placeholder" => "Select Funding Plan"}) %>
+			<div class="control-group">
+				<label class="control-label">Funding Plan</label>
+				<div class="controls">
+					<%= f.select(:funding_plan_id, options_for_select([]), {:prompt => ""}, {:id => "funding_plan_selector", :class => "chained-child", "data-chained" => "true", "data-chained-children" => "false", "data-chained-to" => "#funding_supplier_selector, #funding_type_selector", "data-chained-url" => "/funding_plans.json", "data-placeholder" => "Select Funding Plan"}) %>
+				</div>
 			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label">Amount</label>
-			<div class="controls">
-				<%= f.text_field :amount, :class => 'input-large' %>
+			<div class="control-group">
+				<label class="control-label">Amount</label>
+				<div class="controls">
+					<%= f.text_field :amount, :class => 'input-large' %>
+				</div>
 			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label">Term</label>
-			<div class="controls">
-				<%= f.text_field :term, :class => 'input-large' %>
+			<div class="control-group">
+				<label class="control-label">Term</label>
+				<div class="controls">
+					<%= f.text_field :term, :class => 'input-large', "data-funding-field-type" => "Term" %>
+				</div>
 			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label">Customer Rate</label>
-			<div class="controls">
-				<%= f.text_field :customer_rate, :class => 'input-large' %>
+			<div class="control-group">
+				<label class="control-label">Customer Rate</label>
+				<div class="controls">
+					<%= f.text_field :customer_rate, :class => 'input-large', "data-funding-field-type" => "Customer Rate" %>
+				</div>
 			</div>
-		</div>
-		<% if form_actions_visible == true %>
-			<div class="form-actions">
-				<%= render :partial => "shared/form_actions" %>
-			</div>
-		<% end %>
-	</fieldset>
+			<% if form_actions_visible == true %>
+				<div class="form-actions">
+					<%= render :partial => "shared/form_actions" %>
+				</div>
+			<% end %>
+		</fieldset>
+	</div>
 </div>

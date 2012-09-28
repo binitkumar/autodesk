@@ -135,6 +135,9 @@ funding_plans = FundingPlan.create([
   {funding_type_id: '1', name: 'Bank Transfer'},
   {funding_type_id: '2', name: 'Low Rate Finance Plan', supplier_id: '1', currency_id: '1', maximum_term: '60', 
     commission_difference_in_charges: '0.55', commission_maximum_term: '48', commission_fixed: '0', 
+    commission_minimum: '20', commission_maximum_absolute: '1500', commission_maximum_relative: '0.75' },
+  {funding_type_id: '2', name: 'Special Finance Plan', supplier_id: '2', currency_id: '1', maximum_term: '60', 
+    commission_difference_in_charges: '0.55', commission_maximum_term: '48', commission_fixed: '0', 
     commission_minimum: '20', commission_maximum_absolute: '1500', commission_maximum_relative: '0.75' }
 ])
 

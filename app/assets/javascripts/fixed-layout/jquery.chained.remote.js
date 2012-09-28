@@ -75,7 +75,14 @@
 							$(self).chosen();
 							$(self).trigger("liszt:updated");
 						}
-						$(parent_selector).chosen().change( function() {$(this).trigger("liszt:updated"); });
+						
+						$(parent_selector).chosen().change( function() {
+							$(this).trigger("liszt:updated");
+							if ($(parent_selector).data('show-hide-details') != undefined) {
+								detailsArray = $(parent_selector).data('show-hide-details').split(',');
+								showHideFields(detailsArray[0], detailsArray[1], detailsArray[2], showHideFieldsArray[detailsArray[3]]);
+							}
+						});
                         
                     });
                 });
