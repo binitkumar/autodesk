@@ -76,13 +76,17 @@
 							$(self).trigger("liszt:updated");
 						}
 						
+						/* Ensure that the options are updated when a parent option is selected */
 						$(parent_selector).chosen().change( function() {
 							$(this).trigger("liszt:updated");
-							if ($(parent_selector).data('show-hide-details') != undefined) {
-								detailsArray = $(parent_selector).data('show-hide-details').split(',');
-								showHideFields(detailsArray[0], detailsArray[1], detailsArray[2], showHideFieldsArray[detailsArray[3]]);
-							}
 						});
+						
+						/* Check for fields to be shown / hidden when an option is selected */
+						if ($(parent_selector).data('show-hide-details') != undefined && $(parent_selector).data('show-hide-details-done') != "true") {
+							detailsArray = $(parent_selector).data('show-hide-details').split(',');
+							showHideFields(detailsArray[0], detailsArray[1], detailsArray[2], showHideFieldsArray[detailsArray[3]], true);
+							$(parent_selector).data('show-hide-details-done', 'true');
+						}
                         
                     });
                 });

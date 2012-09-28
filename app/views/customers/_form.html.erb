@@ -1,7 +1,7 @@
 <div class="control-group">
 	<label class="control-label">Customer Type</label>
 	<div class="controls">
-		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", "data-placeholder" => "Select Sale Type"}) %>
+		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", "data-placeholder" => "Select Customer Type"}) %>
 	</div>
 </div>
 <div id="customer-features">

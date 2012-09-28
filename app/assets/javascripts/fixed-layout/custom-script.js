@@ -25,45 +25,13 @@ $(function () {
 	         });
 	
 	/*=========
-	Customer Type Fields
+	Show / Hide Fields
 	===========*/
 	
-	/* First hide all of the selects by finding any inputs that have a data-feature-type attribute */
-	$('#customer-features').find('input[data-feature-type]').parent().parent().hide();
+	/* Call the show / hide fields function for selects that are not chained (if selects are chained the
+	show / hide fields function will be called automatically by the chained script - DO NOT DEFINE THEM HERE) */
 	
-	/* Set the visible fields for each customer type here */
-	var customerTypeFields = [];
-	customerTypeFields['Individual'] = ['First Name(s)', 'Last Name', 'Date of Birth'];
-	customerTypeFields['Limited Company'] = ['Name', 'Company Number'];
-	customerTypeFields['Partnership'] = ['Name', 'Company Number'];
-	
-	/* Apply chosen to the selects, and apply a function when a new item is selected */
-	$('#customer-type-selector').chosen().change( function() {
-		/* re-hide all of the selects as some may have been shown by a previous request */
-		$('#customer-features').find('input[data-feature-type]').parent().parent().hide();
-		/* Select the array of visible fields (created above) */
-		var visibleFields = customerTypeFields[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
-		/* Find each select detailed in the visible fields array, and show it */
-		$.each(visibleFields, function(i, field) {
-			$('#customer-features').find('input[data-feature-type="' + field + '"]').parent().parent().show();
-		});
-	});
-	
-	/*=========
-	Funding Type Fields
-	===========*/
-	
-	/* The funding type will default to cash, so hide unnecessary fields initially */
-	/* NOTE: Amount will always be visible */
-	$('.funding-method').find('input[data-funding-field-type]').parent().parent().hide();
-	
-	/* Set the visible fields for each funding type here */
-	var fundingFields = [];
-	fundingFields['Hire Purchase'] = ['Term', 'Customer Rate'];
-	fundingFields['Lease Purchase'] = ['Term', 'Customer Rate'];
-	fundingFields['Conditional Sale'] = ['Term', 'Customer Rate'];
-	
-	/* When a new item is selected, show the appropriate fields */
+	showHideFields('#customer-features', '#customer-type-selector', 'data-feature-type', showHideFieldsArray['customerTypeFields']);
 	
 	/*=========
 	Mini Chart
