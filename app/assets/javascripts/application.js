@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require fixed-layout/custom_functions_and_variables.js
+//= require show_and_hide_form_fields.js
+//= require funding_default_behavior.js
 //= require jquery.ui.datepicker
 //= require jquery.ui.slider
 //= require twitter/bootstrap.js

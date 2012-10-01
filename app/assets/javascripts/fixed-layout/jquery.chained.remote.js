@@ -81,9 +81,13 @@
 							$(this).trigger("liszt:updated");
 						});
 						
-						/* Check for fields to be shown / hidden when an option is selected */
+						/* Check for fields to be shown / hidden when an option is selected */						
 						if ($(parent_selector).data('show-hide-details') != undefined && $(parent_selector).data('show-hide-details-done') != "true") {
 							detailsArray = $(parent_selector).data('show-hide-details').split(',');
+							if ($(parent_selector).data('timestamp')) {
+								detailsArray[0] = detailsArray[0] + '_' + $(parent_selector).data('timestamp');
+								detailsArray[1] = detailsArray[1] + '_' + $(parent_selector).data('timestamp');
+							}
 							showHideFields(detailsArray[0], detailsArray[1], detailsArray[2], showHideFieldsArray[detailsArray[3]], true);
 							$(parent_selector).data('show-hide-details-done', 'true');
 						}

@@ -7,7 +7,7 @@ $(function () {
 	$('.cocoon').bind('cocoon:after-insert',
 	         function() {
 				/* create a milliseconds timestamp */
-				var timestamp = new Date().getTime();
+				var timestamp = $(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).data('timestamp');
 	           	$(".chzn-select").chosen();
 	
 				/* update the id of each chained select with the timestamp to avoid conflicts */
@@ -15,6 +15,7 @@ $(function () {
 					function () {
 						var newId = $(this).attr('id') + '_' + timestamp;
 						$(this).attr('id', newId)
+						$(this).data('timestamp', timestamp);
 					});
 					
 				/* chain the selects */
@@ -45,6 +46,12 @@ $(function () {
 	show / hide fields function will be called automatically by the chained script - DO NOT DEFINE THEM HERE) */
 	
 	showHideFields('#customer-features', '#customer-type-selector', 'data-feature-type', showHideFieldsArray['customerTypeFields']);
+	
+	/*=========
+	Funding Default Behavior
+	===========*/
+	
+	fundingDefaultBehavior();
 	
 	/*=========
 	Mini Chart
