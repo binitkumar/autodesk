@@ -20,7 +20,20 @@ $(function () {
 				/* chain the selects */
 				$(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).find('select[data-chained-to]').each(
 					function () {
-						$(this).remoteChainedTo($(this).data('chained-to') + '_' + timestamp, $(this).data('chained-url'));
+						/* handle multiple chained parents */
+						var splitParents = $(this).data('chained-to').split(', ');
+						var combinedParents = '';
+						$.each(splitParents, function(i, splitChainedParent) {
+							if (i != splitParents.length - 1) {
+								combinedParents = combinedParents + splitChainedParent + '_' + timestamp + ', ';
+							}
+							else {
+								combinedParents = combinedParents + splitChainedParent + '_' + timestamp
+							}
+						});
+						
+						/* apply the chaining */
+						$(this).remoteChainedTo(combinedParents, $(this).data('chained-url'));
 					});
 	         });
 	
