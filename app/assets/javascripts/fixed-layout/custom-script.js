@@ -6,6 +6,7 @@ $(function () {
 	
 	$('.cocoon').bind('cocoon:after-insert',
 	         function() {
+				/* handle uniqueness and chaining */
 				/* create a milliseconds timestamp */
 				var timestamp = $(this).children('[class!="add-field-links"]').eq($(this).children('[class!="add-field-links"]').length - 1).data('timestamp');
 	           	$(".chzn-select").chosen();
@@ -36,6 +37,9 @@ $(function () {
 						/* apply the chaining */
 						$(this).remoteChainedTo(combinedParents, $(this).data('chained-url'));
 					});
+					
+				/* ensure funding behavior is applied to new section */
+				fundingDefaultBehavior();
 	         });
 	
 	/*=========
