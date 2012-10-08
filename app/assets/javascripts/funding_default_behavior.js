@@ -11,7 +11,7 @@ function fundingDefaultBehavior () {
 	$('#funding_supplier_selector').parent().parent().hide();
 
 	// Disable the Funding Amount text box
-	$('#funding-plan-div').find('.funding-plan-amount').attr('disabled', true);
+	$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').attr('disabled', true);
 
 	// Bind to the change event of the price-contributor fields
 	$('.price-contributor').change(function() {
@@ -21,6 +21,6 @@ function fundingDefaultBehavior () {
 			// Add up the values of the price contributor fields, stripping out any non-numeric elements
 			sum += parseFloat( ('0' + $(this).val()).replace(/[^0-9-\.]/g, ''), 10 );
 		});
-		$('#funding-plan-div').find('.funding-plan-amount').val(sum);
+		$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').val(sum);
 	});
 };

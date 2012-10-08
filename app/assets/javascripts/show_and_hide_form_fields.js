@@ -1,29 +1,38 @@
 /* Function to show and hide appropriate fields in forms */
 function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied){
 
-	$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
+	$(fieldsContainer + ':not([data-no-master-show-hide])').find('input[' + nameHolder +']').parent().parent().hide();
 	
 	if (chosenApplied) {
-		$(typeSelector).on('change',function() {
-			$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
-			/* Select the array of visible fields (created above) */
+		$('[id^="' + typeSelector + '"]').on('change',function() {
+			/* get the timestamp from the container div */
+			var timestamp = $(this).closest('[data-timestamp]').data('timestamp');
+			/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
+			$(this).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
+			/* re-hide all of the selects as some may have been shown by a previous request */
+			$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
+			/* Select the array of visible fields */
 			var visibleFundingFields = fieldsArray[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
 			/* Find each select detailed in the visible fields array, and show it */
 			$.each(visibleFundingFields, function(i, field) {
-				$(fieldsContainer).find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
+				$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
 			});
 		});
 	}
 	
 	else {
-		$(typeSelector).chosen().change(function() {
+		$('[id^="' + typeSelector + '"]').chosen().change(function() {
+			/* get the timestamp from the container div */
+			var timestamp = $(this).closest('[data-timestamp]').data('timestamp');
+			/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
+			$(this).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
 			/* re-hide all of the selects as some may have been shown by a previous request */
-			$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
+			$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
 			/* Select the array of visible fields (created above) */
 			var visibleFundingFields = fieldsArray[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
 			/* Find each select detailed in the visible fields array, and show it */
 			$.each(visibleFundingFields, function(i, field) {
-				$(fieldsContainer).find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
+				$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
 			});
 		});
 	}
