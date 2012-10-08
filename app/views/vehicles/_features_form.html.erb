@@ -1,4 +1,7 @@
 <%= add_fixed_fields('features', ["VIN Number", "Date of Registration"], f, false, false) %>
+<% if f.object.registration_marks.blank? %>
+	<% f.object.registration_marks.build %>
+<% end %>
 <%= f.fields_for :registration_marks do |registration_marks_builder| %>
 	<%= render :partial => "registration_marks/form", :locals => {:f => registration_marks_builder, :form_actions_visible => false} %>
 <% end -%>
