@@ -1,3 +1,18 @@
+function showHideActions(item) {
+	/* get the timestamp from the container div */
+	var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
+	/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
+	$(item).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
+	/* re-hide all of the selects as some may have been shown by a previous request */
+	$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
+	/* Select the array of visible fields */
+	var visibleFundingFields = fieldsArray[$(item).children("option[value='" + $(item).attr('value') + "']").text()];
+	/* Find each select detailed in the visible fields array, and show it */
+	$.each(visibleFundingFields, function(i, field) {
+		$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
+	});
+};
+
 /* Function to show and hide appropriate fields in forms */
 function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied){
 
@@ -5,35 +20,13 @@ function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, 
 	
 	if (chosenApplied) {
 		$('[id^="' + typeSelector + '"]').on('change',function() {
-			/* get the timestamp from the container div */
-			var timestamp = $(this).closest('[data-timestamp]').data('timestamp');
-			/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
-			$(this).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
-			/* re-hide all of the selects as some may have been shown by a previous request */
-			$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
-			/* Select the array of visible fields */
-			var visibleFundingFields = fieldsArray[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
-			/* Find each select detailed in the visible fields array, and show it */
-			$.each(visibleFundingFields, function(i, field) {
-				$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
-			});
+			showHideActions(this);
 		});
 	}
 	
 	else {
 		$('[id^="' + typeSelector + '"]').chosen().change(function() {
-			/* get the timestamp from the container div */
-			var timestamp = $(this).closest('[data-timestamp]').data('timestamp');
-			/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
-			$(this).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
-			/* re-hide all of the selects as some may have been shown by a previous request */
-			$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
-			/* Select the array of visible fields (created above) */
-			var visibleFundingFields = fieldsArray[$(this).children("option[value='" + $(this).attr('value') + "']").text()];
-			/* Find each select detailed in the visible fields array, and show it */
-			$.each(visibleFundingFields, function(i, field) {
-				$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
-			});
+			showHideActions(this);
 		});
 	}
 	
