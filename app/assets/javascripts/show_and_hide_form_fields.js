@@ -1,4 +1,4 @@
-function showHideActions(item) {
+function showHideActionsDynamic(item) {
 	/* get the timestamp from the container div */
 	var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
 	/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
@@ -13,20 +13,41 @@ function showHideActions(item) {
 	});
 };
 
+function showHideActionsNonDynamic(item) {
+	/* re-hide all of the selects as some may have been shown by a previous request */
+	$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
+	/* Select the array of visible fields */
+	var visibleFundingFields = fieldsArray[$(item).children("option[value='" + $(item).attr('value') + "']").text()];
+	/* Find each select detailed in the visible fields array, and show it */
+	$.each(visibleFundingFields, function(i, field) {
+		$(fieldsContainer).find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
+	});
+};
+
 /* Function to show and hide appropriate fields in forms */
-function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied){
+function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied, nonDynamic){
 
 	$(fieldsContainer + ':not([data-no-master-show-hide])').find('input[' + nameHolder +']').parent().parent().hide();
 	
 	if (chosenApplied) {
 		$('[id^="' + typeSelector + '"]').on('change',function() {
-			showHideActions(this);
+			if (nonDynamic) {
+				showHideActionsNonDynamic(this);
+			}
+			else {
+				showHideActionsDynamic(this);
+			}
 		});
 	}
 	
 	else {
 		$('[id^="' + typeSelector + '"]').chosen().change(function() {
-			showHideActions(this);
+			if (nonDynamic) {
+				showHideActionsNonDynamic(this);
+			}
+			else {
+				showHideActionsDynamic(this);
+			}
 		});
 	}
 	
