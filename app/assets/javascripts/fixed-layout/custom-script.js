@@ -40,6 +40,9 @@ $(function () {
 					
 				/* ensure funding behavior is applied to new section */
 				fundingDefaultBehavior();
+				
+				/* ensure field masks are applied to new fields */
+				applyInputMasks();
 	         });
 	
 	/*=========
@@ -162,10 +165,7 @@ $(function () {
 	$(".checkbox-b,.rem_me,.radio-b,input[type='file']").uniform();
 	
 /*==INPUT MASK==*/
-	$(".date").inputmask("99-99-9999",{ "placeholder": "dd-mm-yyyy" });
-	$(".telephone_uk").inputmask("(999)9999 9999");
-	$(".sort-code").inputmask("99-99-99");
-	$(".account-number").inputmask("99999999");	
+	applyInputMasks();
 
 $('#popover').popover();
 
