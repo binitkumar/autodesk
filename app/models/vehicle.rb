@@ -24,7 +24,7 @@ class Vehicle < ActiveRecord::Base
   has_many :quote_vehicles
   has_many :quotes, :through => :quote_vehicles
   
-  accepts_nested_attributes_for :features, :reject_if => :all_blank
+  accepts_nested_attributes_for :features, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
   accepts_nested_attributes_for :registration_marks, :reject_if => :all_blank
   accepts_nested_attributes_for :mileage_readings, :reject_if => :all_blank
   accepts_nested_attributes_for :purchases

@@ -4,6 +4,6 @@ class SaleVehicle < ActiveRecord::Base
   belongs_to :sale
   belongs_to :vehicle
   
-  accepts_nested_attributes_for :vehicle
+  accepts_nested_attributes_for :vehicle, :reject_if => :all_blank
   
 end

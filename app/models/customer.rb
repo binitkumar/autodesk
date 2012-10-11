@@ -30,7 +30,7 @@ class Customer < ActiveRecord::Base
   
   accepts_nested_attributes_for :features, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
   accepts_nested_attributes_for :emails, :reject_if => :all_blank
-  accepts_nested_attributes_for :addresses
+  accepts_nested_attributes_for :addresses, :reject_if => :all_blank
   accepts_nested_attributes_for :contact_numbers, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
   accepts_nested_attributes_for :events
   
