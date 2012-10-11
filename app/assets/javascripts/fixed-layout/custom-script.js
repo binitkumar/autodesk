@@ -49,7 +49,7 @@ $(function () {
 	/* Call the show / hide fields function for selects that are not chained (if selects are chained the
 	show / hide fields function will be called automatically by the chained script - DO NOT DEFINE THEM HERE) */
 	
-	showHideFields('.customer-features', 'customer-type-selector', 'data-feature-type', showHideFieldsArray['customerTypeFields'], true);
+	showHideFields('.customer-features', 'customer-type-selector', 'data-feature-type', showHideFieldsArray['customerTypeFields'], false, true);
 	
 	/*=========
 	Funding Default Behavior

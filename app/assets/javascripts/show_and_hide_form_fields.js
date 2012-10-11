@@ -1,4 +1,4 @@
-function showHideActionsDynamic(item) {
+function showHideActionsDynamic(item, fieldsContainer, nameHolder, fieldsArray) {
 	/* get the timestamp from the container div */
 	var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
 	/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
@@ -13,7 +13,7 @@ function showHideActionsDynamic(item) {
 	});
 };
 
-function showHideActionsNonDynamic(item) {
+function showHideActionsNonDynamic(item, fieldsContainer, nameHolder, fieldsArray) {
 	/* re-hide all of the selects as some may have been shown by a previous request */
 	$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
 	/* Select the array of visible fields */
@@ -32,10 +32,10 @@ function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, 
 	if (chosenApplied) {
 		$('[id^="' + typeSelector + '"]').on('change',function() {
 			if (nonDynamic) {
-				showHideActionsNonDynamic(this);
+				showHideActionsNonDynamic(this, fieldsContainer, nameHolder, fieldsArray);
 			}
 			else {
-				showHideActionsDynamic(this);
+				showHideActionsDynamic(this, fieldsContainer, nameHolder, fieldsArray);
 			}
 		});
 	}
@@ -43,10 +43,10 @@ function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, 
 	else {
 		$('[id^="' + typeSelector + '"]').chosen().change(function() {
 			if (nonDynamic) {
-				showHideActionsNonDynamic(this);
+				showHideActionsNonDynamic(this, fieldsContainer, nameHolder, fieldsArray);
 			}
 			else {
-				showHideActionsDynamic(this);
+				showHideActionsDynamic(this, fieldsContainer, nameHolder, fieldsArray);
 			}
 		});
 	}
