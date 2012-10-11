@@ -50,7 +50,8 @@ class SalesController < ApplicationController
     @sale.attributes = params[:sale]
     authorize! :create, @sale
     if @sale.save
-      redirect_to @sale, :notice => "Successfully created address."
+      notice_message = '<div class="alert alert-success">Sale was created successfully</div>'
+      redirect_to @sale, flash[:notice] = notice_message.html_safe
     else
       error_message = '<div class="alert alert-error">' + @sale.errors.full_messages.join('</div><div class="alert alert-error">') + '</div>'
       flash[:error] = error_message.html_safe if @sale.errors.any?
@@ -60,15 +61,17 @@ class SalesController < ApplicationController
 
   def edit
     @sale = Sale.find(params[:id])
-    if @sale.customer.nil?
-      @sale.build_customer
-      @sale.customer.emails.build
-      @sale.customer.addresses.build
+    @sale.build_customer if @sale.customer.blank?
+    @sale.customer.emails.build if @sale.customer.emails.blank?
+    @sale.customer.addresses.build if @sale.customer.addresses.blank?
+    @sale.sale_vehicles.build if @sale.sale_vehicles.blank?
+    @sale.sale_vehicles.each do |sale_vehicle|
+        sale_vehicle.build_vehicle if sale_vehicle.vehicle.blank?
+        sale_vehicle.vehicle.registration_marks.build if sale_vehicle.vehicle.registration_marks.blank?
     end
-    if @sale.vehicles.nil?
-      @built_vehicle = @sale.vehicles.build
-      @built_vehicle.registration_marks.build
-    end
+    @sale.roles.build if @sale.roles.blank?
+    @sale.product_sales.build if @sale.product_sales.blank?
+    @sale.funding_plan_sales.build if @sale.funding_plan_sales.blank?
     authorize! :edit, @sale
   end
 
