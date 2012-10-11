@@ -24,11 +24,14 @@ class Sale < ActiveRecord::Base
   has_many :financial_transactions, :through => :financial_transaction_funding_plan_sales
   
   accepts_nested_attributes_for :customer, :reject_if => :all_blank
-  accepts_nested_attributes_for :sale_vehicles, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
+  accepts_nested_attributes_for :sale_vehicles, :reject_if => :all_blank
   accepts_nested_attributes_for :product_sales, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :products, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :comments, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :roles, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :funding_plan_sales, :allow_destroy => true, :reject_if => :all_blank
+  
+  validates_associated :sale_vehicles
+  validates_associated :product_sales
   
 end
