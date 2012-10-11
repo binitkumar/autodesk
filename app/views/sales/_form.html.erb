@@ -38,9 +38,11 @@
 							</fieldset>
 							<fieldset>
 								<legend>Customer Emails</legend>
-								<%= render :partial => "emails/form", :locals => {:f => customer_builder, :form_actions_visible => false, :legend_type => 'Customer', :show_add_new_button => true} %>
+								<%= customer_builder.fields_for :emails do |email| %>
+									<%= render :partial => "emails/form", :locals => {:f => email, :form_actions_visible => false} %>
+								<% end -%>
 								<div class="add-field-links">
-								<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
+									<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
 								</div>
 							</fieldset>
 							<fieldset>

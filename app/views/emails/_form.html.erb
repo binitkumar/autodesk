@@ -1,11 +1,9 @@
-<%= f.fields_for :emails do |email| %>
-	<div class="control-group">
-		<label class="control-label">Email</label>
-		<div class="controls">
-			<%= email.text_field :value, :class => 'input-large email-field' %>
-		</div>
+<div class="control-group">
+	<label class="control-label">Email</label>
+	<div class="controls">
+		<%= f.text_field :value, :class => 'input-large email-field' %>
 	</div>
-	<% if form_actions_visible == true %>
-		<%= render :partial => "shared/form_actions" %>
-	<% end %>
-<% end -%>
+</div>
+<% if form_actions_visible == true %>
+	<%= render :partial => "shared/form_actions" %>
+<% end %>
