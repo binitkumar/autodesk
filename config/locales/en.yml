@@ -2,4 +2,16 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+    activerecord:
+        models:
+            sale: "Sale"
+            vehicle: "Vehicle"
+        attributes:
+            sale:
+                date: "Date of sale"
+                sale_type_id: "Sale Type"
+            sale_vehicles:
+                price: "Vehicle price"
+            product_sales:
+                price: "Product price"
+                tax_rate_id: "Product tax rate"
