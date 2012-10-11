@@ -31,7 +31,7 @@ class Sale < ActiveRecord::Base
   accepts_nested_attributes_for :roles, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :funding_plan_sales, :allow_destroy => true, :reject_if => :all_blank
   
-  validates_associated :sale_vehicles
-  validates_associated :product_sales
+  validates :sale_type_id, :presence => true
+  validates :date, :presence => true
   
 end

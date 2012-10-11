@@ -52,6 +52,8 @@ class SalesController < ApplicationController
     if @sale.save
       redirect_to @sale, :notice => "Successfully created address."
     else
+      error_message = '<div class="alert alert-error">' + @sale.errors.full_messages.join('</div><div class="alert alert-error">') + '</div>'
+      flash[:error] = error_message.html_safe if @sale.errors.any?
       render :action => 'new'
     end
   end
