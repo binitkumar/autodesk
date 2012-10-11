@@ -8,7 +8,6 @@ class ProductSale < ActiveRecord::Base
   
   accepts_nested_attributes_for :product, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
   
-  validates :tax_rate_id, :presence => true
-  validates :price, :presence => true, :numericality => {:greater_than => 0}
+  validates :price, :presence => true, :numericality => {:greater_than => 0, :allow_blank => true}
   
 end
