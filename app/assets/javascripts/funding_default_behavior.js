@@ -17,14 +17,14 @@ function fundingDefaultBehavior () {
 	    return $(this).text() == 'Cash'; 
 	}).attr('selected', true);
 	$('#funding_type_selector').trigger("lizst:updated");
-	$('#funding_type_selector').attr('disabled', true).trigger("liszt:updated");
+	$('#funding_type_selector').attr('readonly', true).trigger("liszt:updated");
 
 	// Disable & hide the Funding Supplier selector
 	$('#funding_supplier_selector').attr('disabled', true).trigger("liszt:updated");
 	$('#funding_supplier_selector').parent().parent().hide();
 
 	// Disable the Funding Amount text box, and remove it from the sums
-	$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').attr('disabled', true).removeClass('price-subtractor');
+	$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').attr('readonly', true).removeClass('price-subtractor');
 
 	// Bind to the change event of the price-contributor fields
 	$('.price-contributor').change(function() {
