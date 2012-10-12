@@ -15,6 +15,7 @@
 //= require show_and_hide_form_fields.js
 //= require funding_default_behavior.js
 //= require input_mask.js
+//= require autoNumeric.js
 //= require jquery.ui.datepicker
 //= require jquery.ui.slider
 //= require twitter/bootstrap.js
