@@ -2,11 +2,11 @@ function sumPriceFundingFields () {
 	var sum = 0;
 	$('.price-contributor').each(function(){
 		// Add up the values of the price contributor fields, stripping out any non-numeric elements
-		sum += $(this).autoNumericGet();
+		sum += parseFloat( ('0' + $(this).val()).replace(/[^0-9-\.]/g, ''), 10 );
 	});
 	$('.price-subtractor').each(function(){
 		// Subtract the values of the price subtractor fields from the sum, stripping out any non-numeric elements
-		sum = sum - $(this).autoNumericGet();
+		sum = sum - parseFloat( ('0' + $(this).val()).replace(/[^0-9-\.]/g, ''), 10 );
 	});
 	$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').val(sum);
 };

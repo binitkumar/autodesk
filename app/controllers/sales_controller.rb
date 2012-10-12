@@ -51,7 +51,7 @@ class SalesController < ApplicationController
     authorize! :create, @sale
     if @sale.save
       notice_message = '<div class="alert alert-success">Sale was created successfully</div>'
-      redirect_to @sale, flash[:notice] = notice_message.html_safe
+      redirect_to @sale, :notice => notice_message.html_safe
     else
       error_message = '<div class="alert alert-error">' + @sale.errors.full_messages.join('</div><div class="alert alert-error">') + '</div>'
       flash[:error] = error_message.html_safe if @sale.errors.any?
