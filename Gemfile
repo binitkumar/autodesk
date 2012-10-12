@@ -19,7 +19,7 @@ gem 'cancan'
 gem 'cocoon', :git => 'https://github.com/htowens/cocoon.git'
 
 # Use web-app-theme gem for easy creation of initial layout (repository version not updated; pulling from Github)
-gem 'web-app-theme', :git => '/Users/henryowens/Documents/web-app-theme'
+gem 'web-app-theme', :git => 'https://github.com/htowens/web-app-theme'
 
 # Use the ffaker gem to auto-generate test data
 gem 'ffaker'
