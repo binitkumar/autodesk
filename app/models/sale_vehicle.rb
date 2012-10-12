@@ -6,6 +6,6 @@ class SaleVehicle < ActiveRecord::Base
   
   accepts_nested_attributes_for :vehicle, :reject_if => :all_blank
   
-  validates :price, :presence => true, :numericality => {:greater_than => 0, :allow_blank => true}
+  validates :price, :presence => true, :numericality => {:greater_than_or_equal_to => 0, :allow_blank => true, :message => " can't be negative."}
   
 end
