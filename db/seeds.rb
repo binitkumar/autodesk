@@ -321,12 +321,16 @@ puts 'create vehicles and purchases done'
   sale = Sale.create(dealer_id: dealer.id, customer_id: customer.id, sale_type_id: '1', date: rand_time(180.days.ago, Time.now))
   
   # add a product to the sale
-  sale.products.create(product_type_id: 1 + Random.rand(5))
+  created_product_sale = ProductSale.create(price: '350')
+  created_product_sale.product = Product.create(product_type_id: 1 + Random.rand(5))
+  sale.product_sales << created_product_sale
   
   # add a user
   sale.users << dealer.users.where(:id => 1 + Random.rand(9))
   
   # add a vehicle
-  sale.vehicles << dealer.vehicles[Random.rand(dealer.vehicles.length - 1)]
+  created_sale_vehicle = SaleVehicle.create(:price => '10000')
+  created_sale_vehicle.vehicle = dealer.vehicles[Random.rand(dealer.vehicles.length - 1)]
+  sale.sale_vehicles << created_sale_vehicle
 end
 puts 'create sales done'
