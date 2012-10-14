@@ -1,7 +1,8 @@
 <div class='nested-fields form-horizontal'>
 	<fieldset>
+	  <%= remove_form_link(f) %>
 		<legend>Vehicle Details</legend>
-		<% if f.object.vehicle.blank? %>
+		<% if f.object.vehicle.blank? %> 
 			<% f.object.build_vehicle %>
 		<% end %>
 		<%= f.fields_for :vehicle do |vehicle_builder| %>

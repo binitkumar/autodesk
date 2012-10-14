@@ -1,6 +1,7 @@
 <%= f.hidden_field :currency_id, :value => Currency.where(:value => 'UK Pound').first.id %>
 <div class='nested-fields form-horizontal'>
 	<fieldset>
+	  <%= remove_form_link(f) %>
 		<legend>Product Details</legend>
 		<%= add_fixed_fields('product', [""], f, false, true) %>
 		<div class="control-group">

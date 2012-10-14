@@ -28,4 +28,8 @@ module ApplicationHelper
     return html_string.html_safe
   end
   
+  def remove_form_link(f)
+    link_to_remove_association "<i class='icon-remove'></i>".html_safe, f, style: "float:right;"
+  end
+  
 end
