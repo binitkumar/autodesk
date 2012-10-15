@@ -1,16 +1,13 @@
 <div class='nested-fields form-horizontal'>
-	<fieldset>
-		<legend>Product Details</legend>
-		<div class="control-group">
-			<label class="control-label">Product</label>
-			<div class="controls">
-				<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Product Type"}) %>
-			</div>
+	<div class="control-group">
+		<label class="control-label">Product</label>
+		<div class="controls">
+			<%= f.collection_select(:product_type_id, ProductType.all, :id, :value, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Product Type"}) %>
 		</div>
-		<% if form_actions_visible == true %>
-			<div class="form-actions">
-				<%= render :partial => "shared/form_actions" %>
-			</div>
-		<% end %>
-	</fieldset>
+	</div>
+	<% if form_actions_visible == true %>
+		<div class="form-actions">
+			<%= render :partial => "shared/form_actions" %>
+		</div>
+	<% end %>
 </div>

@@ -3,7 +3,10 @@
 	<fieldset>
 	  <%= remove_form_link(f) %>
 		<legend>Product Details</legend>
-		<%= add_fixed_fields('product', [""], f, false, true) %>
+		<% f.object.build_product if f.object.product.blank? %>
+		<%= f.fields_for :product do |product_builder| %>
+			<%= render :partial => "products/form", :locals => {:f => product_builder, :form_actions_visible => false} %>
+		<% end -%>
 		<div class="control-group">
 			<label class="control-label">Selling Price</label>
 			<div class="controls">

@@ -6,7 +6,7 @@ class ProductSale < ActiveRecord::Base
   belongs_to :tax_rate
   belongs_to :currency
   
-  accepts_nested_attributes_for :product, :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }
+  accepts_nested_attributes_for :product, :reject_if => :all_blank
   
   validates :price, :presence => true, :numericality => {:greater_than_or_equal_to => 0, :allow_blank => true, :message => " can't be negative."}
   
