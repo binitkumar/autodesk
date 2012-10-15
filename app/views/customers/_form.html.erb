@@ -1,12 +1,10 @@
 <div class="control-group">
 	<label class="control-label">Customer Type</label>
 	<div class="controls">
-		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", "data-placeholder" => "Select Customer Type"}) %>
+		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", :class => "show-hide-controller", "data-placeholder" => "Select Customer Type"}) %>
 	</div>
 </div>
-<div class="customer-features">
-	<%= add_fixed_fields('features', ["First Name(s)", "Last Name", "Date of Birth", "Name", "Company Number"], f, false, false) %>
-</div>
+<%= add_fixed_fields('features', ["First Name(s)", "Last Name", "Date of Birth", "Name", "Company Number"], f, false, false) %>
 <% if form_actions_visible == true %>
 	<%= render :partial => "shared/form_actions" %>
 <% end %>

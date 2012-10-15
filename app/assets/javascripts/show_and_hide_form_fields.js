@@ -1,53 +1,44 @@
-function showHideActionsDynamic(item, fieldsContainer, nameHolder, fieldsArray) {
-	/* get the timestamp from the container div */
-	var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
-	/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
-	$(item).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
+function showHideActions(item, fieldsContainer, nameHolder, fieldsArray, nonDynamic) {
+	if (nonDynamic) {
+		var specificFieldsContainer = fieldsContainer;
+	}
+	else {
+		/* get the timestamp from the container div */
+		var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
+		var specificFieldsContainer = fieldsContainer + '[data-timestamp="' + timestamp + '"]';
+		/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
+		$(item).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
+	}
 	/* re-hide all of the selects as some may have been shown by a previous request */
-	$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder +']').parent().parent().hide();
+	$(specificFieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
 	/* Select the array of visible fields */
 	var visibleFundingFields = fieldsArray[$(item).children("option[value='" + $(item).attr('value') + "']").text()];
 	/* Find each select detailed in the visible fields array, and show it */
 	$.each(visibleFundingFields, function(i, field) {
-		$(fieldsContainer + '[data-timestamp="' + timestamp + '"]').find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
+		$(specificFieldsContainer).find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
 	});
-};
-
-function showHideActionsNonDynamic(item, fieldsContainer, nameHolder, fieldsArray) {
-	/* re-hide all of the selects as some may have been shown by a previous request */
-	$(fieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
-	/* Select the array of visible fields */
-	var visibleFundingFields = fieldsArray[$(item).children("option[value='" + $(item).attr('value') + "']").text()];
-	/* Find each select detailed in the visible fields array, and show it */
-	$.each(visibleFundingFields, function(i, field) {
-		$(fieldsContainer).find('input[' + nameHolder + '="' + field + '"]').parent().parent().show();
-	});
-};
+}
 
 /* Function to show and hide appropriate fields in forms */
 function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied, nonDynamic){
 
 	$(fieldsContainer + ':not([data-no-master-show-hide])').find('input[' + nameHolder +']').parent().parent().hide();
+	$(fieldsContainer).find('select.show-hide-controller:not([data-no-master-show-hide])').each( function() {
+		if ($(this).val()){
+			showHideActions(this, fieldsContainer, nameHolder, fieldsArray, nonDynamic);
+			$(this).attr('data-no-master-show-hide', true);
+		}
+	});
 	
 	if (chosenApplied) {
 		$('[id^="' + typeSelector + '"]').on('change',function() {
-			if (nonDynamic) {
-				showHideActionsNonDynamic(this, fieldsContainer, nameHolder, fieldsArray);
-			}
-			else {
-				showHideActionsDynamic(this, fieldsContainer, nameHolder, fieldsArray);
-			}
+			showHideActions(this, fieldsContainer, nameHolder, fieldsArray, nonDynamic);
 		});
 	}
 	
 	else {
 		$('[id^="' + typeSelector + '"]').chosen().change(function() {
-			if (nonDynamic) {
-				showHideActionsNonDynamic(this, fieldsContainer, nameHolder, fieldsArray);
-			}
-			else {
-				showHideActionsDynamic(this, fieldsContainer, nameHolder, fieldsArray);
-			}
+			showHideActions(this, fieldsContainer, nameHolder, fieldsArray, nonDynamic);
 		});
 	}
 	
