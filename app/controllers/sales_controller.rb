@@ -12,6 +12,7 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
+    authorize! :new, @sale
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
@@ -25,11 +26,11 @@ class SalesController < ApplicationController
     @built_vehicle = @built_sale_vehicle.build_vehicle
     @built_vehicle.registration_marks.build
     @sale.attributes = params[:sale]
-    authorize! :new, @sale
   end
 
   def create
     @sale = Sale.new
+    authorize! :create, @sale
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
@@ -48,7 +49,6 @@ class SalesController < ApplicationController
       }
     end
     @sale.attributes = params[:sale]
-    authorize! :create, @sale
     if @sale.save
       notice_message = '<div class="alert alert-success">Sale was created successfully</div>'
       redirect_to @sale, :notice => notice_message.html_safe
@@ -61,6 +61,7 @@ class SalesController < ApplicationController
 
   def edit
     @sale = Sale.find(params[:id])
+    authorize! :edit, @sale
     @sale.build_customer if @sale.customer.blank?
     @sale.customer.emails.build if @sale.customer.emails.blank?
     @sale.customer.addresses.build if @sale.customer.addresses.blank?
@@ -72,31 +73,41 @@ class SalesController < ApplicationController
     @sale.roles.build if @sale.roles.blank?
     @sale.product_sales.build if @sale.product_sales.blank?
     @sale.funding_plan_sales.build if @sale.funding_plan_sales.blank?
-    authorize! :edit, @sale
   end
 
   def update
     @sale = Sale.find(params[:id])
+    authorize! :update, @sale
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
-    params[:sale][:vehicles_attributes].each { |key,value|
-      value.delete(:make)
-      value.delete(:model)
-    }
-    authorize! :update, @sale
+    if !params[:sale][:sale_vehicles_attributes].blank?
+      params[:sale][:sale_vehicles_attributes].each { |key,value|
+        if !value[:vehicle_attributes].blank?
+          value[:vehicle_attributes].delete(:make)
+          value[:vehicle_attributes].delete(:model)
+        end
+      }
+    end
+    if !params[:sale][:funding_plan_sales_attributes].blank?
+      params[:sale][:funding_plan_sales_attributes].each { |key,value|
+        value.delete(:funding_type)
+        value.delete(:supplier)
+      }
+    end
     if @sale.update_attributes(params[:sale])
       redirect_to @sale, :notice  => "Successfully updated sale."
     else
+      error_message = '<div class="alert alert-error">' + @sale.errors.full_messages.join('</div><div class="alert alert-error">') + '</div>'
+      flash[:error] = error_message.html_safe if @sale.errors.any?
       render :action => 'edit'
     end
-    authorize! :update, @sale
   end
 
   def destroy
     @sale = Sale.find(params[:id])
+    authorize! :destroy, @sale
     @sale.destroy
     redirect_to sales_url, :notice => "Successfully destroyed sale."
-    authorize! :destroy, @sale
   end
 end
