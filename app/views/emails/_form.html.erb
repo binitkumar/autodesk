@@ -1,10 +1,8 @@
-<div class="control-group">
+<div class="control-group nested-fields">
 	<label class="control-label">Email</label>
 	<div class="controls">
-     
+		<%= remove_form_link(f) %>
 		<%= f.text_field :value, :class => 'input-large email-field' %>
-	  <%= remove_form_link(f) %>
-	  
 	</div>
 </div>
 <% if form_actions_visible == true %>
