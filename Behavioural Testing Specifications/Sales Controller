@@ -1,0 +1,28 @@
+Creating
+
+User should be able to create a sale
+The dealer id for the sale should be the dealer id of the active dealer for the user (user must be logged in)
+The current user must have a role in the sale
+The sale must have a customer
+The sale must have a sale type
+The sale must have a date
+A sale must have either at least one vehicle or at least one product
+If a sale has a vehicle, it must have a price (>=0)
+If a sale has a product, it must have a price (>=0)
+A sale must have funding plans where the sum of the amounts of the funding plans is equal to the sum of the prices of vehicles and products
+The amount for a sale's funding plan must be >=0
+
+Indexing
+
+User should be able to view sales where the sale's dealer_id is the dealer_id of the active dealership for the user (user must be logged in)
+User should be able to select a deal from the index view to edit, if they have permission
+User should be able to select a deal from the index view to delete, if they have permission
+User should be able to link to the new sale view from the index page
+
+Editing / Updating
+
+Users can edit deals in which they have a role
+The same rules apply as for creating a sale
+
+Showing
+Users can view sales where the sale's dealer_id is the dealer_id of the active dealership for the user (user must be logged in)
