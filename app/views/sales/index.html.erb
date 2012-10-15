@@ -43,16 +43,22 @@
 	            				<%= sale.id %>
 	          				</td>
 	                    	<td>
-	            				<%= link_to sale.customer.features.where(:feature_type_id => "1").first.value + " " + sale.customer.features.where(:feature_type_id => "2").first.value, customer_path(sale.customer) %>
+	            				<% if !sale.customer.blank? %>
+									<%= link_to !sale.customer.features.blank? ? sale.customer.features.where(:feature_type_id => FeatureType.where(:value => "First Name(s)").first.id).first.value + " " + sale.customer.features.where(:feature_type_id => FeatureType.where(:value => "Last Name").first.id).first.value : 'N/A', customer_path(sale.customer) %>
+								<% else %>
+									<%= 'No Customer' %>
+								<% end -%>
 	          				</td>
 	                    	<td>
-	            				<%= link_to sale.vehicles.first.trim.model.make.value + " " + sale.vehicles.first.trim.model.value, vehicle_path(sale.vehicles.first) %>
+	            				<% sale.vehicles.each do |vehicle| %>
+									<%= link_to !vehicle.trim.blank? ? vehicle.make.value + " " + vehicle.model.value : 'N/A', vehicle_path(vehicle) %>
+								<% end -%>
 	          				</td>
 							<td>
 								<%= sale.date %>
 							</td>
 	        			</tr>
-	        			<% end %>
+	        			<% end -%>
 					</tbody>
       			</table>
 	    		</div>
