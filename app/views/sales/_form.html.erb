@@ -42,8 +42,9 @@
 									<%= render :partial => "emails/form", :locals => {:f => email, :form_actions_visible => false} %>
 								<% end -%>
 								<div class="add-field-links">
-									<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>
+									<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>        
 								</div>
+							  
 							</fieldset>
 							<fieldset>
 								<legend>Customer Contact Numbers</legend>
@@ -105,7 +106,7 @@
 			<div class="widget-content">
 				<div class="widget-box cocoon">
 					<%= sale.fields_for :funding_plan_sales do |funding_plan_sales_builder| %>
-						<%= render :partial => "funding_plan_sales/form", :locals => {:f => funding_plan_sales_builder, :form_actions_visible => false} %>
+						<%= render :partial => "funding_plan_sales/form", :locals => {:f => funding_plan_sales_builder, :form_actions_visible => false, :permanent => true} %>
 					<% end -%>
 					<div class="add-field-links">
 						<%= link_to_add_association '<i></i> Add Funding Type'.html_safe, sale, :funding_plan_sales, :partial => "funding_plan_sales/form", :render_options => {:locals => {:form_actions_visible => 'false'}}, :class => 'btn' %>

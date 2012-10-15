@@ -1,5 +1,6 @@
 <div class='nested-fields form-horizontal funding-method-container'>
 	<fieldset>
+	  <%= remove_form_link(f)  unless defined? permanent %>
 		<legend>Funding Details</legend>
 		<div class="control-group">
 			<label class="control-label">Funding Type</label>

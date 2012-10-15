@@ -1,7 +1,8 @@
-<div class="control-group">
+<div class="control-group nested-fields">
 	<label class="control-label">Registration Mark</label>
 	<div class="controls">
 		<%= f.text_field :value, :class => 'input-large' %>
+		<%= remove_form_link(f) %>
 	</div>
 </div>
 <% if form_actions_visible == true %>
