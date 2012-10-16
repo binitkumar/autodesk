@@ -4,7 +4,17 @@
 		<%= f_parent.text_field :price, :class => 'input-large price-contributor' %>
 	</div>
 </div>
-<%= add_fixed_fields('features', ["VIN Number", "Date of Registration"], f, false, false) %>
+<% features_to_build = ["VIN Number", "Date of Registration"]%>
+<% features_to_build.each do |feature| %>
+	<% if f.object.features.where(:feature_type_id => FeatureType.where(:value => feature)).blank? %>
+		<% built_feature = f.object.features.build %>
+		<% built_feature.feature_type = FeatureType.where(:value => feature).first %>
+	<% end %>
+<% end %>
+<%= f.fields_for :features do |features_builder| %>
+	<%= render :partial => "features/fixed_feature", :locals => {:f => features_builder, :fixed_feature_type => features_builder.object.feature_type.value, :form_actions_visible => false} %>
+<% end -%>
+
 <% if f.object.registration_marks.blank? %>
 	<% f.object.registration_marks.build %>
 <% end %>
