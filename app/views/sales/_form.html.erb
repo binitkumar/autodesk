@@ -44,11 +44,12 @@
 								<div class="add-field-links">
 									<%= link_to_add_association '<i></i> Add Email'.html_safe, customer_builder, :emails, :partial => 'emails/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>        
 								</div>
-							  
 							</fieldset>
 							<fieldset>
 								<legend>Customer Contact Numbers</legend>
-								<%= render :partial => "customers/customer_contact_numbers_fixed", :locals => {:f => customer_builder, :form_actions_visible => false} %>
+								<%= customer_builder.fields_for :contact_numbers do |contact_numbers_builder| %>
+									<%= render :partial => "customers/customer_contact_numbers_fixed", :locals => {:f => contact_numbers_builder, :form_actions_visible => false} %>
+								<% end -%>
 							</fieldset>
 							<div class="add-field-links">
 								<%= link_to_add_association '<i></i> Add Contact Number'.html_safe, customer_builder, :contact_numbers, :partial => 'contact_numbers/form', :render_options => {:locals => {:form_actions_visible => 'false', :legend_type => 'Customer'}}, :class => 'btn' %>

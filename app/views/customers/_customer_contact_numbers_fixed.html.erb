@@ -1,4 +1,10 @@
-<%= add_fixed_fields('contact_numbers', ["Home", "Work", "Mobile"], f, false, false) %>
+<div class="control-group">
+	<%= f.hidden_field :contact_number_type_id, :value => f.object.contact_number_type.id %>
+	<label class="control-label"><%= f.object.contact_number_type.value %> Number</label>
+	<div class="controls">
+		<%= f.text_field :value, :class => 'input-large telephone_uk' %>
+	</div>
+</div>
 <% if form_actions_visible == true %>
 	<div class="form-actions">
 		<%= render :partial => "shared/form_actions" %>

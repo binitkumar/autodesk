@@ -19,6 +19,11 @@ class SalesController < ApplicationController
     @sale.build_customer
     @sale.customer.emails.build
     @sale.customer.addresses.build
+    contact_numbers_to_build = ["Home", "Work", "Mobile"]
+    contact_numbers_to_build.each do |number_type|
+      @built_contact_number = @sale.customer.contact_numbers.build
+      @built_contact_number.contact_number_type = ContactNumberType.where(:value => number_type).first
+    end
     @sale.product_sales.build
     @sale.roles.build
     @sale.funding_plan_sales.build
@@ -65,6 +70,13 @@ class SalesController < ApplicationController
     @sale.build_customer if @sale.customer.blank?
     @sale.customer.emails.build if @sale.customer.emails.blank?
     @sale.customer.addresses.build if @sale.customer.addresses.blank?
+    contact_numbers_to_build = ["Home", "Work", "Mobile"]
+    contact_numbers_to_build.each do |number_type|
+      if @sale.customer.contact_numbers.where(:contact_number_type_id => ContactNumberType.where(:value => number_type)).blank?
+        @built_contact_number = @sale.customer.contact_numbers.build
+        @built_contact_number.contact_number_type = ContactNumberType.where(:value => number_type).first
+      end
+    end
     @sale.sale_vehicles.build if @sale.sale_vehicles.blank?
     @sale.sale_vehicles.each do |sale_vehicle|
         sale_vehicle.build_vehicle if sale_vehicle.vehicle.blank?
