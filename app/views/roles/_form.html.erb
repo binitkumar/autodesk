@@ -1,8 +1,8 @@
 <div class='nested-fields form-horizontal'>
 	<fieldset>
 		<legend>Team Member &amp; Role</legend>
-		<%= remove_form_link(f) %>
 		<div class="control-group">
+			<%= remove_form_link(f) %>
 			<label class="control-label">Team Member</label>
 			<div class="controls">
 				<%= f.collection_select(:user_id, User.all, :id, :first_name, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Team Member"}) %>
