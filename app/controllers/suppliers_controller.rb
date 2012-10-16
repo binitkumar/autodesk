@@ -1,6 +1,7 @@
 class SuppliersController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @suppliers = Supplier.all
     respond_to do |format|
       format.html
       format.json do
@@ -16,15 +17,12 @@ class SuppliersController < ApplicationController
   end
 
   def show
-    @supplier = Supplier.find(params[:id])
   end
 
   def new
-    @supplier = Supplier.new
   end
 
   def create
-    @supplier = Supplier.new(params[:supplier])
     if @supplier.save
       redirect_to @supplier, :notice => "Successfully created supplier."
     else
@@ -33,11 +31,9 @@ class SuppliersController < ApplicationController
   end
 
   def edit
-    @supplier = Supplier.find(params[:id])
   end
 
   def update
-    @supplier = Supplier.find(params[:id])
     if @supplier.update_attributes(params[:supplier])
       redirect_to @supplier, :notice  => "Successfully updated supplier."
     else
@@ -46,7 +42,6 @@ class SuppliersController < ApplicationController
   end
 
   def destroy
-    @supplier = Supplier.find(params[:id])
     @supplier.destroy
     redirect_to suppliers_url, :notice => "Successfully destroyed supplier."
   end

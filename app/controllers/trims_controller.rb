@@ -1,6 +1,7 @@
 class TrimsController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @trims = Trim.all
     respond_to do |format|
       format.html
       format.json do
@@ -11,15 +12,12 @@ class TrimsController < ApplicationController
   end
 
   def show
-    @trim = Trim.find(params[:id])
   end
 
   def new
-    @trim = Trim.new
   end
 
   def create
-    @trim = Trim.new(params[:trim])
     if @trim.save
       redirect_to @trim, :notice => "Successfully created trim."
     else
@@ -28,11 +26,9 @@ class TrimsController < ApplicationController
   end
 
   def edit
-    @trim = Trim.find(params[:id])
   end
 
   def update
-    @trim = Trim.find(params[:id])
     if @trim.update_attributes(params[:trim])
       redirect_to @trim, :notice  => "Successfully updated trim."
     else
@@ -41,7 +37,6 @@ class TrimsController < ApplicationController
   end
 
   def destroy
-    @trim = Trim.find(params[:id])
     @trim.destroy
     redirect_to trims_url, :notice => "Successfully destroyed trim."
   end

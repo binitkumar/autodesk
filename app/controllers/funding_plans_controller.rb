@@ -1,6 +1,7 @@
 class FundingPlansController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @funding_plans = FundingPlan.all
     respond_to do |format|
       format.html
       format.json do
@@ -19,15 +20,12 @@ class FundingPlansController < ApplicationController
   end
 
   def show
-    @funding_plan = FundingPlan.find(params[:id])
   end
 
   def new
-    @funding_plan = FundingPlan.new
   end
 
   def create
-    @funding_plan = FundingPlan.new(params[:funding_plan])
     if @funding_plan.save
       redirect_to @funding_plan, :notice => "Successfully created funding plan."
     else
@@ -36,11 +34,9 @@ class FundingPlansController < ApplicationController
   end
 
   def edit
-    @funding_plan = FundingPlan.find(params[:id])
   end
 
   def update
-    @funding_plan = FundingPlan.find(params[:id])
     if @funding_plan.update_attributes(params[:funding_plan])
       redirect_to @funding_plan, :notice  => "Successfully updated funding plan."
     else
@@ -49,7 +45,6 @@ class FundingPlansController < ApplicationController
   end
 
   def destroy
-    @funding_plan = FundingPlan.find(params[:id])
     @funding_plan.destroy
     redirect_to funding_plans_url, :notice => "Successfully destroyed funding plan."
   end

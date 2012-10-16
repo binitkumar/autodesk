@@ -1,18 +1,16 @@
 class TaxRatesController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @tax_rates = TaxRate.all
   end
 
   def show
-    @tax_rate = TaxRate.find(params[:id])
   end
 
   def new
-    @tax_rate = TaxRate.new
   end
 
   def create
-    @tax_rate = TaxRate.new(params[:tax_rate])
     if @tax_rate.save
       redirect_to @tax_rate, :notice => "Successfully created tax rate."
     else
@@ -21,11 +19,9 @@ class TaxRatesController < ApplicationController
   end
 
   def edit
-    @tax_rate = TaxRate.find(params[:id])
   end
 
   def update
-    @tax_rate = TaxRate.find(params[:id])
     if @tax_rate.update_attributes(params[:tax_rate])
       redirect_to @tax_rate, :notice  => "Successfully updated tax rate."
     else
@@ -34,7 +30,6 @@ class TaxRatesController < ApplicationController
   end
 
   def destroy
-    @tax_rate = TaxRate.find(params[:id])
     @tax_rate.destroy
     redirect_to tax_rates_url, :notice => "Successfully destroyed tax rate."
   end

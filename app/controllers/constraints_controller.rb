@@ -1,18 +1,16 @@
 class ConstraintsController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @constraints = Constraint.all
   end
 
   def show
-    @constraint = Constraint.find(params[:id])
   end
 
   def new
-    @constraint = Constraint.new
   end
 
   def create
-    @constraint = Constraint.new(params[:constraint])
     if @constraint.save
       redirect_to @constraint, :notice => "Successfully created constraint."
     else
@@ -21,11 +19,9 @@ class ConstraintsController < ApplicationController
   end
 
   def edit
-    @constraint = Constraint.find(params[:id])
   end
 
   def update
-    @constraint = Constraint.find(params[:id])
     if @constraint.update_attributes(params[:constraint])
       redirect_to @constraint, :notice  => "Successfully updated constraint."
     else
@@ -34,7 +30,6 @@ class ConstraintsController < ApplicationController
   end
 
   def destroy
-    @constraint = Constraint.find(params[:id])
     @constraint.destroy
     redirect_to constraints_url, :notice => "Successfully destroyed constraint."
   end

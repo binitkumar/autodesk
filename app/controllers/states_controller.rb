@@ -1,18 +1,16 @@
 class StatesController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @states = State.all
   end
 
   def show
-    @state = State.find(params[:id])
   end
 
   def new
-    @state = State.new
   end
 
   def create
-    @state = State.new(params[:state])
     if @state.save
       redirect_to @state, :notice => "Successfully created state."
     else
@@ -21,11 +19,9 @@ class StatesController < ApplicationController
   end
 
   def edit
-    @state = State.find(params[:id])
   end
 
   def update
-    @state = State.find(params[:id])
     if @state.update_attributes(params[:state])
       redirect_to @state, :notice  => "Successfully updated state."
     else
@@ -34,7 +30,6 @@ class StatesController < ApplicationController
   end
 
   def destroy
-    @state = State.find(params[:id])
     @state.destroy
     redirect_to states_url, :notice => "Successfully destroyed state."
   end

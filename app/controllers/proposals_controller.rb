@@ -1,18 +1,16 @@
 class ProposalsController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @proposals = Proposal.all
   end
 
   def show
-    @proposal = Proposal.find(params[:id])
   end
 
   def new
-    @proposal = Proposal.new
   end
 
   def create
-    @proposal = Proposal.new(params[:proposal])
     if @proposal.save
       redirect_to @proposal, :notice => "Successfully created proposal."
     else
@@ -21,11 +19,9 @@ class ProposalsController < ApplicationController
   end
 
   def edit
-    @proposal = Proposal.find(params[:id])
   end
 
   def update
-    @proposal = Proposal.find(params[:id])
     if @proposal.update_attributes(params[:proposal])
       redirect_to @proposal, :notice  => "Successfully updated proposal."
     else
@@ -34,7 +30,6 @@ class ProposalsController < ApplicationController
   end
 
   def destroy
-    @proposal = Proposal.find(params[:id])
     @proposal.destroy
     redirect_to proposals_url, :notice => "Successfully destroyed proposal."
   end

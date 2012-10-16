@@ -1,18 +1,16 @@
 class FeesController < ApplicationController
+  load_and_authorize_resource
+  
   def index
-    @fees = Fee.all
   end
 
   def show
-    @fee = Fee.find(params[:id])
   end
 
   def new
-    @fee = Fee.new
   end
 
   def create
-    @fee = Fee.new(params[:fee])
     if @fee.save
       redirect_to @fee, :notice => "Successfully created fee."
     else
@@ -21,11 +19,9 @@ class FeesController < ApplicationController
   end
 
   def edit
-    @fee = Fee.find(params[:id])
   end
 
   def update
-    @fee = Fee.find(params[:id])
     if @fee.update_attributes(params[:fee])
       redirect_to @fee, :notice  => "Successfully updated fee."
     else
@@ -34,7 +30,6 @@ class FeesController < ApplicationController
   end
 
   def destroy
-    @fee = Fee.find(params[:id])
     @fee.destroy
     redirect_to fees_url, :notice => "Successfully destroyed fee."
   end
