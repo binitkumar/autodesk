@@ -10,7 +10,7 @@ function showHideActions(item, fieldsContainer, nameHolder, fieldsArray, nonDyna
 		}
 		else {
 			var specificFieldsContainer = fieldsContainer + '[data-id="' + $(item).closest('.show-hide-controller-container').data('id') + '"]';
-			alert(specificFieldsContainer);
+			//alert(specificFieldsContainer);
 		}
 		/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
 		$(item).closest('.show-hide-controller-container').attr('data-no-master-show-hide', true);

@@ -68,6 +68,7 @@
                         }
                         
                         /* Force updating the children. */
+                        $(self).trigger("children-updated");
                         $(self).trigger("change");
 
 						/* Call the Chosen plugin to make the selects more useable */
