@@ -5,7 +5,7 @@
 		<div class="control-group">
 			<label class="control-label">Funding Type</label>
 			<div class="controls">
-				<%= f.select(:funding_type, FundingType.all.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "funding_type_selector_#{f.object.id}", :class => "show-hide-controller", "data-chained" => "true",  "data-chained-url-name" => "funding_type_id", "data-chained-children" => "true", "data-chained-parent" => "funding_type_selector_#{f.object.id}", "data-placeholder" => "Select Funding Type", "data-show-hide-details" => ".funding-method-container,funding_type_selector,data-funding-field-type,fundingFields"}) %>
+				<%= f.select(:funding_type, @funding_types.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "funding_type_selector_#{f.object.id}", :class => "show-hide-controller", "data-chained" => "true",  "data-chained-url-name" => "funding_type_id", "data-chained-children" => "true", "data-chained-parent" => "funding_type_selector_#{f.object.id}", "data-placeholder" => "Select Funding Type", "data-show-hide-details" => ".funding-method-container,funding_type_selector,data-funding-field-type,fundingFields"}) %>
 			</div>
 		</div>
 		<div class="control-group">

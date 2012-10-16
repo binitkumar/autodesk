@@ -5,13 +5,13 @@
 			<%= remove_form_link(f) %>
 			<label class="control-label">Team Member</label>
 			<div class="controls">
-				<%= f.collection_select(:user_id, User.all, :id, :first_name, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Team Member"}) %>
+				<%= f.collection_select(:user_id, @users, :id, :first_name, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Team Member"}) %>
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label">Role</label>
 			<div class="controls">
-				<%= f.collection_select(:role_type_id, RoleType.all, :id, :value, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Role"}) %>
+				<%= f.collection_select(:role_type_id, @role_types, :id, :value, {prompt: ""}, {:class => "chzn-select", "data-placeholder" => "Select Role"}) %>
 			</div>
 		</div>
 		<% if form_actions_visible == true %>

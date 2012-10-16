@@ -1,18 +1,26 @@
 class SalesController < ApplicationController
   load_and_authorize_resource :except => [:create, :update]
+  before_filter :load_select_values, :only => [:new, :edit, :create, :update]
+  
+  def load_select_values
+    @makes = Make.accessible_by(current_ability)
+    @sale_types = SaleType.accessible_by(current_ability)
+    @customer_types = CustomerType.accessible_by(current_ability)
+    @users = User.accessible_by(current_ability)
+    @role_types = RoleType.accessible_by(current_ability)
+    @funding_types = FundingType.accessible_by(current_ability)
+    @tax_rates = TaxRate.accessible_by(current_ability)
+    @product_types = ProductType.accessible_by(current_ability)
+  end
   
   def index
     # @sales is already loaded via load_and_authorize_resource
   end
 
   def show
-    @sale = Sale.find(params[:id])
-    authorize! :show, @sale
   end
 
   def new
-    @sale = Sale.new
-    authorize! :new, @sale
     current_ability.attributes_for(:new, Sale).each do |key, value|
       @sale.send("#{key}=", value)
     end
@@ -31,6 +39,7 @@ class SalesController < ApplicationController
     @built_vehicle = @built_sale_vehicle.build_vehicle
     @built_vehicle.registration_marks.build
     @sale.attributes = params[:sale]
+    
   end
 
   def create
@@ -65,8 +74,6 @@ class SalesController < ApplicationController
   end
 
   def edit
-    @sale = Sale.find(params[:id])
-    authorize! :edit, @sale
     @sale.build_customer if @sale.customer.blank?
     @sale.customer.emails.build if @sale.customer.emails.blank?
     @sale.customer.addresses.build if @sale.customer.addresses.blank?
@@ -117,8 +124,6 @@ class SalesController < ApplicationController
   end
 
   def destroy
-    @sale = Sale.find(params[:id])
-    authorize! :destroy, @sale
     @sale.destroy
     redirect_to sales_url, :notice => "Successfully destroyed sale."
   end

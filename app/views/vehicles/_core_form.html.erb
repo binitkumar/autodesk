@@ -1,7 +1,7 @@
 <div class="control-group">
 	<label class="control-label">Make</label>
 	<div class="controls">
-		<%= f.select(:make, Make.all.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "vehicle_make_selector_#{f.object.id}", "data-chained" => "true",  "data-chained-url-name" => "make_id", "data-chained-children" => "true", "data-chained-parent" => "vehicle_make_selector", "data-placeholder" => "Select Make"}) %>
+		<%= f.select(:make, @makes.collect {|p| [ p.value, p.id ] }, {:prompt => ""}, {:id => "vehicle_make_selector_#{f.object.id}", "data-chained" => "true",  "data-chained-url-name" => "make_id", "data-chained-children" => "true", "data-chained-parent" => "vehicle_make_selector", "data-placeholder" => "Select Make"}) %>
 	</div>
 </div>
 <div class="control-group">

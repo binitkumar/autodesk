@@ -1,7 +1,7 @@
 <div class="control-group show-hide-controller-container">
 	<label class="control-label">Customer Type</label>
 	<div class="controls">
-		<%= f.collection_select(:customer_type_id, CustomerType.all, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", :class => "show-hide-controller", "data-placeholder" => "Select Customer Type"}) %>
+		<%= f.collection_select(:customer_type_id, @customer_types, :id, :value, {:prompt => ""}, {:id => "customer-type-selector", :class => "show-hide-controller", "data-placeholder" => "Select Customer Type"}) %>
 	</div>
 </div>
 <% features_to_build = ["First Name(s)", "Last Name", "Date of Birth", "Name", "Company Number"]%>
