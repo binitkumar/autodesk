@@ -4,10 +4,16 @@ function showHideActions(item, fieldsContainer, nameHolder, fieldsArray, nonDyna
 	}
 	else {
 		/* get the timestamp from the container div */
-		var timestamp = $(item).closest('[data-timestamp]').data('timestamp');
-		var specificFieldsContainer = fieldsContainer + '[data-timestamp="' + timestamp + '"]';
+		var timestamp = $(item).closest('.show-hide-controller-container').data('timestamp');
+		if (timestamp) {
+			var specificFieldsContainer = fieldsContainer + '[data-timestamp="' + timestamp + '"]';
+		}
+		else {
+			var specificFieldsContainer = fieldsContainer + '[data-id="' + $(item).closest('.show-hide-controller-container').data('id') + '"]';
+			alert(specificFieldsContainer);
+		}
 		/* set a flag to avoid the fields being shown / hidden by the addition of a new section */
-		$(item).closest('[data-timestamp]').attr('data-no-master-show-hide', true);
+		$(item).closest('.show-hide-controller-container').attr('data-no-master-show-hide', true);
 	}
 	/* re-hide all of the selects as some may have been shown by a previous request */
 	$(specificFieldsContainer).find('input[' + nameHolder +']').parent().parent().hide();
@@ -22,7 +28,9 @@ function showHideActions(item, fieldsContainer, nameHolder, fieldsArray, nonDyna
 /* Function to show and hide appropriate fields in forms */
 function showHideFields(fieldsContainer, typeSelector, nameHolder, fieldsArray, chosenApplied, nonDynamic){
 
+	// Initially hide all fields
 	$(fieldsContainer + ':not([data-no-master-show-hide])').find('input[' + nameHolder +']').parent().parent().hide();
+	// If any show-hide-controllers already have an option select, show the appropriate fields
 	$(fieldsContainer).find('select.show-hide-controller:not([data-no-master-show-hide])').each( function() {
 		if ($(this).val()){
 			showHideActions(this, fieldsContainer, nameHolder, fieldsArray, nonDynamic);

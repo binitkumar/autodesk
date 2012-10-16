@@ -13,18 +13,20 @@ function sumPriceFundingFields () {
 
 function fundingDefaultBehavior () {
 	// Set the funding type to cash and disable the Funding Type selector
-	$('#funding_type_selector option').filter(function() {
+	$('.funding-method-container fieldset:first select[id^="funding_type_selector"] option').filter(function() {
 	    return $(this).text() == 'Cash'; 
 	}).attr('selected', true);
-	$('#funding_type_selector').trigger("lizst:updated");
-	$('#funding_type_selector').attr('readonly', true).trigger("liszt:updated");
+	$('.funding-method-container fieldset:first select[id^="funding_type_selector"]').trigger("lizst:updated");
+	$('.funding-method-container fieldset:first select[id^="funding_type_selector"]').attr('disabled', true).trigger("liszt:updated");
+	//Set a flag to prevent hidden fields being shown by other funding plans
+		$('.funding-method-container fieldset:first select[id^="funding_type_selector"]').attr('data-no-master-show-hide', true);
 
 	// Disable & hide the Funding Supplier selector
-	$('#funding_supplier_selector').attr('disabled', true).trigger("liszt:updated");
-	$('#funding_supplier_selector').parent().parent().hide();
+	$('.funding-method-container fieldset:first select[id^="funding_supplier_selector"]').attr('disabled', true).trigger("liszt:updated");
+	$('.funding-method-container fieldset:first select[id^="funding_supplier_selector"]').parent().parent().hide();
 
 	// Disable the Funding Amount text box, and remove it from the sums
-	$('.funding-method-container:not([data-timestamp])').find('.funding-plan-amount').attr('readonly', true).removeClass('price-subtractor');
+	$('.funding-method-container fieldset:first input.funding-plan-amount').attr('readonly', true).removeClass('price-subtractor');
 
 	// Bind to the change event of the price-contributor fields
 	$('.price-contributor').change(function() {
