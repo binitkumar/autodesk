@@ -71,4 +71,13 @@ gem 'jquery-ui-rails'
 # To use debugger
 # gem 'debugger'
 
-gem "mocha", :group => :test
+
+group :test do
+  gem "rspec-rails", "~> 2.11.0"
+  gem 'machinist', '>= 2.0.0.beta2'
+  gem "capybara"
+  gem "guard-rspec"
+end
+
+#gem "mocha", :group => :test
+
