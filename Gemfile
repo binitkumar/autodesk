@@ -40,7 +40,6 @@ gem 'bootstrap-colorpicker-rails'
 # Use the money gem for handling currency
 gem 'money', :git => 'https://github.com/RubyMoney/money.git'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

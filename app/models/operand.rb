@@ -1,7 +1,7 @@
 class Operand < ActiveRecord::Base
   attr_accessible :name, :object, :attribute, :metric_id
   
-  belongs_to :calculation_metric, :class => "metric", :primary_key => "metric_id"
+  belongs_to :calculation_metric, :class_name => "metric", :primary_key => "metric_id"
   
   has_many :metric_operands
   has_many :metrics, :through => :metric_operands
