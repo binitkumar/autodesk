@@ -31,7 +31,16 @@ class Sale < ActiveRecord::Base
   accepts_nested_attributes_for :roles, :allow_destroy => true, :reject_if => :all_blank
   accepts_nested_attributes_for :funding_plan_sales, :allow_destroy => true, :reject_if => :all_blank
   
-  validates :sale_type_id, :presence => true
+  validates :customer, :presence => true
+  validates :sale_type, :presence => true
   validates :date, :presence => true
+  validate :must_have_at_least_one_vehicle_or_product
+  
+  def must_have_at_least_one_vehicle_or_product
+    if (sale_vehicles.length + product_sales.length) == 0
+      errors.add(:vehicles, " or product must exist!")
+      errors.add(:products, " or vehicle must exist!")
+    end
+  end
   
 end
