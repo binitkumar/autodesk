@@ -59,6 +59,7 @@
 							</td>
 	        			</tr>
 	        			<% end -%>
+	        			<%= link_to "New sale", new_sale_path if can? :create, Sale %>
 					</tbody>
       			</table>
 	    		</div>

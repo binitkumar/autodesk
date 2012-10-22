@@ -26,7 +26,9 @@ class Ability
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
     
     user ||= User.new
-    can :manage, :all
+    
+    can :manage, :all unless user.email == "slave@test.local"
+    can :read, :all
     
   end
 end

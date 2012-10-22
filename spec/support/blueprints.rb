@@ -50,6 +50,14 @@ Sale.blueprint(:without_products) do
   sale_vehicles(3)
 end
 
+User.blueprint do
+  email { "user1@test.local"}
+  password { "123456"}
+end
+
+User.blueprint(:slave) do
+  email { "slave@test.local"}
+end
 
 # Add your blueprints here.
 #
