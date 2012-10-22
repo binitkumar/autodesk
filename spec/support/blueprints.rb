@@ -27,7 +27,11 @@ ProductSale.blueprint do
   product
 end
 
+FundingPlan.blueprint do
+end
+
 FundingPlanSale.blueprint do
+  amount {0}
 end
 
 Sale.blueprint do 
