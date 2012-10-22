@@ -35,12 +35,27 @@ class Sale < ActiveRecord::Base
   validates :sale_type, :presence => true
   validates :date, :presence => true
   validate :must_have_at_least_one_vehicle_or_product
+  validate :total_amount_funded_must_equal_total_price
   
   def must_have_at_least_one_vehicle_or_product
     if (sale_vehicles.length + product_sales.length) == 0
       errors.add(:vehicles, " or product must exist!")
       errors.add(:products, " or vehicle must exist!")
     end
+  end
+  
+  def total_amount_funded_must_equal_total_price
+    if( total_amount_funded != total_price )
+      errors.add(:base, "Amount funded (#{total_amount_funded}) must be equal to total price (#{total_price}).")
+    end
+  end
+  
+  def total_amount_funded
+    funding_plan_sales.sum(:amount)
+  end
+  
+  def total_price
+    sale_vehicles.sum(:price) + product_sales.sum(:price)
   end
   
 end

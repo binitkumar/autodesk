@@ -15,7 +15,7 @@ Vehicle.blueprint do
 end
 
 SaleVehicle.blueprint do
-  price { 20000 }
+  price { 0 }
   vehicle
 end
 
@@ -23,8 +23,11 @@ Product.blueprint do
 end
 
 ProductSale.blueprint do
-  price { 20000 }
+  price { 0 }
   product
+end
+
+FundingPlanSale.blueprint do
 end
 
 Sale.blueprint do 
@@ -37,6 +40,7 @@ Sale.blueprint(:full) do
   product_sales(3)
   sale_vehicles(3)
 end
+
 
 Sale.blueprint(:without_vehicles) do 
   product_sales(3)
