@@ -122,6 +122,8 @@ Autobase::Application.routes.draw do
 
   resources :products
 
+  get '/sales/validate_unique_email'
+  get '/sales/validate_unique_phone_no'
   resources :sales
 
   resources :events

@@ -2,6 +2,8 @@ class SalesController < ApplicationController
   load_and_authorize_resource :except => [:create, :update]
   before_filter :load_select_values, :only => [:new, :edit, :create, :update]
   
+  protect_from_forgery :except=>[ :validate_unique_email,:validate_unique_phone_no ]
+
   def load_select_values
     @makes = Make.accessible_by(current_ability)
     @sale_types = SaleType.accessible_by(current_ability)
@@ -126,5 +128,21 @@ class SalesController < ApplicationController
   def destroy
     @sale.destroy
     redirect_to sales_url, :notice => "Successfully destroyed sale."
+  end
+
+  def validate_unique_email
+    if Email.where(:value=>params[:fieldValue]).length == 0
+      render :json=> [params[:fieldId],true]
+    else
+      render :json=> [params[:fieldId],false]
+    end
+  end
+
+  def validate_unique_phone_no 
+    if ContactNumber.where(:value=>params[:fieldValue]).length == 0
+      render :json=> [params[:fieldId],true]
+    else
+      render :json=> [params[:fieldId],false]
+    end
   end
 end

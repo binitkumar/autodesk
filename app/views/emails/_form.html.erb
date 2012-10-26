@@ -1,8 +1,9 @@
+<%= javascript_include_tag "sales_form_validation_reset" %>
 <div class="control-group nested-fields">
 	<label class="control-label">Email</label>
 	<div class="controls">
 		<%= remove_form_link(f) %>
-		<%= f.text_field :value, :class => 'input-large email-field' %>
+		<%= f.text_field :value, :class => 'input-large email-field validate[required,custom[email],ajax[uniqueUserEmail]' %>
 	</div>
 </div>
 <% if form_actions_visible == true %>

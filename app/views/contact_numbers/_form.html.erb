@@ -1,3 +1,4 @@
+<%= javascript_include_tag "sales_form_validation_reset" %>
 <div class='nested-fields form-horizontal'>
 	<fieldset>
 		<legend><%= legend_type + " Contact Number"%></legend>
@@ -10,7 +11,7 @@
 		<div class="control-group">
 			<label class="control-label">Contact Number</label>
 			<div class="controls">
-				<%= f.text_field :value, :class => 'input-large telephone_uk' %>
+				<%= f.text_field :value, :class => 'input-large telephone_uk validate[required,ajax[uniquePhoneNo]' %>
 			</div>
 		</div>
 		<% if form_actions_visible == true %>
